@@ -1,16 +1,11 @@
 # Breast Cancer Research Group
 
 ## Description of Project
-The proposal is essentially a summary of your interests and intent. Be sure to include the following details:
-The kind of data you’d like to work with and the field you’re interested in (finance, healthcare surveys, etc.)
-The questions you’ll ask of the data
-Possible source for the data
-
-Data Type:
 Our project 3 will focus on Breast Cancer data analysis
 We will be continuing with our data set from project one and performing a data visualization
 Our data set will come from the COVID-19 and Cancer Consortium (CCC19) breast cancer and racial disparities outcomes study
 It consists of demographic data for patients with Breast Cancer and COVID-19 and provides information on their COVID-19 outcomes
+
 
 ## Questions we are asking of the data:
 
