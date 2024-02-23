@@ -24,12 +24,12 @@ It consists of demographic data for patients with Breast Cancer and COVID-19 and
 8. What is the isolated effect of age on the risk of COVID-19 and Breast Cancer outcomes? - Dean
 
 ## Members of the group
--Hamza Saleem - @HSaleem352
--Mina Bagheri - @minalbm
--Dean Ninalga - @Ninalgad 
--Fozia - @FoziaY
--Shan Lian - @Lians03
--Alejandra - @AlejandraFeatherston
+- Hamza Saleem - @HSaleem352
+- Mina Bagheri - @minalbm
+- Dean Ninalga - @Ninalgad 
+- Fozia - @FoziaY
+- Shan Lian - @Lians03
+- Alejandra - @AlejandraFeatherston
 
 ## Possible sources for the data:
 Nagaraj, G., Khaki, A., & Shah, D. (2023). Covid-19 and Cancer Consortium (CCC19) breast cancer and racial disparities outcomes study. Zenodo. https://doi.org/10.5281/zenodo.7644334
