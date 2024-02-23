@@ -9,14 +9,14 @@ It consists of demographic data for patients with Breast Cancer and COVID-19 and
 
 ## Questions we are asking of the data:
 
-1. What are the sociodemographic and clinical factors that influence adverse outcomes: 
-2. How does the timing and type of their breast cancer treatment affect their COVID-19 outcomes? - Alex
-3. Is smoking a factor in severe COVID-19 for individuals with Breast Cancer? - Mina
-4. Amongst all the races with different BC statuses, is smoking a factor for them to have COVID-19? - Mina
-5. How does race/ethnicity affect COVID with Breast Cancer? - Shan
-6. Does obesity and age have an effect on COVID-19 with Breast Cancer? - Fozia
-7. Is the severity of COVID-19 affected if the individuals live in urban, suburban, or rural areas? - Hamza
-8. What is the isolated effect of age on the risk of COVID-19 and Breast Cancer outcomes? - Dean
+What are the sociodemographic and clinical factors that influence adverse outcomes: 
+1. How does the timing and type of their breast cancer treatment affect their COVID-19 outcomes? - Alex
+2. Is smoking a factor in severe COVID-19 for individuals with Breast Cancer? - Mina
+3. Amongst all the races with different BC statuses, is smoking a factor for them to have COVID-19? - Mina
+4. How does race/ethnicity affect COVID with Breast Cancer? - Shan
+5. Does obesity and age have an effect on COVID-19 with Breast Cancer? - Fozia
+6. Is the severity of COVID-19 affected if the individuals live in urban, suburban, or rural areas? - Hamza
+7. What is the isolated effect of age on the risk of COVID-19 and Breast Cancer outcomes? - Dean
 
 ## Members of the group
 - Hamza Saleem - @HSaleem352
