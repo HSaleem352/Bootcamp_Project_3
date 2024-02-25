@@ -2,5 +2,5 @@
 
 d3.json('/1').then(function(data) {
       
-    Plotly.newPlot('plot', data, layout);
+    Plotly.newPlot('plot', data);
   });
