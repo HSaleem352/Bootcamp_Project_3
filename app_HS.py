@@ -31,9 +31,9 @@ def get_data():
 
     #data = {"Suburban":residence_counts[0], "urban": residence_counts[1], "rural": residence_counts[2]}
 
-    #data = {residence_counts.index[0]:residence_counts[0], residence_counts.index[1]:residence_counts[1], residence_counts.index[2]:residence_counts[2]}
+    data = {residence_counts.index[0]:residence_counts[0], residence_counts.index[1]:residence_counts[1], residence_counts.index[2]:residence_counts[2]}
 
-    return jsonify(residence_counts.to_dict())
+    return render_template('index_HS.html', data=data)
 
 
 if __name__ == '__main__':
