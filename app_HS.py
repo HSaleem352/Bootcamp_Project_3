@@ -5,12 +5,8 @@ from flask import Flask, jsonify, render_template
 app = Flask(__name__)
 
 @app.route('/')
-def welcome():
-    return (
-        f"Welcome to the Project 3!<br/>"
-    )
-# def main():
-#     return render_template("index_HS.html")
+def main():
+    return render_template("index_HS.html")
 
 @app.route('/1')
 def get_data():
