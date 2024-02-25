@@ -12,7 +12,7 @@ def welcome():
 # def main():
 #     return render_template("index_HS.html")
 
-@app.route('/residence_ratio')
+@app.route('/1')
 def get_data():
     # Reading the file
     dataset_df = pd.read_csv("https://drive.google.com/u/0/uc?id=1IBWDyHq2TJHcvYXWJ8Kh38j_L_ZlJbkr&export=download")
@@ -30,15 +30,14 @@ def get_data():
     # Remove unknown residence 
     US_residence_df_clean = US_residence_df.loc[(US_residence_df['urban_rural'] != 'Unknown') | (US_residence_df['der_region_v2'] != 'Other')]
 
+    #residence_counts = pd.DataFrame(US_residence_df_clean['urban_rural'].value_counts())
     residence_counts = US_residence_df_clean['urban_rural'].value_counts()
 
     #data = {"Suburban":residence_counts[0], "urban": residence_counts[1], "rural": residence_counts[2]}
 
-    data = {residence_counts.index[0]:residence_counts[0], residence_counts.index[1]:residence_counts[1], residence_counts.index[2]:residence_counts[2]}
+    #data = {residence_counts.index[0]:residence_counts[0], residence_counts.index[1]:residence_counts[1], residence_counts.index[2]:residence_counts[2]}
 
-    return (data)
-
-
+    return jsonify(residence_counts.to_dict())
 
 
 if __name__ == '__main__':
