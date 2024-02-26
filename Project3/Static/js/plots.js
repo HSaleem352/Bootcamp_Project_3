@@ -1,4 +1,4 @@
-//Smoker_NonSmoker_Covid_DF
+//Smoker&BC_VS_Non-Smoker&BC
 
 // Use D3 to fetch data from the API endpoint
 d3.json('/api/Smoker&BC_VS_Non-Smoker&BC').then(function(data) {
@@ -44,7 +44,7 @@ d3.json('/api/Smoker&BC_VS_Non-Smoker&BC').then(function(data) {
   Plotly.newPlot('bar-graph1', data, layout);
 }); 
 
-//Smoker&BC_VS_Non-Smoker&BC
+//Smoker_NonSmoker_Covid_DF 
 
 // Use D3 to fetch data from the API endpoint
 d3.json('/api/Smoker_NonSmoker_Covid_DF').then(function(data) {
@@ -88,4 +88,142 @@ d3.json('/api/Smoker_NonSmoker_Covid_DF').then(function(data) {
   var data = [trace1, trace2];
 
   Plotly.newPlot('bar-graph2', data, layout);
+});
+
+//MildCov_BC_Smoker_NonSmoker_DF
+
+// Use D3 to fetch data from the API endpoint
+d3.json('/api/MildCov_BC_Smoker_NonSmoker_DF').then(function(data) {
+  // Extract the required data for the bar graph
+  var NonSmoker_BC_MildCov_Count = data.map(d => d.NonSmoker_BC_MildCov_Count);
+  var Smoker_BC_MildCov_Count = data.map(d => d.Smoker_BC_MildCov_Count);
+  var labels = ["Mild", "Moderate", "Severe"];
+
+  // Create a bar graph using Plotly
+  var trace1 = {
+    x: labels,
+    y: NonSmoker_BC_MildCov_Count,
+    name: 'NonSmoker_BC_MildCov_Count',
+    type: 'bar',
+    marker: {
+      color: 'rgba(240, 128, 128, 0.7)'  // LightCoral (RGBA)
+    }
+  };
+
+  var trace2 = {
+    x: labels,
+    y: Smoker_BC_MildCov_Count,
+    name: 'Smoker_BC_MildCov_Count',
+    type: 'bar',
+    marker: {
+      color: 'rgba(127, 255, 212, 0.7)'  // Aquamarine (RGBA)
+    }
+  };
+
+  var layout = {
+    barmode: 'group',
+    title: 'Mild-COVID with BC & Smoker VS. Mild-COVID with BC & Non-Smoker',
+    xaxis: {
+      title: 'COV_BC_Status'  // Add x-axis title
+    },
+    yaxis: {
+      title: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID'  // Add y-axis title
+    }
+  };
+
+  var data = [trace1, trace2];
+
+  Plotly.newPlot('bar-graph3', data, layout);
+});
+
+//ModerateCov_BC_Smoker_NonSmoker_DF 
+
+// Use D3 to fetch data from the API endpoint
+d3.json('/api/ModerateCov_BC_Smoker_NonSmoker_DF').then(function(data) {
+  // Extract the required data for the bar graph
+  var NonSmoker_BC_ModerateCov_Count = data.map(d => d.NonSmoker_BC_ModerateCov_Count);
+  var Smoker_BC_ModerateCov_Count = data.map(d => d.Smoker_BC_ModerateCov_Count);
+  var labels = ["Moderate COVID & Active and responding", "Moderate COVID & Active and stable", "Moderate COVID & Active and progressing"];
+
+  // Create a bar graph using Plotly
+  var trace1 = {
+    x: labels,
+    y: NonSmoker_BC_ModerateCov_Count,
+    name: 'NonSmoker_BC_ModerateCov_Count',
+    type: 'bar',
+    marker: {
+      color: 'rgba(240, 128, 128, 0.7)'  // LightCoral (RGBA)
+    }
+  };
+
+  var trace2 = {
+    x: labels,
+    y: Smoker_BC_ModerateCov_Count,
+    name: 'Smoker_BC_ModerateCov_Count',
+    type: 'bar',
+    marker: {
+      color: 'rgba(127, 255, 212, 0.7)'  // Aquamarine (RGBA)
+    }
+  };
+
+  var layout = {
+    barmode: 'group',
+    title: 'Moderate-COVID with BC & Smoker VS. Moderate-COVID with BC & Non-Smoker',
+    xaxis: {
+      title: 'COV_BC_Status'  // Add x-axis title
+    },
+    yaxis: {
+      title: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID'  // Add y-axis title
+    }
+  };
+
+  var data = [trace1, trace2];
+
+  Plotly.newPlot('bar-graph4', data, layout);
+});
+
+//SevereCov_BC_Smoker_NonSmoker_DF 
+
+// Use D3 to fetch data from the API endpoint
+d3.json('/api/SevereCov_BC_Smoker_NonSmoker_DF').then(function(data) {
+  // Extract the required data for the bar graph
+  var NonSmoker_BC_SevereCov_Count = data.map(d => d.NonSmoker_BC_SevereCov_Count);
+  var Smoker_BC_SevereCov_Count = data.map(d => d.Smoker_BC_SevereCov_Count);
+  var labels = ["Severe COVID & Active and responding", "Severe COVID & Active and stable", "Severe COVID & Active and progressing"];
+
+  // Create a bar graph using Plotly
+  var trace1 = {
+    x: labels,
+    y: NonSmoker_BC_SevereCov_Count,
+    name: 'NonSmoker_BC_SevereCov_Count',
+    type: 'bar',
+    marker: {
+      color: 'rgba(240, 128, 128, 0.7)'  // LightCoral (RGBA)
+    }
+  };
+
+  var trace2 = {
+    x: labels,
+    y: Smoker_BC_SevereCov_Count,
+    name: 'Smoker_BC_SevereCov_Count',
+    type: 'bar',
+    marker: {
+      color: 'rgba(127, 255, 212, 0.7)'  // Aquamarine (RGBA)
+    }
+  };
+
+  var layout = {
+    barmode: 'group',
+    title: 'Severe-COVID with BC & Smoker VS. Severe-COVID with BC & Non-Smoker',
+    xaxis: {
+      title: 'COV_BC_Status'  // Add x-axis title
+    },
+    yaxis: {
+      title: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID'  // Add y-axis title
+    }
+  };
+
+  var data = [trace1, trace2];
+
+  Plotly.newPlot('bar-graph5', data, layout);
 });
