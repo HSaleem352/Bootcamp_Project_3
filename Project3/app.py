@@ -5,7 +5,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # CSV files
-csv1 = 'Smoker&BC_VS_Non-Smoker&BC.csv'
+# csv1 = 'Smoker&BC_VS_Non-Smoker&BC.csv'
 csv2 = 'Smoker_NonSmoker_Covid_DF.csv'
 csv3 = 'MildCov_BC_Smoker_NonSmoker_DF.csv'
 csv4 = 'ModerateCov_BC_Smoker_NonSmoker_DF.csv'
@@ -18,8 +18,8 @@ def main():
 @app.route('/api/Smoker&BC_VS_Non-Smoker&BC', methods=['GET'])
 def get_data1():
     # Read CSV file using pandas
-    df1 = pd.read_csv(csv1)
-    
+    df1 = pd.read_csv("https://drive.google.com/uc?id=1WHdLRb3-9xl91szvWtSQpV1gWl12hotK&export=download")
+   
     # Convert DataFrame to JSON
     json_data = df1.to_json(orient='records')
 
