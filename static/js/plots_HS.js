@@ -1,6 +1,7 @@
 // Use D3 to fetch data from the API endpoint
 
 d3.json("/residence").then(function(response) {
+
   console.log(response.count)
   dict = response.count
   names = []
@@ -14,17 +15,20 @@ d3.json("/residence").then(function(response) {
       // console.log("Value:", dict[key]);
     }
   }
+  console.log(names)
+  console.log(values)
+
+  var trace1 = [{
+    values: values,
+    labels: names,
+    type: 'pie'
+  }];
   
-  let trace1 = {
-    x: names,
-    y: values,
-    type: "bar"
+  var layout = {
+    height: 400,
+    width: 500
   };
 
-  let layout = {
-    title: "residence_counts"
-
-  };
 
   Plotly.newPlot("plot", trace1, layout);
 
