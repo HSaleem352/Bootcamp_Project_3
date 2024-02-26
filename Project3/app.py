@@ -78,11 +78,12 @@
 #     app.run(debug=True)
 
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 import pandas as pd
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 # Replace 'your_file.csv' with the actual path to your CSV file
 csv_file_path = 'output.csv'
 
@@ -96,5 +97,9 @@ def get_data():
 
     return json_data
 
+@app.route('/')
+def main():
+    return render_template("index.html")
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='localhost', port=5000, debug=True)
