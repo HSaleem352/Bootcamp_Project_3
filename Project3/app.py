@@ -6,13 +6,13 @@ app = Flask(__name__)
 
 # CSV files
 csv1 = 'Smoker&BC_VS_Non-Smoker&BC.csv'
-csv2 = 'Smoker&BC_VS_Non-Smoker&BC.csv'
+csv2 = 'Smoker_NonSmoker_Covid_DF.csv'
 
 @app.route('/')
 def main():
     return render_template("index.html")
 
-@app.route('/api/Smoker_NonSmoker_Covid_DF', methods=['GET'])
+@app.route('/api/Smoker&BC_VS_Non-Smoker&BC', methods=['GET'])
 def get_data1():
     # Read CSV file using pandas
     df1 = pd.read_csv(csv1)
@@ -22,7 +22,7 @@ def get_data1():
 
     return json_data
 
-@app.route('/api/Smoker&BC_VS_Non-Smoker&BC', methods=['GET'])
+@app.route('/api/Smoker_NonSmoker_Covid_DF', methods=['GET'])
 def get_data2():
     # Read CSV file using pandas
     df2 = pd.read_csv(csv2)
