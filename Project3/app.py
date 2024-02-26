@@ -4,13 +4,6 @@ import pandas as pd
 
 app = Flask(__name__)
 
-# CSV files
-# csv1 = 'Smoker&BC_VS_Non-Smoker&BC.csv'
-# csv2 = 'Smoker_NonSmoker_Covid_DF.csv'
-# csv3 = 'MildCov_BC_Smoker_NonSmoker_DF.csv'
-# csv4 = 'ModerateCov_BC_Smoker_NonSmoker_DF.csv'
-# csv5 = 'SevereCov_BC_Smoker_NonSmoker_DF.csv'
-
 @app.route('/')
 def main():
     return render_template("index.html")
