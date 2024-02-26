@@ -8,7 +8,7 @@ app = Flask(__name__)
 def main():
     return render_template("index_HS.html")
 
-@app.route('/1')
+@app.route('/residence')
 def get_data():
     # Reading the file
     dataset_df = pd.read_csv("https://drive.google.com/u/0/uc?id=1IBWDyHq2TJHcvYXWJ8Kh38j_L_ZlJbkr&export=download")
@@ -28,14 +28,15 @@ def get_data():
 
     #residence_counts = pd.DataFrame(US_residence_df_clean['urban_rural'].value_counts())
     residence_counts = US_residence_df_clean['urban_rural'].value_counts()
+    residence_counts = pd.DataFrame(US_residence_df_clean['urban_rural'].value_counts())
 
     #data = {"Suburban":residence_counts[0], "urban": residence_counts[1], "rural": residence_counts[2]}
 
-    data = {residence_counts.index[0]:residence_counts[0], residence_counts.index[1]:residence_counts[1], residence_counts.index[2]:residence_counts[2]}
+    #data = {residence_counts.index[0]:residence_counts[0], residence_counts.index[1]:residence_counts[1], residence_counts.index[2]:residence_counts[2]}
 
     # residence_counts = pd.DataFrame(residence_counts)
 
-    return jsonify(data.json)
+    return (residence_counts.to_json())
 
 
 if __name__ == '__main__':
