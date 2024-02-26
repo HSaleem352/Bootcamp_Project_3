@@ -1,9 +1,18 @@
-// d3.json('/about').then(function(data){
+
+// fetch('/about')
+//   .then(response => response.json())
+//   .then(data => {
 //     console.log(data);
-// }); 
+//     // Process the data here
+//   })
+//   .catch(error => console.error('Error fetching data:', error));
+
+// d3.json("/api/data").then(function(data) {
+//     console.log(data);
+// });
 
 // Use D3 to fetch data from the API endpoint
-d3.json('127.0.0.1:5000/about').then(function(data) {
+d3.json('/api/data').then(function(data) {
     // Extract the required data for the bar graph
     var NonSmoker_BC_Count = data.map(d => d.NonSmoker_BC_Count);
     var Smoker_BC_Count = data.map(d => d.Smoker_BC_Count);
