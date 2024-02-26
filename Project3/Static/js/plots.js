@@ -42,3 +42,29 @@ d3.json('/api/data').then(function(data) {
   
     Plotly.newPlot('bar-graph', data, layout);
   });
+
+  // Fetch data from Flask API
+  // fetch('/api/data')
+  // .then(response => response.json())
+  // .then(data => {
+  //     // Extract data for x and y axes
+  //     const labels = Object.keys(data[0]);
+  //     const xValues = data.map(item => labels.map(label => item[label]));
+
+  //     // Create a Plotly bar graph
+  //     const traces = labels.map((label, index) => ({
+  //         x: xValues.map(x => x[index]),
+  //         y: xValues.map(x => x[index]),
+  //         type: 'bar',
+  //         name: label
+  //     }));
+
+  //     const layout = {
+  //         title: 'Bar Graph',
+  //         xaxis: { title: 'X Axis' },
+  //         yaxis: { title: 'Y Axis' }
+  //     };
+
+  //     Plotly.newPlot('bar-graph', traces, layout);
+  // })
+  // .catch(error => console.error('Error fetching data:', error));
