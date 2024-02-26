@@ -1,17 +1,64 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Title</title>
-    <!-- Load Plotly from CDN -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <!-- Load D3 from CDN -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cancer</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
     <div id="bar-graph"></div>
     <script src="../Static/js/plots.js"></script>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Graph</title>
+    <!-- Plotly CDN for JavaScript -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="bar-graph"></div>
+
+    <script>
+        // Fetch data from Flask API
+        fetch('/api/data')
+            .then(response => response.json())
+            .then(data => {
+                // Extract data for x and y axes
+                const labels = Object.keys(data[0]);
+                const xValues = data.map(item => labels.map(label => item[label]));
+
+                // Create a Plotly bar graph
+                const traces = labels.map((label, index) => ({
+                    x: xValues.map(x => x[index]),
+                    y: xValues.map(x => x[index]),
+                    type: 'bar',
+                    name: label
+                }));
+
+                const layout = {
+                    title: 'Bar Graph',
+                    xaxis: { title: 'X Axis' },
+                    yaxis: { title: 'Y Axis' }
+                };
+
+                Plotly.newPlot('bar-graph', traces, layout);
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
 </html>
+
+
+
+
+  
+  
