@@ -1,5 +1,5 @@
 // Use D3 to fetch data from the API endpoint
-d3.json('/api/data').then(function(data) {
+d3.json('/api/Smoker_NonSmoker_Covid_DF').then(function(data) {
   // Extract the required data for the bar graph
   var NonSmoker_BC_Count = data.map(d => d.NonSmoker_BC_Count);
   var Smoker_BC_Count = data.map(d => d.Smoker_BC_Count);
@@ -39,5 +39,5 @@ d3.json('/api/data').then(function(data) {
 
   var data = [trace1, trace2];
 
-  Plotly.newPlot('bar-graph', data, layout);
-});
+  Plotly.newPlot('bar-graph1', data, layout);
+}); 
