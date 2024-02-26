@@ -33,7 +33,9 @@ def get_data():
 
     data = {residence_counts.index[0]:residence_counts[0], residence_counts.index[1]:residence_counts[1], residence_counts.index[2]:residence_counts[2]}
 
-    return render_template('index_HS.html', data=data)
+    # residence_counts = pd.DataFrame(residence_counts)
+
+    return jsonify(data.json)
 
 
 if __name__ == '__main__':
