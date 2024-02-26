@@ -5,7 +5,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Replace 'your_file.csv' with the actual path to your CSV file
-csv_file_path = 'output.csv'
+csv_file_path = 'Smoker&BC_VS_Non-Smoker&BC.csv'
 
 @app.route('/api/data', methods=['GET'])
 def get_data():
