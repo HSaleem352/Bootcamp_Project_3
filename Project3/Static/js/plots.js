@@ -10,14 +10,20 @@ d3.json('/api/data').then(function(data) {
     x: labels,
     y: NonSmoker_BC_Count,
     name: 'Non-Smoker Count',
-    type: 'bar'
+    type: 'bar',
+    marker: {
+      color: 'rgba(255, 182, 193, 0.7)'  // Pastel Pink (RGBA)
+    }
   };
 
   var trace2 = {
     x: labels,
     y: Smoker_BC_Count,
     name: 'Smoker Count',
-    type: 'bar'
+    type: 'bar',
+    marker: {
+      color: 'rgba(173, 216, 230, 0.7)'  // Pastel Blue (RGBA)
+    }
   };
 
   var layout = {
