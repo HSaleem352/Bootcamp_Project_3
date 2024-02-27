@@ -8,6 +8,14 @@ app = Flask(__name__)
 def main():
     return render_template("index.html")
 
+@app.route('/')
+def main():
+    return render_template("mina_q1.html")
+
+@app.route('/')
+def main():
+    return render_template("mina_q2.html")
+
 @app.route('/api/Smoker&BC_VS_Non-Smoker&BC', methods=['GET'])
 def get_data1():
     # Read CSV file using pandas
