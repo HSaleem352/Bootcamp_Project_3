@@ -255,6 +255,25 @@ d3.json('/api/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
 
   var layout1 = {
       title: 'Active and Progressing BC & Smoker VS. Race/Ethnicity',
+      legend: {
+        title: {
+            text: 'Race/Ethnicity',  // Set the title above the legend
+            x: 0.5  // Set the x position to be centered
+          },
+      },
+      annotations: [{
+        text: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID',
+        showarrow: false,
+        font: {
+            size: 10,
+            color: '#000000'
+        },
+        x: 0,  // Set the x position to be on the left side
+        xref: 'paper',  // Reference the x position to the paper (entire plot)
+        y: 0.5,  // Set the y position to be in the middle vertically
+        yref: 'paper',  // Reference the y position to the paper (entire plot)
+        textangle: -90  // Set the text angle to make it vertical
+    }]
   };
 
   Plotly.newPlot('pie-chart1', [trace1], layout1);
@@ -276,6 +295,25 @@ d3.json('/api/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
 
   var layout2 = {
       title: 'Active and Progressing BC & Non-Smoker VS. Race/Ethnicity',
+      legend: {
+        title: {
+            text: 'Race/Ethnicity',  // Set the title above the legend
+            x: 0.5  // Set the x position to be centered
+          },
+      },
+      annotations: [{
+        text: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID',
+        showarrow: false,
+        font: {
+            size: 10,
+            color: '#000000'
+        },
+        x: 0,  // Set the x position to be on the left side
+        xref: 'paper',  // Reference the x position to the paper (entire plot)
+        y: 0.5,  // Set the y position to be in the middle vertically
+        yref: 'paper',  // Reference the y position to the paper (entire plot)
+        textangle: -90  // Set the text angle to make it vertical
+    }]
   };
 
   Plotly.newPlot('pie-chart2', [trace2], layout2);
