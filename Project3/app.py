@@ -84,7 +84,18 @@ def get_data():
 
     return (residence_counts.to_json())
 
+## Alejandra
 
+@app.route('timing_df', methods=['GET'])
+def get_data():
+
+    # Read CSV file using pandas
+    df = pd.read_csv('https://drive.google.com/uc?id=1Yt49jL6G8ZMfX3SY_wiEpPmtMVui0BIp&export=download')
+    
+    # Convert DataFrame to JSON
+    json_data = df2.to_json(orient='records')
+
+    return json_data
 
 if __name__ == '__main__':
     app.run(debug=True)
