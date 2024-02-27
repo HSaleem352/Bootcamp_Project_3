@@ -228,6 +228,99 @@ d3.json('/api/SevereCov_BC_Smoker_NonSmoker_DF').then(function(data) {
   Plotly.newPlot('bar-graph5', data, layout);
 });
 
+// A_St_BC_Smoker_NonSmoker_DF
+
+d3.json('/api/A_St_BC_Smoker_NonSmoker_DF').then(function(data) {
+  
+  var Race_Ethnicity = ["NHW", "Black", "Hispanic", "AAPI", "Others"];
+  // Extract data for each entry
+  var labels = Race_Ethnicity;
+  var values1 = data.map(item => item.Smoker_A_St_Count);
+  var values2 = data.map(item => item.NonSmoker_A_St_Count);
+
+  // Create Pie Chart 3
+  var trace1 = {
+      labels: labels,
+      values: values1,
+      type: 'pie',
+      marker: {
+          colors: ["mediumaquamarine", "silver", "steelblue", "lightcoral", "lemonchiffon"],
+          line: {
+              color: 'black',
+              width: 1.25
+          }
+      },
+      hole: 0.3,  // hole size adjustment
+  };
+
+  var layout1 = {
+      title: 'Active and stable BC & Smoker VS. Race/Ethnicity',
+      legend: {
+        title: {
+            text: 'Race/Ethnicity',  // Set the title above the legend
+          },
+        y: 0.5  // Set the y position to be centered
+      },
+      annotations: [{
+        text: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID',
+        showarrow: false,
+        font: {
+            size: 10,
+            color: '#000000'
+        },
+        x: 0,  // Set the x position to be on the left side
+        xref: 'paper',  // Reference the x position to the paper (entire plot)
+        y: 0.5,  // Set the y position to be in the middle vertically
+        yref: 'paper',  // Reference the y position to the paper (entire plot)
+        textangle: -90  // Set the text angle to make it vertical
+    }]
+  };
+
+  Plotly.newPlot('pie-chart3', [trace1], layout1);
+
+  // Create Pie Chart 4
+  var trace2 = {
+      labels: labels,
+      values: values2,
+      type: 'pie',
+      marker: {
+          colors: ["mediumaquamarine", "silver", "steelblue", "lightcoral", "lemonchiffon"],
+          line: {
+              color: 'black',
+              width: 1.25
+          }
+      },
+      hole: 0.3,  // hole size adjustment
+  };
+
+  var layout2 = {
+      title: 'Active and stable BC & Non-Smoker VS. Race/Ethnicity',
+      legend: {
+        title: {
+            text: 'Race/Ethnicity',  // Set the title above the legend
+          },
+        y: 0.5  // Set the y position to be centered
+      },
+      annotations: [{
+        text: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID',
+        showarrow: false,
+        font: {
+            size: 10,
+            color: '#000000'
+        },
+        x: 0,  // Set the x position to be on the left side
+        xref: 'paper',  // Reference the x position to the paper (entire plot)
+        y: 0.5,  // Set the y position to be in the middle vertically
+        yref: 'paper',  // Reference the y position to the paper (entire plot)
+        textangle: -90  // Set the text angle to make it vertical
+    }]
+  };
+
+  Plotly.newPlot('pie-chart4', [trace2], layout2);
+}).catch(function(error) {
+  console.error('Error fetching data:', error);
+});
+
 // A_Prog_BC_Smoker_NonSmoker_DF
 
 d3.json('/api/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
@@ -238,7 +331,7 @@ d3.json('/api/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
   var values1 = data.map(item => item.Smoker_A_Prog_Count);
   var values2 = data.map(item => item.NonSmoker_A_Prog_Count);
 
-  // Create Pie Chart 1
+  // Create Pie Chart 5
   var trace1 = {
       labels: labels,
       values: values1,
@@ -276,9 +369,9 @@ d3.json('/api/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
     }]
   };
 
-  Plotly.newPlot('pie-chart1', [trace1], layout1);
+  Plotly.newPlot('pie-chart5', [trace1], layout1);
 
-  // Create Pie Chart 2
+  // Create Pie Chart 6
   var trace2 = {
       labels: labels,
       values: values2,
@@ -316,7 +409,7 @@ d3.json('/api/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
     }]
   };
 
-  Plotly.newPlot('pie-chart2', [trace2], layout2);
+  Plotly.newPlot('pie-chart6', [trace2], layout2);
 }).catch(function(error) {
   console.error('Error fetching data:', error);
 });
