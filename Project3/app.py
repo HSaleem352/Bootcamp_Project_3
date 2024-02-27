@@ -8,13 +8,9 @@ app = Flask(__name__)
 def main():
     return render_template("index.html")
 
-@app.route('/')
-def main():
+@app.route('/mina_q1')
+def mina_q1():
     return render_template("mina_q1.html")
-
-@app.route('/')
-def main():
-    return render_template("mina_q2.html")
 
 @app.route('/api/Smoker&BC_VS_Non-Smoker&BC', methods=['GET'])
 def get_data1():
@@ -66,6 +62,10 @@ def get_data5():
 
     return json_data
 
+@app.route('/mina_q2')
+def mina_q2():
+    return render_template("mina_q2.html")
+
 @app.route('/api/A_Res_BC_Smoker_NonSmoker_DF', methods=['GET'])
 def get_data6():
     # Read CSV file using pandas
@@ -95,8 +95,7 @@ def get_data8():
     json_data = df.to_json(orient='records')
 
     return json_data
-
-    
+ 
 ####   Hamza Below
 @app.route('/residence')
 def get_data():
@@ -127,3 +126,4 @@ def get_data():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
