@@ -30,6 +30,6 @@ d3.json("/residence").then(function(response) {
   };
 
 
-  Plotly.newPlot("plot", trace1, layout);
+  Plotly.newPlot("HS_pie", trace1, layout);
 
   });
