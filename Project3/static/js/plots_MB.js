@@ -254,7 +254,7 @@ d3.json('/api/A_St_BC_Smoker_NonSmoker_DF').then(function(data) {
   };
 
   var layout1 = {
-      title: 'Active and stable BC & Smoker VS. Race/Ethnicity',
+      title: 'Active and Stable BC & Smoker VS. Race/Ethnicity',
       legend: {
         title: {
             text: 'Race/Ethnicity',  // Set the title above the legend
@@ -294,7 +294,7 @@ d3.json('/api/A_St_BC_Smoker_NonSmoker_DF').then(function(data) {
   };
 
   var layout2 = {
-      title: 'Active and stable BC & Non-Smoker VS. Race/Ethnicity',
+      title: 'Active and Stable BC & Non-Smoker VS. Race/Ethnicity',
       legend: {
         title: {
             text: 'Race/Ethnicity',  // Set the title above the legend

@@ -58,8 +58,18 @@ def get_data5():
 
     return json_data
 
-@app.route('/api/A_St_BC_Smoker_NonSmoker_DF', methods=['GET'])
+@app.route('/api/A_Res_BC_Smoker_NonSmoker_DF', methods=['GET'])
 def get_data6():
+    # Read CSV file using pandas
+    df = pd.read_csv('https://drive.google.com/uc?id=1AtBbKKS8v7dsbIwX1B_VZbUXhnOHbFwt&export=download')
+    
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
+
+@app.route('/api/A_St_BC_Smoker_NonSmoker_DF', methods=['GET'])
+def get_data7():
     # Read CSV file using pandas
     df = pd.read_csv('https://drive.google.com/uc?id=1NB6wbM0zmmW7RxFI8vBI3wOgGVqOloXU&export=download')
     
@@ -69,7 +79,7 @@ def get_data6():
     return json_data
 
 @app.route('/api/A_Prog_BC_Smoker_NonSmoker_DF', methods=['GET'])
-def get_data7():
+def get_data8():
     # Read CSV file using pandas
     df = pd.read_csv('https://drive.google.com/uc?id=1X4ue-G51Q7_v9zU_9uY7zYd99A8v7M6h&export=download')
     
