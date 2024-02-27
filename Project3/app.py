@@ -58,7 +58,7 @@ def get_data5():
 
     return json_data
     
-
+####   Hamza Below
 @app.route('/residence')
 def get_data():
     # Reading the file
@@ -113,4 +113,3 @@ def get_data():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
