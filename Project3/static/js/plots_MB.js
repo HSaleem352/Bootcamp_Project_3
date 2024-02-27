@@ -258,8 +258,8 @@ d3.json('/api/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
       legend: {
         title: {
             text: 'Race/Ethnicity',  // Set the title above the legend
-            x: 0.5  // Set the x position to be centered
           },
+        y: 0.5  // Set the y position to be centered
       },
       annotations: [{
         text: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID',
@@ -298,8 +298,8 @@ d3.json('/api/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
       legend: {
         title: {
             text: 'Race/Ethnicity',  // Set the title above the legend
-            x: 0.5  // Set the x position to be centered
           },
+        y: 0.5  // Set the y position to be centered
       },
       annotations: [{
         text: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID',
