@@ -30,11 +30,6 @@ def get_data():
     residence_counts = US_residence_df_clean['urban_rural'].value_counts()
     residence_counts = pd.DataFrame(US_residence_df_clean['urban_rural'].value_counts())
 
-    #data = {"Suburban":residence_counts[0], "urban": residence_counts[1], "rural": residence_counts[2]}
-
-    #data = {residence_counts.index[0]:residence_counts[0], residence_counts.index[1]:residence_counts[1], residence_counts.index[2]:residence_counts[2]}
-
-    # residence_counts = pd.DataFrame(residence_counts)
 
     return (residence_counts.to_json())
 
