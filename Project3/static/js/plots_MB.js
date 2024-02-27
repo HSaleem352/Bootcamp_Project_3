@@ -231,8 +231,10 @@ d3.json('/api/SevereCov_BC_Smoker_NonSmoker_DF').then(function(data) {
 // A_Prog_BC_Smoker_NonSmoker_DF
 
 d3.json('/api/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
+  
+  var Race_Ethnicity = ["NHW", "Black", "Hispanic", "AAPI", "Others"];
   // Extract data for each entry
-  var labels = Object.keys(data[0]);
+  var labels = Race_Ethnicity;
   var values1 = data.map(item => item.Smoker_A_Prog_Count);
   var values2 = data.map(item => item.NonSmoker_A_Prog_Count);
 
