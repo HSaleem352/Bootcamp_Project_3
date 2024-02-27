@@ -57,6 +57,17 @@ def get_data5():
     json_data = df2.to_json(orient='records')
 
     return json_data
+
+@app.route('/api/A_Prog_BC_Smoker_NonSmoker_DF', methods=['GET'])
+def get_data5():
+    # Read CSV file using pandas
+    df2 = pd.read_csv('https://drive.google.com/uc?id=1X4ue-G51Q7_v9zU_9uY7zYd99A8v7M6h&export=download')
+    
+    # Convert DataFrame to JSON
+    json_data = df2.to_json(orient='records')
+
+    return json_data
+
     
 ####   Hamza Below
 @app.route('/residence')

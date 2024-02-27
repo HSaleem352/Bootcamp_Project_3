@@ -227,3 +227,5 @@ d3.json('/api/SevereCov_BC_Smoker_NonSmoker_DF').then(function(data) {
 
   Plotly.newPlot('bar-graph5', data, layout);
 });
+
+// A_Prog_BC_Smoker_NonSmoker_DF
