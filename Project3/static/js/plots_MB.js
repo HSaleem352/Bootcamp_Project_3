@@ -229,3 +229,56 @@ d3.json('/api/SevereCov_BC_Smoker_NonSmoker_DF').then(function(data) {
 });
 
 // A_Prog_BC_Smoker_NonSmoker_DF
+
+d3.json('/api/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
+  // Extract data for each entry
+  var labels = Object.keys(data[0]);
+  var values1 = data.map(item => item.Smoker_A_Prog_Count);
+  var values2 = data.map(item => item.NonSmoker_A_Prog_Count);
+
+  // Create Pie Chart 1
+  var trace1 = {
+      labels: labels,
+      values: values1,
+      type: 'pie',
+      marker: {
+          colors: ["mediumaquamarine", "silver", "steelblue", "lightcoral", "lemonchiffon"],
+          line: {
+              color: 'black',
+              width: 1.25
+          }
+      },
+      hole: 0.4,  // hole size adjustment
+  };
+
+  var layout1 = {
+      title: 'Active and Progressing BC & Smoker VS. Race/Ethnicity',
+      showlegend: false,
+  };
+
+  Plotly.newPlot('pie-chart1', [trace1], layout1);
+
+  // Create Pie Chart 2
+  var trace2 = {
+      labels: labels,
+      values: values2,
+      type: 'pie',
+      marker: {
+          colors: ["mediumaquamarine", "silver", "steelblue", "lightcoral", "lemonchiffon"],
+          line: {
+              color: 'black',
+              width: 1.25
+          }
+      },
+      hole: 0.4,  // hole size adjustment
+  };
+
+  var layout2 = {
+      title: 'Active and Progressing BC & Non-Smoker VS. Race/Ethnicity',
+      showlegend: false,
+  };
+
+  Plotly.newPlot('pie-chart2', [trace2], layout2);
+}).catch(function(error) {
+  console.error('Error fetching data:', error);
+});
