@@ -243,12 +243,6 @@ d3.json('/api/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
       labels: labels,
       values: values1,
       type: 'pie',
-      textinfo: 'label',
-      textposition: 'outside',
-      outsidetextfont: {
-        size: 14,
-        color: '#000000',  // Black color for text
-      },
       marker: {
           colors: ["mediumaquamarine", "silver", "steelblue", "lightcoral", "lemonchiffon"],
           line: {
@@ -261,7 +255,7 @@ d3.json('/api/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
 
   var layout1 = {
       title: 'Active and Progressing BC & Smoker VS. Race/Ethnicity',
-      showlegend: false,
+      showlegend: true,
   };
 
   Plotly.newPlot('pie-chart1', [trace1], layout1);
