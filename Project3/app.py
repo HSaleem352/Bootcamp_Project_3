@@ -93,7 +93,7 @@ def get_data():
     df = pd.read_csv('https://drive.google.com/uc?id=1Yt49jL6G8ZMfX3SY_wiEpPmtMVui0BIp&export=download')
     
     # Convert DataFrame to JSON
-    json_data = df2.to_json(orient='records')
+    json_data = df.to_json(orient='records')
 
     return json_data
 
