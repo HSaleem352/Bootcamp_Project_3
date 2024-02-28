@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,jsonify
 import pandas as pd
 
 
@@ -8,83 +8,27 @@ app = Flask(__name__)
 def main():
     return render_template("index.html")
 
-@app.route('/api/Smoker&BC_VS_Non-Smoker&BC', methods=['GET'])
-def get_data1():
-    # Read CSV file using pandas
-    df1 = pd.read_csv("https://drive.google.com/uc?id=1WHdLRb3-9xl91szvWtSQpV1gWl12hotK&export=download")
-   
-    # Convert DataFrame to JSON
-    json_data = df1.to_json(orient='records')
+@app.route('/obesity_age_effect')
+def get_data_content():
+    file_link ='https://drive.google.com/u/0/uc?id=1IBWDyHq2TJHcvYXWJ8Kh38j_L_ZlJbkr&export=download'
 
-    return json_data
-
-@app.route('/api/Smoker_NonSmoker_Covid_DF', methods=['GET'])
-def get_data2():
-    # Read CSV file using pandas
-    df2 = pd.read_csv('https://drive.google.com/uc?id=1uZaOgO0ly8vnpRrjx8L8D-D0bit453Hh&export=download')
+    # reading the data from google drive 
+    data_df = pd.read_csv(file_link)
     
-    # Convert DataFrame to JSON
-    json_data = df2.to_json(orient='records')
+    # cleaning and filtering the data 
+    data_df["der_days_fu"]=pd.to_numeric(data_df["der_days_fu"],errors="coerce")
+    data_df["der_days_fu"]=pd.to_numeric(data_df["der_age_trunc"],errors="coerce")
 
-    return json_data
+    # selecting only the columns needed
+    selected_columns=["der_age_trunc","der_obesity","der_race_v2","der_cancer_status_v4","severity_of_covid_19_v2"]
+    cleaned_data = data_df[selected_columns]
 
-@app.route('/api/MildCov_BC_Smoker_NonSmoker_DF', methods=['GET'])
-def get_data3():
-    # Read CSV file using pandas
-    df2 = pd.read_csv('https://drive.google.com/uc?id=1eGS51t_iA2thfhZPX4dwlNeHRSldqSrL&export=download')
-    
-    # Convert DataFrame to JSON
-    json_data = df2.to_json(orient='records')
+    # dropping rows with empty values 
+    cleaned_data = cleaned_data.dropna()
 
-    return json_data
-
-@app.route('/api/ModerateCov_BC_Smoker_NonSmoker_DF', methods=['GET'])
-def get_data4():
-    # Read CSV file using pandas
-    df2 = pd.read_csv('https://drive.google.com/uc?id=1ByrRT6n_V9kNpAordMIipHB6k4pWC4xo&export=download')
-    
-    # Convert DataFrame to JSON
-    json_data = df2.to_json(orient='records')
-
-    return json_data
-
-@app.route('/api/SevereCov_BC_Smoker_NonSmoker_DF', methods=['GET'])
-def get_data5():
-    # Read CSV file using pandas
-    df2 = pd.read_csv('https://drive.google.com/uc?id=1Cn75SkCm_0x3Z7VKsifnpeavcJZDalJL&export=download')
-    
-    # Convert DataFrame to JSON
-    json_data = df2.to_json(orient='records')
-
-    return json_data
-    
-####   Hamza Below
-@app.route('/residence')
-def get_data():
-    # Reading the file
-    dataset_df = pd.read_csv("https://drive.google.com/u/0/uc?id=1IBWDyHq2TJHcvYXWJ8Kh38j_L_ZlJbkr&export=download")
-
-    # Cleaning the dataset
-    # Narrow down the dataset to view region and severity of Covid
-    residence_df = dataset_df[['der_region_v2', 'urban_rural', 'der_site_type', 'severity_of_covid_19_v2']]
-
-    # Clean the dataset to remove any NAN fields
-    nonNaN_residence_df = residence_df.dropna()
-
-    # Remove any non-US and other data
-    US_residence_df = nonNaN_residence_df.loc[(nonNaN_residence_df['der_region_v2'] != 'Non-US') | (nonNaN_residence_df['der_region_v2'] != 'Other')]
-
-    # Remove unknown residence 
-    US_residence_df_clean = US_residence_df.loc[(US_residence_df['urban_rural'] != 'Unknown') | (US_residence_df['der_region_v2'] != 'Other')]
-
-    #residence_counts = pd.DataFrame(US_residence_df_clean['urban_rural'].value_counts())
-    residence_counts = US_residence_df_clean['urban_rural'].value_counts()
-    residence_counts = pd.DataFrame(US_residence_df_clean['urban_rural'].value_counts())
-
-
-    return (residence_counts.to_json())
-
-
+    # covering dataframe to json 
+    cleaned_data_json = cleaned_data.to_json(orient = 'records')
+    return jsonify(cleaned_data_json)
 
 if __name__ == '__main__':
     app.run(debug=True)
