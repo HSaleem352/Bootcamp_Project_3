@@ -97,5 +97,17 @@ def get_data():
 
     return json_data
 
+@app.route("treatment_type_df", methods=["GET"])
+def get_data1():
+
+    # Read CSV file using pandas
+    df1 = pd.read_csv("https://drive.google.com/uc?id=1HZYF4bIOI3e-XYANDO0bYHsRfiq1-hd0&export=download")
+
+    # Convert DataFrame to JSON
+    json_data = df1.to_json(orient="recods")
+
+    return json_data
+
+
 if __name__ == '__main__':
     app.run(debug=True)
