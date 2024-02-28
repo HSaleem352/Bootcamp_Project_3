@@ -108,6 +108,5 @@ def get_data1():
 
     return json_data
 
-
 if __name__ == '__main__':
     app.run(debug=True)
