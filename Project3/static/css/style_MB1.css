@@ -13,7 +13,7 @@ body {
 }
 
 .card {
-    width: 450px; /* Adjust the width */
+    width: 640px; /* Adjust the width */
     height: 550px; /* Adjust the height */
     transform-style: preserve-3d;
     transition: transform 0.5s;
