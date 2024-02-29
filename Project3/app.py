@@ -5,13 +5,17 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, text, inspect, func
 from flask import Flask, jsonify, render_template
 
-engine = create_engine('postgresql+psycopg2://breast_cancer_dataset_user:UnSNEeECgY7ky2i5KAPC2WtQn9XrRpvc@dpg-cnbvjf779t8c73epbb3g-a.oregon-postgres.render.com/breast_cancer_dataset')
+engine = create_engine('postgresql://breast_cancer_dataset_user:UnSNEeECgY7ky2i5KAPC2WtQn9XrRpvc@dpg-cnbvjf779t8c73epbb3g-a.oregon-postgres.render.com/breast_cancer_dataset')
 
 app = Flask(__name__)
 
 @app.route('/')
 def main():
     return render_template("index.html")
+
+#################################################################################################################
+##                                                Mina                                                         ##
+#################################################################################################################
 
 @app.route('/mina_q1')
 def mina_q1():
@@ -104,9 +108,10 @@ def get_data_MB8():
  
 
 #################################################################################################################
+##                                                Hamza                                                        ##
 #################################################################################################################
 
-@app.route('/api/HS/residence_counts')
+@app.route('/api/HS/residence_counts', methods=['GET'])
 def HS_residenceCounts():
 
     with engine.connect() as connection:
@@ -114,7 +119,10 @@ def HS_residenceCounts():
     
     return (residence_counts.to_json(orient='records'))
 
-## Alejandra
+
+#################################################################################################################
+##                                                Alejandra                                                    ##
+#################################################################################################################
 
 @app.route('/api/v1/AFR_timing_df', methods=['GET'])
 def afr_timing_df():
