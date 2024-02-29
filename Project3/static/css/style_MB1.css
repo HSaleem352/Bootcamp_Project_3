@@ -4,18 +4,17 @@ body {
     flex-direction: column; /* Make the body a flex container with a vertical direction */
     align-items: center;
     justify-content: center;
-    height: 100%;
+    /* height: 100%; */
     margin: 0;
 }
 
-.carousel.slide.mb-6.pointer-event {
-    height: 100%; /* Set minimum height to 100% of the viewport height */
-    margin: 0; /* Reset margin */
-}
+#myCarousel{
+    width:100%;
+    }
 
-.carousel, .mt-4 {
+.carousel-item{
     width: 100%; /* Make sure the containers take the full width */
-    flex: 1;
+    height: 100vh;
 }
 
 .card-container {
