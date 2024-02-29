@@ -86,8 +86,8 @@ def get_data():
 
 ## Alejandra
 
-@app.route('/timing_df', methods=['GET'])
-def get_data12():
+@app.route('/api/v1/AFR_timing_df', methods=['GET'])
+def afr_timing_df():
 
     # Read CSV file using pandas
     df = pd.read_csv('https://drive.google.com/uc?id=1Yt49jL6G8ZMfX3SY_wiEpPmtMVui0BIp&export=download')
@@ -97,8 +97,8 @@ def get_data12():
 
     return json_data
 
-@app.route("/treatment_type_df", methods=["GET"])
-def get_data1():
+@app.route("/api/v1/treatment_type_df", methods=["GET"])
+def afr_treatment_type_df():
 
     # Read CSV file using pandas
     df1 = pd.read_csv("https://drive.google.com/uc?id=1HZYF4bIOI3e-XYANDO0bYHsRfiq1-hd0&export=download")
