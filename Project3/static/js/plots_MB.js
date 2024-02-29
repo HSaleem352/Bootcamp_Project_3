@@ -1,7 +1,7 @@
 //Smoker&BC_VS_Non-Smoker&BC
 
 // Use D3 to fetch data from the API endpoint
-d3.json('/api/Smoker&BC_VS_Non-Smoker&BC').then(function(data) {
+d3.json('/api/v1/Smoker&BC_VS_Non-Smoker&BC').then(function(data) {
   // Extract the required data for the bar graph
   var NonSmoker_BC_Count = data.map(d => d.NonSmoker_BC_Count);
   var Smoker_BC_Count = data.map(d => d.Smoker_BC_Count);
@@ -47,7 +47,7 @@ d3.json('/api/Smoker&BC_VS_Non-Smoker&BC').then(function(data) {
 //Smoker_NonSmoker_Covid_DF 
 
 // Use D3 to fetch data from the API endpoint
-d3.json('/api/Smoker_NonSmoker_Covid_DF').then(function(data) {
+d3.json('/api/v1/Smoker_NonSmoker_Covid_DF').then(function(data) {
   // Extract the required data for the bar graph
   var NonSmoker_Covid_Count = data.map(d => d.NonSmoker_Covid_Count);
   var Smoker_Covid_Count = data.map(d => d.Smoker_Covid_Count);
@@ -93,7 +93,7 @@ d3.json('/api/Smoker_NonSmoker_Covid_DF').then(function(data) {
 //MildCov_BC_Smoker_NonSmoker_DF
 
 // Use D3 to fetch data from the API endpoint
-d3.json('/api/MildCov_BC_Smoker_NonSmoker_DF').then(function(data) {
+d3.json('/api/v1/MildCov_BC_Smoker_NonSmoker_DF').then(function(data) {
   // Extract the required data for the bar graph
   var NonSmoker_BC_MildCov_Count = data.map(d => d.NonSmoker_BC_MildCov_Count);
   var Smoker_BC_MildCov_Count = data.map(d => d.Smoker_BC_MildCov_Count);
@@ -139,7 +139,7 @@ d3.json('/api/MildCov_BC_Smoker_NonSmoker_DF').then(function(data) {
 //ModerateCov_BC_Smoker_NonSmoker_DF 
 
 // Use D3 to fetch data from the API endpoint
-d3.json('/api/ModerateCov_BC_Smoker_NonSmoker_DF').then(function(data) {
+d3.json('/api/v1/ModerateCov_BC_Smoker_NonSmoker_DF').then(function(data) {
   // Extract the required data for the bar graph
   var NonSmoker_BC_ModerateCov_Count = data.map(d => d.NonSmoker_BC_ModerateCov_Count);
   var Smoker_BC_ModerateCov_Count = data.map(d => d.Smoker_BC_ModerateCov_Count);
@@ -185,7 +185,7 @@ d3.json('/api/ModerateCov_BC_Smoker_NonSmoker_DF').then(function(data) {
 //SevereCov_BC_Smoker_NonSmoker_DF 
 
 // Use D3 to fetch data from the API endpoint
-d3.json('/api/SevereCov_BC_Smoker_NonSmoker_DF').then(function(data) {
+d3.json('/api/v1/SevereCov_BC_Smoker_NonSmoker_DF').then(function(data) {
   // Extract the required data for the bar graph
   var NonSmoker_BC_SevereCov_Count = data.map(d => d.NonSmoker_BC_SevereCov_Count);
   var Smoker_BC_SevereCov_Count = data.map(d => d.Smoker_BC_SevereCov_Count);
@@ -230,7 +230,7 @@ d3.json('/api/SevereCov_BC_Smoker_NonSmoker_DF').then(function(data) {
 
 //A_Res_BC_Smoker_NonSmoker_DF
 
-d3.json('/api/A_Res_BC_Smoker_NonSmoker_DF').then(function(data) {
+d3.json('/api/v1/A_Res_BC_Smoker_NonSmoker_DF').then(function(data) {
   
   var Race_Ethnicity = ["NHW", "Black", "Hispanic", "AAPI", "Others"];
   // Extract data for each entry
@@ -323,7 +323,7 @@ d3.json('/api/A_Res_BC_Smoker_NonSmoker_DF').then(function(data) {
 
 //A_St_BC_Smoker_NonSmoker_DF
 
-d3.json('/api/A_St_BC_Smoker_NonSmoker_DF').then(function(data) {
+d3.json('/api/v1/A_St_BC_Smoker_NonSmoker_DF').then(function(data) {
   
   var Race_Ethnicity = ["NHW", "Black", "Hispanic", "AAPI", "Others"];
   // Extract data for each entry
@@ -416,7 +416,7 @@ d3.json('/api/A_St_BC_Smoker_NonSmoker_DF').then(function(data) {
 
 //A_Prog_BC_Smoker_NonSmoker_DF
 
-d3.json('/api/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
+d3.json('/api/v1/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
   
   var Race_Ethnicity = ["NHW", "Black", "Hispanic", "AAPI", "Others"];
   // Extract data for each entry
