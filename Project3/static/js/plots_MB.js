@@ -1,7 +1,7 @@
 //Smoker&BC_VS_Non-Smoker&BC
 
 // Use D3 to fetch data from the API endpoint
-d3.json('/api/Smoker&BC_VS_Non-Smoker&BC').then(function(data) {
+d3.json('/api/v1/Smoker&BC_VS_Non-Smoker&BC').then(function(data) {
   // Extract the required data for the bar graph
   var NonSmoker_BC_Count = data.map(d => d.NonSmoker_BC_Count);
   var Smoker_BC_Count = data.map(d => d.Smoker_BC_Count);
@@ -47,7 +47,7 @@ d3.json('/api/Smoker&BC_VS_Non-Smoker&BC').then(function(data) {
 //Smoker_NonSmoker_Covid_DF 
 
 // Use D3 to fetch data from the API endpoint
-d3.json('/api/Smoker_NonSmoker_Covid_DF').then(function(data) {
+d3.json('/api/v1/Smoker_NonSmoker_Covid_DF').then(function(data) {
   // Extract the required data for the bar graph
   var NonSmoker_Covid_Count = data.map(d => d.NonSmoker_Covid_Count);
   var Smoker_Covid_Count = data.map(d => d.Smoker_Covid_Count);
@@ -93,7 +93,7 @@ d3.json('/api/Smoker_NonSmoker_Covid_DF').then(function(data) {
 //MildCov_BC_Smoker_NonSmoker_DF
 
 // Use D3 to fetch data from the API endpoint
-d3.json('/api/MildCov_BC_Smoker_NonSmoker_DF').then(function(data) {
+d3.json('/api/v1/MildCov_BC_Smoker_NonSmoker_DF').then(function(data) {
   // Extract the required data for the bar graph
   var NonSmoker_BC_MildCov_Count = data.map(d => d.NonSmoker_BC_MildCov_Count);
   var Smoker_BC_MildCov_Count = data.map(d => d.Smoker_BC_MildCov_Count);
@@ -139,7 +139,7 @@ d3.json('/api/MildCov_BC_Smoker_NonSmoker_DF').then(function(data) {
 //ModerateCov_BC_Smoker_NonSmoker_DF 
 
 // Use D3 to fetch data from the API endpoint
-d3.json('/api/ModerateCov_BC_Smoker_NonSmoker_DF').then(function(data) {
+d3.json('/api/v1/ModerateCov_BC_Smoker_NonSmoker_DF').then(function(data) {
   // Extract the required data for the bar graph
   var NonSmoker_BC_ModerateCov_Count = data.map(d => d.NonSmoker_BC_ModerateCov_Count);
   var Smoker_BC_ModerateCov_Count = data.map(d => d.Smoker_BC_ModerateCov_Count);
@@ -185,7 +185,7 @@ d3.json('/api/ModerateCov_BC_Smoker_NonSmoker_DF').then(function(data) {
 //SevereCov_BC_Smoker_NonSmoker_DF 
 
 // Use D3 to fetch data from the API endpoint
-d3.json('/api/SevereCov_BC_Smoker_NonSmoker_DF').then(function(data) {
+d3.json('/api/v1/SevereCov_BC_Smoker_NonSmoker_DF').then(function(data) {
   // Extract the required data for the bar graph
   var NonSmoker_BC_SevereCov_Count = data.map(d => d.NonSmoker_BC_SevereCov_Count);
   var Smoker_BC_SevereCov_Count = data.map(d => d.Smoker_BC_SevereCov_Count);
@@ -226,4 +226,283 @@ d3.json('/api/SevereCov_BC_Smoker_NonSmoker_DF').then(function(data) {
   var data = [trace1, trace2];
 
   Plotly.newPlot('bar-graph5', data, layout);
+});
+
+//A_Res_BC_Smoker_NonSmoker_DF
+
+d3.json('/api/v1/A_Res_BC_Smoker_NonSmoker_DF').then(function(data) {
+  
+  var Race_Ethnicity = ["NHW", "Black", "Hispanic", "AAPI", "Others"];
+  // Extract data for each entry
+  var labels = Race_Ethnicity;
+  var values1 = data.map(item => item.Smoker_A_Res_Count);
+  var values2 = data.map(item => item.NonSmoker_A_Res_Count);
+
+  // Create Pie Chart 1
+  var trace1 = {
+      labels: labels,
+      values: values1,
+      type: 'pie',
+      marker: {
+          colors: ["mediumaquamarine", "silver", "steelblue", "lightcoral", "lemonchiffon"],
+          line: {
+              color: 'black',
+              width: 1.25
+          }
+      },
+      hole: 0.3,  // hole size adjustment
+  };
+
+  var layout1 = {
+      title: 'Active and Responding BC & Smoker VS. Race/Ethnicity',
+      legend: {
+        title: {
+            text: 'Race/Ethnicity',  // Set the title above the legend
+          },
+        y: 0.5  // Set the y position to be centered
+      },
+      annotations: [{
+        text: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID',
+        showarrow: false,
+        font: {
+            size: 10,
+            color: '#000000'
+        },
+        x: 0,  // Set the x position to be on the left side
+        xref: 'paper',  // Reference the x position to the paper (entire plot)
+        y: 0.5,  // Set the y position to be in the middle vertically
+        yref: 'paper',  // Reference the y position to the paper (entire plot)
+        textangle: -90  // Set the text angle to make it vertical
+    }]
+  };
+
+  Plotly.newPlot('pie-chart1', [trace1], layout1);
+
+  // Create Pie Chart 2
+  var trace2 = {
+      labels: labels,
+      values: values2,
+      type: 'pie',
+      marker: {
+          colors: ["mediumaquamarine", "silver", "steelblue", "lightcoral", "lemonchiffon"],
+          line: {
+              color: 'black',
+              width: 1.25
+          }
+      },
+      hole: 0.3,  // hole size adjustment
+  };
+
+  var layout2 = {
+      title: 'Active and Responding BC & Smoker VS. Race/Ethnicity',
+      legend: {
+        title: {
+            text: 'Race/Ethnicity',  // Set the title above the legend
+          },
+        y: 0.5  // Set the y position to be centered
+      },
+      annotations: [{
+        text: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID',
+        showarrow: false,
+        font: {
+            size: 10,
+            color: '#000000'
+        },
+        x: 0,  // Set the x position to be on the left side
+        xref: 'paper',  // Reference the x position to the paper (entire plot)
+        y: 0.5,  // Set the y position to be in the middle vertically
+        yref: 'paper',  // Reference the y position to the paper (entire plot)
+        textangle: -90  // Set the text angle to make it vertical
+    }]
+  };
+
+  Plotly.newPlot('pie-chart2', [trace2], layout2);
+}).catch(function(error) {
+  console.error('Error fetching data:', error);
+});
+
+//A_St_BC_Smoker_NonSmoker_DF
+
+d3.json('/api/v1/A_St_BC_Smoker_NonSmoker_DF').then(function(data) {
+  
+  var Race_Ethnicity = ["NHW", "Black", "Hispanic", "AAPI", "Others"];
+  // Extract data for each entry
+  var labels = Race_Ethnicity;
+  var values1 = data.map(item => item.Smoker_A_St_Count);
+  var values2 = data.map(item => item.NonSmoker_A_St_Count);
+
+  // Create Pie Chart 3
+  var trace1 = {
+      labels: labels,
+      values: values1,
+      type: 'pie',
+      marker: {
+          colors: ["mediumaquamarine", "silver", "steelblue", "lightcoral", "lemonchiffon"],
+          line: {
+              color: 'black',
+              width: 1.25
+          }
+      },
+      hole: 0.3,  // hole size adjustment
+  };
+
+  var layout1 = {
+      title: 'Active and Stable BC & Smoker VS. Race/Ethnicity',
+      legend: {
+        title: {
+            text: 'Race/Ethnicity',  // Set the title above the legend
+          },
+        y: 0.5  // Set the y position to be centered
+      },
+      annotations: [{
+        text: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID',
+        showarrow: false,
+        font: {
+            size: 10,
+            color: '#000000'
+        },
+        x: 0,  // Set the x position to be on the left side
+        xref: 'paper',  // Reference the x position to the paper (entire plot)
+        y: 0.5,  // Set the y position to be in the middle vertically
+        yref: 'paper',  // Reference the y position to the paper (entire plot)
+        textangle: -90  // Set the text angle to make it vertical
+    }]
+  };
+
+  Plotly.newPlot('pie-chart3', [trace1], layout1);
+
+  // Create Pie Chart 4
+  var trace2 = {
+      labels: labels,
+      values: values2,
+      type: 'pie',
+      marker: {
+          colors: ["mediumaquamarine", "silver", "steelblue", "lightcoral", "lemonchiffon"],
+          line: {
+              color: 'black',
+              width: 1.25
+          }
+      },
+      hole: 0.3,  // hole size adjustment
+  };
+
+  var layout2 = {
+      title: 'Active and Stable BC & Non-Smoker VS. Race/Ethnicity',
+      legend: {
+        title: {
+            text: 'Race/Ethnicity',  // Set the title above the legend
+          },
+        y: 0.5  // Set the y position to be centered
+      },
+      annotations: [{
+        text: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID',
+        showarrow: false,
+        font: {
+            size: 10,
+            color: '#000000'
+        },
+        x: 0,  // Set the x position to be on the left side
+        xref: 'paper',  // Reference the x position to the paper (entire plot)
+        y: 0.5,  // Set the y position to be in the middle vertically
+        yref: 'paper',  // Reference the y position to the paper (entire plot)
+        textangle: -90  // Set the text angle to make it vertical
+    }]
+  };
+
+  Plotly.newPlot('pie-chart4', [trace2], layout2);
+}).catch(function(error) {
+  console.error('Error fetching data:', error);
+});
+
+//A_Prog_BC_Smoker_NonSmoker_DF
+
+d3.json('/api/v1/A_Prog_BC_Smoker_NonSmoker_DF').then(function(data) {
+  
+  var Race_Ethnicity = ["NHW", "Black", "Hispanic", "AAPI", "Others"];
+  // Extract data for each entry
+  var labels = Race_Ethnicity;
+  var values1 = data.map(item => item.Smoker_A_Prog_Count);
+  var values2 = data.map(item => item.NonSmoker_A_Prog_Count);
+
+  // Create Pie Chart 5
+  var trace1 = {
+      labels: labels,
+      values: values1,
+      type: 'pie',
+      marker: {
+          colors: ["mediumaquamarine", "silver", "steelblue", "lightcoral", "lemonchiffon"],
+          line: {
+              color: 'black',
+              width: 1.25
+          }
+      },
+      hole: 0.3,  // hole size adjustment
+  };
+
+  var layout1 = {
+      title: 'Active and Progressing BC & Smoker VS. Race/Ethnicity',
+      legend: {
+        title: {
+            text: 'Race/Ethnicity',  // Set the title above the legend
+          },
+        y: 0.5  // Set the y position to be centered
+      },
+      annotations: [{
+        text: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID',
+        showarrow: false,
+        font: {
+            size: 10,
+            color: '#000000'
+        },
+        x: 0,  // Set the x position to be on the left side
+        xref: 'paper',  // Reference the x position to the paper (entire plot)
+        y: 0.5,  // Set the y position to be in the middle vertically
+        yref: 'paper',  // Reference the y position to the paper (entire plot)
+        textangle: -90  // Set the text angle to make it vertical
+    }]
+  };
+
+  Plotly.newPlot('pie-chart5', [trace1], layout1);
+
+  // Create Pie Chart 6
+  var trace2 = {
+      labels: labels,
+      values: values2,
+      type: 'pie',
+      marker: {
+          colors: ["mediumaquamarine", "silver", "steelblue", "lightcoral", "lemonchiffon"],
+          line: {
+              color: 'black',
+              width: 1.25
+          }
+      },
+      hole: 0.3,  // hole size adjustment
+  };
+
+  var layout2 = {
+      title: 'Active and Progressing BC & Non-Smoker VS. Race/Ethnicity',
+      legend: {
+        title: {
+            text: 'Race/Ethnicity',  // Set the title above the legend
+          },
+        y: 0.5  // Set the y position to be centered
+      },
+      annotations: [{
+        text: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID',
+        showarrow: false,
+        font: {
+            size: 10,
+            color: '#000000'
+        },
+        x: 0,  // Set the x position to be on the left side
+        xref: 'paper',  // Reference the x position to the paper (entire plot)
+        y: 0.5,  // Set the y position to be in the middle vertically
+        yref: 'paper',  // Reference the y position to the paper (entire plot)
+        textangle: -90  // Set the text angle to make it vertical
+    }]
+  };
+
+  Plotly.newPlot('pie-chart6', [trace2], layout2);
+}).catch(function(error) {
+  console.error('Error fetching data:', error);
 });

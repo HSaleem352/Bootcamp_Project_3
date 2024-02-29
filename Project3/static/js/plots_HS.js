@@ -1,35 +1,26 @@
-// Use D3 to fetch data from the API endpoint
+d3.json("/api/HS/residence_counts").then(function(response) {
 
-d3.json("/residence").then(function(response) {
+  var names = response.map(d => d.urban_rural);
+  var values = response.map(d => d.count);
 
-  console.log(response.count)
-  dict = response.count
-  names = []
-  values = []
-
-  for (let key in dict) {
-    if (dict.hasOwnProperty(key)) {
-      names.push(key)
-      values.push(dict[key])
-      // console.log("Key:", key);
-      // console.log("Value:", dict[key]);
-    }
-  }
-  console.log(names)
-  console.log(values)
-
-  var trace1 = [{
+  var trace = [{
     values: values,
     labels: names,
+    domain: {column: 0},
+    hole: .4,
     type: 'pie'
   }];
-  
+
   var layout = {
-    height: 400,
-    width: 500
-  };
+    title: "Distribution of Patients' residence",
+
+      height: 600,
+      width: 600,
+      
+    };
+
+  Plotly.newPlot("HS_pie", trace, layout);
 
 
-  Plotly.newPlot("HS_pie", trace1, layout);
+});
 
-  });
