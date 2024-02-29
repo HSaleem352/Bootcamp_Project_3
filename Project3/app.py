@@ -154,6 +154,94 @@ def afr_treatment_type_df():
 
     return json_data
 
+## Shan
+
+
+@app.route('/api/v1/percentage_df', methods=['GET'])
+def get_data1_shan():
+    # Read CSV file using pandas
+    df = pd.read_csv('https://drive.google.com/uc?id=1y-JrZNB_rxoE0dK-N_E1WMOQoKI9Wf_o&export=download')
+   
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+
+    return json_data
+
+
+
+
+@app.route('/api/v1/cancer_status_sum', methods=['GET'])
+def get_data2_shan():
+    # Read CSV file using pandas
+    df2 = pd.read_csv('https://drive.google.com/uc?id=124_14GL5gPJIZNyqeLe43VG9Ts49wq_F&export=download')
+   
+    # Convert DataFrame to JSON
+    json_data = df2.to_json(orient='records')
+
+
+    return json_data
+
+
+
+
+@app.route('/api/v1/race_and_severity_plot', methods=['GET'])
+def get_data3_shan():
+    # Read CSV file using pandas
+    df3 = pd.read_csv('https://drive.google.com/uc?id=1k7imD_Er8sImRHxNVDZpSqu5RNgtHHI4&export=download')
+   
+   
+    # Convert DataFrame to JSON
+    json_data = df3.to_json(orient='records')
+
+
+    return json_data
+
+
+@app.route('/api/v1/covid_severity_count_by_race', methods=['GET'])
+def get_data4_shan():
+    # Read CSV file using pandas
+    df4 = pd.read_csv('https://drive.google.com/uc?id=1hiH6yxP8IotqlrEJQ0I65bb8u0A5_TSd&export=download')
+
+
+   
+   
+    # Convert DataFrame to JSON
+    json_data = df4.to_json(orient='records')
+
+
+    return json_data
+
+
+@app.route('/api/v1/race_counts_percentage', methods=['GET'])
+def get_data5_shan():
+    # Read CSV file using pandas
+    df5 = pd.read_csv('https://drive.google.com/uc?id=1aTK9PfTcUVMMD7B3dCDwUrXHbvNA88HZ&export=download')
+
+
+   
+    # Convert DataFrame to JSON
+    json_data = df5.to_json(orient='records')
+
+
+    return json_data
+
+
+@app.route('/api/v1/race_counts', methods=['GET'])
+def get_data6_shan():
+    # Read CSV file using pandas
+    df6 = pd.read_csv('https://drive.google.com/uc?id=10r8M-WxvWEJhDgq_KXekLgFWebGQEzve&export=download')
+
+
+    # Convert DataFrame to JSON
+    json_data = df6.to_json(orient='records')
+
+
+    return json_data
+
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
 
