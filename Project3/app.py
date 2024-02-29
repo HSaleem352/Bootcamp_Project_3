@@ -147,10 +147,11 @@ def afr_timing_df():
 def afr_treatment_type_df():
 
     # Read CSV file using pandas
-    df1 = pd.read_csv("https://drive.google.com/uc?id=1HZYF4bIOI3e-XYANDO0bYHsRfiq1-hd0&export=download")
+    with engine.connect() as connection:
+        df = pd.read_sql('treatment_type_df',connection)
 
     # Convert DataFrame to JSON
-    json_data = df1.to_json(orient="recods")
+    json_data = df.to_json(orient="recods")
 
     return json_data
 
