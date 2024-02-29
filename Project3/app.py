@@ -28,7 +28,9 @@ def mina_q2():
 @app.route('/api/v1/Smoker&BC_VS_Non-Smoker&BC', methods=['GET'])
 def get_data_MB1():
     # Read CSV file using pandas
-    df = pd.read_csv("https://drive.google.com/uc?id=1WHdLRb3-9xl91szvWtSQpV1gWl12hotK&export=download")
+    #df = pd.read_csv("https://drive.google.com/uc?id=1WHdLRb3-9xl91szvWtSQpV1gWl12hotK&export=download")
+    with engine.connect() as connection:
+        df = pd.read_sql('Smoker&BC_VS_Non-Smoker&BC',connection)
    
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
