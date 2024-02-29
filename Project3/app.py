@@ -136,7 +136,8 @@ def HS_residenceCounts():
 def afr_timing_df():
 
     # Read CSV file using pandas
-    df = pd.read_csv('https://drive.google.com/uc?id=1Yt49jL6G8ZMfX3SY_wiEpPmtMVui0BIp&export=download')
+    with engine.connect() as connection:
+        df = pd.read_sql('AFR_timing_df',connection)
     
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
