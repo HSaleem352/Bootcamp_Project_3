@@ -9,7 +9,7 @@ def main():
     return render_template("index.html")
 
 @app.route('/api/Smoker&BC_VS_Non-Smoker&BC', methods=['GET'])
-def get_data1():
+def drive_data_smokerbc():
     # Read CSV file using pandas
     df1 = pd.read_csv("https://drive.google.com/uc?id=1WHdLRb3-9xl91szvWtSQpV1gWl12hotK&export=download")
    
@@ -86,8 +86,8 @@ def get_data():
 
 ## Alejandra
 
-@app.route('timing_df', methods=['GET'])
-def get_data():
+@app.route('/timing_df', methods=['GET'])
+def get_data12():
 
     # Read CSV file using pandas
     df = pd.read_csv('https://drive.google.com/uc?id=1Yt49jL6G8ZMfX3SY_wiEpPmtMVui0BIp&export=download')
@@ -97,7 +97,7 @@ def get_data():
 
     return json_data
 
-@app.route("treatment_type_df", methods=["GET"])
+@app.route("/treatment_type_df", methods=["GET"])
 def get_data1():
 
     # Read CSV file using pandas
