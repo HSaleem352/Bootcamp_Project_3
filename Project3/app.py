@@ -13,9 +13,9 @@ app = Flask(__name__)
 def main():
     return render_template("index.html")
 
-@app.route('/mina_q1')
+@app.route('/smoking_effect')
 def mina_q1():
-    return render_template("mina_q1.html")
+    return render_template("smoking.html")
 
 @app.route('/mina_q2')
 def mina_q2():
