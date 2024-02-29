@@ -21,6 +21,10 @@ def mina_q1():
 def mina_q2():
     return render_template("mina_q2.html")
 
+@app.route('/dean_q')
+def dean_q():
+    return render_template("dean_q.html")
+
 @app.route('/api/v1/Smoker&BC_VS_Non-Smoker&BC', methods=['GET'])
 def get_data_MB1():
     # Read CSV file using pandas
@@ -135,6 +139,15 @@ def afr_treatment_type_df():
 
     # Convert DataFrame to JSON
     json_data = df1.to_json(orient="recods")
+
+    return json_data
+
+## DEAN
+@app.route('/api/v1/age_status_severity', methods=['GET'])
+def age_v_cancer_covid_data():
+    df = pd.read_csv("https://drive.google.com/u/0/uc?id=1-I42sBzZYTQNqXXqlX9HkMXjoYP0zCNc&export=download")
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
 
     return json_data
 
