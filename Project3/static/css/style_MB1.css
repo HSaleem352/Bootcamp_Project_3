@@ -37,6 +37,7 @@ body {
 
 .carousel-control-prev, .carousel-control-next {
     align-self: center;
+    filter: invert(1) grayscale(100%);
 }
 
 .card-container {
