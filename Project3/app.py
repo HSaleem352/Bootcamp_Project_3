@@ -9,6 +9,10 @@ engine = create_engine('postgresql+psycopg2://breast_cancer_dataset_user:UnSNEeE
 
 app = Flask(__name__)
 
+#################################################################################################################
+##                                            Home Page                                                        ##
+#################################################################################################################
+
 @app.route('/')
 def main():
     return render_template("index.html")
@@ -156,46 +160,43 @@ def afr_treatment_type_df():
 
     return json_data
 
-## Shan
+#################################################################################################################
+##                                                  Shan                                                       ##
+#################################################################################################################
 
 
 @app.route('/api/v1/percentage_df', methods=['GET'])
 def get_data1_shan():
     # Read CSV file using pandas
-    df = pd.read_csv('https://drive.google.com/uc?id=1y-JrZNB_rxoE0dK-N_E1WMOQoKI9Wf_o&export=download')
+    with engine.connect() as connection:
+        df = pd.read_sql('percentage_df',connection)
    
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
 
-
     return json_data
-
-
 
 
 @app.route('/api/v1/cancer_status_sum', methods=['GET'])
 def get_data2_shan():
     # Read CSV file using pandas
-    df2 = pd.read_csv('https://drive.google.com/uc?id=124_14GL5gPJIZNyqeLe43VG9Ts49wq_F&export=download')
+    with engine.connect() as connection:
+        df = pd.read_sql('cancer_status_sum',connection)
    
     # Convert DataFrame to JSON
-    json_data = df2.to_json(orient='records')
-
+    json_data = df.to_json(orient='records')
 
     return json_data
-
-
 
 
 @app.route('/api/v1/race_and_severity_plot', methods=['GET'])
 def get_data3_shan():
     # Read CSV file using pandas
-    df3 = pd.read_csv('https://drive.google.com/uc?id=1k7imD_Er8sImRHxNVDZpSqu5RNgtHHI4&export=download')
-   
+    with engine.connect() as connection:
+        df = pd.read_sql('race_and_severity_plot',connection)
    
     # Convert DataFrame to JSON
-    json_data = df3.to_json(orient='records')
-
+    json_data = df.to_json(orient='records')
 
     return json_data
 
@@ -203,14 +204,11 @@ def get_data3_shan():
 @app.route('/api/v1/covid_severity_count_by_race', methods=['GET'])
 def get_data4_shan():
     # Read CSV file using pandas
-    df4 = pd.read_csv('https://drive.google.com/uc?id=1hiH6yxP8IotqlrEJQ0I65bb8u0A5_TSd&export=download')
+    with engine.connect() as connection:
+        df = pd.read_sql('covid_severity_count_by_race',connection)
 
-
-   
-   
     # Convert DataFrame to JSON
-    json_data = df4.to_json(orient='records')
-
+    json_data = df.to_json(orient='records')
 
     return json_data
 
@@ -218,13 +216,11 @@ def get_data4_shan():
 @app.route('/api/v1/race_counts_percentage', methods=['GET'])
 def get_data5_shan():
     # Read CSV file using pandas
-    df5 = pd.read_csv('https://drive.google.com/uc?id=1aTK9PfTcUVMMD7B3dCDwUrXHbvNA88HZ&export=download')
+    with engine.connect() as connection:
+        df = pd.read_sql('race_counts_percentage',connection)
 
-
-   
     # Convert DataFrame to JSON
-    json_data = df5.to_json(orient='records')
-
+    json_data = df.to_json(orient='records')
 
     return json_data
 
@@ -232,16 +228,17 @@ def get_data5_shan():
 @app.route('/api/v1/race_counts', methods=['GET'])
 def get_data6_shan():
     # Read CSV file using pandas
-    df6 = pd.read_csv('https://drive.google.com/uc?id=10r8M-WxvWEJhDgq_KXekLgFWebGQEzve&export=download')
-
+    with engine.connect() as connection:
+        df = pd.read_sql('race_counts',connection)
 
     # Convert DataFrame to JSON
-    json_data = df6.to_json(orient='records')
-
+    json_data = df.to_json(orient='records')
 
     return json_data
 
-
+#################################################################################################################
+##                                                  Debug                                                      ##
+#################################################################################################################
 
 
 if __name__ == '__main__':
