@@ -83,8 +83,9 @@ def get_data_MB5():
 
 @app.route('/api/v1/A_Res_BC_Smoker_NonSmoker_DF', methods=['GET'])
 def get_data_MB6():
-    # Read CSV file using pandas
-    df = pd.read_csv('https://drive.google.com/uc?id=1AtBbKKS8v7dsbIwX1B_VZbUXhnOHbFwt&export=download')
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('A_Res_BC_Smoker_NonSmoker_DF',connection)
     
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
