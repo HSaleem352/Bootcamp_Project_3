@@ -106,7 +106,8 @@ def get_data_MB7():
 @app.route('/api/v1/A_Prog_BC_Smoker_NonSmoker_DF', methods=['GET'])
 def get_data_MB8():
     # Read CSV file using pandas
-    df = pd.read_csv('https://drive.google.com/uc?id=1X4ue-G51Q7_v9zU_9uY7zYd99A8v7M6h&export=download')
+    with engine.connect() as connection:
+        df = pd.read_sql('A_Prog_BC_Smoker_NonSmoker_DF',connection)
     
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
