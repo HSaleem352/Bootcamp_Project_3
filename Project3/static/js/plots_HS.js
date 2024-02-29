@@ -1,4 +1,4 @@
-d3.json("/HS/residence").then(function(response) {
+d3.json("/api/HS/residence_counts").then(function(response) {
 
   var names = response.map(d => d.urban_rural);
   var values = response.map(d => d.count);

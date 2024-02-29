@@ -66,8 +66,8 @@ def get_data5():
 #################################################################################################################
 #################################################################################################################
 
-@app.route('/HS/residence')
-def get_data():
+@app.route('/api/HS/residence_counts')
+def HS_residenceCounts():
 
     with engine.connect() as connection:
         residence_counts = pd.read_sql('residence_counts',connection)
