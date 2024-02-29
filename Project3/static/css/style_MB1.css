@@ -3,7 +3,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     /* background-color: #888888; Set the background color to gray */
 }
