@@ -169,8 +169,14 @@ d3.json('/api/v1/ModerateCov_BC_Smoker_NonSmoker_DF').then(function(data) {
   var layout = {
     barmode: 'group',
     title: 'Moderate-COVID with BC & Smoker VS. Moderate-COVID with BC & Non-Smoker',
+    titlefont: {
+      size: 14  // Adjust the title font size as needed
+    },
     xaxis: {
-      title: 'COV_BC_Status'  // Add x-axis title
+      title: 'COV_BC_Status', // Add x-axis title
+      tickfont: {
+        size: 6  // Adjust the label font size as needed
+    }
     },
     yaxis: {
       title: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID'  // Add y-axis title
@@ -215,8 +221,14 @@ d3.json('/api/v1/SevereCov_BC_Smoker_NonSmoker_DF').then(function(data) {
   var layout = {
     barmode: 'group',
     title: 'Severe-COVID with BC & Smoker VS. Severe-COVID with BC & Non-Smoker',
+    titlefont: {
+      size: 14  // Adjust the title font size as needed
+    },
     xaxis: {
-      title: 'COV_BC_Status'  // Add x-axis title
+      title: 'COV_BC_Status',  // Add x-axis title
+      tickfont: {
+        size: 6  // Adjust the label font size as needed
+    }
     },
     yaxis: {
       title: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID'  // Add y-axis title
