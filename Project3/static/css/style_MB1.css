@@ -1,0 +1,48 @@
+/* mina q1 */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: #888888; Set the background color to gray */
+}
+
+.card-container {
+    perspective: 1000px;
+}
+
+.card {
+    width: 450px; /* Adjust the width */
+    height: 550px; /* Adjust the height */
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    border: 2px solid #000000; /* Add a black border */
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

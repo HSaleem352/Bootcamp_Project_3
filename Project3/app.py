@@ -13,55 +13,95 @@ app = Flask(__name__)
 def main():
     return render_template("index.html")
 
-@app.route('/api/Smoker&BC_VS_Non-Smoker&BC', methods=['GET'])
-def get_data1():
+@app.route('/mina_q1')
+def mina_q1():
+    return render_template("mina_q1.html")
+
+@app.route('/mina_q2')
+def mina_q2():
+    return render_template("mina_q2.html")
+
+@app.route('/api/v1/Smoker&BC_VS_Non-Smoker&BC', methods=['GET'])
+def get_data_MB1():
     # Read CSV file using pandas
-    df1 = pd.read_csv("https://drive.google.com/uc?id=1WHdLRb3-9xl91szvWtSQpV1gWl12hotK&export=download")
+    df = pd.read_csv("https://drive.google.com/uc?id=1WHdLRb3-9xl91szvWtSQpV1gWl12hotK&export=download")
    
     # Convert DataFrame to JSON
-    json_data = df1.to_json(orient='records')
+    json_data = df.to_json(orient='records')
 
     return json_data
 
-@app.route('/api/Smoker_NonSmoker_Covid_DF', methods=['GET'])
-def get_data2():
+@app.route('/api/v1/Smoker_NonSmoker_Covid_DF', methods=['GET'])
+def get_data_MB2():
     # Read CSV file using pandas
-    df2 = pd.read_csv('https://drive.google.com/uc?id=1uZaOgO0ly8vnpRrjx8L8D-D0bit453Hh&export=download')
+    df = pd.read_csv('https://drive.google.com/uc?id=1uZaOgO0ly8vnpRrjx8L8D-D0bit453Hh&export=download')
     
     # Convert DataFrame to JSON
-    json_data = df2.to_json(orient='records')
+    json_data = df.to_json(orient='records')
 
     return json_data
 
-@app.route('/api/MildCov_BC_Smoker_NonSmoker_DF', methods=['GET'])
-def get_data3():
+@app.route('/api/v1/MildCov_BC_Smoker_NonSmoker_DF', methods=['GET'])
+def gget_data_MB3():
     # Read CSV file using pandas
-    df2 = pd.read_csv('https://drive.google.com/uc?id=1eGS51t_iA2thfhZPX4dwlNeHRSldqSrL&export=download')
+    df = pd.read_csv('https://drive.google.com/uc?id=1eGS51t_iA2thfhZPX4dwlNeHRSldqSrL&export=download')
     
     # Convert DataFrame to JSON
-    json_data = df2.to_json(orient='records')
+    json_data = df.to_json(orient='records')
 
     return json_data
 
-@app.route('/api/ModerateCov_BC_Smoker_NonSmoker_DF', methods=['GET'])
-def get_data4():
+@app.route('/api/v1/ModerateCov_BC_Smoker_NonSmoker_DF', methods=['GET'])
+def get_data_MB4():
     # Read CSV file using pandas
-    df2 = pd.read_csv('https://drive.google.com/uc?id=1ByrRT6n_V9kNpAordMIipHB6k4pWC4xo&export=download')
+    df = pd.read_csv('https://drive.google.com/uc?id=1ByrRT6n_V9kNpAordMIipHB6k4pWC4xo&export=download')
     
     # Convert DataFrame to JSON
-    json_data = df2.to_json(orient='records')
+    json_data = df.to_json(orient='records')
 
     return json_data
 
-@app.route('/api/SevereCov_BC_Smoker_NonSmoker_DF', methods=['GET'])
-def get_data5():
+@app.route('/api/v1/SevereCov_BC_Smoker_NonSmoker_DF', methods=['GET'])
+def get_data_MB5():
     # Read CSV file using pandas
-    df2 = pd.read_csv('https://drive.google.com/uc?id=1Cn75SkCm_0x3Z7VKsifnpeavcJZDalJL&export=download')
+    df = pd.read_csv('https://drive.google.com/uc?id=1Cn75SkCm_0x3Z7VKsifnpeavcJZDalJL&export=download')
     
     # Convert DataFrame to JSON
-    json_data = df2.to_json(orient='records')
+    json_data = df.to_json(orient='records')
 
     return json_data
+
+
+@app.route('/api/v1/A_Res_BC_Smoker_NonSmoker_DF', methods=['GET'])
+def get_data_MB6():
+    # Read CSV file using pandas
+    df = pd.read_csv('https://drive.google.com/uc?id=1AtBbKKS8v7dsbIwX1B_VZbUXhnOHbFwt&export=download')
+    
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
+
+@app.route('/api/v1/A_St_BC_Smoker_NonSmoker_DF', methods=['GET'])
+def get_data_MB7():
+    # Read CSV file using pandas
+    df = pd.read_csv('https://drive.google.com/uc?id=1NB6wbM0zmmW7RxFI8vBI3wOgGVqOloXU&export=download')
+    
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
+
+@app.route('/api/v1/A_Prog_BC_Smoker_NonSmoker_DF', methods=['GET'])
+def get_data_MB8():
+    # Read CSV file using pandas
+    df = pd.read_csv('https://drive.google.com/uc?id=1X4ue-G51Q7_v9zU_9uY7zYd99A8v7M6h&export=download')
+    
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
+ 
 
 #################################################################################################################
 #################################################################################################################
@@ -78,3 +118,4 @@ def HS_residenceCounts():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
