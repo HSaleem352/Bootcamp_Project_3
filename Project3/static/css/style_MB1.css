@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+.navbar.navbar-dark.bg-dark {
+    width:100%;
+}
+
 #myCarousel{
     width:100%;
     }
@@ -40,6 +44,9 @@ body {
     filter: invert(1) grayscale(100%);
 }
 
+.alert.alert-primary.d-flex.align-items-center {
+    width: 100%;
+}
 .card-container {
     perspective: 1000px;
 }
