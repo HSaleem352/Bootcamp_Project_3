@@ -128,14 +128,31 @@ def get_data_MB8():
 def hamza_page():
     return render_template("hamza.html")
 
-@app.route('/api/HS/residence_counts', methods=['GET'])
+
+@app.route('/api/v1/residence_counts', methods=['GET'])
 def HS_residenceCounts():
 
     # Read Dataframe using SQL
     with engine.connect() as connection:
-        residence_counts = pd.read_sql('residence_counts',connection)
+        df = pd.read_sql('residence_counts',connection)
     
-    return (residence_counts.to_json(orient='records'))
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
+
+
+@app.route('/api/v1/severity_residence_HS', methods=['GET'])
+def severity_residence_HS():
+
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('severity_residence_HS',connection)
+
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
 
 
 #################################################################################################################
