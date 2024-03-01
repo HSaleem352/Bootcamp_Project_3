@@ -1,31 +1,33 @@
-d3.json("/api/v1/AFR_timing_df").then(function(response) {
+d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
-    // Severity of COVID when treatment given between 0 and 4 weeks
-
-    // var timing = response.der_cancer_tx_timing_v2
-    let trace = {
-        x: response[0],
-        y: response[1],
-        marker: {
-            color:"blue"},
-            type:"bar",
-            orientation: "h",
-        };
+    var mild = data.mild;
+    var moderate = data.moderate;
+    var severe = data.severe;
+    var labels = ["0-4 months", "point 2", "point 3", "point 4"]
+    var x_axis = [1, 2, 3, 4]
+  
+    var trace = {
+      x: x_axis,
+      y: mild,
+      text: labels,
+      marker:{
+        color: "blue"},
+        type: "bar",
+        orientation: "v",
+    };
 
     var data = [trace];
-
-    let layout = {
-        title: "Try something",
-        margin: {
-            l: 200,
-            r: 200,
-            t: 200,
-            b: 50,
-
-        }
-    };
-    
-    Plotly.newPlot("AFR_bar", data, layout);
+  
+    var layout = {
+      title: "Mild Covid Outcomes",
+  
+        height: 600,
+        width: 600,
+        
+      };
+  
+    Plotly.newPlot("mild_bar", data, layout);
   
   
   });
+  
