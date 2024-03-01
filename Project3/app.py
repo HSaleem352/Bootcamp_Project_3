@@ -247,9 +247,13 @@ def get_data6_shan():
 def dean_q():
     return render_template("dean_q.html")
 
+
 @app.route('/api/v1/age_status_severity', methods=['GET'])
 def age_v_cancer_covid_data():
-    df = pd.read_csv("https://drive.google.com/u/0/uc?id=1-I42sBzZYTQNqXXqlX9HkMXjoYP0zCNc&export=download")
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('age_status_severity',connection)
+
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
 
