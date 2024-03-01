@@ -125,7 +125,7 @@ def get_data_MB8():
 #################################################################################################################
 
 @app.route('/hamza')
-def dean_q():
+def hamza_page():
     return render_template("hamza.html")
 
 @app.route('/api/HS/residence_counts', methods=['GET'])
