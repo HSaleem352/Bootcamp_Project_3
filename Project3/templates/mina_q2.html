@@ -14,7 +14,7 @@
 <body>
 
 <!-- Card 1 -->
-<div class="card mb-3">
+<div class="card mb-3" data-toggle="collapse" data-target="#explanation1" aria-expanded="false">
     <div class="card-header">
         Card 1
     </div>
@@ -28,18 +28,15 @@
             </div>
         </div>
     </div>
-    <div class="card-footer">
-        <button class="btn btn-primary" data-toggle="collapse" data-target="#explanation1">
-            Show Explanation
-        </button>
-        <div id="explanation1" class="collapse mt-2">
+    <div id="explanation1" class="collapse mt-2">
+        <div class="card-footer">
             Explanation for Card 1
         </div>
     </div>
 </div>
 
 <!-- Card 2 -->
-<div class="card mb-3">
+<div class="card mb-3" data-toggle="collapse" data-target="#explanation2" aria-expanded="false">
     <div class="card-header">
         Card 2
     </div>
@@ -53,18 +50,15 @@
             </div>
         </div>
     </div>
-    <div class="card-footer">
-        <button class="btn btn-primary" data-toggle="collapse" data-target="#explanation2">
-            Show Explanation
-        </button>
-        <div id="explanation2" class="collapse mt-2">
+    <div id="explanation2" class="collapse mt-2">
+        <div class="card-footer">
             Explanation for Card 2
         </div>
     </div>
 </div>
 
 <!-- Card 3 -->
-<div class="card mb-3">
+<div class="card mb-3" data-toggle="collapse" data-target="#explanation3" aria-expanded="false">
     <div class="card-header">
         Card 3
     </div>
@@ -78,11 +72,8 @@
             </div>
         </div>
     </div>
-    <div class="card-footer">
-        <button class="btn btn-primary" data-toggle="collapse" data-target="#explanation3">
-            Show Explanation
-        </button>
-        <div id="explanation3" class="collapse mt-2">
+    <div id="explanation3" class="collapse mt-2">
+        <div class="card-footer">
             Explanation for Card 3
         </div>
     </div>
@@ -95,6 +86,21 @@
 
 <!-- Your Chart Initialization Script -->
 <script src="{{ url_for('static', filename='js/plots_MB.js') }}"></script>
+
+<!-- JavaScript to handle card click -->
+<script>
+    document.querySelectorAll('.card').forEach(function(card) {
+        card.addEventListener('click', function() {
+            var targetCollapse = card.getAttribute('data-target');
+            var isExpanded = $(targetCollapse).hasClass('show');
+
+            // If the explanation is not expanded, expand it
+            if (!isExpanded) {
+                $(targetCollapse).collapse('show');
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
