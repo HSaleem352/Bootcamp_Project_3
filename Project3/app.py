@@ -124,6 +124,10 @@ def get_data_MB8():
 ##                                                Hamza                                                        ##
 #################################################################################################################
 
+@app.route('/hamza')
+def dean_q():
+    return render_template("hamza.html")
+
 @app.route('/api/HS/residence_counts', methods=['GET'])
 def HS_residenceCounts():
 
