@@ -180,15 +180,6 @@ def get_data1_shan():
     json_data = df.to_json(orient='records')
 
     return json_data
-   
-## DEAN
-@app.route('/api/v1/age_status_severity', methods=['GET'])
-def age_v_cancer_covid_data():
-    df = pd.read_csv("https://drive.google.com/u/0/uc?id=1-I42sBzZYTQNqXXqlX9HkMXjoYP0zCNc&export=download")
-    # Convert DataFrame to JSON
-    json_data = df.to_json(orient='records')
-
-    return json_data
 
 
 @app.route('/api/v1/cancer_status_sum', methods=['GET'])
@@ -245,6 +236,19 @@ def get_data6_shan():
     with engine.connect() as connection:
         df = pd.read_sql('race_counts',connection)
 
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
+
+
+#################################################################################################################
+##                                                  Dean                                                       ##
+#################################################################################################################
+
+@app.route('/api/v1/age_status_severity', methods=['GET'])
+def age_v_cancer_covid_data():
+    df = pd.read_csv("https://drive.google.com/u/0/uc?id=1-I42sBzZYTQNqXXqlX9HkMXjoYP0zCNc&export=download")
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
 
