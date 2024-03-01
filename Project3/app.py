@@ -120,7 +120,7 @@ def HS_residenceCounts():
 def afr_timing_df():
 
     # Read CSV file using pandas
-    df = pd.read_csv('https://drive.google.com/uc?id=1Yt49jL6G8ZMfX3SY_wiEpPmtMVui0BIp&export=download')
+    df = pd.read_csv('https://drive.google.com/uc?id=1FE-JYKjod8YGo71-E37W3UpDq8nL3UyU&export=download')
     
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
@@ -131,7 +131,7 @@ def afr_timing_df():
 def afr_treatment_type_df():
 
     # Read CSV file using pandas
-    df1 = pd.read_csv("https://drive.google.com/uc?id=1HZYF4bIOI3e-XYANDO0bYHsRfiq1-hd0&export=download")
+    df1 = pd.read_csv("https://drive.google.com/uc?id=1uDqbe24GtHw7ctzsdma_r4-wGPVUFevh&export=download")
 
     # Convert DataFrame to JSON
     json_data = df1.to_json(orient="recods")
