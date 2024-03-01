@@ -25,9 +25,9 @@ def main():
 def mina_q1():
     return render_template("smoking.html")
 
-@app.route('/mina_q2')
+@app.route('/smoking_race_effect')
 def mina_q2():
-    return render_template("mina_q2.html")
+    return render_template("smoking_race.html")
 
 
 @app.route('/api/v1/Smoker&BC_VS_Non-Smoker&BC', methods=['GET'])
