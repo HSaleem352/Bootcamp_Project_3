@@ -18,7 +18,7 @@
     <nav class="navbar navbar-dark bg-dark" aria-label="First navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Smoking Effect</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars_MB1" aria-controls="navbars_MB1" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars_MB1" aria-controls="navbars_MB1" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
     
@@ -32,12 +32,12 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">References</a>
+              </li>
             </ul>
-
           </div>
         </div>
     </nav>
-    
+
     <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-target="#myCarousel" data-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
@@ -178,7 +178,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+
     <!-- Your Chart Initialization Script -->
     <script src="{{ url_for('static', filename='js/plots_MB.js') }}"></script>
     
