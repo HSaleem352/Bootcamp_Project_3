@@ -21,17 +21,14 @@ def main():
 ##                                                Mina                                                         ##
 #################################################################################################################
 
-@app.route('/mina_q1')
+@app.route('/smoking_effect')
 def mina_q1():
-    return render_template("mina_q1.html")
+    return render_template("smoking.html")
 
 @app.route('/mina_q2')
 def mina_q2():
     return render_template("mina_q2.html")
 
-@app.route('/dean_q')
-def dean_q():
-    return render_template("dean_q.html")
 
 @app.route('/api/v1/Smoker&BC_VS_Non-Smoker&BC', methods=['GET'])
 def get_data_MB1():
@@ -245,6 +242,10 @@ def get_data6_shan():
 #################################################################################################################
 ##                                                  Dean                                                       ##
 #################################################################################################################
+
+@app.route('/dean_q')
+def dean_q():
+    return render_template("dean_q.html")
 
 @app.route('/api/v1/age_status_severity', methods=['GET'])
 def age_v_cancer_covid_data():

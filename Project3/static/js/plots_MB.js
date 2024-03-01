@@ -306,7 +306,7 @@ d3.json('/api/v1/A_Res_BC_Smoker_NonSmoker_DF').then(function(data) {
   };
 
   var layout2 = {
-      title: 'Active and Responding BC & Smoker VS. Race/Ethnicity',
+      title: 'Active and Responding BC & Non-Smoker VS. Race/Ethnicity',
       legend: {
         title: {
             text: 'Race/Ethnicity',  // Set the title above the legend
