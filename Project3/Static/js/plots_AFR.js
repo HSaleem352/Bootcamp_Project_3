@@ -5,13 +5,11 @@
 d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
     var mild = data.mild;
-    var labels = ["0-4 months", "point 2", "point 3", "point 4"]
-    var x_axis = [1, 2, 3, 4]
+    var labels = ["point 1", "point 2", "point 3", "point 4"];
   
     var trace = {
-      x: x_axis,
+      x: labels,
       y: mild,
-      text: labels,
       marker:{
         color: "blue"},
         type: "bar"
@@ -36,13 +34,11 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
   d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
     var moderate = data.moderate;
-    var labels = ["point 1", "point 2", "point 3", "point 4"]
-    var x_axis = [1, 2, 3, 4]
+    var labels = ["point 1", "point 2", "point 3", "point 4"];
   
     var trace = {
-      x: x_axis,
+      x: labels,
       y: moderate,
-      text: labels,
       marker:{
         color: "blue"},
         type: "bar"
@@ -67,13 +63,11 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
   d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
     var severe = data.severe;
-    var labels = ["point 1", "point 2", "point 3", "point 4"]
-    var x_axis = [1, 2, 3, 4]
+    var labels = ["point 1", "point 2", "point 3", "point 4"];
   
     var trace = {
-      x: x_axis,
-      y: moderate,
-      text: labels,
+      x: labels,
+      y: severe,
       marker:{
         color: "blue"},
         type: "bar"
