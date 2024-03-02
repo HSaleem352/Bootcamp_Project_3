@@ -6,8 +6,8 @@
 
 d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
-    var mild = data.map(row => row[Object.keys(row)[0]]);;
-    var labels = ["point 1", "point 2", "point 3", "point 4", "point 5"];
+    var mild = data.Mild;
+    var labels = ["point 1", "point 2", "point 3", "point 4"];
   
     var trace = {
       x: labels,
@@ -29,7 +29,7 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
       }
       };
   
-    Plotly.newPlot("afr_mild_bar", data, layout);
+    Plotly.newPlot("afr_mild_timing_bar", data, layout);
   
   });
 
@@ -37,7 +37,7 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
   d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
-    var moderate = data.moderate;
+    var moderate = data.Moderate;
     var labels = ["point 1", "point 2", "point 3", "point 4"];
   
     var trace = {
@@ -60,7 +60,7 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
       }
       };
   
-    Plotly.newPlot("afr_moderate_bar", data, layout);
+    Plotly.newPlot("afr_moderate_timing_bar", data, layout);
   
   });
 
@@ -68,7 +68,7 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
   d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
-    var severe = data.severe;
+    var severe = data.Severe;
     var labels = ["point 1", "point 2", "point 3", "point 4"];
   
     var trace = {
@@ -91,7 +91,7 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
       }
       };
   
-    Plotly.newPlot("afr_severe_bar", data, layout);
+    Plotly.newPlot("afr_severe_timing_bar", data, layout);
   
   });
 
@@ -99,10 +99,12 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
 // ##                                                Treatment Type                                               ##
 // #################################################################################################################
 
+// MILD
+
 d3.json("/api/v1/treatment_type_df").then(function(data) {
 
   var mild = data.Mild;
-  var labels = ["point 1", "point 2", "point 3", "point 4"];
+  var labels = ["treatment 1", "treatment 2", "treatment 3", "treatment 4", "treatment 5"];
 
   var trace = {
     x: labels,
@@ -115,7 +117,7 @@ d3.json("/api/v1/treatment_type_df").then(function(data) {
   var data = [trace];
 
   var layout = {
-    title: "Mild Covid Outcomes at Each Time Point",
+    title: "Mild Covid Outcomes for Each Treatment Type",
     margin: {
       l: 200,
       r: 200,
@@ -124,6 +126,68 @@ d3.json("/api/v1/treatment_type_df").then(function(data) {
     }
     };
 
-  Plotly.newPlot("afr_mild_bar", data, layout);
+  Plotly.newPlot("afr_mild_treatment_bar", data, layout);
+
+});
+
+// MODERATE
+
+d3.json("/api/v1/treatment_type_df").then(function(data) {
+
+  var mild = data.Moderate;
+  var labels = ["treatment 1", "treatment 2", "treatment 3", "treatment 4", "treatment 5"];
+
+  var trace = {
+    x: labels,
+    y: mild,
+    marker:{
+      color: "blue"},
+      type: "bar"
+  };
+
+  var data = [trace];
+
+  var layout = {
+    title: "Moderate Covid Outcomes for Each Treatment Type",
+    margin: {
+      l: 200,
+      r: 200,
+      t: 200,
+      b: 200,
+    }
+    };
+
+  Plotly.newPlot("afr_moderate_treatment_bar", data, layout);
+
+});
+
+// SEVERE
+
+d3.json("/api/v1/treatment_type_df").then(function(data) {
+
+  var mild = data.Severe;
+  var labels = ["treatment 1", "treatment 2", "treatment 3", "treatment 4", "treatment 5"];
+
+  var trace = {
+    x: labels,
+    y: mild,
+    marker:{
+      color: "blue"},
+      type: "bar"
+  };
+
+  var data = [trace];
+
+  var layout = {
+    title: "Severe Covid Outcomes for Each Treatment Type",
+    margin: {
+      l: 200,
+      r: 200,
+      t: 200,
+      b: 200,
+    }
+    };
+
+  Plotly.newPlot("afr_severe_treatment_bar", data, layout);
 
 });
