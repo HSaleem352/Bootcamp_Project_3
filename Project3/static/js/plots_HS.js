@@ -21,7 +21,6 @@ d3.json("/api/v1/residence_counts").then(function(response) {
 
   Plotly.newPlot("HS_pie", trace, layout);
 
-
 });
 
 
@@ -80,6 +79,74 @@ d3.json("/api/v1/severity_residence_HS").then(function(response) {
   var data = [trace1, trace2, trace3];
 
   Plotly.newPlot("HS_severity_bar", data, layout);
+
+
+});
+
+d3.json("/api/v1/cancer_residence_HS").then(function(response) {
+
+  var labels = response.map(d => d.der_cancer_status_v4);
+  var urban = response.map(d => d.urban);
+  var suburban = response.map(d => d.suburban);
+  var rural = response.map(d => d.rural);
+
+  var trace1 = [{
+    values: urban,
+    labels: labels,
+    domain: {column: 0},
+    name: 'Urban',
+    hole: .4,
+    type: 'pie'
+  }];
+
+  var layout1 = {
+    title: "Cancer stages in Urban Area",
+
+      height: 800,
+      width: 800,
+      
+    };
+
+    Plotly.newPlot("HS_cancer_urban", trace1, layout1);
+
+  var trace2 = [{
+    values: suburban,
+    labels: labels,
+    domain: {column: 0},
+    name: 'Suburban',
+    hole: .4,
+    type: 'pie'
+  }];
+
+  var layout2 = {
+    title: "Cancer stages in Suburban Area",
+
+      height: 800,
+      width: 800,
+      
+    };
+
+  Plotly.newPlot("HS_cancer_suburban", trace2, layout2);
+
+  var trace3 = [{
+    values: rural,
+    labels: labels,
+    domain: {column: 0},
+    name: 'Rural',
+    hole: .4,
+    type: 'pie'
+  }];
+
+  var layout3 = {
+    title: "Cancer stages in Rural Area",
+
+      height: 800,
+      width: 800,
+      
+    };
+
+  Plotly.newPlot("HS_cancer_rural", trace3, layout3);
+
 
 
 });
