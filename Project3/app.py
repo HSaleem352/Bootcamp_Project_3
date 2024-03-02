@@ -141,9 +141,8 @@ def HS_residenceCounts():
 @app.route('/api/v1/AFR_timing_df', methods=['GET'])
 def afr_timing_df():
 
-    # Read Dataframe using SQL
-    with engine.connect() as connection:
-        df = pd.read_sql('AFR_timing_df',connection)
+    # Read CSV file using pandas
+    df = pd.read_csv('https://drive.google.com/uc?id=1FE-JYKjod8YGo71-E37W3UpDq8nL3UyU&export=download')
     
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
@@ -153,9 +152,8 @@ def afr_timing_df():
 @app.route("/api/v1/treatment_type_df", methods=["GET"])
 def afr_treatment_type_df():
 
-    # Read Dataframe using SQL
-    with engine.connect() as connection:
-        df = pd.read_sql('treatment_type_df',connection)
+    # Read CSV file using pandas
+    df = pd.read_csv("https://drive.google.com/uc?id=1uDqbe24GtHw7ctzsdma_r4-wGPVUFevh&export=download")
 
     # Convert DataFrame to JSON
     json_data = df.to_json(orient="recods")
