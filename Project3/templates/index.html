@@ -8,22 +8,18 @@
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <!-- plotly -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- style.css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div id="bar-graph1"></div>
-    <div id="bar-graph2"></div>
-    <div id="bar-graph3"></div>
-    <div id="bar-graph4"></div>
-    <div id="bar-graph5"></div>
-    <div id="pie-chart1" style="width: 45%; display: inline-block;"></div>
-    <div id="pie-chart2" style="width: 45%; display: inline-block;"></div>
-    <div id="pie-chart3" style="width: 45%; display: inline-block;"></div>
-    <div id="pie-chart4" style="width: 45%; display: inline-block;"></div>
-    <div id="pie-chart5" style="width: 45%; display: inline-block;"></div>
-    <div id="pie-chart6" style="width: 45%; display: inline-block;"></div>
-    <script src="{{ url_for('static', filename='js/plots_MB.js') }}"></script>
-    <div id="HS_pie"></div>
-    <script src="{{ url_for('static', filename='js/plots_HS.js') }}"></script>
+    <header class="bg-white black-80 tc pv4 avenir">
+        <h1 class="mt2 mb0 baskerville i fw1 f1">Breast Cancer Research Group</h1>
+        <nav class="bt bb tc mw7 center mt4">
+          <a class="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l" href="/">Home</a>
+          <a class="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l" href="/Members">Our Team</a>
+          <a class="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pa3 ph4-l" href="/References">References</a>
+        </nav>
+      </header>
 </body>
 </html>
 
