@@ -35,6 +35,10 @@ def collect_and_clean_data():
 def main():
     return render_template("index.html")
 
+@app.route('/Fozia')
+def fozia_page():
+    return render_template("FY.html")
+
 @app.route('/obesity_age_effect')
 def get_data_content():
     # Call the function to collect and clean the data if not already done

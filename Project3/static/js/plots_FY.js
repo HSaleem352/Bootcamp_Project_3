@@ -1,16 +1,26 @@
 // Load data and create visualizations
-function loadDataAndCreateVisualizations() {
-    fetch('/obesity_age_effect')
-        .then(response => response.json())
-        .then(data => {
+// function loadDataAndCreateVisualizations() {
+//     fetch('/obesity_age_effect')
+//         .then(response => response.json())
+//         .then(data => {
         
-            createHistogram(data);
-            createBarChart(data);
-            createBoxplot(data);
+//             createHistogram(data);
+//             createBarChart(data);
+//             createBoxplot(data);
         
-            // Add more visualization functions as needed
-        })
-        .catch(error => console.error('Error fetching data:', error));
+//             // Add more visualization functions as needed
+//         })
+//         .catch(error => console.error('Error fetching data:', error));
+// }
+
+d3.json("/obesity_age_effect").then(function(data) {
+
+    trace1 = createHistogram(data);
+    trace2 = createBarChart(data);
+    trace3 = createBoxplot(data);
+
+    Plotly.newPlot("histogram-container", trace1, trace2, trace3);
+
 }
 
 
