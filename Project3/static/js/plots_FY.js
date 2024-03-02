@@ -15,31 +15,33 @@
 
 d3.json("/obesity_age_effect").then(function(data) {
 
-    trace1 = createHistogram(data);
-    trace2 = createBarChart(data);
-    trace3 = createBoxplot(data);
+    console.log(data)
 
-    Plotly.newPlot("histogram-container", trace1, trace2, trace3);
+    // trace1 = createHistogram(data);
+    // trace2 = createBarChart(data);
+    // trace3 = createBoxplot(data);
 
-}
+    // Plotly.newPlot("histogram-container", trace1, trace2, trace3);
 
-
-// Visualization function for COVID-19 severity distribution (Histogram)
-function createHistogram(data) {
-    // ...
-}
-
-// Visualization function for obesity distribution (Bar chart)
-function createBarChart(data) {
-    // ...
-}
-
-// Visualization function for age distribution by cancer status (Boxplot)
-function createBoxplot(data) {
-    // ...
-}
+});
 
 
-// Call the function to load data and create visualizations
-loadDataAndCreateVisualizations();
+// // Visualization function for COVID-19 severity distribution (Histogram)
+// function createHistogram(data) {
+//     // ...
+// }
+
+// // Visualization function for obesity distribution (Bar chart)
+// function createBarChart(data) {
+//     // ...
+// }
+
+// // Visualization function for age distribution by cancer status (Boxplot)
+// function createBoxplot(data) {
+//     // ...
+// }
+
+
+// // Call the function to load data and create visualizations
+// loadDataAndCreateVisualizations();
 
