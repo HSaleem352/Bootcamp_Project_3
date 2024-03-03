@@ -190,3 +190,8 @@
     border-radius: 8px;
     text-align: center; /* Center the text within the box */
 }
+
+.alert-warning {
+    text-align: center; /* Center the text within the alert box */
+    color: black; /* Set the font color to black */
+}
