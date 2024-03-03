@@ -7,25 +7,26 @@
 d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
     var mild = data.map(x => x.Mild);
-    var labels = ["point 1", "point 2", "point 3", "point 4"];
+    var labels = ["0-4 Weeks", "1-3 Months", "+3 Months", "Never"];
   
     var trace = {
       x: labels,
       y: mild,
+      type: "bar",
       marker:{
-        color: "blue"},
-        type: "bar"
+        color: "rgba(226, 173, 251, 0.8)"
+      },
     };
 
     var data = [trace];
   
     var layout = {
-      title: "Mild Covid Outcomes at Each Time Point",
+      title: "Number of Mild Covid Outcomes at Each Time Point",
       margin: {
         l: 200,
         r: 200,
-        t: 200,
-        b: 200,
+        t: 100,
+        b: 100,
       }
       };
   
@@ -38,25 +39,25 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
   d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
     var moderate = data.map(x => x.Moderdate);
-    var labels = ["point 1", "point 2", "point 3", "point 4"];
+    var labels = ["0-4 Weeks", "1-3 Months", "+3 Months", "Never"];
   
     var trace = {
       x: labels,
       y: moderate,
       marker:{
-        color: "blue"},
+        color: "rgba(249, 251, 173, 0.8)"},
         type: "bar"
     };
 
     var data = [trace];
   
     var layout = {
-      title: "Moderate Covid Outcomes at Each Time Point",
+      title: "Number of Moderate Covid Outcomes at Each Time Point",
       margin: {
         l: 200,
         r: 200,
-        t: 200,
-        b: 200,
+        t: 100,
+        b: 100,
       }
       };
   
@@ -69,25 +70,25 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
   d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
     var severe = data.map(x => x.Severe);
-    var labels = ["point 1", "point 2", "point 3", "point 4"];
+    var labels = ["0-4 Weeks", "1-3 Months", "+3 Months", "Never"];
   
     var trace = {
       x: labels,
       y: severe,
       marker:{
-        color: "blue"},
+        color: "rgba(173, 230, 251, 0.8)"},
         type: "bar"
     };
 
     var data = [trace];
   
     var layout = {
-      title: "Severe Covid Outcomes at Each Time Point",
+      title: "Number of Severe Covid Outcomes at Each Time Point",
       margin: {
         l: 200,
         r: 200,
-        t: 200,
-        b: 200,
+        t: 100,
+        b: 100,
       }
       };
   
@@ -95,34 +96,39 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
   
   });
 
+  // COMBINED
+
   d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
     var combined_mild = data.map(x => x.Mild);
-    var combined_mod = data.map(x => x.Moderate);
+    var combined_mod = data.map(x => x.Moderdate);
     var combined_sev = data.map(x => x.Severe)
-    var labels = ["point 1", "point 2", "point 3", "point 4"];
+    var labels = ["0-4 Weeks", "1-3 Months", "+3 Months", "Never"];
   
     var trace_mild = {
       x: labels,
       y: combined_mild,
+      name: "Mild Covid Outcomes",
       marker:{
-        color: "blue"},
+        color: "rgba(226, 173, 251, 0.8)"},
         type: "bar"
     };
 
     var trace_mod = {
       x: labels,
       y: combined_mod,
+      name: "Moderate Covid Outcomes",
       marker:{
-        color: "blue"},
+        color: "rgba(249, 251, 173, 0.8)"},
         type: "bar"
     };
 
     var trace_sev = {
       x: labels,
       y: combined_sev,
+      name: "Severe Covid Outcomes",
       marker:{
-        color: "blue"},
+        color: "rgba(173, 230, 251, 0.8)"},
         type: "bar"
     };
 
@@ -130,12 +136,12 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
   
     var layout = {
       barmode: "group",
-      title: "Mild Covid Outcomes at Each Time Point",
+      title: "Mild, Moderate and Severe Covid Outcomes at Each Time Point",
       margin: {
         l: 200,
         r: 200,
-        t: 200,
-        b: 200,
+        t: 100,
+        b: 100,
       }
       };
   
@@ -152,13 +158,13 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
 d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
 
   var mild = data.map(x => x.Mild);
-  var labels = ["treatment 1", "treatment 2", "treatment 3", "treatment 4", "treatment 5"];
+  var labels = ["None", "Cyto", "Targeted", "Endo", "Immuno"];
 
   var trace = {
     x: labels,
     y: mild,
     marker:{
-      color: "blue"},
+      color: "rgba(226, 173, 251, 0.8)"},
       type: "bar"
   };
 
@@ -169,8 +175,8 @@ d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
     margin: {
       l: 200,
       r: 200,
-      t: 200,
-      b: 200,
+      t: 100,
+      b: 100,
     }
     };
 
@@ -183,13 +189,13 @@ d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
 d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
 
   var mild = data.map(x => x.Moderate);
-  var labels = ["treatment 1", "treatment 2", "treatment 3", "treatment 4", "treatment 5"];
+  var labels = ["None", "Cyto", "Targeted", "Endo", "Immuno"];
 
   var trace = {
     x: labels,
     y: mild,
     marker:{
-      color: "blue"},
+      color: "rgba(249, 251, 173, 0.8)"},
       type: "bar"
   };
 
@@ -200,8 +206,8 @@ d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
     margin: {
       l: 200,
       r: 200,
-      t: 200,
-      b: 200,
+      t: 100,
+      b: 100,
     }
     };
 
@@ -214,13 +220,13 @@ d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
 d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
 
   var severe = data.map(x => x.Severe);
-  var labels = ["treatment 1", "treatment 2", "treatment 3", "treatment 4", "treatment 5"];
+  var labels = ["None", "Cyto", "Targeted", "Endo", "Immuno"];
 
   var trace = {
     x: labels,
     y: severe,
     marker:{
-      color: "blue"},
+      color: "rgba(173, 230, 251, 0.8)"},
       type: "bar"
   };
 
@@ -231,11 +237,64 @@ d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
     margin: {
       l: 200,
       r: 200,
-      t: 200,
-      b: 200,
+      t: 100,
+      b: 100,
     }
     };
 
   Plotly.newPlot("afr_severe_treatment_bar", data, layout);
+
+});
+
+// COMBINED
+
+d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
+
+  var combined_treat_mild = data.map(x => x.Mild);
+  var combined_treat_mod = data.map(x => x.Moderate);
+  var combined_treat_sev = data.map(x => x.Severe)
+  var labels = ["None", "Cyto", "Targeted", "Endo", "Immuno"];
+
+  var trace_mild = {
+    x: labels,
+    y: combined_treat_mild,
+    name: "Mild Covid Outcomes",
+    marker:{
+      color: "rgba(226, 173, 251, 0.8)"},
+      type: "bar"
+  };
+
+  var trace_mod = {
+    x: labels,
+    y: combined_treat_mod,
+    name: "Moderate Covid Outcomes",
+    marker:{
+      color: "rgba(249, 251, 173, 0.8)"},
+      type: "bar"
+  };
+
+  var trace_sev = {
+    x: labels,
+    y: combined_treat_sev,
+    name: "Severe Covid Outcomes",
+    marker:{
+      color: "rgba(173, 230, 251, 0.8)"},
+      type: "bar"
+  };
+
+  var data = [trace_mild, trace_mod, trace_sev];
+
+  var layout = {
+    barmode: "group",
+    title: "Mild, Moderate and Severe Covid Outcomes for Different Treatment Types",
+    margin: {
+      l: 200,
+      r: 200,
+      t: 100,
+      b: 100,
+    }
+    };
+
+  Plotly.newPlot("afr_treatment_bar_grouped", data, layout);
 
 });
