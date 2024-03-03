@@ -12,6 +12,8 @@
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="//cdn.amcharts.com/lib/5/themes/Material.js"></script>
+
     <!-- styling css for hamza branch -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling_HS.css') }}">
     <!-- Bootstrap CSS -->
@@ -47,13 +49,11 @@
 
     <div class="figure1_container">
 
-        <div class="residence_title">
-           <h1>Distribution of Patients' Residence</h1>
+        <div id="residence_title">
+           Distribution of Patients' Residence
         </div>
 
-        <div class="residence_container">
-            <div id="residence_pie"></div>
-        </div>
+        <div id="residence_pie"></div>
         
     </div>
 
@@ -65,13 +65,48 @@
     <button onmouseleave="resetButton(this)" onmouseenter="enlargeButton(this)" onclick="toggleGraph(2)">Suburban</button>
 
     <button onmouseleave="resetButton(this)" onmouseenter="enlargeButton(this)" onclick="toggleGraph(3)">Rural</button>
+
+    <button onmouseleave="resetButton(this)" onmouseenter="enlargeButton(this)" onclick="showAll()">Show All</button>
     
     <!-- this is urban -->
-    <div id="graph1" ></div>
+    <div class="g1_container">
+
+        <div id="g1_title">
+           Cancer stages in Urban Area
+        </div>
+
+        <div id="graph1" ></div>
+        
+    </div>
+
     <!-- this is suburban -->
-    <div id="graph2" ></div>
+    <div class="g2_container">
+
+        <div id="g2_title">
+           Cancer stages in Suburban Area
+        </div>
+
+        <div id="graph2" ></div>
+        
+    </div>
+
     <!-- this is rural -->
-    <div id="graph3" ></div>
+    <div class="g3_container">
+
+        <div id="g3_title">
+           Cancer stages in Rural Area
+        </div>
+
+        <div id="graph3" ></div>
+        
+    </div>
+
+
+    
+    
+    
+    <!-- this is rural -->
+    
 
     <script src="{{ url_for('static', filename='js/plots_HS.js') }}"></script>
 </body>

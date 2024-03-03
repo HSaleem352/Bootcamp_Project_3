@@ -22,15 +22,6 @@ d3.json("/api/v1/residence_counts").then(function(response) {
     am5themes_Animated.new(root),
   ]);
 
-  // setting colors
-  // series.get("colors").set("colors", [
-  //   am5.color(0x095256),
-  //   am5.color(0x087f8c),
-  //   am5.color(0x5aaa95),
-  //   am5.color(0x86a873),
-  //   am5.color(0xbb9f06)
-  // ]);
-
   // Create chart
   var chart = root.container.children.push(am5percent.PieChart.new(root, {
     radius: am5.percent(90),
@@ -82,12 +73,6 @@ d3.json("/api/v1/residence_counts").then(function(response) {
   });
 
   legend.data.setAll(series.dataItems);
-
-  // // Add chart title
-  // var title = chart.titles();
-  // title.text = "Distribution of Patients' Residence";
-  // title.fontSize = 25;
-  // title.marginBottom = 30;
 
 
   // Play initial series animation
@@ -178,16 +163,8 @@ d3.json("/api/v1/cancer_residence_HS").then(function(response) {
   // Set themes
   root.setThemes([
     am5themes_Animated.new(root),
+    am5themes_Material.new(root)
   ]);
-
-  // setting colors
-  // series.get("colors").set("colors", [
-  //   am5.color(0x095256),
-  //   am5.color(0x087f8c),
-  //   am5.color(0x5aaa95),
-  //   am5.color(0x86a873),
-  //   am5.color(0xbb9f06)
-  // ]);
 
   // Create chart
   var chart = root.container.children.push(am5percent.PieChart.new(root, {
@@ -260,7 +237,8 @@ d3.json("/api/v1/cancer_residence_HS").then(function(response) {
 
   // Set themes
   root.setThemes([
-    am5themes_Animated.new(root),
+    am5themes_Animated.new(root), 
+    am5themes_Material.new(root)
   ]);
 
   // Create chart
@@ -335,6 +313,7 @@ d3.json("/api/v1/cancer_residence_HS").then(function(response) {
   // Set themes
   root.setThemes([
     am5themes_Animated.new(root),
+    am5themes_Material.new(root)
   ]);
 
   // Create chart
@@ -400,13 +379,24 @@ function toggleGraph(graphNumber) {
   // Hide all graphs
   for (let i = 1; i <= 3; i++) {
     document.getElementById(`graph${i}`).classList.add('hidden');
+    document.getElementById(`g${i}_title`).classList.add('hidden');
+    
   }
 
   // Show the selected graph
+  
   document.getElementById(`graph${graphNumber}`).classList.remove('hidden');
-  `graph${graphNumber}`.series.appear(1000, 100);
+  document.getElementById(`g${graphNumber}_title`).classList.remove('hidden');
 
+}
 
+function showAll() {
+  document.getElementById('graph1').classList.remove('hidden');
+  document.getElementById('graph2').classList.remove('hidden');
+  document.getElementById('graph3').classList.remove('hidden');
+  document.getElementById('g1_title').classList.remove('hidden');
+  document.getElementById('g2_title').classList.remove('hidden');
+  document.getElementById('g3_title').classList.remove('hidden');
 }
 
 function enlargeButton(button) {
@@ -416,6 +406,8 @@ function enlargeButton(button) {
 function resetButton(button) {
   button.style.transform = 'scale(1)';
 }
+
+
 
 
 

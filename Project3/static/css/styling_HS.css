@@ -24,47 +24,112 @@ body {
   transform: skewX(-12deg);
   background-color: #E2F0CB;
   /* overflow: hidden; */
-  /* display: inline-box; */
+  display: grid;
   
 }
 
-.residence_title {  
+#residence_title {
   height: 50vh;
   width: 50vw;
-  font-size: 1em; 
+  font-size: 2em; 
   left: 30%;
-  top: 80%;
-  /* font-family: 'Your Desired Font', 'Times New Roman', Times, serif;
-  color: black; */
+  top: 5%;
+  transform-origin: left top; 
+  transform: skewX(12deg);
   position:absolute;
-}
-
-.residence_title h1 {
   color: black;
   font-family: 'Your Desired Font', 'Times New Roman', Times, serif;
-  
 }
 
 #residence_pie {
   /* display: block; */
   width: 80vw;
   height: 80vh; 
+  left: 0%;
+  top: 15%;
+  transform: translate(-15%,50%);
   transform-origin: left top; 
   transform: skewX(12deg);
+  position:absolute
+  
+}
+
+.g1_container{
+  width: 100%; /* Adjust the width as needed */
+  height: 80vh;
+  margin: auto;
+  border-top-right-radius: 70px;
+  background-color: #E2F0CB;
+  /* overflow: hidden; */
+  display: grid;
   
 }
 
 #graph1 {
-  width: 80vw;
-  height: 80vh;   
+  width: 50vw;
+  height: 50vh; 
+  transform: translate(50%,-50%);
+  position:relative 
+}
+
+#g1_title {
+  height: 50vh;
+  width: 50vw;
+  font-size: 2em; 
+  transform: translate(70%,20%);
+  color: black;
+  font-family: 'Your Desired Font', 'Times New Roman', Times, serif;
+}
+
+.g2_container{
+  width: 100%; /* Adjust the width as needed */
+  height: 80vh;
+  margin: auto;
+  border-top-right-radius: 70px;
+  background-color: #E2F0CB;
+  /* overflow: hidden; */
+  display: grid;
+  
 }
 
 #graph2 {
-  width: 80vw;
-  height: 80vh;   
+  width: 50vw;
+  height: 50vh; 
+  transform: translate(50%,-50%);
+  position:relative 
+}
+
+#g2_title {
+  height: 50vh;
+  width: 50vw;
+  font-size: 2em; 
+  transform: translate(70%,20%);
+  color: black;
+  font-family: 'Your Desired Font', 'Times New Roman', Times, serif;
+}
+.g3_container{
+  width: 100%; /* Adjust the width as needed */
+  height: 80vh;
+  margin: auto;
+  border-top-right-radius: 70px;
+  background-color: #E2F0CB;
+  /* overflow: hidden; */
+  display: grid;
+  
 }
 
 #graph3 {
-  width: 80vw;
-  height: 80vh;   
+  width: 50vw;
+  height: 50vh; 
+  transform: translate(50%,-50%);
+  position:relative 
+}
+
+#g3_title {
+  height: 50vh;
+  width: 50vw;
+  font-size: 2em; 
+  transform: translate(70%,20%);
+  color: black;
+  font-family: 'Your Desired Font', 'Times New Roman', Times, serif;
 }
