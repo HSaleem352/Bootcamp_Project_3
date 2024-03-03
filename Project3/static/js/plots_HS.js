@@ -94,32 +94,7 @@ d3.json("/api/v1/residence_counts").then(function(response) {
   series.appear(1000, 100);
 
 
-  // var names = response.map(d => d.urban_rural);
-  // var values = response.map(d => d.count);
-
-  // var trace = [{
-  //   values: values,
-  //   labels: names,
-  //   domain: {column: 0},
-  //   hole: .4,
-  //   type: 'pie'
-  // }];
-
-  // var layout = {
-  //   title: "Distribution of Patients' residence",
-
-  //     height: 600,
-  //     width: 600,
-      
-  //   };
-
-  // Plotly.newPlot("HS_pie", trace, layout);
-
 });
-
-
-
-
 
 
 
@@ -182,71 +157,333 @@ d3.json("/api/v1/severity_residence_HS").then(function(response) {
 
 });
 
+
+
+
+
+
+
+
+
 d3.json("/api/v1/cancer_residence_HS").then(function(response) {
+    var labels = response.map(d => d.der_cancer_status_v4);
+    var urban = response.map(d => d.urban);
+    var suburban = response.map(d => d.suburban);
+    var rural = response.map(d => d.rural);
 
-  var labels = response.map(d => d.der_cancer_status_v4);
-  var urban = response.map(d => d.urban);
-  var suburban = response.map(d => d.suburban);
-  var rural = response.map(d => d.rural);
+    var figure1 = [];
 
-  var trace1 = [{
-    values: urban,
-    labels: labels,
-    domain: {column: 0},
-    name: 'Urban',
-    hole: .4,
-    type: 'pie'
-  }];
+    for (let i = 0; i < labels.length; i++) {
+      figure1.push(
+      {labels: labels[i], values: urban[i]}
+      )
+    }
 
-  var layout1 = {
-    title: "Cancer stages in Urban Area",
+    //Create root element
+  var root = am5.Root.new("graph1");
 
-      height: 800,
-      width: 800,
-      
-    };
+  // Set themes
+  root.setThemes([
+    am5themes_Animated.new(root),
+  ]);
 
-    Plotly.newPlot("HS_cancer_urban", trace1, layout1);
+  // setting colors
+  // series.get("colors").set("colors", [
+  //   am5.color(0x095256),
+  //   am5.color(0x087f8c),
+  //   am5.color(0x5aaa95),
+  //   am5.color(0x86a873),
+  //   am5.color(0xbb9f06)
+  // ]);
 
-  var trace2 = [{
-    values: suburban,
-    labels: labels,
-    domain: {column: 0},
-    name: 'Suburban',
-    hole: .4,
-    type: 'pie'
-  }];
+  // Create chart
+  var chart = root.container.children.push(am5percent.PieChart.new(root, {
+    radius: am5.percent(90),
+    innerRadius: am5.percent(50),
+    layout: root.horizontalLayout
+  }));
+  // Creating the series template
+  var series = chart.series.push(am5percent.PieSeries.new(root, {
+    name: "Cancer Status in Urban",
+    valueField: "values",
+    categoryField: "labels"
+  }));
+  // Setting the data
+  series.data.setAll(figure1)
 
-  var layout2 = {
-    title: "Cancer stages in Suburban Area",
+  // Disabling labels and ticks
+  series.labels.template.set("visible", false);
+  series.ticks.template.set("visible", false);
 
-      height: 800,
-      width: 800,
-      
-    };
+  // Adding gradients
+  series.slices.template.set("strokeOpacity", 0);
+  series.slices.template.set("fillGradient", am5.RadialGradient.new(root, {
+    stops: [{
+      brighten: -0.8
+    }, {
+      brighten: -0.8
+    }, {
+      brighten: -0.5
+    }, {
+      brighten: 0
+    }, {
+      brighten: -0.5
+    }]
+  }));
 
-  Plotly.newPlot("HS_cancer_suburban", trace2, layout2);
+  // Create legend
+  var legend = chart.children.push(am5.Legend.new(root, {
+    centerY: am5.percent(50),
+    y: am5.percent(50),
+    layout: root.verticalLayout
+  }));
+  // set value labels align to right
+  legend.valueLabels.template.setAll({ textAlign: "right" })
+  // set width and max width of labels
+  legend.labels.template.setAll({ 
+    maxWidth: 140,
+    width: 140,
+    oversizedBehavior: "wrap"
+  });
 
-  var trace3 = [{
-    values: rural,
-    labels: labels,
-    domain: {column: 0},
-    name: 'Rural',
-    hole: .4,
-    type: 'pie'
-  }];
+  legend.data.setAll(series.dataItems);
 
-  var layout3 = {
-    title: "Cancer stages in Rural Area",
+  // Play initial series animation
+  series.appear(1000, 100);
 
-      height: 800,
-      width: 800,
-      
-    };
+  //////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////
 
-  Plotly.newPlot("HS_cancer_rural", trace3, layout3);
+  var figure2 = [];
 
+    for (let i = 0; i < labels.length; i++) {
+      figure2.push(
+      {labels: labels[i], values: suburban[i]}
+      )
+    }
 
+    //Create root element
+  var root = am5.Root.new("graph2");
 
+  // Set themes
+  root.setThemes([
+    am5themes_Animated.new(root),
+  ]);
+
+  // Create chart
+  var chart = root.container.children.push(am5percent.PieChart.new(root, {
+    radius: am5.percent(90),
+    innerRadius: am5.percent(50),
+    layout: root.horizontalLayout
+  }));
+  // Creating the series template
+  var series = chart.series.push(am5percent.PieSeries.new(root, {
+    name: "Cancer Status in SubUrban",
+    valueField: "values",
+    categoryField: "labels"
+  }));
+  // Setting the data
+  series.data.setAll(figure2)
+
+  // Disabling labels and ticks
+  series.labels.template.set("visible", false);
+  series.ticks.template.set("visible", false);
+
+  // Adding gradients
+  series.slices.template.set("strokeOpacity", 0);
+  series.slices.template.set("fillGradient", am5.RadialGradient.new(root, {
+    stops: [{
+      brighten: -0.8
+    }, {
+      brighten: -0.8
+    }, {
+      brighten: -0.5
+    }, {
+      brighten: 0
+    }, {
+      brighten: -0.5
+    }]
+  }));
+
+  // Create legend
+  var legend = chart.children.push(am5.Legend.new(root, {
+    centerY: am5.percent(50),
+    y: am5.percent(50),
+    layout: root.verticalLayout
+  }));
+  // set value labels align to right
+  legend.valueLabels.template.setAll({ textAlign: "right" })
+  // set width and max width of labels
+  legend.labels.template.setAll({ 
+    maxWidth: 140,
+    width: 140,
+    oversizedBehavior: "wrap"
+  });
+
+  legend.data.setAll(series.dataItems);
+
+  // Play initial series animation
+  series.appear(1000, 100);
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  var figure3 = [];
+
+    for (let i = 0; i < labels.length; i++) {
+      figure3.push(
+      {labels: labels[i], values: rural[i]}
+      )
+    }
+
+    //Create root element
+  var root = am5.Root.new("graph3");
+
+  // Set themes
+  root.setThemes([
+    am5themes_Animated.new(root),
+  ]);
+
+  // Create chart
+  var chart = root.container.children.push(am5percent.PieChart.new(root, {
+    radius: am5.percent(90),
+    innerRadius: am5.percent(50),
+    layout: root.horizontalLayout
+  }));
+  // Creating the series template
+  var series = chart.series.push(am5percent.PieSeries.new(root, {
+    name: "Cancer Status in Rural",
+    valueField: "values",
+    categoryField: "labels"
+  }));
+  // Setting the data
+  series.data.setAll(figure3)
+
+  // Disabling labels and ticks
+  series.labels.template.set("visible", false);
+  series.ticks.template.set("visible", false);
+
+  // Adding gradients
+  series.slices.template.set("strokeOpacity", 0);
+  series.slices.template.set("fillGradient", am5.RadialGradient.new(root, {
+    stops: [{
+      brighten: -0.8
+    }, {
+      brighten: -0.8
+    }, {
+      brighten: -0.5
+    }, {
+      brighten: 0
+    }, {
+      brighten: -0.5
+    }]
+  }));
+
+  // Create legend
+  var legend = chart.children.push(am5.Legend.new(root, {
+    centerY: am5.percent(50),
+    y: am5.percent(50),
+    layout: root.verticalLayout
+  }));
+  // set value labels align to right
+  legend.valueLabels.template.setAll({ textAlign: "right" })
+  // set width and max width of labels
+  legend.labels.template.setAll({ 
+    maxWidth: 140,
+    width: 140,
+    oversizedBehavior: "wrap"
+  });
+
+  legend.data.setAll(series.dataItems);
+
+  // Play initial series animation
+  series.appear(1000, 100);
+
+ 
 });
 
+
+
+function toggleGraph(graphNumber) {
+  // Hide all graphs
+  for (let i = 1; i <= 3; i++) {
+    document.getElementById(`graph${i}`).classList.add('hidden');
+  }
+  document.getElementById(`graph${graphNumber}`).classList.remove('hidden');
+
+  // Show the selected graph
+  document.getElementById(`graph${graphNumber}`).classList.remove('hidden');
+}
+
+function enlargeButton(button) {
+  button.style.transform = 'scale(1.05)';
+}
+
+function resetButton(button) {
+  button.style.transform = 'scale(1)';
+}
+
+
+
+
+// var labels = response.map(d => d.der_cancer_status_v4);
+//   var urban = response.map(d => d.urban);
+//   var suburban = response.map(d => d.suburban);
+//   var rural = response.map(d => d.rural);
+
+//   var trace1 = [{
+//     values: urban,
+//     labels: labels,
+//     domain: {column: 0},
+//     name: 'Urban',
+//     hole: .4,
+//     type: 'pie'
+//   }];
+
+//   var layout1 = {
+//     title: "Cancer stages in Urban Area",
+
+//       height: 800,
+//       width: 800,
+      
+//     };
+
+//     Plotly.newPlot("graph1", trace1, layout1);
+
+//   var trace2 = [{
+//     values: suburban,
+//     labels: labels,
+//     domain: {column: 0},
+//     name: 'Suburban',
+//     hole: .4,
+//     type: 'pie'
+//   }];
+
+//   var layout2 = {
+//     title: "Cancer stages in Suburban Area",
+
+//       height: 800,
+//       width: 800,
+      
+//     };
+
+//   Plotly.newPlot("graph2", trace2, layout2);
+
+//   var trace3 = [{
+//     values: rural,
+//     labels: labels,
+//     domain: {column: 0},
+//     name: 'Rural',
+//     hole: .4,
+//     type: 'pie'
+//   }];
+
+//   var layout3 = {
+//     title: "Cancer stages in Rural Area",
+
+//       height: 800,
+//       width: 800,
+      
+//     };
+
+//   Plotly.newPlot("graph3", trace3, layout3);

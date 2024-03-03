@@ -58,9 +58,21 @@
     </div>
 
     <div id="HS_severity_bar"></div>
-    <div id="HS_cancer_urban"></div>
-    <div id="HS_cancer_suburban"></div>
-    <div id="HS_cancer_rural"></div>
+
+
+    <button onmouseleave="resetButton(this)" onmouseenter="enlargeButton(this)" onclick="toggleGraph(1)">Urban</button>
+
+    <button onmouseleave="resetButton(this)" onmouseenter="enlargeButton(this)" onclick="toggleGraph(2)">Suburban</button>
+
+    <button onmouseleave="resetButton(this)" onmouseenter="enlargeButton(this)" onclick="toggleGraph(3)">Rural</button>
+    
+    <!-- this is urban -->
+    <div id="graph1" ></div>
+    <!-- this is suburban -->
+    <div id="graph2" ></div>
+    <!-- this is rural -->
+    <div id="graph3" ></div>
+
     <script src="{{ url_for('static', filename='js/plots_HS.js') }}"></script>
 </body>
 </html>
