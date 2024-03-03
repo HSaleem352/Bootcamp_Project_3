@@ -112,7 +112,7 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
     var trace_mod = {
       x: labels,
-      y: comvbined_mod,
+      y: combined_mod,
       marker:{
         color: "blue"},
         type: "bar"
@@ -139,7 +139,7 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
       }
       };
   
-    Plotly.newPlot("afr_mild_timing_bar", data, layout);
+    Plotly.newPlot("afr_timing_bar_grouped", data, layout);
   
   });
 
