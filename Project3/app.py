@@ -159,7 +159,7 @@ def severity_residence_HS():
 ##                                                Alejandra                                                    ##
 ###############################################################################################################
 
-@app.route('/api/v1/AFR_timing_df', methods=['GET'])
+@app.route('/api/v1/afr_timing_df', methods=['GET'])
 def afr_timing_df():
 
     # Read CSV file using pandas
@@ -170,7 +170,7 @@ def afr_timing_df():
 
     return json_data
 
-@app.route("/api/v1/treatment_type_df", methods=["GET"])
+@app.route("/api/v1/afr_treatment_type_df", methods=["GET"])
 def afr_treatment_type_df():
 
     # Read CSV file using pandas

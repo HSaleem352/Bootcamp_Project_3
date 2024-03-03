@@ -101,7 +101,7 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
 // MILD
 
-d3.json("/api/v1/treatment_type_df").then(function(data) {
+d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
 
   var mild = data.map(x => x.Mild);
   var labels = ["treatment 1", "treatment 2", "treatment 3", "treatment 4", "treatment 5"];
@@ -132,7 +132,7 @@ d3.json("/api/v1/treatment_type_df").then(function(data) {
 
 // MODERATE
 
-d3.json("/api/v1/treatment_type_df").then(function(data) {
+d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
 
   var mild = data.map(x => x.Moderate);
   var labels = ["treatment 1", "treatment 2", "treatment 3", "treatment 4", "treatment 5"];
@@ -163,7 +163,7 @@ d3.json("/api/v1/treatment_type_df").then(function(data) {
 
 // SEVERE
 
-d3.json("/api/v1/treatment_type_df").then(function(data) {
+d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
 
   var severe = data.map(x => x.Severe);
   var labels = ["treatment 1", "treatment 2", "treatment 3", "treatment 4", "treatment 5"];
