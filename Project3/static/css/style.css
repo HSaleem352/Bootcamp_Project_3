@@ -195,3 +195,7 @@
     text-align: center; /* Center the text within the alert box */
     color: black; /* Set the font color to black */
 }
+
+.card-link {
+    text-decoration: none;
+}
