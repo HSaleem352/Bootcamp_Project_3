@@ -158,13 +158,6 @@ d3.json("/api/v1/severity_residence_HS").then(function(response) {
 });
 
 
-
-
-
-
-
-
-
 d3.json("/api/v1/cancer_residence_HS").then(function(response) {
     var labels = response.map(d => d.der_cancer_status_v4);
     var urban = response.map(d => d.urban);
@@ -203,21 +196,21 @@ d3.json("/api/v1/cancer_residence_HS").then(function(response) {
     layout: root.horizontalLayout
   }));
   // Creating the series template
-  var series = chart.series.push(am5percent.PieSeries.new(root, {
+  var series1 = chart.series.push(am5percent.PieSeries.new(root, {
     name: "Cancer Status in Urban",
     valueField: "values",
     categoryField: "labels"
   }));
   // Setting the data
-  series.data.setAll(figure1)
+  series1.data.setAll(figure1)
 
   // Disabling labels and ticks
-  series.labels.template.set("visible", false);
-  series.ticks.template.set("visible", false);
+  series1.labels.template.set("visible", false);
+  series1.ticks.template.set("visible", false);
 
   // Adding gradients
-  series.slices.template.set("strokeOpacity", 0);
-  series.slices.template.set("fillGradient", am5.RadialGradient.new(root, {
+  series1.slices.template.set("strokeOpacity", 0);
+  series1.slices.template.set("fillGradient", am5.RadialGradient.new(root, {
     stops: [{
       brighten: -0.8
     }, {
@@ -232,24 +225,24 @@ d3.json("/api/v1/cancer_residence_HS").then(function(response) {
   }));
 
   // Create legend
-  var legend = chart.children.push(am5.Legend.new(root, {
+  var legend1 = chart.children.push(am5.Legend.new(root, {
     centerY: am5.percent(50),
     y: am5.percent(50),
     layout: root.verticalLayout
   }));
   // set value labels align to right
-  legend.valueLabels.template.setAll({ textAlign: "right" })
+  legend1.valueLabels.template.setAll({ textAlign: "right" })
   // set width and max width of labels
-  legend.labels.template.setAll({ 
+  legend1.labels.template.setAll({ 
     maxWidth: 140,
     width: 140,
     oversizedBehavior: "wrap"
   });
 
-  legend.data.setAll(series.dataItems);
+  legend1.data.setAll(series1.dataItems);
 
   // Play initial series animation
-  series.appear(1000, 100);
+  series1.appear(1000, 100);
 
   //////////////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////////////////////////////
@@ -277,21 +270,21 @@ d3.json("/api/v1/cancer_residence_HS").then(function(response) {
     layout: root.horizontalLayout
   }));
   // Creating the series template
-  var series = chart.series.push(am5percent.PieSeries.new(root, {
+  var series2 = chart.series.push(am5percent.PieSeries.new(root, {
     name: "Cancer Status in SubUrban",
     valueField: "values",
     categoryField: "labels"
   }));
   // Setting the data
-  series.data.setAll(figure2)
+  series2.data.setAll(figure2)
 
   // Disabling labels and ticks
-  series.labels.template.set("visible", false);
-  series.ticks.template.set("visible", false);
+  series2.labels.template.set("visible", false);
+  series2.ticks.template.set("visible", false);
 
   // Adding gradients
-  series.slices.template.set("strokeOpacity", 0);
-  series.slices.template.set("fillGradient", am5.RadialGradient.new(root, {
+  series2.slices.template.set("strokeOpacity", 0);
+  series2.slices.template.set("fillGradient", am5.RadialGradient.new(root, {
     stops: [{
       brighten: -0.8
     }, {
@@ -306,24 +299,24 @@ d3.json("/api/v1/cancer_residence_HS").then(function(response) {
   }));
 
   // Create legend
-  var legend = chart.children.push(am5.Legend.new(root, {
+  var legend2 = chart.children.push(am5.Legend.new(root, {
     centerY: am5.percent(50),
     y: am5.percent(50),
     layout: root.verticalLayout
   }));
   // set value labels align to right
-  legend.valueLabels.template.setAll({ textAlign: "right" })
+  legend2.valueLabels.template.setAll({ textAlign: "right" })
   // set width and max width of labels
-  legend.labels.template.setAll({ 
+  legend2.labels.template.setAll({ 
     maxWidth: 140,
     width: 140,
     oversizedBehavior: "wrap"
   });
 
-  legend.data.setAll(series.dataItems);
+  legend2.data.setAll(series2.dataItems);
 
   // Play initial series animation
-  series.appear(1000, 100);
+  series2.appear(1000, 100);
 
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -351,21 +344,21 @@ d3.json("/api/v1/cancer_residence_HS").then(function(response) {
     layout: root.horizontalLayout
   }));
   // Creating the series template
-  var series = chart.series.push(am5percent.PieSeries.new(root, {
+  var series3 = chart.series.push(am5percent.PieSeries.new(root, {
     name: "Cancer Status in Rural",
     valueField: "values",
     categoryField: "labels"
   }));
   // Setting the data
-  series.data.setAll(figure3)
+  series3.data.setAll(figure3)
 
   // Disabling labels and ticks
-  series.labels.template.set("visible", false);
-  series.ticks.template.set("visible", false);
+  series3.labels.template.set("visible", false);
+  series3.ticks.template.set("visible", false);
 
   // Adding gradients
-  series.slices.template.set("strokeOpacity", 0);
-  series.slices.template.set("fillGradient", am5.RadialGradient.new(root, {
+  series3.slices.template.set("strokeOpacity", 0);
+  series3.slices.template.set("fillGradient", am5.RadialGradient.new(root, {
     stops: [{
       brighten: -0.8
     }, {
@@ -380,25 +373,24 @@ d3.json("/api/v1/cancer_residence_HS").then(function(response) {
   }));
 
   // Create legend
-  var legend = chart.children.push(am5.Legend.new(root, {
+  var legend3 = chart.children.push(am5.Legend.new(root, {
     centerY: am5.percent(50),
     y: am5.percent(50),
     layout: root.verticalLayout
   }));
   // set value labels align to right
-  legend.valueLabels.template.setAll({ textAlign: "right" })
+  legend3.valueLabels.template.setAll({ textAlign: "right" })
   // set width and max width of labels
-  legend.labels.template.setAll({ 
+  legend3.labels.template.setAll({ 
     maxWidth: 140,
     width: 140,
     oversizedBehavior: "wrap"
   });
 
-  legend.data.setAll(series.dataItems);
+  legend3.data.setAll(series3.dataItems);
 
   // Play initial series animation
-  series.appear(1000, 100);
-
+  series3.appear(1000, 100);
  
 });
 
@@ -409,10 +401,12 @@ function toggleGraph(graphNumber) {
   for (let i = 1; i <= 3; i++) {
     document.getElementById(`graph${i}`).classList.add('hidden');
   }
-  document.getElementById(`graph${graphNumber}`).classList.remove('hidden');
 
   // Show the selected graph
   document.getElementById(`graph${graphNumber}`).classList.remove('hidden');
+  `graph${graphNumber}`.series.appear(1000, 100);
+
+
 }
 
 function enlargeButton(button) {
@@ -422,6 +416,8 @@ function enlargeButton(button) {
 function resetButton(button) {
   button.style.transform = 'scale(1)';
 }
+
+
 
 
 
