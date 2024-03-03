@@ -18,6 +18,22 @@ def main():
     return render_template("index.html")
 
 #################################################################################################################
+##                                            Our Team Page                                                    ##
+#################################################################################################################
+
+@app.route('/OurTeam')
+def ourteam():
+    return render_template("ourteam.html")
+
+#################################################################################################################
+##                                            References Page                                                  ##
+#################################################################################################################
+
+@app.route('/Limitations_References')
+def Limitations_References():
+    return render_template("limitations_references.html")
+
+#################################################################################################################
 ##                                                Mina                                                         ##
 #################################################################################################################
 
@@ -25,9 +41,9 @@ def main():
 def mina_q1():
     return render_template("smoking.html")
 
-@app.route('/mina_q2')
+@app.route('/smoking_race_effect')
 def mina_q2():
-    return render_template("mina_q2.html")
+    return render_template("smoking_race.html")
 
 
 @app.route('/api/v1/Smoker&BC_VS_Non-Smoker&BC', methods=['GET'])

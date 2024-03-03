@@ -4,25 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breast Cancer Research</title>
-    <!-- D3 -->
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <!-- plotly -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- style.css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div id="bar-graph1"></div>
-    <div id="bar-graph2"></div>
-    <div id="bar-graph3"></div>
-    <div id="bar-graph4"></div>
-    <div id="bar-graph5"></div>
-    <div id="pie-chart1" style="width: 45%; display: inline-block;"></div>
-    <div id="pie-chart2" style="width: 45%; display: inline-block;"></div>
-    <div id="pie-chart3" style="width: 45%; display: inline-block;"></div>
-    <div id="pie-chart4" style="width: 45%; display: inline-block;"></div>
-    <div id="pie-chart5" style="width: 45%; display: inline-block;"></div>
-    <div id="pie-chart6" style="width: 45%; display: inline-block;"></div>
-    <script src="{{ url_for('static', filename='js/plots_MB.js') }}"></script>
+
+    <div style="background-color: pink;">
+        <header class="bg-pink black-80 tc pv4 avenir">
+            <h1 class="mt2 mb0 baskerville i fw1 f1">Breast Cancer Research Group</h1>
+        </header>
+    </div>
+        <div style="background-color: gray;">
+            <nav class="bt bb tc mw7 center mt4">
+            <a style="font-weight: bold;" class="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l" href="/">Home</a>
+            <a style="font-weight: bold;" class="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l" href="/OurTeam">Our Team</a>
+            <a style="font-weight: bold;" class="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pa3 ph4-l" href="/Limitations_References">Limitations & References</a>
+            </nav>
+        </div>
     
+    <div class="content-box">
+        <h2 style="margin-bottom: 10px;">Introduction to our page:</h2>
+        <p>Welcome to our webpage, where we delve into a comprehensive analysis rooted in a collaborative study with the COVID-19 and Cancer Consortium (CCC19) registry. Our research focuses on the intersection of COVID-19 and breast cancer (BC) in females, spanning from March 2020 to June 2021. The study involves 1383 female participants diagnosed with breast cancer and confirmed SARS-CoV-2 infection, with a median age of 61 years and a follow-up period of 90 days. To ensure diversity, participants hail from various geographic regions within the United States.</p>
+        <p>Our primary goal is to thoroughly examine the severity of COVID-19 outcomes among females with a history of breast cancer. Utilizing the CCC19 registry, we aim to pinpoint specific factors influencing COVID-19 severity in this unique population. This valuable knowledge is essential for tailoring medical responses and interventions for individuals with breast cancer who contract COVID-19. Explore our research findings, examining the crucial intersection between breast cancer and COVID-19 in females. Our insights provide valuable knowledge for tailoring medical responses and interventions for individuals with breast cancer who faced COVID-19 challenges during that time.</p>
+    </div>
+
+
+    <div class="alert alert-warning" role="alert">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-hand-index-thumb" viewBox="0 0 16 16" style="margin-right: 8px;">
+            <path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 0 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 1 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.118a.5.5 0 0 1-.447-.276l-1.232-2.465-2.512-4.185a.517.517 0 0 1 .809-.631l2.41 2.41A.5.5 0 0 0 6 9.5V1.75A.75.75 0 0 1 6.75 1M8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v6.543L3.443 6.736A1.517 1.517 0 0 0 1.07 8.588l2.491 4.153 1.215 2.43A1.5 1.5 0 0 0 6.118 16h6.302a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5 5 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.6 2.6 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046zm2.094 2.025"/>
+        </svg>
+        Tap on the question you would like to see the analysis for!
+    </div>
+
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="/endpoint1" class="card-link">
+                    <div class="card" style="background-color: #C7DBDA;">
+                        <div class="card-body">
+                            How does the timing and type of their breast cancer treatment affect their COVID-19 outcomes?
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <a href="/smoking_effect" class="card-link">
+                    <div class="card" style="background-color: #FFE1E9;">
+                        <div class="card-body">
+                            Is smoking a factor in severe COVID-19 for individuals with Breast Cancer?
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <a href="/smoking_race_effect" class="card-link">
+                    <div class="card" style="background-color: #FDD7C2;">
+                        <div class="card-body">
+                            Amongst all the races with different BC statuses, is smoking a factor for them to have COVID-19?
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <a href="/endpoint4" class="card-link">
+                    <div class="card" style="background-color: #F6EAC2;">
+                        <div class="card-body">
+                            How does race/ethnicity affect COVID with Breast Cancer?
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <a href="/endpoint5" class="card-link">
+                    <div class="card" style="background-color: #FFB8B1;">
+                        <div class="card-body">
+                            Does obesity and age have an effect on COVID-19 with Breast Cancer?
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <a href="/endpoint6" class="card-link">
+                    <div class="card" style="background-color: #E2F0CB;">
+                        <div class="card-body">
+                            Is the severity of COVID-19 affected if the individuals live in urban, suburban, or rural areas?
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <a href="/endpoint7" class="card-link">
+                    <div class="card" style="background-color: #B5EAD6;">
+                        <div class="card-body">
+                            What is the isolated effect of age on the risk of COVID-19 and Breast Cancer outcomes?
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
 

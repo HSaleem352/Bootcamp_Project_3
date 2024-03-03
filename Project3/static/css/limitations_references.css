@@ -1,0 +1,23 @@
+.navbar.navbar-dark.bg-dark {
+    width:100%;
+}
+
+.content-box1 {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #fff6b3; /* Set a very light green background color for the box */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center; /* Center the text within the box */
+}
+
+.content-box2 {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #f0fff0; /* Set a very light green background color for the box */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center; /* Center the text within the box */
+}
