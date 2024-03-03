@@ -37,7 +37,7 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
   d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
-    var moderate = data.map(x => x.Moderate);
+    var moderate = data.map(x => x.Moderdate);
     var labels = ["point 1", "point 2", "point 3", "point 4"];
   
     var trace = {
