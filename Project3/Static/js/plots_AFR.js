@@ -10,12 +10,9 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
     var labels = ["0-4 Weeks", "1-3 Months", "+3 Months", "Never"];
   
     var trace = {
-      x: labels,
-      y: mild,
-      type: "bar",
-      marker:{
-        color: "rgba(226, 173, 251, 0.8)"
-      },
+      labels: labels,
+      values: mild,
+      type: "pie"
     };
 
     var data = [trace];
@@ -30,7 +27,7 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
       }
       };
   
-    Plotly.newPlot("afr_mild_timing_bar", data, layout);
+    Plotly.newPlot("afr_mild_timing_pie", data, layout);
   
   });
 
@@ -42,11 +39,9 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
     var labels = ["0-4 Weeks", "1-3 Months", "+3 Months", "Never"];
   
     var trace = {
-      x: labels,
-      y: moderate,
-      marker:{
-        color: "rgba(249, 251, 173, 0.8)"},
-        type: "bar"
+      labels: labels,
+      values: moderate,
+      type: "pie"
     };
 
     var data = [trace];
@@ -61,7 +56,7 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
       }
       };
   
-    Plotly.newPlot("afr_moderate_timing_bar", data, layout);
+    Plotly.newPlot("afr_moderate_timing_pie", data, layout);
   
   });
 
@@ -73,11 +68,9 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
     var labels = ["0-4 Weeks", "1-3 Months", "+3 Months", "Never"];
   
     var trace = {
-      x: labels,
-      y: severe,
-      marker:{
-        color: "rgba(173, 230, 251, 0.8)"},
-        type: "bar"
+      labels: labels,
+      values: severe,
+      type: "pie"
     };
 
     var data = [trace];
@@ -92,7 +85,7 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
       }
       };
   
-    Plotly.newPlot("afr_severe_timing_bar", data, layout);
+    Plotly.newPlot("afr_severe_timing_pie", data, layout);
   
   });
 
@@ -161,11 +154,9 @@ d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
   var labels = ["None", "Cyto", "Targeted", "Endo", "Immuno"];
 
   var trace = {
-    x: labels,
-    y: mild,
-    marker:{
-      color: "rgba(226, 173, 251, 0.8)"},
-      type: "bar"
+    labels: labels,
+      values: mild,
+      type: "pie"
   };
 
   var data = [trace];
@@ -180,7 +171,7 @@ d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
     }
     };
 
-  Plotly.newPlot("afr_mild_treatment_bar", data, layout);
+  Plotly.newPlot("afr_mild_treatment_pie", data, layout);
 
 });
 
@@ -188,15 +179,13 @@ d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
 
 d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
 
-  var mild = data.map(x => x.Moderate);
+  var moderate = data.map(x => x.Moderate);
   var labels = ["None", "Cyto", "Targeted", "Endo", "Immuno"];
 
   var trace = {
-    x: labels,
-    y: mild,
-    marker:{
-      color: "rgba(249, 251, 173, 0.8)"},
-      type: "bar"
+    labels: labels,
+    values: moderate,
+    type: "pie"
   };
 
   var data = [trace];
@@ -211,7 +200,7 @@ d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
     }
     };
 
-  Plotly.newPlot("afr_moderate_treatment_bar", data, layout);
+  Plotly.newPlot("afr_moderate_treatment_pie", data, layout);
 
 });
 
@@ -223,11 +212,9 @@ d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
   var labels = ["None", "Cyto", "Targeted", "Endo", "Immuno"];
 
   var trace = {
-    x: labels,
-    y: severe,
-    marker:{
-      color: "rgba(173, 230, 251, 0.8)"},
-      type: "bar"
+    labels: labels,
+    values: severe,
+    type: "pie"
   };
 
   var data = [trace];
@@ -242,7 +229,7 @@ d3.json("/api/v1/afr_treatment_type_df").then(function(data) {
     }
     };
 
-  Plotly.newPlot("afr_severe_treatment_bar", data, layout);
+  Plotly.newPlot("afr_severe_treatment_pie", data, layout);
 
 });
 
