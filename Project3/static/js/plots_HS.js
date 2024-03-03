@@ -1,27 +1,117 @@
+// This will be displayed in api call '/hamza'
+
+
 d3.json("/api/v1/residence_counts").then(function(response) {
 
+  // Read the Data
   var names = response.map(d => d.urban_rural);
-  var values = response.map(d => d.count);
+  var count = response.map(d => d.count);
+  var figure = [];
 
-  var trace = [{
-    values: values,
-    labels: names,
-    domain: {column: 0},
-    hole: .4,
-    type: 'pie'
-  }];
+  for (let i = 0; i < names.length; i++) {
+    figure.push(
+    {labels: names[i], values: count[i]}
+    )
+  }
 
-  var layout = {
-    title: "Distribution of Patients' residence",
+  // var figure = [
+  //   {labels: names[0], values: count[0]},
+  //   {labels: names[1], values: count[1]},
+  //   {labels: names[2], values: count[2]}
+  // ]
 
-      height: 600,
-      width: 600,
+  //Create root element
+  var root = am5.Root.new("HS_pie");
+
+  // Set themes
+  root.setThemes([
+    am5themes_Animated.new(root),
+    //am5themes_Dark.new(root)
+  ]);
+
+  // Create chart
+  var chart = root.container.children.push(am5percent.PieChart.new(root, {
+    radius: am5.percent(90),
+    innerRadius: am5.percent(50),
+    layout: root.horizontalLayout
+  }));
+  // Creating the series template
+  var series = chart.series.push(am5percent.PieSeries.new(root, {
+    name: "Residence",
+    valueField: "values",
+    categoryField: "labels"
+  }));
+  // Setting the data
+  series.data.setAll(figure)
+
+  // Disabling labels and ticks
+  series.labels.template.set("visible", false);
+  series.ticks.template.set("visible", false);
+
+  // Adding gradients
+  series.slices.template.set("strokeOpacity", 0);
+  series.slices.template.set("fillGradient", am5.RadialGradient.new(root, {
+    stops: [{
+      brighten: -0.8
+    }, {
+      brighten: -0.8
+    }, {
+      brighten: -0.5
+    }, {
+      brighten: 0
+    }, {
+      brighten: -0.5
+    }]
+  }));
+
+  // Create legend
+  var legend = chart.children.push(am5.Legend.new(root, {
+    centerY: am5.percent(50),
+    y: am5.percent(50),
+    layout: root.verticalLayout
+  }));
+  // set value labels align to right
+  legend.valueLabels.template.setAll({ textAlign: "right" })
+  // set width and max width of labels
+  legend.labels.template.setAll({ 
+    maxWidth: 140,
+    width: 140,
+    oversizedBehavior: "wrap"
+  });
+
+  legend.data.setAll(series.dataItems);
+
+  // Play initial series animation
+  series.appear(1000, 100);
+
+
+  // var names = response.map(d => d.urban_rural);
+  // var values = response.map(d => d.count);
+
+  // var trace = [{
+  //   values: values,
+  //   labels: names,
+  //   domain: {column: 0},
+  //   hole: .4,
+  //   type: 'pie'
+  // }];
+
+  // var layout = {
+  //   title: "Distribution of Patients' residence",
+
+  //     height: 600,
+  //     width: 600,
       
-    };
+  //   };
 
-  Plotly.newPlot("HS_pie", trace, layout);
+  // Plotly.newPlot("HS_pie", trace, layout);
 
 });
+
+
+
+
+
 
 
 d3.json("/api/v1/severity_residence_HS").then(function(response) {

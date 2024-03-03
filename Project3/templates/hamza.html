@@ -8,9 +8,18 @@
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <!-- plotly -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- amcharts library -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <!-- <script src="//cdn.amcharts.com/lib/5/themes/Dark.js"></script> -->
+    <!-- styling css for hamza branch -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling_HS.css') }}">
+
 </head>
 <body>
     <div id="HS_pie"></div>
+
     <div id="HS_severity_bar"></div>
     <div id="HS_cancer_urban"></div>
     <div id="HS_cancer_suburban"></div>
