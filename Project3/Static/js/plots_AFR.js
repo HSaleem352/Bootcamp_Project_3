@@ -95,6 +95,54 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
   
   });
 
+  d3.json("/api/v1/AFR_timing_df").then(function(data) {
+
+    var combined_mild = data.map(x => x.Mild);
+    var combined_mod = data.map(x => x.Moderate);
+    var combined_sev = data.map(x => x.Severe)
+    var labels = ["point 1", "point 2", "point 3", "point 4"];
+  
+    var trace_mild = {
+      x: labels,
+      y: combined_mild,
+      marker:{
+        color: "blue"},
+        type: "bar"
+    };
+
+    var trace_mod = {
+      x: labels,
+      y: comvbined_mod,
+      marker:{
+        color: "blue"},
+        type: "bar"
+    };
+
+    var trace_sev = {
+      x: labels,
+      y: combined_sev,
+      marker:{
+        color: "blue"},
+        type: "bar"
+    };
+
+    var data = [trace_mild, trace_mod, trace_sev];
+  
+    var layout = {
+      barmode: "group",
+      title: "Mild Covid Outcomes at Each Time Point",
+      margin: {
+        l: 200,
+        r: 200,
+        t: 200,
+        b: 200,
+      }
+      };
+  
+    Plotly.newPlot("afr_mild_timing_bar", data, layout);
+  
+  });
+
 // #################################################################################################################
 // ##                                                Treatment Type                                               ##
 // #################################################################################################################
