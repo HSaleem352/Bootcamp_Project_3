@@ -29,9 +29,9 @@ def ourteam():
 ##                                            References Page                                                  ##
 #################################################################################################################
 
-@app.route('/References')
-def references():
-    return render_template("references.html")
+@app.route('/Limitations_References')
+def Limitations_References():
+    return render_template("limitations_references.html")
 
 #################################################################################################################
 ##                                                Mina                                                         ##
