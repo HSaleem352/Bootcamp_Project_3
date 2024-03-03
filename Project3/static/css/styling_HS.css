@@ -2,7 +2,42 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
   
-  #HS_pie {
-    width: 100%;
-    height: 500px;
-  }
+.figure1_container{
+  width: 100%; /* Adjust the width as needed */
+  height: 100vh;
+  margin: auto;
+  border-top-right-radius: 70px;
+  transform-origin: left top;
+  transform: skewX(-12deg);
+  background-color: #E2F0CB;
+  /* overflow: hidden; */
+  /* display: inline-box; */
+  
+}
+
+.residence_title {  
+  height: 50vh;
+  width: 50vw;
+  font-size: 1em; 
+  left: 30%;
+  top: 80%;
+  /* font-family: 'Your Desired Font', 'Times New Roman', Times, serif;
+  color: black; */
+  position:absolute;
+}
+
+.residence_title h1 {
+  color: black;
+  font-family: 'Your Desired Font', 'Times New Roman', Times, serif;
+  
+}
+
+
+#residence_pie {
+  /* display: block; */
+  width: 80vw;
+  height: 80vh; 
+  transform-origin: left top; 
+  transform: skewX(12deg);
+  
+}

@@ -14,20 +14,22 @@ d3.json("/api/v1/residence_counts").then(function(response) {
     )
   }
 
-  // var figure = [
-  //   {labels: names[0], values: count[0]},
-  //   {labels: names[1], values: count[1]},
-  //   {labels: names[2], values: count[2]}
-  // ]
-
   //Create root element
-  var root = am5.Root.new("HS_pie");
+  var root = am5.Root.new("residence_pie");
 
   // Set themes
   root.setThemes([
     am5themes_Animated.new(root),
-    //am5themes_Dark.new(root)
   ]);
+
+  // setting colors
+  // series.get("colors").set("colors", [
+  //   am5.color(0x095256),
+  //   am5.color(0x087f8c),
+  //   am5.color(0x5aaa95),
+  //   am5.color(0x86a873),
+  //   am5.color(0xbb9f06)
+  // ]);
 
   // Create chart
   var chart = root.container.children.push(am5percent.PieChart.new(root, {
@@ -80,6 +82,13 @@ d3.json("/api/v1/residence_counts").then(function(response) {
   });
 
   legend.data.setAll(series.dataItems);
+
+  // // Add chart title
+  // var title = chart.titles();
+  // title.text = "Distribution of Patients' Residence";
+  // title.fontSize = 25;
+  // title.marginBottom = 30;
+
 
   // Play initial series animation
   series.appear(1000, 100);

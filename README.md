@@ -36,6 +36,7 @@ Nagaraj, G., Khaki, A., & Shah, D. (2023). Covid-19 and Cancer Consortium (CCC19
 ## References
 creating postgresql engine: https://stackoverflow.com/questions/62688256/sqlalchemy-exc-nosuchmoduleerror-cant-load-plugin-sqlalchemy-dialectspostgre
 listing all tables in postgres using SQLAlchemy: https://www.pythonsheets.com/notes/python-sqlalchemy.html
+visual for amcharts: https://www.amcharts.com/demos/donut-with-radial-gradient/
 
 
 
