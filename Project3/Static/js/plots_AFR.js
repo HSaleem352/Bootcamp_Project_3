@@ -6,7 +6,7 @@
 
 d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
-    var mild = data.Mild;
+    var mild = data.map(x => x.Mild);
     var labels = ["point 1", "point 2", "point 3", "point 4"];
   
     var trace = {
@@ -37,7 +37,7 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
   d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
-    var moderate = data.Moderate;
+    var moderate = data.map(x => x.Moderate);
     var labels = ["point 1", "point 2", "point 3", "point 4"];
   
     var trace = {
@@ -68,7 +68,7 @@ d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
   d3.json("/api/v1/AFR_timing_df").then(function(data) {
 
-    var severe = data.Severe;
+    var severe = data.map(x => x.Severe);
     var labels = ["point 1", "point 2", "point 3", "point 4"];
   
     var trace = {
