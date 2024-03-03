@@ -1,5 +1,14 @@
+.navbar.navbar-dark.bg-dark {
+  width:100%;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    display: flex;
+    flex-direction: column; /* Make the body a flex container with a vertical direction */
+    align-items: center;
+    justify-content: center;
+    margin: 0;
   }
   
 .figure1_container{
@@ -31,7 +40,6 @@ body {
   font-family: 'Your Desired Font', 'Times New Roman', Times, serif;
   
 }
-
 
 #residence_pie {
   /* display: block; */
