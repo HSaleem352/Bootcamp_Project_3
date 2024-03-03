@@ -1,0 +1,35 @@
+.navbar.navbar-dark.bg-dark {
+    width:100%;
+}
+
+#myCarousel{
+    width:100%;
+    }
+    
+.carousel-item.active, .carousel-item{
+    width: 100%; /* Make sure the containers take the full width */
+    height: 100vh;
+}
+
+.carousel-caption.text-start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust the height based on your design */
+}
+
+.carousel-caption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust the height based on your design */
+}
+.carousel-inner {
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    align-self: center;
+    filter: invert(1) grayscale(100%);
+}
