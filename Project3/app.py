@@ -160,7 +160,7 @@ def severity_residence_HS():
 ###############################################################################################################
 
 @app.route('/api/v1/AFR_timing_df', methods=['GET'])
-def afr_timing_df():
+def AFR_timing_df():
 
     # Read CSV file using pandas
     df = pd.read_csv('https://drive.google.com/uc?id=1FE-JYKjod8YGo71-E37W3UpDq8nL3UyU&export=download')
@@ -177,7 +177,7 @@ def afr_treatment_type_df():
     df = pd.read_csv("https://drive.google.com/uc?id=1uDqbe24GtHw7ctzsdma_r4-wGPVUFevh&export=download")
 
     # Convert DataFrame to JSON
-    json_data = df.to_json(orient="recods")
+    json_data = df.to_json(orient="records")
 
     return json_data
 
