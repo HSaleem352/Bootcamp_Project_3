@@ -14,49 +14,47 @@
 
 
 <body>
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <div class="numbertext"> Mild</div>
-      <div id="afr_mild_timing_pie" style="width:100%"></div>
-      <div class="text"> Mild Covid Outcomes at Different times</dive>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">Moderate</div>
-      <div id="afr_moderate_timing_pie" style="width:100%"></div>
-      <div class="text">Moderate covid outcomes at different times</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">Severe</div>
-      <div id="afr_severe_timing_pie" style="width: 100%;"></div>
-      <div class="text">Severe covid outcomes at different time points</div>
+
+  <div class="afr_title">
+      <h1>How the number of mild, moderate, and severe covid outcomes changes as the timing of BC treatment changes </h1>
+  </div>
+  <div class="afr_text_description">
+      <p>I am hypothesizing that the closer the cancer treatment was given to COVID-19 infection, the more likely the patients are to have moderate or severe COVID-19 outcomes</p>
+  </div>
+  <div id="afr_timing_bar_grouped"></div>
+  <div class="afr_dropdown">
+    <button class="dropbtn", style="justify-content: center;">Pie Charts: Timing of BC Treatment by Covid Outcomes</button>
+    <div class="dropdown-content">
+      <button class="timing_mild_btn">Timing of BC Treatment - Mild Covid Outcomes Pie Chart</button>
+      <button class="selectionbtn">Timing of BC Treatment - Moderate Covid Outcomes Pie Chart</button>
+      <button class="selectionbtn">Timing of BC Treatment - Severe Covid Outcomes Pie Chart</button>
     </div>
   </div>
-  <script>
-    let slideIndex=1;
-    showSlides(slideIndex);
+<div id="afr_mild_timing_pie"></div>
+<div id="afr_moderate_timing_pie"></div>
+<div id="afr_severe_timing_pie"></div>
 
-    function plusSlides(n) {
-      showSlides(slideIndex +=n);
-    }
+<div class="afr_title">
+    <h1>How the number of mild, moderate, and severe covid outcomes changes based on the type of BC Treatment </h1>
+</div>
+<div class="afr_text_description">
+    <p>Cancer treatments can affect the immune system and its ability to respond to infection.</p>
+    <p>According to the American Cancer Society, cancer treatments like chemotherapy and radiation therapy can cause a decrease in the number of white blood cells and thus decrease the body's capacity to respond to infection.</p>
+    <p>Additionally, targeted therapy and immunotherapy are used to improve the immune system's ability to attack cancer cells, but can compromise their ability to fight off infections</p>
+    <p>In this analysis, I am looking at how the type of cancer treatment affects the severity of Covid by potentially compromising the immune system and its ability to respond to infection</p>
+</div>
+<div id="afr_treatment_bar_grouped"></div>
+<div class="afr_dropdown">
+    <button class="dropbtn", style="justify-content: center;">Pie Charts: Type of BC Treatment by Covid Outcomes</button>
+    <div class="dropdown-content">
+      <button class="selectionbtn">Type of Treatment - Mild Covid Outcomes Pie Chart</button>
+      <button class="selectionbtn">Type of Treatment - Moderate Covid Outcomes Pie Chart</button>
+      <button class="selectionbtn">Type of Treatment - Severe Covid Outcomes Pie Chart</button>
+</div>
+<div id="afr_mild_treatment_pie"></div>
+<div id="afr_moderate_treatment_pie"></div>
+<div id="afr_severe_treatment_pie"></div>
 
-    function showSlides(n){
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsbyClassName('dot');
-      if(n > slides.length) {slidesIndex=1}
-      if(n<1) {slideIndex=slides.length}
-      for (i=0; i<slides.length; i++) {
-        slides[i].style.display = 'none';
-      }
-      for (i=0; i<dots.length; i++) {
-        dots[i].className=dots[i].className.replace("avtive", "");
-      }
-      slides[slidesIndex-1].style.display = "block";
-      dots[slidesIndex-1].className += "active";
-    }
-  </script>
-  <script src="{{ url_for('static', filename='js/plots_AFR.js') }}"></script>
+<script src="{{ url_for('static', filename='js/plots_AFR.js') }}"></script>
 </body>
 </html>
