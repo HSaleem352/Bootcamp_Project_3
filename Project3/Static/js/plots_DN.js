@@ -371,6 +371,24 @@ function animateCovCDF() {
                     yaxis: {
                         range: [0, 1.001]
                     },
+annotations: [
+{
+    x: 35,
+    y: 0.8,
+    xref: 'x',
+    yref: 'y',
+    text: 'Ages follow a<br><em>Normal Distribution</em>(<i>t=43.58, p=3.4358e-10</i>)<br><i>mean=61.31<br>std=14.56</i>',
+    showarrow: false,
+    arrowhead: 7,
+    ax: 30,
+    ay: -65,
+    font: {
+        color: "#169489",
+        size: 14,
+    },
+    align: "left"
+}
+]
                 }
             }
             Plotly.animate('density-covid', {
