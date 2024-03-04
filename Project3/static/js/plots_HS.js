@@ -390,20 +390,6 @@ function toggleGraph(graphNumber) {
   show(document.getElementById(`g_container${graphNumber}`) );
   show(document.getElementById(`graph${graphNumber}`) );
   show(document.getElementById(`g${graphNumber}_title`) );
-  
-
-
-
-  // for (let i = 1; i <= 3; i++) {
-  //   document.getElementById(`g_container${i}`).classList.add('hidden');
-  //   document.getElementById(`graph${i}`).classList.add('hidden');
-  //   document.getElementById(`g${i}_title`).classList.add('hidden');
-  // }
-  
-  // // Show the selected graph
-  // document.getElementById(`g_container${graphNumber}`).classList.remove('hidden');
-  // document.getElementById(`graph${graphNumber}`).classList.remove('hidden');
-  // document.getElementById(`g${graphNumber}_title`).classList.remove('hidden');
 
 }
 
@@ -415,12 +401,6 @@ function showAll() {
     show(document.getElementById(`g${i}_title`) );
 } 
 
-  // document.getElementById('graph1').classList.remove('hidden');
-  // document.getElementById('graph2').classList.remove('hidden');
-  // document.getElementById('graph3').classList.remove('hidden');
-  // document.getElementById('g1_title').classList.remove('hidden');
-  // document.getElementById('g2_title').classList.remove('hidden');
-  // document.getElementById('g3_title').classList.remove('hidden');
   
 }
 
@@ -433,70 +413,3 @@ function resetButton(button) {
 }
 
 
-
-
-
-
-
-
-// var labels = response.map(d => d.der_cancer_status_v4);
-//   var urban = response.map(d => d.urban);
-//   var suburban = response.map(d => d.suburban);
-//   var rural = response.map(d => d.rural);
-
-//   var trace1 = [{
-//     values: urban,
-//     labels: labels,
-//     domain: {column: 0},
-//     name: 'Urban',
-//     hole: .4,
-//     type: 'pie'
-//   }];
-
-//   var layout1 = {
-//     title: "Cancer stages in Urban Area",
-
-//       height: 800,
-//       width: 800,
-      
-//     };
-
-//     Plotly.newPlot("graph1", trace1, layout1);
-
-//   var trace2 = [{
-//     values: suburban,
-//     labels: labels,
-//     domain: {column: 0},
-//     name: 'Suburban',
-//     hole: .4,
-//     type: 'pie'
-//   }];
-
-//   var layout2 = {
-//     title: "Cancer stages in Suburban Area",
-
-//       height: 800,
-//       width: 800,
-      
-//     };
-
-//   Plotly.newPlot("graph2", trace2, layout2);
-
-//   var trace3 = [{
-//     values: rural,
-//     labels: labels,
-//     domain: {column: 0},
-//     name: 'Rural',
-//     hole: .4,
-//     type: 'pie'
-//   }];
-
-//   var layout3 = {
-//     title: "Cancer stages in Rural Area",
-
-//       height: 800,
-//       width: 800,
-      
-//     };
-
-//   Plotly.newPlot("graph3", trace3, layout3);
