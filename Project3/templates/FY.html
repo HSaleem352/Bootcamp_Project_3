@@ -14,6 +14,9 @@
     <script src="{{ url_for('static', filename='js/plots_FY.js') }}"></script>
     <!-- <link rel="stylesheet" href="/Project3/static/css/styling_FY.css"> -->
 
+    <!-- plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
 
 </head>
 
@@ -24,18 +27,20 @@
        
 
         <!-- Histogram Container -->
-        <div id="histogram-container" class="visualization-container">
+        <!-- <div id="histogram-container" class="visualization-container">
             <h2>COVID-19 Severity Distribution</h2>
-        </div>
+        </div> -->
 
         <!-- Bar Chart Container -->
-        <div id="bar-chart-container" class="visualization-container">
+        <!-- <div id="bar-chart-container" class="visualization-container">
             <h2>Obesity Distribution</h2>
-        </div>
+
+            class="visualization-container"
+        </div> -->
 
         <!-- Boxplot Container -->
-        <div id="boxplot-container" class="visualization-container">
-            <h2>Age Distribution by Cancer Status</h2>
+        <div id="boxplot-container">
+            <!-- <h2>Age Distribution by Cancer Status</h2> -->
         </div>
 
         

@@ -2,10 +2,16 @@ body {
     padding: 20px;
 }
 
-.visualization-container {
+/* .visualization-container {
     margin-bottom: 30px;
+} */
+
+#boxplot-container{
+    height: 800px;
+    width: 100%;
 }
 
+/* }
 h2 {
     margin-bottom: 15px;
-}
+} */
