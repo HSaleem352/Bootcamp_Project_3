@@ -1,6 +1,4 @@
-let url = '/api/v1/race_counts'
-
-
+url = '/api/v1/race_counts'
 d3.json(url).then(function(data) {
    console.log(data)
     var trace1 = [{
@@ -17,7 +15,43 @@ d3.json(url).then(function(data) {
     };
 
     // create graph
-    Plotly.newPlot('race_counts', trace1, layout);
+    Plotly.newPlot('race_counts-pie-chart', trace1, layout);
 });
 
 console.log('3333444')
+
+
+let url2 = '/api/v1/covid_severity_count_by_race'
+d3.json(url2).then(function(data) {
+    let trace2 = [
+        {
+            x: data.map(d => d.Race),
+            y: data.map(d => d.Mild),
+            name: 'Mild',
+            type: 'bar'
+        },
+        {
+            x: data.map(d => d.Race),
+            y: data.map(d => d.Moderate),
+            name: 'Moderate',
+            type: 'bar'
+        },
+        {
+            x: data.map(d => d.Race),
+            y: data.map(d => d.Severe),
+            name: 'Severe',
+            type: 'bar'
+        }
+    ];
+
+    
+    let layout = {
+        barmode: 'stack',
+        title: 'COVID-19 Severity by Race',
+        xaxis: {title: 'Race'},
+        yaxis: {title: 'Number of Cases'}
+    };
+
+    
+    Plotly.newPlot('covid-severity-bar-chart', trace2, layout);
+});
