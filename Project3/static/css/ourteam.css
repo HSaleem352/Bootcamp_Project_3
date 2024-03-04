@@ -55,3 +55,28 @@ body {
     object-fit: cover;
     margin-bottom: 10px;
 }
+
+.icon-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-link:hover {
+    color: inherit;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 8px; /* Adjust spacing between icons and text */
+    width: 24px; /* Set the width of the icons */
+    height: 24px; /* Set the height of the icons */
+}
+
+.icon-link:hover span {
+    color: navy;
+    font-weight: bold;
+  }
