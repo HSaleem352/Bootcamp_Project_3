@@ -124,12 +124,12 @@ d3.json('/api/v1/MildCov_BC_Smoker_NonSmoker_DF').then(function(data) {
     barmode: 'group',
     title: 'Mild-COVID with BC & Smoker VS. Mild-COVID with BC & Non-Smoker',
     titlefont: {
-      size: 14  // Adjust the title font size as needed
+      size: 14  // Adjust the title font size
     },
     xaxis: {
       title: 'COV_BC_Status',  // Add x-axis title
       tickfont: {
-        size: 6  // Adjust the label font size as needed
+        size: 6  // Adjust the label font size
     }
     },
     yaxis: {
@@ -176,12 +176,12 @@ d3.json('/api/v1/ModerateCov_BC_Smoker_NonSmoker_DF').then(function(data) {
     barmode: 'group',
     title: 'Moderate-COVID with BC & Smoker VS. Moderate-COVID with BC & Non-Smoker',
     titlefont: {
-      size: 14  // Adjust the title font size as needed
+      size: 14  // Adjust the title font size
     },
     xaxis: {
       title: 'COV_BC_Status', // Add x-axis title
       tickfont: {
-        size: 6  // Adjust the label font size as needed
+        size: 6  // Adjust the label font size
     }
     },
     yaxis: {

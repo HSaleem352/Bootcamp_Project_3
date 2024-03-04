@@ -6,10 +6,12 @@ body {
     margin: 0;
 }
 
+/* Navbar */
 .navbar.navbar-dark.bg-dark {
     width:100%;
 }
 
+/* Carousel */
 #myCarousel{
     width:100%;
     }
@@ -23,14 +25,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Adjust the height based on your design */
+    height: 100vh; /* Adjust the height */
 }
 
 .carousel-caption{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Adjust the height based on your design */
+    height: 100vh; /* Adjust the height */
 }
 .carousel-inner {
     align-items: center;
@@ -42,9 +44,12 @@ body {
     filter: invert(1) grayscale(100%);
 }
 
+/* Alert */
 .alert.alert-primary.d-flex.align-items-center {
     width: 100%;
 }
+
+/* Flip Cards */
 .card-container {
     perspective: 1000px;
 }

@@ -7,10 +7,12 @@ body {
     margin: 0;
 }
 
+/* Navbar */
 .navbar.navbar-dark.bg-dark {
     width: 100%;
 }
 
+/* Team cards */
 .big-card {
     background-color: #ceb5b7;  /* Light pink color */
     border-radius: 20px;  /* Rounded edges for the big card */
@@ -56,6 +58,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* LinkedIn & Github Icons */
 .icon-link {
     text-decoration: none;
     color: inherit;

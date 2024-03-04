@@ -1,3 +1,4 @@
+/* Title & Navbar */
 .ba {
     border-style: solid;
 }
@@ -172,6 +173,7 @@
     }
 }
 
+/* Introduction */
 .content-box {
     margin: 20px auto;
     padding: 20px;
@@ -182,11 +184,13 @@
     text-align: center; /* Center the text within the box */
 }
 
+/* Alert */
 .alert-warning {
     text-align: center; /* Center the text within the alert box */
     color: black; /* Set the font color to black */
 }
 
+/* Question Cards */
 .card-container {
     margin-top: 1rem;
     margin-bottom: 1rem;

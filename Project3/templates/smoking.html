@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/smoking.css') }}">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark" aria-label="First navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Smoking Effect</a>
@@ -36,6 +37,8 @@
           </div>
         </div>
     </nav>
+
+    <!-- Carousel -->
     <div class="carousel slide mb-6 pointer-event" id="myCarousel" data-bs-ride="carousel">
         <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
@@ -68,6 +71,8 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
+
+    <!-- Alert -->
     <div class="alert alert-primary d-flex align-items-center justify-content-center" role="alert" style="font-size: 24px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
@@ -76,6 +81,8 @@
           Tap on the graphs for explanation!
         </div>
       </div>
+    
+    <!-- Bar Graphs Flip Cards -->
     <div class="container mt-4">
         <div class="row">
             <!-- Flip card for bar-graph1 (left side) -->
@@ -138,18 +145,20 @@
             </div>
         </div>
     </div>
+
+    <!-- Conclusion -->
     <div style="background-color: lavender; color: black; padding: 15px; border-radius: 8px; margin: 10px 0; width: 100%;">
         <h2 style="margin-bottom: 10px;">Conclusion</h2>
         <p>
-            
-The initial hypothesis posited for this experiment was that "Individuals who smoke and have Breast Cancer have a higher chance of having severe COVID compared to those who do not smoke." However, upon careful examination of the bar graphs and the conducted analysis, it is evident that smoking does not exert an influence on the severity of COVID-19 for individuals with breast cancer.
-
-It's crucial to acknowledge that the dataset lacks a detailed exploration into the smoking history of individuals, merely categorizing them as smokers or non-smokers. Additionally, within the dataset, the overall count of smokers is lower than that of non-smokers, potentially impacting the outcome of this analysis.
+        The initial hypothesis posited for this experiment was that "Individuals who smoke and have Breast Cancer have a higher chance of having severe COVID compared to those who do not smoke." However, upon careful examination of the bar graphs and the conducted analysis, it is evident that smoking does not exert an influence on the severity of COVID-19 for individuals with breast cancer.
+        It's crucial to acknowledge that the dataset lacks a detailed exploration into the smoking history of individuals, merely categorizing them as smokers or non-smokers. Additionally, within the dataset, the overall count of smokers is lower than that of non-smokers, potentially impacting the outcome of this analysis.
         </p>
     </div>
     
+    <!-- Plots -->
     <script src="{{ url_for('static', filename='js/plots_MB.js') }}"></script>
 
+    <!-- Flip Cards -->
     <script>
         function flipCard(card) {
             card.classList.toggle('flipped');

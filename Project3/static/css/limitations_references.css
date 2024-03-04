@@ -1,7 +1,9 @@
+/* Navbar */
 .navbar.navbar-dark.bg-dark {
     width:100%;
 }
 
+/* Limitations */
 .content-box1 {
     margin: 20px auto;
     padding: 20px;
@@ -12,6 +14,7 @@
     text-align: center; /* Center the text within the box */
 }
 
+/* References */
 .content-box2 {
     margin: 20px auto;
     padding: 20px;
