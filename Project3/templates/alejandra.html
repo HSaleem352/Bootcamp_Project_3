@@ -9,7 +9,7 @@
     <!-- plotly -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- css -->
-    <link rel="stylesheet" href="/Project3/Static/css/afr_style.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/afr_style.css') }}">
 </head>
 
 
@@ -22,7 +22,7 @@
     </div>
     <div id="afr_timing_bar_grouped"></div>
     <div class="afr_dropdown_timing">
-        <button class="dropbtn">Dive Deeper</button>
+        <button class="dropbtn">Pie Charts</button>
         <div class="dropdown-content">
           <p>Mild</p>
           <p>Moderate</p>
