@@ -404,12 +404,5 @@ function showAll() {
   
 }
 
-function enlargeButton(button) {
-  button.style.transform = 'scale(1.05)';
-}
-
-function resetButton(button) {
-  button.style.transform = 'scale(1)';
-}
 
 

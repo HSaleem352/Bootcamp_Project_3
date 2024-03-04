@@ -28,7 +28,7 @@
 <body>
     <nav class="navbar navbar-dark bg-dark" aria-label="First navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Smoking Effect</a>
+        <a class="navbar-brand" href="#">Residence Type Effect</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars_HS" aria-controls="navbars_HS" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,14 +63,19 @@
 
     <div id="HS_severity_bar"></div>
 
+    
+    <div id="outer">
 
-    <button onmouseleave="resetButton(this)" onmouseenter="enlargeButton(this)" onclick="toggleGraph(1)">Urban</button>
+        <button  onclick="showAll()" class = "buttons">Show All</button>
 
-    <button onmouseleave="resetButton(this)" onmouseenter="enlargeButton(this)" onclick="toggleGraph(2)">Suburban</button>
+        <button  onclick="toggleGraph(1)" class = "buttons" >Urban</button>
 
-    <button onmouseleave="resetButton(this)" onmouseenter="enlargeButton(this)" onclick="toggleGraph(3)">Rural</button>
+        <button  onclick="toggleGraph(2)" class = "buttons">Suburban</button>
 
-    <button onmouseleave="resetButton(this)" onmouseenter="enlargeButton(this)" onclick="showAll()">Show All</button>
+        <button  onclick="toggleGraph(3)" class = "buttons" >Rural</button>
+ 
+    </div>
+    
     
     <!-- this is urban -->
     <div id="g_container1">
