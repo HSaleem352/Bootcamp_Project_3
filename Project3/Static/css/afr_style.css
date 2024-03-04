@@ -35,7 +35,7 @@
   /* #dropdown-content p:hover {background-color: #ddd;} */
   
   /* Show the dropdown menu on hover */
-  /* #afr_dropdown_timing:hover .dropdown-content {display: block;} */
+  #afr_dropdown_timing:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  /* #afr_dropdown_timing:hover .dropbtn {background-color: #3e8e41;}  */
+  #afr_dropdown_timing:hover .dropbtn {background-color: #3e8e41;} 
