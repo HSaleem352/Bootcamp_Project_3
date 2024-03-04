@@ -1,7 +1,9 @@
-// Use D3 to fetch data from the API endpoint
-d3.json('/api/v1/race_counts').then(function(data) {
+let url = '/api/v1/race_counts'
+
+
+d3.json(url).then(function(data) {
    console.log(data)
-    var plotData = [{
+    var trace1 = [{
         values: data.map(d => d.value),
         labels: data.map(d => d.category),
         type: 'pie'
@@ -15,7 +17,7 @@ d3.json('/api/v1/race_counts').then(function(data) {
     };
 
     // create graph
-    Plotly.newPlot('Race_Distribution_in_the_study', plotData, layout);
+    Plotly.newPlot('race_counts', trace1, layout);
 });
 
 console.log('3333444')

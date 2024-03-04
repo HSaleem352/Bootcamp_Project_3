@@ -201,6 +201,18 @@ def afr_treatment_type_df():
 ##                                                  Shan                                                       ##
 #################################################################################################################
 
+@app.route('/api/v1/race_counts', methods=['GET'])
+def get_data1_shan():
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('race_counts',connection)
+
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    # return json_data
+    return render_template("shan_q.html")
+
 
 # @app.route('/api/v1/percentage_df', methods=['GET'])
 # def get_data1_shan():
@@ -250,16 +262,7 @@ def get_data4_shan():
     return json_data
 
 
-@app.route('/api/v1/race_counts', methods=['GET'])
-def get_data6_shan():
-    # Read Dataframe using SQL
-    with engine.connect() as connection:
-        df = pd.read_sql('race_counts',connection)
 
-    # Convert DataFrame to JSON
-    json_data = df.to_json(orient='records')
-
-    return render_template("shan_q.html")
 
 
 #################################################################################################################
