@@ -97,7 +97,7 @@ d3.json('/api/v1/MildCov_BC_Smoker_NonSmoker_DF').then(function(data) {
   // Extract the required data for the bar graph
   var NonSmoker_BC_MildCov_Count = data.map(d => d.NonSmoker_BC_MildCov_Count);
   var Smoker_BC_MildCov_Count = data.map(d => d.Smoker_BC_MildCov_Count);
-  var labels = ["Mild", "Moderate", "Severe"];
+  var labels = ["Mild COVID & Active and responding", "Mild COVID & Active and stable", "Mild COVID & Active and progressing"];
 
   // Create a bar graph using Plotly
   var trace1 = {
@@ -123,8 +123,14 @@ d3.json('/api/v1/MildCov_BC_Smoker_NonSmoker_DF').then(function(data) {
   var layout = {
     barmode: 'group',
     title: 'Mild-COVID with BC & Smoker VS. Mild-COVID with BC & Non-Smoker',
+    titlefont: {
+      size: 14  // Adjust the title font size as needed
+    },
     xaxis: {
-      title: 'COV_BC_Status'  // Add x-axis title
+      title: 'COV_BC_Status',  // Add x-axis title
+      tickfont: {
+        size: 6  // Adjust the label font size as needed
+    }
     },
     yaxis: {
       title: 'Number of Smokers_BC_COVID & Non-Smokers_BC_COVID'  // Add y-axis title
