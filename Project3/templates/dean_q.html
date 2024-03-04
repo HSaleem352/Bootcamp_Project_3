@@ -12,12 +12,12 @@
 </head>
 <body>
     <div id="boxplot-cancer" class="column"></div>
-    <button onclick="plots_DN:animate_joint_can_desntiy();" class="button">Joint Distribution</button>
-    <button onclick="plots_DN:animate_disjoint_can_density();" class="button">Marginal Distribution</button>
+    <button onclick="plots_DN:animateJointCanDesntiy();" class="button">Joint Distribution</button>
+    <button onclick="plots_DN:animateDisjointCanDensity();" class="button">Marginal Distributions (default)</button>
     <div id="density-cancer" class="column"></div>
     <div id="boxplot-covid" class="column"></div>
-    <button onclick="plots_DN:animate_joint_cov_desntiy();" class="button">Joint Distribution</button>
-    <button onclick="plots_DN:animate_disjoint_cov_density();" class="button">Marginal Distribution</button>
+    <button onclick="plots_DN:animateCovCDF();" class="button">Empirical CDF</button>
+    <button onclick="plots_DN:animateDisjointCovDensity();" class="button">Empirical PDF (default)</button>
     <div id="density-covid" class="column"></div>
     <script src="{{ url_for('static', filename='js/plots_DN.js') }}"></script>
 </body>
