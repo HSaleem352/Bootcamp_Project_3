@@ -202,16 +202,16 @@ def afr_treatment_type_df():
 #################################################################################################################
 
 
-@app.route('/api/v1/percentage_df', methods=['GET'])
-def get_data1_shan():
-    # Read Dataframe using SQL
-    with engine.connect() as connection:
-        df = pd.read_sql('percentage_df',connection)
+# @app.route('/api/v1/percentage_df', methods=['GET'])
+# def get_data1_shan():
+#     # Read Dataframe using SQL
+#     with engine.connect() as connection:
+#         df = pd.read_sql('percentage_df',connection)
 
-    # Convert DataFrame to JSON
-    json_data = df.to_json(orient='records')
+#     # Convert DataFrame to JSON
+#     json_data = df.to_json(orient='records')
 
-    return json_data
+#     return render_template("shan_q.html")
 
 
 @app.route('/api/v1/cancer_status_sum', methods=['GET'])
@@ -250,18 +250,6 @@ def get_data4_shan():
     return json_data
 
 
-@app.route('/api/v1/race_counts_percentage', methods=['GET'])
-def get_data5_shan():
-    # Read Dataframe using SQL
-    with engine.connect() as connection:
-        df = pd.read_sql('race_counts_percentage',connection)
-
-    # Convert DataFrame to JSON
-    json_data = df.to_json(orient='records')
-
-    return json_data
-
-
 @app.route('/api/v1/race_counts', methods=['GET'])
 def get_data6_shan():
     # Read Dataframe using SQL
@@ -271,7 +259,7 @@ def get_data6_shan():
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
 
-    return json_data
+    return render_template("shan_q.html")
 
 
 #################################################################################################################
