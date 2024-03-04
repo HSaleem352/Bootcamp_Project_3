@@ -1,5 +1,6 @@
 // This will be displayed in api call '/hamza'
-
+const hide = el => el.style.setProperty("display", "none");
+const show = el => el.style.setProperty("display", "block");
 
 d3.json("/api/v1/residence_counts").then(function(response) {
 
@@ -377,26 +378,50 @@ d3.json("/api/v1/cancer_residence_HS").then(function(response) {
 
 function toggleGraph(graphNumber) {
   // Hide all graphs
-  for (let i = 1; i <= 3; i++) {
-    document.getElementById(`graph${i}`).classList.add('hidden');
-    document.getElementById(`g${i}_title`).classList.add('hidden');
-    
-  }
 
-  // Show the selected graph
+
+
+  for (let i = 1; i <= 3; i++) {
+      hide(document.getElementById(`g_container${i}`) );
+      hide(document.getElementById(`graph${i}`) );
+      hide(document.getElementById(`g${i}_title`) );
+  } 
+
+  show(document.getElementById(`g_container${graphNumber}`) );
+  show(document.getElementById(`graph${graphNumber}`) );
+  show(document.getElementById(`g${graphNumber}_title`) );
   
-  document.getElementById(`graph${graphNumber}`).classList.remove('hidden');
-  document.getElementById(`g${graphNumber}_title`).classList.remove('hidden');
+
+
+
+  // for (let i = 1; i <= 3; i++) {
+  //   document.getElementById(`g_container${i}`).classList.add('hidden');
+  //   document.getElementById(`graph${i}`).classList.add('hidden');
+  //   document.getElementById(`g${i}_title`).classList.add('hidden');
+  // }
+  
+  // // Show the selected graph
+  // document.getElementById(`g_container${graphNumber}`).classList.remove('hidden');
+  // document.getElementById(`graph${graphNumber}`).classList.remove('hidden');
+  // document.getElementById(`g${graphNumber}_title`).classList.remove('hidden');
 
 }
 
 function showAll() {
-  document.getElementById('graph1').classList.remove('hidden');
-  document.getElementById('graph2').classList.remove('hidden');
-  document.getElementById('graph3').classList.remove('hidden');
-  document.getElementById('g1_title').classList.remove('hidden');
-  document.getElementById('g2_title').classList.remove('hidden');
-  document.getElementById('g3_title').classList.remove('hidden');
+
+  for (let i = 1; i <= 3; i++) {
+    show(document.getElementById(`g_container${i}`) );
+    show(document.getElementById(`graph${i}`) );
+    show(document.getElementById(`g${i}_title`) );
+} 
+
+  // document.getElementById('graph1').classList.remove('hidden');
+  // document.getElementById('graph2').classList.remove('hidden');
+  // document.getElementById('graph3').classList.remove('hidden');
+  // document.getElementById('g1_title').classList.remove('hidden');
+  // document.getElementById('g2_title').classList.remove('hidden');
+  // document.getElementById('g3_title').classList.remove('hidden');
+  
 }
 
 function enlargeButton(button) {
