@@ -24,9 +24,22 @@
     height: 150px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:baseline;
     background-color: rgb(247, 247, 193);
   }
+
+  .hover_instruct{
+    background-color: rgb(181, 241, 181);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Lato";
+    color: black;
+    font-size: 20px;
+  }
+
 
 
 /* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
