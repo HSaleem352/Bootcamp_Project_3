@@ -8,10 +8,10 @@
     color: black;
     font-family: 'Lato';
     font-size: 24px;
-    height: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:end;
     background-color: rgb(247, 247, 193);
   }
 
@@ -20,8 +20,8 @@
     color: black;
     text-align: center;
     font-family: "Lato";
-    font-size: 25px;
-    height: 150px;
+    font-size: 20px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items:baseline;
@@ -29,8 +29,8 @@
   }
 
   .hover_instruct{
-    background-color: rgb(181, 241, 181);
-    height: 100px;
+    background-color: rgb(211, 248, 211);
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@
 /*                                                                         TIMING FLIP CARD                                                                    */
 /* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* The flip card container */
 .flip-card {
   background-color: transparent;
   width: 2000px;
@@ -66,8 +66,8 @@
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+/* Add a class to rotate when active */
+.flip-card.active .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -101,6 +101,14 @@
 .flip-card-back {
   background-color: rgb(252, 214, 243);
   color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:left;
+  font-family: "Lato";
+  color: black;
+  font-size: 20px;
 
   transform: rotateY(180deg);
 }
