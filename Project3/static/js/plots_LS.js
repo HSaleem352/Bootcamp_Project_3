@@ -106,61 +106,6 @@ d3.json(url3).then(function(data) {
 });
 
 
-// let url3 = '/api/v1/cancer_status_sum'
-
-// d3.json(url3).then(function(data) {
-//     // Group data by Race
-//     let groupedData = d3.group(data, d => d.Race);
-
-//     // For each race, prepare data and plot a pie chart
-//     groupedData.forEach(function(values, race) {
-//         let labels = values.map(d => d['Cancer Status']);
-//         let counts = values.map(d => d.Count);
-
-//         let trace = {
-//             labels: labels,
-//             values: counts,
-//             type: 'pie',
-//             textinfo: "label+percent",
-//             insidetextorientation: "radial"
-//         };
-
-//         let layout = {
-//             title: `${race} Cancer Status Distribution`,
-//         };
-
-//         // Use a switch or if-else chain to determine the right div ID based on race
-//         let chartId;
-//         switch(race) {
-//             case 'Hispanic':
-//                 chartId = 'hispanic-chart';
-//                 break;
-//             case 'Non-Hispanic AAPI':
-//                 chartId = 'aapi-chart';
-//                 break;
-//             case 'Non-Hispanic Black':
-//                 chartId = 'black-chart';
-//                 break;
-//             case 'Non-Hispanic White':
-//                 chartId = 'white-chart';
-//                 break;
-//             case 'Other':
-//                 chartId = 'other-chart';
-//                 break;
-//             default:
-//                 console.error('Unknown race category:', race);
-//                 return; // Skip unknown categories
-//         }
-
-//         // Plot the pie chart for this race
-//         Plotly.newPlot(chartId, [trace], layout);
-//     });
-// });
-
-
-
-// let url3 = '/api/v1/cancer_status_sum'
-
 
 
 
@@ -191,12 +136,11 @@ function hide(element) {
     }
 }
 
-
 function showAll() {
     for (let i = 1; i <= 5; i++) {
         show(document.getElementById(`g_container${i}`));
-    }
-}
+}}
+
 
 document.addEventListener('DOMContentLoaded', function() {
     showAll(); // display all when launch
