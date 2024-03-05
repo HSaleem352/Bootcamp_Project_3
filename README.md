@@ -1,11 +1,7 @@
 # Breast Cancer Research Group
 
 ## Description of Project
-Our project 3 will focus on Breast Cancer data analysis
-We will be continuing with our data set from project one and performing a data visualization
-Our data set will come from the COVID-19 and Cancer Consortium (CCC19) breast cancer and racial disparities outcomes study
-It consists of demographic data for patients with Breast Cancer and COVID-19 and provides information on their COVID-19 outcomes
-
+Our project 3 will focus on Breast Cancer data analysis. We will be continuing with our data set from project one and performing a data visualization. Our data set will come from the COVID-19 and Cancer Consortium (CCC19) breast cancer and racial disparities outcomes study. It consists of demographic data for patients with Breast Cancer and COVID-19 and provides information on their COVID-19 outcomes.
 
 ## Questions we are asking of the data:
 
@@ -26,20 +22,37 @@ What are the sociodemographic and clinical factors that influence adverse outcom
 - Shan Lian - @Lians03
 - Alejandra - @AlejandraFeatherston
 
-## Possible sources for the data:
-Nagaraj, G., Khaki, A., & Shah, D. (2023). Covid-19 and Cancer Consortium (CCC19) breast cancer and racial disparities outcomes study. Zenodo. https://doi.org/10.5281/zenodo.7644334
+## Work Breakdown
+- Finding the database: All group members
+- SQL and data reading: Hamza
+- Flask: All group members
+- Plot creastion: All group members
+- Home page: Mina and Hamza
+- Our Team, Limitations & References pages: Mina
+- Question 1 related page: Alejandra
+- Question 2 related page: Mina
+- Question 3 related page: Mina
+- Question 4 related page: Shan
+- Question 5 related page: Fozia
+- Question 6 related page: Hamza
+- Question 7 related page: Dean
 
+## Dataset:
+Nagaraj, G., Khaki, A., & Shah, D. (2023). Covid-19 and Cancer Consortium (CCC19) breast cancer and racial disparities outcomes study. Zenodo. https://doi.org/10.5281/zenodo.7644334
 
 ## Code Snippets
 
 
 ## References
+*Hamza*
 creating postgresql engine: https://stackoverflow.com/questions/62688256/sqlalchemy-exc-nosuchmoduleerror-cant-load-plugin-sqlalchemy-dialectspostgre
 listing all tables in postgres using SQLAlchemy: https://www.pythonsheets.com/notes/python-sqlalchemy.html
 visual for amcharts: https://www.amcharts.com/demos/donut-with-radial-gradient/
 
-
-
+*Mina*
+-Page structures: https://getbootstrap.com/ , ChatGPT
+-Uploading images from GoogleDrive to Our Team page: https://stackoverflow.com/questions/77851898/using-google-drive-link-as-img-src-on-react-app-not-working
+-Home page navbar: https://tachyons.io/components/nav/logo-titles-links-centered/index.html
 
 
 
