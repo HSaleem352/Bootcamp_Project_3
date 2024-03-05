@@ -42,6 +42,7 @@ Nagaraj, G., Khaki, A., & Shah, D. (2023). Covid-19 and Cancer Consortium (CCC19
 
 ## Code Snippets
 **Mina**
+
 Home page question cards animation:
 ```python
 .card-link .card {
@@ -55,7 +56,40 @@ Home page question cards animation:
     box-shadow: 0px 0px 2px 2px darkgrey;     
 }
 ```
-
+Removing the blue color hyperlink:
+```python
+.icon-link:hover {
+    color: inherit;
+}
+```
+Flip cards:
+```python
+    <script>
+        function flipCard(card) {
+            card.classList.toggle('flipped');
+        }
+    </script>
+//css//
+.card.flipped {
+    transform: rotateY(180deg);
+}
+```
+Card click expand:
+```python
+    <script>
+        document.querySelectorAll('.card').forEach(function(card) {
+            card.addEventListener('click', function() {
+                var targetCollapse = card.getAttribute('data-target');
+                var isExpanded = $(targetCollapse).hasClass('show');
+    
+                // If the explanation is not expanded, expand it
+                if (!isExpanded) {
+                    $(targetCollapse).collapse('show');
+                }
+            });
+        });
+    </script>
+```
 ## References
 **Hamza**
 creating postgresql engine: https://stackoverflow.com/questions/62688256/sqlalchemy-exc-nosuchmoduleerror-cant-load-plugin-sqlalchemy-dialectspostgre
