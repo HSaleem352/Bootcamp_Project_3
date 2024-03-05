@@ -26,7 +26,7 @@ What are the sociodemographic and clinical factors that influence adverse outcom
 - Finding the database: All group members
 - SQL and data reading: Hamza
 - Flask: All group members
-- Plot creastion: All group members
+- Plot creation: All group members
 - Home page: Mina and Hamza
 - Our Team, Limitations & References pages: Mina
 - Question 1 related page: Alejandra
