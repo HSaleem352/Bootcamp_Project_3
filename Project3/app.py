@@ -238,7 +238,7 @@ def cancer_residence():
 
 #################################################################################################################
 ##                                                Alejandra                                                    ##
-###############################################################################################################
+#################################################################################################################
 
 @app.route('/api/v1/AFR_timing_df', methods=['GET'])
 def AFR_timing_df():
@@ -270,28 +270,26 @@ def afr_page():
 #################################################################################################################
 ##                                                  Shan                                                       ##
 #################################################################################################################
-@app.route('/shan')
-def shan_page():
-    return render_template("shan.html")
 
 
-@app.route('/api/v1/race_counts', methods=['GET'])
+@app.route('/api/v1/percentage_df', methods=['GET'])
 def get_data1_shan():
     # Read Dataframe using SQL
     with engine.connect() as connection:
-        df = pd.read_sql('race_counts',connection)
+        df = pd.read_sql('percentage_df',connection)
 
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
 
     return json_data
 
-@app.route('/api/v1/covid_severity_count_by_race', methods=['GET'])
+
+@app.route('/api/v1/cancer_status_sum', methods=['GET'])
 def get_data2_shan():
     # Read Dataframe using SQL
     with engine.connect() as connection:
-        df = pd.read_sql('covid_severity_count_by_race',connection)
-
+        df = pd.read_sql('cancer_status_sum',connection)
+   
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
 
@@ -309,20 +307,41 @@ def get_data3_shan():
 
     return json_data
 
-@app.route('/api/v1/cancer_status_sum', methods=['GET'])
+
+@app.route('/api/v1/covid_severity_count_by_race', methods=['GET'])
 def get_data4_shan():
     # Read Dataframe using SQL
     with engine.connect() as connection:
-        df = pd.read_sql('cancer_status_sum',connection)
-   
+        df = pd.read_sql('covid_severity_count_by_race',connection)
+
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
 
     return json_data
 
 
+@app.route('/api/v1/race_counts_percentage', methods=['GET'])
+def get_data5_shan():
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('race_counts_percentage',connection)
+
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
 
 
+@app.route('/api/v1/race_counts', methods=['GET'])
+def get_data6_shan():
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('race_counts',connection)
+
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
 
 
 #################################################################################################################
