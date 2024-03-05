@@ -65,28 +65,6 @@ def get_data_MB1():
 
     return json_data
 
-
-#################################################################################################################################################
-#################################################################################################################################################
-#################################################################################################################################################
-#################################################################################################################################################
-#################################################################################################################################################
-#################################################################################################################################################
-#################################################################################################################################################
-    
-
-#################################################################################################################################################
-#################################################################################################################################################
-#################################################################################################################################################
-#################################################################################################################################################
-#################################################################################################################################################
-#################################################################################################################################################
-#################################################################################################################################################
-
-
-
-
-
 @app.route('/api/v1/Smoker_NonSmoker_Covid_DF', methods=['GET'])
 def get_data_MB2():
     # Read Dataframe using SQL
@@ -120,27 +98,6 @@ def get_data_MB4():
 
     return json_data
 
-   
-
-
-    
-   
-    
-    
-    # # Call the function to collect and clean the data if not already done
-    # # cleaned_data_link = "https://drive.google.com/file/d/1XlddGFnRFavw58PFowIIgLVWrRco-Ffu/view?usp=drive_link"
-
-    # # Reading the data from Google Drive
-    # file_link = 'https://drive.google.com/u/0/uc?id=1IBWDyHq2TJHcvYXWJ8Kh38j_L_ZlJbkr&export=download'
-    # data_df = pd.read_csv(file_link)
-    
-    # # Cleaning and filtering the data 
-    # data_df["der_days_fu"] = pd.to_numeric(data_df["der_days_fu"], errors="coerce")
-    # data_df["der_days_fu"] = pd.to_numeric(data_df["der_age_trunc"], errors="coerce")
-
-    # # Selecting only the columns needed
-    # selected_columns = ["der_age_trunc", "der_obesity", "der_race_v2", "der_cancer_status_v4", "severity_of_covid_19_v2"]
-    # cleaned_data = data_df[selected_columns]
 
 @app.route('/api/v1/SevereCov_BC_Smoker_NonSmoker_DF', methods=['GET'])
 def get_data_MB5():
@@ -321,10 +278,6 @@ def get_data4_shan():
     return json_data
 
 
-
-
-
-
 #################################################################################################################
 ##                                                  Dean                                                       ##
 #################################################################################################################
@@ -344,8 +297,6 @@ def age_v_cancer_covid_data():
     json_data = df.to_json(orient='records')
 
     return json_data
-
-
 
 #################################################################################################################
 ##                                                  Fozia                                                      ##
@@ -374,106 +325,9 @@ def obesity_age_effect():
     return cleaned_data_json
 
 
-
 #################################################################################################################
 ##                                                  Debug                                                      ##
 #################################################################################################################
 if __name__ == '__main__':
     app.run(debug=True)
 
-
-    
-#####################################################################################################################
-#####################################################################################################################
-#####################################################################################################################
-#####################################################################################################################
-#####################################################################################################################
-
-
-# @app.route('/api/v1/cancer_status_sum', methods=['GET'])
-# def get_data2_shan():
-#     # Read Dataframe using SQL
-#     with engine.connect() as connection:
-#         df = pd.read_sql('cancer_status_sum',connection)
-   
-#     # Convert DataFrame to JSON
-#     json_data = df.to_json(orient='records')
-
-#     return json_data
-
-
-# @app.route('/api/v1/race_and_severity_plot', methods=['GET'])
-# def get_data3_shan():
-#     # Read Dataframe using SQL
-#     with engine.connect() as connection:
-#         df = pd.read_sql('race_and_severity_plot',connection)
-   
-#     # Convert DataFrame to JSON
-#     json_data = df.to_json(orient='records')
-
-#     return json_data
-
-
-# @app.route('/api/v1/covid_severity_count_by_race', methods=['GET'])
-# def get_data4_shan():
-#     # Read Dataframe using SQL
-#     with engine.connect() as connection:
-#         df = pd.read_sql('covid_severity_count_by_race',connection)
-
-#     # Convert DataFrame to JSON
-#     json_data = df.to_json(orient='records')
-
-#     return json_data
-
-
-# @app.route('/api/v1/race_counts_percentage', methods=['GET'])
-# def get_data5_shan():
-#     # Read Dataframe using SQL
-#     with engine.connect() as connection:
-#         df = pd.read_sql('race_counts_percentage',connection)
-
-#     # Convert DataFrame to JSON
-#     json_data = df.to_json(orient='records')
-
-#     return json_data
-
-
-# @app.route('/api/v1/race_counts', methods=['GET'])
-# def get_data6_shan():
-#     # Read Dataframe using SQL
-#     with engine.connect() as connection:
-#         df = pd.read_sql('race_counts',connection)
-
-#     # Convert DataFrame to JSON
-#     json_data = df.to_json(orient='records')
-
-#     return json_data
-
-
-# #################################################################################################################
-# ##                                                  Dean                                                       ##
-# #################################################################################################################
-
-# @app.route('/dean_q')
-# def dean_q():
-#     return render_template("dean_q.html")
-
-
-# @app.route('/api/v1/age_status_severity', methods=['GET'])
-# def age_v_cancer_covid_data():
-#     # Read Dataframe using SQL
-#     with engine.connect() as connection:
-#         df = pd.read_sql('age_status_severity',connection)
-
-#     # Convert DataFrame to JSON
-#     json_data = df.to_json(orient='records')
-
-#     return json_data
-
-# #################################################################################################################
-# ##                                                  Debug                                                      ##
-# #################################################################################################################
-
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
