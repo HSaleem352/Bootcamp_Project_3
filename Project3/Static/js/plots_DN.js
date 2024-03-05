@@ -371,24 +371,6 @@ function animateCovCDF() {
                     yaxis: {
                         range: [0, 1.001]
                     },
-annotations: [
-{
-    x: 35,
-    y: 0.8,
-    xref: 'x',
-    yref: 'y',
-    text: 'Ages follow a<br><em>Normal Distribution</em>(<i>t=43.58, p=3.4358e-10</i>)<br><i>mean=61.31<br>std=14.56</i>',
-    showarrow: false,
-    arrowhead: 7,
-    ax: 30,
-    ay: -65,
-    font: {
-        color: "#169489",
-        size: 14,
-    },
-    align: "left"
-}
-]
                 }
             }
             Plotly.animate('density-covid', {
@@ -518,3 +500,73 @@ function animateDisjointCovDensity() {
 
 plotCovidDensity()
 plotCancerDensity()
+
+
+
+function plotDotPlot() {
+var rows = ['All patients', 'Ages 18-34', '35-49', '50+', 'Cancer Mild', 'Moderate', 'Severe'];
+
+var mortalityRates = [8.93, 7.317, 5.085, 10.0, 1.795, 20.845, 56.604];
+
+var trace1 = {
+  type: 'scatter',
+  x: mortalityRates,
+  y: rows,
+  mode: 'markers',
+  name: 'Percent of estimated voting age population',
+  marker: {
+    color: 'rgba(156, 165, 196, 0.95)',
+    line: {
+      color: 'rgba(156, 165, 196, 1.0)',
+      width: 1,
+    },
+    symbol: 'circle',
+    size: 16
+  }
+};
+var data = [trace1];
+
+var layout = {
+  title: 'Votes cast for ten lowest voting age population in OECD countries',
+  xaxis: {
+    showgrid: false,
+    showline: true,
+    linecolor: 'rgb(102, 102, 102)',
+    titlefont: {
+      font: {
+        color: 'rgb(204, 204, 204)'
+      }
+    },
+    tickfont: {
+      font: {
+        color: 'rgb(102, 102, 102)'
+      }
+    },
+    autotick: false,
+    dtick: 10,
+    ticks: 'outside',
+    tickcolor: 'rgb(102, 102, 102)'
+  },
+  margin: {
+    l: 140,
+    r: 40,
+    b: 50,
+    t: 80
+  },
+  legend: {
+    font: {
+      size: 10,
+    },
+    yanchor: 'middle',
+    xanchor: 'right'
+  },
+  width: 600,
+  height: 600,
+  paper_bgcolor: 'rgb(254, 247, 234)',
+  plot_bgcolor: 'rgb(254, 247, 234)',
+  hovermode: 'closest'
+};
+
+Plotly.newPlot('mortality-dots', data, layout);
+    
+}
