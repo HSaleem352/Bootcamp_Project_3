@@ -56,25 +56,22 @@
 <!-- Timing Carousel -->
 
 <!-- Slideshow container -->
-<div class="slideshow-container">
+<div class="timing-slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext"> Mild </div>
+  <div class="myTimingSlides fade">
     <div id="afr_mild_timing_pie" style ="width:100%"></div>
-    <div class="text"> Mild Covid Outcomes at Different BC Treatment Time Points</div>
+    <div class="timingtext"> Mild Covid Outcomes at Different BC Treatment Time Points</div>
   </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">Moderate</div>
-    <div id="afr_moderate_timing_pie" style ="width:100%; align-items: center;"></div>
-    <div class="text">Moderate Covid Outcomes at Different BC Treatment Time Points</div>
+  <div class="myTimingSlides fade">
+    <div id="afr_moderate_timing_pie" style ="width:100%"></div>
+    <div class="timingtext">Moderate Covid Outcomes at Different BC Treatment Time Points</div>
   </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">Severe</div>
+  <div class="myTimingSlides fade">
     <div id="afr_severe_timing_pie" style ="width:100%"></div>
-    <div class="text"> Severe Covid Outcomes at Different BC Treatment Time Points</div>
+    <div class="timingtext"> Severe Covid Outcomes at Different BC Treatment Time Points</div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -106,7 +103,7 @@
 
   function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("mySlides");
+    let slides = document.getElementsByClassName("myTimingSlides");
     let dots = document.getElementsByClassName("dot");
     if (n > slides.length) {slideIndex = 1} 
     if (n < 1) {slideIndex = slides.length}
@@ -135,19 +132,6 @@
 <!-- Treatment Overall Data -->
 <!-- Make it flip over to see explanation -->
 <div id="afr_treatment_bar_grouped"></div>
-
-<!-- Treatment Carousel -->
-<div class="afr_dropdown">
-    <button class="dropbtn", style="justify-content: center;">Pie Charts: Type of BC Treatment by Covid Outcomes</button>
-    <div class="dropdown-content">
-      <button class="selectionbtn">Type of Treatment - Mild Covid Outcomes Pie Chart</button>
-      <button class="selectionbtn">Type of Treatment - Moderate Covid Outcomes Pie Chart</button>
-      <button class="selectionbtn">Type of Treatment - Severe Covid Outcomes Pie Chart</button>
-</div>
-<div id="afr_mild_treatment_pie"></div>
-<div id="afr_moderate_treatment_pie"></div>
-<div id="afr_severe_treatment_pie"></div>
-
 
 
 <!-- Plots -->
