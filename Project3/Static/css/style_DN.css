@@ -1,6 +1,17 @@
-.column {
+.left-column {
+  float: left;
+  margin-top: 35px;
+  width: 50%;
+}
+
+.right-column {
   float: left;
   width: 50%;
+}
+
+.column {
+  float: left;
+  width: 100%;
 }
 
 /* Clear floats after the columns */
@@ -14,5 +25,7 @@
 .button {
   float: left;
   margin-left: 25px;
-    margin-top: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+font-family: "franklin-gothic-urw";
 }

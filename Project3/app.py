@@ -298,6 +298,19 @@ def age_v_cancer_covid_data():
 
     return json_data
 
+
+@app.route("/api/v1/outcome_rates", methods=["GET"])
+def outcome_rates():
+
+    # Read CSV file using pandas
+    df = pd.read_csv("https://drive.google.com/u/0/uc?id=1VotiOmeDwCyDDe5w3BYumclG9bzs1CTu&export=download")
+
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient="records")
+
+    return json_data
+
+
 #################################################################################################################
 ##                                                  Fozia                                                      ##
 #################################################################################################################
