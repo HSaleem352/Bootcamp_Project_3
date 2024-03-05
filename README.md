@@ -38,6 +38,7 @@ creating postgresql engine: https://stackoverflow.com/questions/62688256/sqlalch
 listing all tables in postgres using SQLAlchemy: https://www.pythonsheets.com/notes/python-sqlalchemy.html
 visual for amcharts: https://www.amcharts.com/demos/donut-with-radial-gradient/
 pic for home page: https://healthcare.utah.edu/huntsmancancerinstitute/sites/g/files/zrelqx336/files/styles/freeform_phone/public/migrate_images/mammo-mask.jpg?h=bdbe9ddb&itok=VPDk9U4v
+animations: https://animate.style/
 
 
 

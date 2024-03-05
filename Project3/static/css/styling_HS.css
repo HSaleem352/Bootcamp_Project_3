@@ -175,3 +175,23 @@ body {
     border-radius:10px;
 }
 
+.bar_container{
+  display: flex;
+  width:100%;
+  height: 100vh;
+  background-color: #E2F0CB;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 70px;
+  transform: skewX(12deg);
+  transform-origin: right bottom;  
+}
+
+#HS_severity_bar{
+  margin-left: -10vw;
+  width: 80%;
+  height: 80%;
+  transform: skewX(-12deg);
+  transform-origin: right bottom; 
+}
+

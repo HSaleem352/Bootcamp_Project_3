@@ -99,7 +99,8 @@ d3.json("/api/v1/severity_residence_HS").then(function(response) {
     name: 'Mild',
     type: 'bar',
     marker: {
-      color: 'rgba(255, 182, 193, 0.7)' 
+      color: 'cornflowerblue',
+      line: {width: 1} 
     }
   };
 
@@ -109,7 +110,8 @@ d3.json("/api/v1/severity_residence_HS").then(function(response) {
     name: 'Moderate',
     type: 'bar',
     marker: {
-      color: 'rgba(143, 116, 230, 0.7)'  
+      color: 'lightblue',
+      line: {width: 1}  
     }
   };
 
@@ -119,22 +121,45 @@ d3.json("/api/v1/severity_residence_HS").then(function(response) {
     name: 'Severe',
     type: 'bar',
     marker: {
-      color: 'rgba(173, 216, 230, 0.7)'  
+      color: 'palegreen',  
+      line: {width: 1}
     }
   };
 
   var layout = {
-    barmode: 'group',
-    height: 800,
-    width: 1200,
-    title: 'Severity of covid 19 vs cases of Covid-19 for each residence type',
-    xaxis: {
-      title: 'Residence Type'  
-    },
-    yaxis: {
-      title: 'Cases of Covid-19' 
-    }
-  };
+      barmode: 'group',
+      // height: 800,
+      // width: 1200,
+      title: 'Severity of covid 19 vs cases of Covid-19 for each residence type',
+      font: {
+          family: "'Times New Roman', Times, serif", // Set the desired font
+          size: 22, // Set the font size
+          color: 'black', // Set the font color
+          bold: 'normal' // Set the font weight (normal or bold)
+      },
+      xaxis: {
+          title: {
+            text: 'Residence Type', 
+            font: {
+              size: 20 // Set the font size for the x-axis title
+            }},
+          tickfont: {
+            size: 16 // Set the font size for the x-axis ticks
+            },
+
+          },
+          yaxis: {
+              title: {
+                  text: 'Cases of Covid-19',
+                  font: {
+                    size: 20 // Set the font size for the x-axis title
+                  }},
+              tickfont: {
+                size: 16 // Set the font size for the x-axis ticks
+                },
+            
+          }
+  }
 
   var data = [trace1, trace2, trace3];
 
