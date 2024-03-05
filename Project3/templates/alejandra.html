@@ -20,7 +20,7 @@
    <!-- Navbar -->
    <nav class="navbar navbar-dark bg-dark" aria-label="First navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Smoking Effect</a>
+      <a class="navbar-brand" href="#"> Effect of Timing and Type of Anti-Cancer Therapy on Covid Outome Severity</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars_MB1" aria-controls="navbars_MB1" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -49,9 +49,20 @@
       <p>I am hypothesizing that the closer the cancer treatment was given to COVID-19 infection, the more likely the patients are to have moderate or severe COVID-19 outcomes</p>
   </div>
 
-<!-- Timing Overall Data -->
-<!-- Make it flip over to see explanation -->
-  <div id="afr_timing_bar_grouped"></div>
+  <!-- Flip Cards -->
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div id="afr_treatment_bar_grouped" style="width:1000px;height:300px;"></div>
+      </div>
+      <div class="flip-card-back">
+        <p style="text-align: center; font-family: Lato; font-size: 20;"> I hypothesized that individuals who received ACT closer to their timing of having covid would have more severe covid outcomes than individuals who never received ACT or who received it more than 3 months after getting covid. The null hypothesis would be that the timing had no effect on an individual’s covid-19 outcome severity.</p>
+        <p style="text-align: center; font-family: Lato; font-size: 20;"> A chi-squared analysis shows that there was no significant relationship between the covid-19 outcome and the timing of ACT</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Timing Carousel -->
 
@@ -139,5 +150,7 @@
 
  <!-- Bootstrap JS and Popper.js -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>
