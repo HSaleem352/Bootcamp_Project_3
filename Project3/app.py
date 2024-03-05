@@ -200,6 +200,10 @@ def afr_treatment_type_df():
 #################################################################################################################
 ##                                                  Shan                                                       ##
 #################################################################################################################
+@app.route('/shan')
+def shan_page():
+    return render_template("shan_q.html")
+
 
 @app.route('/api/v1/race_counts', methods=['GET'])
 def get_data1_shan():
@@ -210,8 +214,7 @@ def get_data1_shan():
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
 
-    # return json_data
-    return render_template("shan_q.html")
+    return json_data
 
 @app.route('/api/v1/covid_severity_count_by_race', methods=['GET'])
 def get_data2_shan():
@@ -245,7 +248,7 @@ def get_data4_shan():
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
 
-    return render_template("shan_q.html")
+    return json_data
 
 
 
