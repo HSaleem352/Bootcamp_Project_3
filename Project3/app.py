@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def main():
-    return render_template("alejandra.html")
+    return render_template("index.html")
 
 #################################################################################################################
 ##                                                Mina                                                         ##
@@ -180,6 +180,11 @@ def afr_treatment_type_df():
     json_data = df.to_json(orient="records")
 
     return json_data
+
+@app.route('/afr_treatment_timing_page')
+def main():
+    return render_template("alejandra.html")
+
 
 #################################################################################################################
 ##                                                  Shan                                                       ##
