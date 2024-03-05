@@ -186,10 +186,10 @@ def cancer_residence():
 
 #################################################################################################################
 ##                                                Alejandra                                                    ##
-#################################################################################################################
+###############################################################################################################
 
 @app.route('/api/v1/AFR_timing_df', methods=['GET'])
-def afr_timing_df():
+def AFR_timing_df():
 
     # Read CSV file using pandas
     df = pd.read_csv('https://drive.google.com/uc?id=1FE-JYKjod8YGo71-E37W3UpDq8nL3UyU&export=download')
@@ -199,16 +199,21 @@ def afr_timing_df():
 
     return json_data
 
-@app.route("/api/v1/treatment_type_df", methods=["GET"])
+@app.route("/api/v1/afr_treatment_type_df", methods=["GET"])
 def afr_treatment_type_df():
 
     # Read CSV file using pandas
     df = pd.read_csv("https://drive.google.com/uc?id=1uDqbe24GtHw7ctzsdma_r4-wGPVUFevh&export=download")
 
     # Convert DataFrame to JSON
-    json_data = df.to_json(orient="recods")
+    json_data = df.to_json(orient="records")
 
     return json_data
+
+@app.route('/afr_treatment_timing_page')
+def main():
+    return render_template("alejandra.html")
+
 
 #################################################################################################################
 ##                                                  Shan                                                       ##
