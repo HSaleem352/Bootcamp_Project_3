@@ -37,6 +37,10 @@ What are the sociodemographic and clinical factors that influence adverse outcom
 - Question 6 related page: Hamza
 - Question 7 related page: Dean
 
+## Instructions on how to use and interact with the project
+
+## Efforts for ethical considerations made in the project
+
 ## Dataset:
 Nagaraj, G., Khaki, A., & Shah, D. (2023). Covid-19 and Cancer Consortium (CCC19) breast cancer and racial disparities outcomes study. Zenodo. https://doi.org/10.5281/zenodo.7644334
 
