@@ -272,7 +272,7 @@ def afr_page():
 #################################################################################################################
 @app.route('/shan')
 def shan_page():
-    return render_template("shan_q.html")
+    return render_template("shan.html")
 
 
 @app.route('/api/v1/race_counts', methods=['GET'])

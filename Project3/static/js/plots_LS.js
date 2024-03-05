@@ -20,7 +20,7 @@ d3.json(url).then(function(data) {
 
 let url2 = '/api/v1/covid_severity_count_by_race'
 d3.json(url2).then(function(data) {
-    console.log(data)
+    console.log(data);
     let trace2 = [
         {
             x: data.map(d => d.Race),
