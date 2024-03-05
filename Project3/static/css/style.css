@@ -244,10 +244,13 @@ body {
     height: 100%;
     justify-content: center;
     align-items: center;
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .text_frame h1 {
     font-size: 3vw;
+    
 }
 
 .pic_frame{
@@ -267,4 +270,7 @@ body {
 .pic_frame img {
     width: 100%; 
     height: 100%; 
+    animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+   
 }
