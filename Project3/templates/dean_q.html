@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style_DN.css">
     <title>Breast Cancer Research</title>
     <!-- D3 -->
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
@@ -10,10 +11,14 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
-    <div id="boxplot-cancer"></div>
-    <div id="density-cancer"></div>
-    <div id="boxplot-covid"></div>
-    <div id="density-covid"></div>
+    <div id="boxplot-cancer" class="column"></div>
+    <button onclick="plots_DN:animateJointCanDesntiy();" class="button">Joint Distribution</button>
+    <button onclick="plots_DN:animateDisjointCanDensity();" class="button">Marginal Distributions (default)</button>
+    <div id="density-cancer" class="column"></div>
+    <div id="boxplot-covid" class="column"></div>
+    <button onclick="plots_DN:animateCovCDF();" class="button">Empirical CDF</button>
+    <button onclick="plots_DN:animateDisjointCovDensity();" class="button">Empirical PDF (default)</button>
+    <div id="density-covid" class="column"></div>
     <script src="{{ url_for('static', filename='js/plots_DN.js') }}"></script>
 </body>
 </html>

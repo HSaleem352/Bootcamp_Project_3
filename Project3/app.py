@@ -302,3 +302,90 @@ def age_v_cancer_covid_data():
 if __name__ == '__main__':
     app.run(debug=True)
 
+@app.route('/api/v1/cancer_status_sum', methods=['GET'])
+def get_data2_shan():
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('cancer_status_sum',connection)
+   
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
+
+
+@app.route('/api/v1/race_and_severity_plot', methods=['GET'])
+def get_data3_shan():
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('race_and_severity_plot',connection)
+   
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
+
+
+@app.route('/api/v1/covid_severity_count_by_race', methods=['GET'])
+def get_data4_shan():
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('covid_severity_count_by_race',connection)
+
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
+
+
+@app.route('/api/v1/race_counts_percentage', methods=['GET'])
+def get_data5_shan():
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('race_counts_percentage',connection)
+
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
+
+
+@app.route('/api/v1/race_counts', methods=['GET'])
+def get_data6_shan():
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('race_counts',connection)
+
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
+
+
+#################################################################################################################
+##                                                  Dean                                                       ##
+#################################################################################################################
+
+@app.route('/dean_q')
+def dean_q():
+    return render_template("dean_q.html")
+
+
+@app.route('/api/v1/age_status_severity', methods=['GET'])
+def age_v_cancer_covid_data():
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('age_status_severity',connection)
+
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
+
+#################################################################################################################
+##                                                  Debug                                                      ##
+#################################################################################################################
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
