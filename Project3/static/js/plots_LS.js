@@ -8,8 +8,8 @@ d3.json(url).then(function(data) {
     }];
 
     var layout = {
-        height: 400,
-        width: 500,
+        height: 420,
+        width: 700,
         title: 'Race Distribution in the Study'
     };
     
@@ -89,12 +89,18 @@ d3.json(url3).then(function(data) {
             labels: labels,
             values: counts,
             type: 'pie',
-            textinfo: "label+percent",
-            insidetextorientation: "radial"
+            textinfo: "percent",
+            insidetextorientation: "auto"
         };
 
         let layout = {
-            title: `${race} Cancer Status Distribution`,
+            paper_bgcolor: 'white',
+            plot_bgcolor: 'white',
+            legend: {
+                font: {
+                    size: 16 // Adjust this value as needed to increase the font size
+                }
+            }
         };
 
         
@@ -138,7 +144,10 @@ function hide(element) {
 function showAll() {
     for (let i = 1; i <= 5; i++) {
         show(document.getElementById(`g_container${i}`));
-}}
+        show(document.getElementById(`graph${i}`));
+        show(document.getElementById(`g${i}_title`));
+    }
+}
 
 
 document.addEventListener('DOMContentLoaded', function() {

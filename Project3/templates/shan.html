@@ -15,7 +15,7 @@
   <script src="//cdn.amcharts.com/lib/5/themes/Material.js"></script>
 
   <!-- styling css for hamza branch -->
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling_HS.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling_LS.css') }}">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -25,6 +25,7 @@
 </head>
 
 <body>
+   <!-- nav bar -->
     <nav class="navbar navbar-dark bg-dark" aria-label="First navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Ethnicity, COVID-19, and Breast Cancer</a>
@@ -47,29 +48,29 @@
           </div>
         </div>
       </nav>
-
-    <!-- <h1>Breast Cancer Research on Race</h1> -->
-
-    <div class="container-fluid mt-3">
-      <h1>Race Distribution in the Study</h1>
-      <div class="row">
-          <!-- Reduce the text column size for more chart space -->
-          <div class="col-xxl-4 p-3 text-black" style="background-color: white">
-            <h2> Sample Size Review </h2>
-            <p> This distribution suggests a significant representation of Non-Hispanic White individuals, accounting for the majority of the study's population. The Non-Hispanic Black and Hispanic categories follow, with a moderate representation. The "Other" and Non-Hispanic AAPI categories have the least representation. This distribution may reflect the demographic profile of the area or population from which the study participants were drawn, assuming the study aims to be representative of a broader population.</p>
+      <!-- Race Distribution pie chart  -->
+      <div class="container-fluid mt-3">
+        <h1>Race Distribution in the Study</h1>
+        <div class="row">
+          <div class="col-sm-6 p-3 text-black" style="background-color: white;">
+            <h2>Sample Size Review</h2>
+            <p>This distribution suggests a significant representation of Non-Hispanic White individuals, accounting for the majority of the study's population. The Non-Hispanic Black and Hispanic categories follow, with a moderate representation. The "Other" and Non-Hispanic AAPI categories have the least representation. This distribution may reflect the demographic profile of the area or population from which the study participants were drawn, assuming the study aims to be representative of a broader population.</p>
             <h2>Limitations of the Study</h2>
-            <p> The dominance of the Non-Hispanic White category and the underrepresentation of others, particularly Non-Hispanic AAPI, could introduce limitations regarding the generalizability and applicability of its findings. Future studies should aim for more balanced representation or employ methods to adjust for these disparities to ensure the findings are reflective of the broader population's experiences. This might involve targeted recruitment strategies or weighting the results to better reflect the general population's demographic makeup.</p>
+            <p>The dominance of the Non-Hispanic White category and the underrepresentation of others, particularly Non-Hispanic AAPI, could introduce limitations regarding the generalizability and applicability of its findings. Future studies should aim for more balanced representation or employ methods to adjust for these disparities to ensure the findings are reflective of the broader population's experiences. This might involve targeted recruitment strategies or weighting the results to better reflect the general population's demographic makeup.</p>
           </div>
-          <div class="col-xxl-8 p-3 text-white" style="background-color: white;">
-            <div id="race-counts-pie-chart" style="height: 800px;"></div>
+          <div class="col-lg-6 p-3" style="background-color: white;">
+            <div id="race-counts-pie-chart" style="height: 400px;"></div>
+          </div>
         </div>
       </div>
-    </div>
+      
     
+    <!-- Divider  -->
+    <div class="divider"></div>
   
 
 
-
+    <!-- Ethnic Distribution and COVID-19 Severity Bar chart  -->
     <div class="container-fluid mt-3">
       <h1>Relationship Between Ethnic Distribution and COVID-19 Severity</h1>
       <div class="row">
@@ -96,7 +97,7 @@
 
  
 
-
+  <!-- 5 buttons of pie charts  -->
     <div id="covid-severity-bar-chart"></div>
        
     <div id="outer">
@@ -115,7 +116,7 @@
 
   </div>
 
-
+  <!-- 5 pie charts  -->
   <div class="container-fluid mt-3">
     <!-- Outer container to ensure full-width and some margin at the top -->
   
@@ -169,10 +170,8 @@
   
   </div>
   
-
-
-
     <script src="{{ url_for('static', filename='js/plots_LS.js') }}"></script>
+
 </body>
 </html>
 
