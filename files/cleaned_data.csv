@@ -1,0 +1,1354 @@
+der_age_trunc,der_obesity,der_race_v2,der_cancer_status_v4,severity_of_covid_19_v2
+58.0,No,Non-Hispanic White,Active and responding,Severe
+67.0,No,Hispanic,Active and stable,Mild
+49.0,Yes,Other,Unknown,Moderate
+47.0,No,Hispanic,Active and responding,Mild
+62.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+75.0,No,Non-Hispanic White,Active and responding,Mild
+45.0,No,Hispanic,Active and stable,Mild
+63.0,No,Hispanic,Active and responding,Mild
+47.0,No,Non-Hispanic Black,Active and progressing,Moderate
+54.0,No,Non-Hispanic White,Active and progressing,Mild
+54.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+63.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+71.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+46.0,No,Non-Hispanic White,Active and responding,Mild
+40.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+67.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+74.0,No,Other,"Remission or no evidence of disease, >5 years",Moderate
+69.0,No,Hispanic,"Remission or no evidence of disease, >5 years",Moderate
+54.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, <5 years",Mild
+47.0,No,Non-Hispanic White,Active and stable,Mild
+50.0,No,Other,"Remission or no evidence of disease, <5 years",Moderate
+43.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, >5 years",Moderate
+76.0,Yes,Non-Hispanic White,Active and responding,Moderate
+79.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Severe
+54.0,No,Non-Hispanic Black,Active and progressing,Severe
+46.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+40.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+45.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+69.0,No,Non-Hispanic AAPI,Active and stable,Mild
+52.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+62.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+85.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+56.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+58.0,No,Other,Active and responding,Mild
+44.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+90.0,No,Non-Hispanic White,Active and stable,Moderate
+61.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+65.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+83.0,No,Other,"Remission or no evidence of disease, >5 years",Severe
+75.0,Yes,Hispanic,"Remission or no evidence of disease, >5 years",Mild
+74.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+62.0,No,Non-Hispanic White,Active and progressing,Moderate
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+46.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+77.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+49.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+73.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Severe
+88.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+84.0,No,Other,"Remission or no evidence of disease, >5 years",Severe
+74.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+62.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+84.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+80.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+31.0,No,Non-Hispanic White,Active and progressing,Moderate
+51.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+62.0,Yes,Non-Hispanic White,Active and responding,Moderate
+60.0,Yes,Hispanic,"Remission or no evidence of disease, >5 years",Moderate
+56.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+31.0,No,Non-Hispanic White,Active and stable,Mild
+63.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+81.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+85.0,Yes,Hispanic,"Remission or no evidence of disease, >5 years",Moderate
+70.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+82.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+54.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+59.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+62.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+68.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+56.0,Yes,Other,"Remission or no evidence of disease, >5 years",Mild
+58.0,No,Other,Active and progressing,Moderate
+33.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+88.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Severe
+48.0,Yes,Non-Hispanic White,Unknown,Mild
+68.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+85.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+67.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+49.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+74.0,Yes,Other,"Remission or no evidence of disease, >5 years",Moderate
+81.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+66.0,No,Hispanic,Active and responding,Moderate
+81.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, >5 years",Mild
+79.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+49.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+79.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+80.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+88.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+50.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+65.0,Yes,Non-Hispanic Black,Unknown,Mild
+55.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+64.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+77.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+74.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+78.0,No,Hispanic,Active and progressing,Moderate
+72.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+54.0,Yes,Non-Hispanic Black,Active and responding,Moderate
+50.0,Yes,Non-Hispanic Black,Active and progressing,Moderate
+28.0,No,Hispanic,Active and responding,Mild
+78.0,No,Non-Hispanic Black,Active and responding,Moderate
+73.0,Yes,Non-Hispanic Black,Active and responding,Moderate
+75.0,No,Non-Hispanic White,Active and stable,Mild
+73.0,Yes,Hispanic,Active and stable,Mild
+52.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+49.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+78.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+86.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+56.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+83.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+61.0,Yes,Non-Hispanic White,Active and stable,Severe
+64.0,Yes,Non-Hispanic White,Active and stable,Moderate
+69.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+50.0,No,Non-Hispanic Black,Active and stable,Mild
+40.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+77.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+53.0,No,Non-Hispanic Black,Active and progressing,Severe
+46.0,No,Hispanic,Active and responding,Mild
+57.0,No,Hispanic,"Remission or no evidence of disease, >5 years",Mild
+50.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+59.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+65.0,No,Other,"Remission or no evidence of disease, >5 years",Mild
+66.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+79.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+52.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+87.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+73.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Severe
+49.0,Yes,Non-Hispanic White,Active and responding,Mild
+49.0,Yes,Non-Hispanic Black,Active and responding,Mild
+59.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+78.0,No,Non-Hispanic Black,Active and stable,Mild
+66.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+70.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+73.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+74.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+67.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+58.0,No,Non-Hispanic White,Active and progressing,Mild
+50.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+71.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+51.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+52.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+84.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+70.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+67.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+67.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Severe
+68.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+73.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+79.0,Yes,Hispanic,"Remission or no evidence of disease, >5 years",Mild
+85.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+55.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+81.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+77.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+55.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+70.0,Yes,Other,"Remission or no evidence of disease, <5 years",Mild
+50.0,No,Non-Hispanic Black,Unknown,Mild
+57.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+65.0,No,Non-Hispanic White,Active and progressing,Mild
+79.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+69.0,No,Non-Hispanic Black,Active and stable,Moderate
+90.0,No,Non-Hispanic White,Unknown,Mild
+80.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+37.0,No,Other,"Remission or no evidence of disease, <5 years",Mild
+84.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+69.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+58.0,Yes,Hispanic,Active and progressing,Moderate
+71.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+77.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+55.0,No,Non-Hispanic White,Unknown,Mild
+85.0,Yes,Other,Unknown,Severe
+66.0,Yes,Non-Hispanic White,Unknown,Moderate
+33.0,Yes,Non-Hispanic White,Unknown,Mild
+50.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+70.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Severe
+51.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+56.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+48.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+49.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+85.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+60.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+57.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+70.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+50.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+81.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+56.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+46.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+55.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+62.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+74.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+61.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+55.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+64.0,No,Other,"Remission or no evidence of disease, <5 years",Mild
+55.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+46.0,No,Non-Hispanic White,Active and stable,Mild
+74.0,Yes,Non-Hispanic White,Active and stable,Mild
+43.0,No,Non-Hispanic AAPI,Active and stable,Mild
+46.0,No,Non-Hispanic White,Active and stable,Mild
+51.0,Yes,Non-Hispanic AAPI,Active and progressing,Mild
+52.0,Yes,Hispanic,Active and stable,Moderate
+49.0,Yes,Non-Hispanic Black,Active and progressing,Moderate
+55.0,No,Non-Hispanic White,Active and stable,Mild
+37.0,No,Hispanic,Active and stable,Mild
+75.0,No,Non-Hispanic AAPI,Active and stable,Moderate
+72.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+59.0,No,Non-Hispanic Black,Active and progressing,Mild
+67.0,No,Hispanic,Active and stable,Mild
+61.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+80.0,No,Non-Hispanic Black,Active and stable,Mild
+65.0,Yes,Non-Hispanic Black,Active and stable,Moderate
+79.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+61.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, >5 years",Moderate
+51.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+58.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+62.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+68.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+37.0,Yes,Non-Hispanic Black,Active and responding,Mild
+51.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+59.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+69.0,Yes,Non-Hispanic Black,Active and stable,Moderate
+56.0,Yes,Non-Hispanic White,Unknown,Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Severe
+84.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+35.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+41.0,No,Non-Hispanic Black,Active and stable,Moderate
+46.0,No,Non-Hispanic White,Unknown,Mild
+74.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+81.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+39.0,No,Non-Hispanic White,Active and responding,Mild
+75.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+67.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+67.0,Yes,Non-Hispanic Black,Active and progressing,Mild
+83.0,No,Non-Hispanic Black,Unknown,Moderate
+76.0,No,Other,"Remission or no evidence of disease, <5 years",Mild
+62.0,Yes,Non-Hispanic White,Unknown,Mild
+65.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+50.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+64.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+60.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+69.0,Yes,Non-Hispanic White,Unknown,Mild
+69.0,No,Non-Hispanic Black,Active and stable,Mild
+50.0,No,Non-Hispanic White,Active and stable,Mild
+74.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+60.0,No,Non-Hispanic White,Active and responding,Mild
+59.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+70.0,Yes,Non-Hispanic White,Active and stable,Moderate
+41.0,No,Hispanic,Active and progressing,Moderate
+53.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+46.0,No,Hispanic,Active and stable,Mild
+60.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+45.0,Yes,Other,Active and stable,Moderate
+62.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+45.0,No,Non-Hispanic White,Active and progressing,Moderate
+59.0,Yes,Hispanic,Active and responding,Mild
+68.0,Yes,Non-Hispanic Black,Active and responding,Mild
+64.0,No,Other,"Remission or no evidence of disease, <5 years",Moderate
+51.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+47.0,No,Other,Unknown,Mild
+42.0,Yes,Hispanic,Unknown,Mild
+42.0,No,Hispanic,Active and progressing,Mild
+53.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+40.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+68.0,No,Non-Hispanic Black,Unknown,Mild
+42.0,No,Non-Hispanic White,Active and stable,Mild
+35.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+72.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+47.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+41.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+73.0,No,Hispanic,Unknown,Moderate
+47.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+33.0,Yes,Non-Hispanic White,Active and stable,Mild
+46.0,No,Non-Hispanic White,Active and progressing,Moderate
+51.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+63.0,Yes,Non-Hispanic White,Active and stable,Mild
+58.0,No,Non-Hispanic Black,Active and responding,Moderate
+69.0,No,Hispanic,Active and progressing,Moderate
+55.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+68.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+75.0,No,Non-Hispanic White,Active and stable,Mild
+76.0,Yes,Non-Hispanic White,Unknown,Mild
+36.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+49.0,Yes,Non-Hispanic Black,Unknown,Moderate
+46.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+65.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+52.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+63.0,No,Hispanic,Active and stable,Moderate
+53.0,No,Non-Hispanic White,Unknown,Moderate
+32.0,No,Non-Hispanic White,Active and responding,Mild
+52.0,Yes,Hispanic,Active and progressing,Moderate
+68.0,Yes,Non-Hispanic White,Active and responding,Mild
+44.0,No,Other,"Remission or no evidence of disease, <5 years",Mild
+70.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+62.0,No,Other,Unknown,Mild
+65.0,No,Non-Hispanic Black,Active and progressing,Mild
+42.0,No,Non-Hispanic AAPI,Active and stable,Mild
+41.0,Yes,Other,"Remission or no evidence of disease, <5 years",Mild
+58.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+25.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+54.0,No,Non-Hispanic Black,Active and progressing,Moderate
+41.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+68.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+36.0,Yes,Hispanic,Unknown,Mild
+65.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+75.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+56.0,Yes,Non-Hispanic Black,Active and progressing,Moderate
+63.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+80.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+60.0,No,Non-Hispanic White,Active and stable,Mild
+77.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+55.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+47.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+61.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+47.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, <5 years",Moderate
+47.0,No,Non-Hispanic White,Active and responding,Mild
+53.0,Yes,Non-Hispanic Black,Active and stable,Moderate
+38.0,No,Non-Hispanic White,Active and stable,Mild
+61.0,No,Hispanic,Active and responding,Mild
+55.0,Yes,Non-Hispanic AAPI,"Remission or no evidence of disease, <5 years",Mild
+47.0,No,Hispanic,Active and responding,Moderate
+37.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+43.0,Yes,Hispanic,Unknown,Moderate
+54.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+28.0,No,Non-Hispanic White,Unknown,Mild
+52.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+32.0,No,Hispanic,Active and responding,Mild
+58.0,Yes,Non-Hispanic Black,Active and stable,Moderate
+56.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+37.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, <5 years",Mild
+62.0,No,Hispanic,"Remission or no evidence of disease, >5 years",Mild
+54.0,Yes,Hispanic,Active and responding,Mild
+41.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+70.0,No,Hispanic,Active and progressing,Moderate
+55.0,No,Hispanic,Active and progressing,Mild
+55.0,No,Hispanic,Active and responding,Mild
+62.0,Yes,Hispanic,Active and stable,Mild
+52.0,No,Non-Hispanic White,Active and responding,Mild
+70.0,Yes,Non-Hispanic AAPI,Active and progressing,Mild
+68.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+59.0,Yes,Non-Hispanic White,Active and responding,Moderate
+48.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+37.0,No,Non-Hispanic Black,Active and responding,Mild
+59.0,No,Non-Hispanic Black,Unknown,Mild
+44.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+49.0,Yes,Non-Hispanic Black,Unknown,Mild
+57.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+61.0,Yes,Other,"Remission or no evidence of disease, <5 years",Mild
+43.0,No,Non-Hispanic White,Unknown,Mild
+52.0,Yes,Hispanic,Active and responding,Mild
+50.0,No,Non-Hispanic White,Unknown,Mild
+59.0,No,Other,"Remission or no evidence of disease, <5 years",Mild
+42.0,No,Hispanic,Active and stable,Mild
+43.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+70.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Severe
+31.0,Yes,Non-Hispanic Black,Active and responding,Moderate
+58.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+65.0,No,Non-Hispanic Black,Active and responding,Moderate
+76.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+61.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+88.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+40.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+71.0,Yes,Hispanic,Active and responding,Mild
+40.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+47.0,No,Hispanic,Active and progressing,Mild
+40.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+55.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+54.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+48.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+48.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+58.0,No,Hispanic,Active and responding,Mild
+74.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Severe
+89.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+56.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+64.0,No,Non-Hispanic White,Active and progressing,Mild
+33.0,No,Other,Active and progressing,Mild
+38.0,No,Hispanic,Active and progressing,Mild
+43.0,Yes,Non-Hispanic White,Active and progressing,Mild
+51.0,No,Non-Hispanic White,Active and stable,Mild
+61.0,No,Non-Hispanic White,Active and stable,Mild
+86.0,Yes,Non-Hispanic White,Unknown,Severe
+57.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+51.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+57.0,Yes,Non-Hispanic Black,Active and progressing,Severe
+64.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+71.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+72.0,No,Non-Hispanic White,Active and stable,Moderate
+62.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+68.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+42.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+61.0,No,Non-Hispanic White,Active and stable,Mild
+47.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+55.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+41.0,Yes,Hispanic,"Remission or no evidence of disease, >5 years",Mild
+75.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+77.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+51.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+45.0,Yes,Non-Hispanic White,Active and stable,Mild
+82.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+51.0,Yes,Hispanic,Active and stable,Mild
+53.0,No,Non-Hispanic Black,Active and progressing,Mild
+63.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+56.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+81.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+46.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+64.0,No,Other,"Remission or no evidence of disease, <5 years",Mild
+51.0,Yes,Hispanic,Active and stable,Mild
+48.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+87.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+56.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+39.0,No,Non-Hispanic Black,Active and stable,Mild
+54.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+84.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+73.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+42.0,No,Non-Hispanic AAPI,Unknown,Moderate
+58.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+64.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+67.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+79.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+72.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+56.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+51.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+73.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, >5 years",Mild
+66.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+28.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+67.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+62.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+52.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+67.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+40.0,Yes,Hispanic,Active and responding,Mild
+71.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+52.0,No,Non-Hispanic White,Active and progressing,Mild
+86.0,No,Non-Hispanic AAPI,Active and stable,Mild
+84.0,No,Non-Hispanic White,Active and responding,Mild
+52.0,No,Hispanic,Active and stable,Mild
+40.0,No,Non-Hispanic Black,Active and progressing,Mild
+65.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+67.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+40.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+61.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+30.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+47.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+87.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+65.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+50.0,No,Non-Hispanic AAPI,Active and progressing,Mild
+51.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+55.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+74.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+62.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+68.0,Yes,Hispanic,Active and responding,Moderate
+46.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+39.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+32.0,Yes,Non-Hispanic White,Active and responding,Mild
+65.0,Yes,Hispanic,Active and responding,Mild
+80.0,No,Non-Hispanic White,Active and responding,Moderate
+46.0,Yes,Non-Hispanic White,Active and responding,Mild
+56.0,Yes,Hispanic,Active and responding,Mild
+62.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+78.0,No,Hispanic,Active and responding,Mild
+49.0,No,Hispanic,Active and responding,Mild
+64.0,Yes,Non-Hispanic Black,Active and responding,Mild
+58.0,No,Non-Hispanic White,Active and stable,Mild
+86.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+83.0,No,Non-Hispanic White,Unknown,Moderate
+50.0,No,Non-Hispanic White,Active and progressing,Moderate
+65.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+58.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+55.0,No,Non-Hispanic White,Active and stable,Mild
+73.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+59.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+73.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+81.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+72.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+72.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+63.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+53.0,Yes,Non-Hispanic Black,Active and stable,Mild
+84.0,No,Non-Hispanic White,Active and stable,Mild
+50.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+82.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+41.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+77.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+55.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+56.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+56.0,No,Other,Active and responding,Mild
+70.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+64.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+50.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, <5 years",Mild
+82.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+62.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+59.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+64.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+48.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+88.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+42.0,Yes,Non-Hispanic White,Active and stable,Moderate
+82.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+81.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+62.0,Yes,Non-Hispanic White,Active and progressing,Mild
+51.0,Yes,Non-Hispanic Black,Active and stable,Mild
+29.0,No,Non-Hispanic Black,Unknown,Mild
+40.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+77.0,No,Non-Hispanic Black,Active and stable,Moderate
+82.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+42.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+42.0,No,Non-Hispanic White,Active and stable,Mild
+71.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+90.0,Yes,Non-Hispanic Black,Active and stable,Severe
+79.0,No,Non-Hispanic White,Active and stable,Moderate
+71.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+44.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+84.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+56.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+88.0,Yes,Non-Hispanic White,Active and responding,Moderate
+64.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+47.0,Yes,Non-Hispanic White,Active and stable,Mild
+67.0,Yes,Other,"Remission or no evidence of disease, >5 years",Moderate
+72.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+72.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+75.0,No,Non-Hispanic Black,Active and progressing,Moderate
+58.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+57.0,No,Hispanic,Active and responding,Severe
+68.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+43.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+42.0,No,Hispanic,Active and responding,Mild
+78.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+58.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+76.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+76.0,No,Other,Unknown,Moderate
+77.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+31.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+63.0,No,Non-Hispanic White,Active and responding,Moderate
+46.0,Yes,Hispanic,Active and responding,Mild
+45.0,Yes,Hispanic,Active and responding,Mild
+82.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, >5 years",Moderate
+60.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+89.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+65.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+82.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+88.0,Yes,Non-Hispanic White,Active and progressing,Moderate
+69.0,No,Non-Hispanic White,Active and progressing,Moderate
+51.0,No,Non-Hispanic White,Active and responding,Mild
+46.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+67.0,Yes,Non-Hispanic Black,Active and progressing,Moderate
+51.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+73.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+63.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+72.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+44.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+46.0,Yes,Other,Active and responding,Moderate
+88.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+71.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+79.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+61.0,Yes,Non-Hispanic Black,Active and responding,Moderate
+86.0,No,Hispanic,"Remission or no evidence of disease, >5 years",Moderate
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+42.0,Yes,Hispanic,Unknown,Moderate
+45.0,Yes,Non-Hispanic Black,Unknown,Mild
+64.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+63.0,Yes,Non-Hispanic Black,Active and responding,Mild
+90.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+43.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+49.0,No,Hispanic,Active and responding,Mild
+50.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+85.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+70.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+76.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+70.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+71.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+25.0,No,Non-Hispanic White,Active and stable,Mild
+87.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+72.0,Yes,Non-Hispanic Black,Active and stable,Moderate
+52.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+71.0,No,Non-Hispanic White,Active and progressing,Moderate
+61.0,No,Non-Hispanic White,Unknown,Moderate
+87.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+47.0,No,Hispanic,Active and responding,Mild
+66.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+84.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+43.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+61.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+50.0,Yes,Hispanic,Active and stable,Mild
+90.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+62.0,Yes,Hispanic,Active and responding,Mild
+31.0,Yes,Hispanic,Unknown,Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+40.0,No,Non-Hispanic White,Active and stable,Mild
+58.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+70.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+70.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+62.0,No,Other,"Remission or no evidence of disease, <5 years",Moderate
+60.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+86.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+26.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+57.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+71.0,No,Non-Hispanic White,Active and progressing,Mild
+49.0,Yes,Hispanic,"Remission or no evidence of disease, >5 years",Moderate
+86.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+45.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+29.0,No,Non-Hispanic White,Active and stable,Mild
+61.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+64.0,Yes,Other,"Remission or no evidence of disease, >5 years",Moderate
+65.0,Yes,Non-Hispanic Black,Active and progressing,Severe
+37.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+54.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Severe
+75.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+49.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+43.0,No,Non-Hispanic Black,Active and stable,Mild
+47.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+45.0,Yes,Non-Hispanic White,Active and progressing,Mild
+68.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+77.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+59.0,No,Non-Hispanic Black,Active and responding,Mild
+65.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+83.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+49.0,Yes,Non-Hispanic White,Unknown,Mild
+75.0,Yes,Non-Hispanic White,Active and stable,Mild
+84.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+61.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+63.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+46.0,Yes,Hispanic,Unknown,Mild
+69.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+61.0,Yes,Non-Hispanic White,Active and responding,Moderate
+90.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+63.0,No,Hispanic,Active and progressing,Mild
+59.0,Yes,Hispanic,Active and stable,Moderate
+63.0,No,Non-Hispanic AAPI,Active and stable,Mild
+53.0,Yes,Other,"Remission or no evidence of disease, <5 years",Moderate
+45.0,Yes,Hispanic,Active and stable,Mild
+78.0,Yes,Other,Active and responding,Severe
+55.0,No,Non-Hispanic White,Active and stable,Moderate
+51.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+71.0,Yes,Other,Active and responding,Mild
+78.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+73.0,No,Non-Hispanic White,Active and progressing,Mild
+32.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+79.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+83.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+53.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+76.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+73.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+66.0,Yes,Non-Hispanic White,Active and responding,Mild
+77.0,Yes,Non-Hispanic White,Active and stable,Moderate
+76.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+66.0,Yes,Non-Hispanic Black,Active and responding,Mild
+61.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+64.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+66.0,No,Non-Hispanic White,Active and responding,Moderate
+71.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+65.0,No,Non-Hispanic Black,Active and stable,Mild
+80.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Severe
+60.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+57.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+71.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Severe
+82.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+43.0,Yes,Non-Hispanic White,Active and stable,Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+56.0,Yes,Non-Hispanic Black,Active and responding,Moderate
+55.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+47.0,Yes,Non-Hispanic Black,Unknown,Mild
+61.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+55.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+30.0,No,Hispanic,Unknown,Moderate
+41.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+41.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+72.0,Yes,Non-Hispanic White,Active and stable,Mild
+54.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+65.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+81.0,No,Other,Unknown,Mild
+53.0,No,Non-Hispanic AAPI,Active and responding,Mild
+76.0,No,Other,"Remission or no evidence of disease, <5 years",Mild
+85.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Severe
+38.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+47.0,Yes,Other,"Remission or no evidence of disease, >5 years",Mild
+64.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+63.0,Yes,Hispanic,"Remission or no evidence of disease, >5 years",Moderate
+64.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Severe
+64.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+64.0,No,Hispanic,Active and progressing,Moderate
+65.0,No,Non-Hispanic White,Active and stable,Mild
+82.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+71.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Severe
+63.0,Yes,Non-Hispanic White,Active and stable,Moderate
+38.0,Yes,Non-Hispanic Black,Active and responding,Mild
+46.0,No,Non-Hispanic White,Active and progressing,Moderate
+55.0,Yes,Hispanic,Active and responding,Mild
+73.0,Yes,Non-Hispanic Black,Active and progressing,Moderate
+55.0,Yes,Non-Hispanic White,Active and stable,Moderate
+59.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+74.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+56.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+37.0,No,Hispanic,Active and responding,Severe
+77.0,No,Non-Hispanic White,Active and responding,Moderate
+51.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+60.0,Yes,Non-Hispanic Black,Unknown,Mild
+63.0,Yes,Other,"Remission or no evidence of disease, <5 years",Mild
+49.0,No,Hispanic,Active and stable,Mild
+33.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+41.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+43.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+64.0,No,Non-Hispanic Black,Active and responding,Mild
+59.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+60.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+38.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, <5 years",Mild
+53.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+80.0,Yes,Non-Hispanic White,Active and responding,Mild
+61.0,No,Hispanic,Active and progressing,Moderate
+61.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+82.0,No,Non-Hispanic Black,Unknown,Mild
+59.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+70.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+54.0,Yes,Non-Hispanic AAPI,"Remission or no evidence of disease, <5 years",Mild
+66.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+54.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+56.0,Yes,Non-Hispanic White,Active and responding,Mild
+56.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+51.0,Yes,Non-Hispanic AAPI,Active and progressing,Mild
+78.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, >5 years",Mild
+65.0,Yes,Hispanic,Active and stable,Mild
+67.0,No,Hispanic,Active and stable,Mild
+49.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+37.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+71.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+76.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+71.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+53.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+76.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+54.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+28.0,Yes,Non-Hispanic AAPI,Active and progressing,Severe
+55.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+49.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+66.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+65.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+48.0,Yes,Non-Hispanic Black,Active and responding,Mild
+76.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+58.0,No,Hispanic,Active and progressing,Moderate
+67.0,Yes,Non-Hispanic AAPI,Active and stable,Moderate
+60.0,No,Hispanic,Active and progressing,Moderate
+55.0,No,Non-Hispanic White,Unknown,Moderate
+63.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+76.0,No,Hispanic,Active and stable,Mild
+48.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+57.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+39.0,Yes,Hispanic,Unknown,Mild
+50.0,Yes,Hispanic,Active and responding,Mild
+61.0,No,Hispanic,Active and responding,Moderate
+66.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+84.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+69.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+43.0,Yes,Hispanic,Unknown,Mild
+58.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+87.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+63.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+81.0,Yes,Other,"Remission or no evidence of disease, >5 years",Severe
+83.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+80.0,No,Non-Hispanic White,Active and stable,Moderate
+56.0,No,Non-Hispanic Black,Active and responding,Moderate
+38.0,Yes,Hispanic,Active and stable,Mild
+56.0,No,Hispanic,Unknown,Mild
+85.0,Yes,Non-Hispanic White,Active and responding,Mild
+58.0,No,Non-Hispanic White,Unknown,Mild
+49.0,Yes,Hispanic,Active and stable,Mild
+80.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+56.0,Yes,Non-Hispanic White,Active and progressing,Severe
+39.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+60.0,No,Non-Hispanic White,Active and progressing,Mild
+42.0,No,Non-Hispanic Black,Active and stable,Moderate
+52.0,No,Hispanic,Unknown,Mild
+78.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+37.0,No,Other,Unknown,Mild
+57.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+61.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+63.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+43.0,No,Non-Hispanic Black,Active and progressing,Moderate
+30.0,Yes,Hispanic,Unknown,Mild
+61.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+53.0,Yes,Other,"Remission or no evidence of disease, >5 years",Mild
+65.0,No,Other,"Remission or no evidence of disease, <5 years",Mild
+64.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+52.0,Yes,Other,"Remission or no evidence of disease, <5 years",Mild
+64.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+72.0,No,Non-Hispanic White,Active and responding,Mild
+30.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+39.0,Yes,Non-Hispanic Black,Active and responding,Mild
+66.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+44.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+64.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+71.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+63.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+52.0,Yes,Hispanic,Active and stable,Mild
+39.0,No,Non-Hispanic Black,Active and responding,Mild
+75.0,No,Non-Hispanic White,Active and stable,Moderate
+28.0,Yes,Other,Unknown,Mild
+67.0,No,Non-Hispanic Black,Active and stable,Mild
+55.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+41.0,No,Non-Hispanic Black,Unknown,Mild
+61.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+69.0,No,Non-Hispanic Black,Active and progressing,Moderate
+85.0,No,Non-Hispanic Black,Active and progressing,Mild
+55.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+42.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+51.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+77.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+50.0,Yes,Non-Hispanic Black,Active and responding,Mild
+65.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, <5 years",Moderate
+57.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+79.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+70.0,Yes,Non-Hispanic White,Active and responding,Mild
+47.0,No,Hispanic,Active and progressing,Mild
+46.0,Yes,Hispanic,Active and stable,Mild
+71.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+69.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+49.0,No,Non-Hispanic White,Unknown,Mild
+64.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+82.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+53.0,No,Non-Hispanic White,Active and responding,Mild
+66.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+60.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+81.0,No,Other,"Remission or no evidence of disease, >5 years",Moderate
+48.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+59.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+54.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+60.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+76.0,No,Non-Hispanic AAPI,Active and progressing,Moderate
+58.0,No,Other,"Remission or no evidence of disease, <5 years",Mild
+51.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+76.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+69.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+60.0,Yes,Non-Hispanic White,Active and stable,Mild
+40.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Severe
+51.0,No,Non-Hispanic Black,Unknown,Mild
+71.0,No,Non-Hispanic White,Active and progressing,Moderate
+61.0,No,Non-Hispanic White,Active and stable,Mild
+43.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+63.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+77.0,No,Other,"Remission or no evidence of disease, >5 years",Mild
+47.0,Yes,Non-Hispanic AAPI,"Remission or no evidence of disease, >5 years",Mild
+41.0,Yes,Non-Hispanic Black,Active and responding,Moderate
+40.0,Yes,Non-Hispanic White,Unknown,Mild
+56.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+78.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+56.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+52.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+82.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+63.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+76.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+81.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+72.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+74.0,Yes,Non-Hispanic White,Active and progressing,Moderate
+68.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+46.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+49.0,No,Hispanic,Active and progressing,Mild
+54.0,No,Other,Unknown,Severe
+50.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+53.0,No,Non-Hispanic Black,Active and responding,Mild
+50.0,Yes,Hispanic,Active and responding,Mild
+73.0,Yes,Non-Hispanic White,Active and stable,Mild
+81.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+59.0,Yes,Non-Hispanic Black,Active and responding,Mild
+60.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+56.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+44.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+44.0,No,Non-Hispanic White,Active and responding,Moderate
+78.0,Yes,Hispanic,"Remission or no evidence of disease, >5 years",Mild
+57.0,No,Non-Hispanic White,Active and stable,Mild
+53.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+62.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+48.0,Yes,Hispanic,Active and stable,Mild
+66.0,Yes,Hispanic,"Remission or no evidence of disease, >5 years",Mild
+69.0,No,Hispanic,"Remission or no evidence of disease, >5 years",Mild
+82.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+80.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+88.0,No,Other,"Remission or no evidence of disease, >5 years",Moderate
+57.0,No,Non-Hispanic Black,Active and responding,Mild
+70.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+80.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+47.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+56.0,No,Non-Hispanic Black,Active and progressing,Moderate
+59.0,Yes,Non-Hispanic White,Active and stable,Mild
+79.0,No,Hispanic,Unknown,Moderate
+83.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Severe
+62.0,No,Non-Hispanic White,Unknown,Mild
+65.0,Yes,Hispanic,Active and responding,Mild
+65.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+87.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+80.0,No,Non-Hispanic White,Unknown,Mild
+41.0,No,Non-Hispanic White,Active and stable,Mild
+90.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+56.0,No,Non-Hispanic White,Active and responding,Mild
+51.0,Yes,Non-Hispanic White,Unknown,Mild
+82.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+41.0,Yes,Non-Hispanic AAPI,Unknown,Severe
+66.0,Yes,Hispanic,Active and stable,Mild
+72.0,No,Non-Hispanic Black,Unknown,Mild
+69.0,No,Non-Hispanic White,Unknown,Moderate
+63.0,Yes,Non-Hispanic White,Active and stable,Mild
+64.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+63.0,No,Hispanic,Active and stable,Mild
+37.0,Yes,Non-Hispanic White,Active and stable,Mild
+73.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+36.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+64.0,No,Hispanic,Active and stable,Mild
+63.0,No,Hispanic,Active and responding,Mild
+73.0,Yes,Other,Unknown,Mild
+80.0,Yes,Non-Hispanic White,Unknown,Mild
+65.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+58.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+54.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+64.0,Yes,Hispanic,Active and stable,Mild
+79.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+53.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+42.0,No,Non-Hispanic AAPI,Active and responding,Moderate
+43.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+78.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+56.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+28.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, <5 years",Mild
+64.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+45.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+39.0,No,Other,"Remission or no evidence of disease, <5 years",Mild
+63.0,No,Non-Hispanic White,Active and responding,Mild
+50.0,Yes,Hispanic,Active and responding,Mild
+77.0,No,Non-Hispanic White,Active and responding,Mild
+79.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+66.0,Yes,Non-Hispanic White,Active and responding,Mild
+56.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+70.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+60.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+64.0,Yes,Non-Hispanic Black,Active and stable,Mild
+83.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+70.0,Yes,Non-Hispanic White,Active and stable,Mild
+58.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+66.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+79.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+90.0,No,Non-Hispanic White,Active and stable,Moderate
+53.0,Yes,Hispanic,Active and responding,Mild
+54.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+52.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+59.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+49.0,Yes,Non-Hispanic Black,Active and progressing,Mild
+52.0,Yes,Non-Hispanic White,Active and progressing,Moderate
+56.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+46.0,No,Non-Hispanic White,Unknown,Moderate
+71.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+59.0,Yes,Non-Hispanic White,Active and responding,Mild
+68.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+73.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+42.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+76.0,No,Non-Hispanic AAPI,Active and responding,Moderate
+47.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+65.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+45.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+71.0,No,Non-Hispanic Black,Active and progressing,Moderate
+90.0,No,Non-Hispanic White,Unknown,Mild
+78.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+86.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+70.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+61.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+51.0,No,Non-Hispanic White,Active and progressing,Moderate
+65.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+79.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+56.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+90.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Severe
+36.0,Yes,Non-Hispanic White,Active and stable,Mild
+48.0,No,Hispanic,Active and stable,Mild
+50.0,No,Hispanic,Active and progressing,Moderate
+33.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+75.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+45.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+87.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+89.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+62.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+68.0,No,Non-Hispanic White,Unknown,Mild
+70.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+54.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+74.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+78.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+63.0,No,Other,Active and responding,Mild
+68.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+28.0,No,Non-Hispanic White,Active and stable,Mild
+71.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+71.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+78.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+79.0,No,Non-Hispanic White,Unknown,Mild
+61.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+52.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+73.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+76.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+65.0,No,Non-Hispanic White,Active and progressing,Moderate
+55.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+65.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+69.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+88.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+69.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+76.0,No,Non-Hispanic White,Active and stable,Mild
+80.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, <5 years",Moderate
+53.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+54.0,Yes,Non-Hispanic Black,Active and stable,Moderate
+36.0,Yes,Non-Hispanic White,Unknown,Mild
+57.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+32.0,Yes,Non-Hispanic White,Active and responding,Mild
+64.0,Yes,Non-Hispanic White,Unknown,Mild
+75.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+81.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+78.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+79.0,Yes,Non-Hispanic White,Active and progressing,Mild
+32.0,No,Non-Hispanic Black,Active and progressing,Severe
+34.0,No,Non-Hispanic White,Active and stable,Mild
+40.0,No,Non-Hispanic White,Active and stable,Mild
+72.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+41.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+73.0,Yes,Non-Hispanic White,Active and responding,Moderate
+65.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+59.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+63.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+50.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+64.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+47.0,Yes,Non-Hispanic White,Unknown,Mild
+45.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+81.0,No,Hispanic,"Remission or no evidence of disease, >5 years",Moderate
+74.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+53.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+34.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+66.0,No,Other,"Remission or no evidence of disease, >5 years",Mild
+36.0,Yes,Hispanic,Unknown,Mild
+56.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+68.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+69.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+90.0,No,Non-Hispanic White,Active and stable,Mild
+65.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+74.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+66.0,Yes,Hispanic,Active and responding,Moderate
+58.0,No,Other,Active and stable,Mild
+51.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+63.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+35.0,Yes,Hispanic,Unknown,Mild
+86.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Severe
+66.0,Yes,Non-Hispanic Black,Active and responding,Mild
+44.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+51.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+52.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+48.0,No,Non-Hispanic White,Unknown,Mild
+58.0,Yes,Non-Hispanic White,Active and stable,Mild
+49.0,Yes,Hispanic,Active and responding,Mild
+56.0,Yes,Non-Hispanic White,Active and stable,Mild
+66.0,No,Non-Hispanic White,Active and responding,Moderate
+52.0,No,Non-Hispanic Black,Active and responding,Mild
+58.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+60.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+55.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+65.0,No,Non-Hispanic White,Active and responding,Mild
+50.0,No,Hispanic,Active and responding,Mild
+63.0,No,Non-Hispanic White,Active and responding,Mild
+55.0,No,Non-Hispanic White,Active and stable,Mild
+67.0,No,Hispanic,Active and stable,Mild
+62.0,No,Non-Hispanic White,Active and stable,Mild
+79.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+35.0,No,Non-Hispanic White,Active and stable,Mild
+39.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+39.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+88.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+28.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+72.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+80.0,Yes,Non-Hispanic White,Active and stable,Moderate
+59.0,No,Non-Hispanic White,Active and stable,Mild
+75.0,No,Other,"Remission or no evidence of disease, >5 years",Mild
+66.0,Yes,Non-Hispanic White,Active and responding,Mild
+89.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+76.0,No,Hispanic,Unknown,Mild
+40.0,Yes,Non-Hispanic White,Active and stable,Mild
+46.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+53.0,No,Non-Hispanic White,Unknown,Mild
+83.0,Yes,Non-Hispanic Black,Active and stable,Moderate
+76.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+79.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+57.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Moderate
+48.0,No,Non-Hispanic White,Active and stable,Mild
+48.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+49.0,No,Non-Hispanic White,Unknown,Mild
+71.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+45.0,Yes,Non-Hispanic Black,Active and responding,Mild
+65.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+78.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+61.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+84.0,Yes,Non-Hispanic Black,Active and stable,Mild
+55.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+88.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+90.0,Yes,Non-Hispanic White,Active and stable,Mild
+47.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+58.0,No,Non-Hispanic White,Active and responding,Mild
+76.0,Yes,Non-Hispanic White,Active and responding,Moderate
+51.0,Yes,Non-Hispanic White,Active and progressing,Severe
+54.0,No,Non-Hispanic White,Unknown,Severe
+57.0,Yes,Other,"Remission or no evidence of disease, <5 years",Severe
+61.0,No,Non-Hispanic Black,Unknown,Mild
+71.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+54.0,No,Non-Hispanic White,Active and responding,Moderate
+59.0,No,Hispanic,Active and responding,Mild
+70.0,Yes,Other,Active and stable,Mild
+59.0,No,Other,Active and responding,Mild
+53.0,No,Non-Hispanic White,Active and stable,Mild
+46.0,No,Non-Hispanic Black,Unknown,Moderate
+41.0,No,Hispanic,Active and responding,Severe
+42.0,No,Non-Hispanic AAPI,Active and stable,Moderate
+62.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+74.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+50.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+68.0,No,Non-Hispanic Black,Unknown,Moderate
+75.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+30.0,No,Non-Hispanic White,Active and responding,Mild
+53.0,No,Non-Hispanic White,Unknown,Mild
+88.0,No,Other,"Remission or no evidence of disease, >5 years",Moderate
+52.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+66.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+74.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+78.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+58.0,Yes,Other,"Remission or no evidence of disease, >5 years",Mild
+73.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+69.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+88.0,Yes,Non-Hispanic White,Active and progressing,Moderate
+63.0,Yes,Hispanic,Active and responding,Moderate
+37.0,Yes,Non-Hispanic White,Active and stable,Moderate
+77.0,No,Non-Hispanic White,Active and responding,Moderate
+62.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+58.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+86.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+65.0,Yes,Non-Hispanic White,Active and responding,Mild
+51.0,Yes,Non-Hispanic White,Active and responding,Mild
+53.0,Yes,Hispanic,Active and responding,Moderate
+31.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+59.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+76.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+62.0,Yes,Hispanic,Active and responding,Mild
+50.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+58.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+59.0,No,Hispanic,Active and stable,Mild
+58.0,No,Hispanic,Active and stable,Mild
+54.0,No,Non-Hispanic White,Active and progressing,Mild
+90.0,No,Non-Hispanic White,Active and stable,Moderate
+54.0,No,Hispanic,Active and responding,Mild
+70.0,Yes,Other,"Remission or no evidence of disease, <5 years",Moderate
+54.0,No,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+62.0,Yes,Non-Hispanic White,Active and stable,Moderate
+58.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+71.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+53.0,No,Hispanic,"Remission or no evidence of disease, >5 years",Mild
+36.0,No,Hispanic,Active and responding,Mild
+86.0,Yes,Non-Hispanic White,Active and responding,Moderate
+39.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+83.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+76.0,Yes,Non-Hispanic AAPI,Active and stable,Severe
+59.0,Yes,Hispanic,Active and stable,Mild
+39.0,Yes,Hispanic,Active and responding,Mild
+82.0,No,Non-Hispanic White,Active and stable,Moderate
+66.0,Yes,Other,"Remission or no evidence of disease, <5 years",Mild
+52.0,No,Hispanic,Active and progressing,Mild
+65.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+87.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+49.0,No,Non-Hispanic Black,Active and stable,Mild
+53.0,Yes,Non-Hispanic White,Active and progressing,Moderate
+59.0,No,Non-Hispanic White,Active and stable,Moderate
+47.0,Yes,Hispanic,Active and responding,Mild
+49.0,No,Hispanic,Active and responding,Mild
+60.0,Yes,Hispanic,Active and responding,Mild
+56.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+62.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+74.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+52.0,No,Non-Hispanic White,Unknown,Mild
+75.0,No,Non-Hispanic White,Active and stable,Mild
+59.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+66.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+54.5,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+78.0,No,Non-Hispanic Black,Active and progressing,Mild
+77.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+72.0,No,Non-Hispanic Black,Active and stable,Moderate
+58.0,Yes,Hispanic,Active and progressing,Mild
+59.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+36.0,Yes,Hispanic,Unknown,Mild
+69.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Moderate
+73.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+49.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+77.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+63.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+46.0,No,Non-Hispanic White,Active and stable,Mild
+45.0,No,Hispanic,Active and responding,Mild
+67.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+67.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+52.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+77.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, >5 years",Mild
+81.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+58.0,Yes,Non-Hispanic Black,Active and responding,Moderate
+61.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+83.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+62.0,No,Non-Hispanic White,Active and responding,Mild
+61.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+66.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+57.0,Yes,Non-Hispanic White,Active and responding,Mild
+55.0,No,Other,"Remission or no evidence of disease, <5 years",Mild
+63.0,Yes,Non-Hispanic White,Active and stable,Moderate
+68.0,No,Non-Hispanic White,Active and responding,Moderate
+57.0,Yes,Other,Unknown,Mild
+67.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+58.0,Yes,Other,Active and responding,Moderate
+49.0,No,Other,Active and progressing,Mild
+81.0,Yes,Non-Hispanic White,Unknown,Moderate
+32.0,No,Non-Hispanic White,Active and responding,Mild
+37.0,No,Non-Hispanic White,Active and responding,Mild
+67.0,Yes,Non-Hispanic White,Active and responding,Mild
+38.0,Yes,Non-Hispanic Black,Active and responding,Mild
+83.0,No,Other,"Remission or no evidence of disease, >5 years",Mild
+69.0,No,Non-Hispanic Black,Active and responding,Mild
+69.0,Yes,Non-Hispanic White,Unknown,Mild
+48.0,Yes,Hispanic,Unknown,Mild
+57.0,Yes,Hispanic,"Remission or no evidence of disease, >5 years",Mild
+57.0,No,Other,Active and responding,Mild
+61.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+56.0,No,Hispanic,Active and responding,Mild
+50.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+65.0,No,Non-Hispanic White,Active and responding,Mild
+50.0,No,Non-Hispanic White,Unknown,Mild
+84.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+78.0,No,Non-Hispanic White,Active and stable,Mild
+29.0,No,Non-Hispanic White,Unknown,Mild
+69.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+61.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+39.0,No,Non-Hispanic Black,Active and responding,Moderate
+43.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+42.0,Yes,Non-Hispanic White,Active and progressing,Moderate
+39.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+73.0,No,Hispanic,"Remission or no evidence of disease, >5 years",Moderate
+65.0,No,Non-Hispanic White,Active and stable,Mild
+63.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+59.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Severe
+62.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+40.0,No,Hispanic,Unknown,Mild
+61.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+60.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+59.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+53.0,No,Hispanic,Unknown,Mild
+64.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+38.0,No,Non-Hispanic AAPI,Unknown,Mild
+58.0,Yes,Non-Hispanic White,Unknown,Moderate
+71.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+50.0,Yes,Hispanic,Active and responding,Moderate
+56.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+57.0,Yes,Non-Hispanic Black,Active and progressing,Severe
+70.0,No,Hispanic,"Remission or no evidence of disease, >5 years",Moderate
+84.0,Yes,Non-Hispanic White,Active and progressing,Moderate
+65.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+90.0,No,Non-Hispanic White,Active and progressing,Moderate
+56.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, >5 years",Mild
+43.0,No,Non-Hispanic White,Active and responding,Mild
+70.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+24.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+59.0,No,Non-Hispanic White,Active and progressing,Severe
+72.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+69.0,Yes,Non-Hispanic White,Active and progressing,Moderate
+79.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Severe
+89.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Severe
+52.0,Yes,Non-Hispanic AAPI,Active and stable,Moderate
+72.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+51.0,Yes,Other,"Remission or no evidence of disease, <5 years",Moderate
+59.0,Yes,Hispanic,Unknown,Moderate
+64.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+90.0,No,Non-Hispanic White,Active and progressing,Mild
+62.0,No,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+54.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+83.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+72.0,No,Non-Hispanic White,Active and responding,Mild
+84.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+62.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+59.0,No,Non-Hispanic Black,Active and progressing,Moderate
+55.0,No,Non-Hispanic White,Unknown,Mild
+43.0,No,Non-Hispanic White,Active and stable,Mild
+58.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Severe
+45.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+60.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+55.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Severe
+75.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Moderate
+74.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+59.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, >5 years",Mild
+52.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+51.0,Yes,Non-Hispanic White,Active and responding,Mild
+58.0,Yes,Non-Hispanic White,Active and stable,Mild
+50.0,Yes,Non-Hispanic White,Unknown,Mild
+62.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+54.0,No,Hispanic,"Remission or no evidence of disease, >5 years",Mild
+61.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+42.0,Yes,Hispanic,"Remission or no evidence of disease, >5 years",Mild
+75.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+66.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Moderate
+52.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+77.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+77.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+41.0,No,Other,Unknown,Mild
+80.0,Yes,Non-Hispanic White,Active and stable,Mild
+56.0,No,Hispanic,Active and responding,Mild
+49.0,Yes,Non-Hispanic White,Active and responding,Mild
+65.0,No,Non-Hispanic White,Active and progressing,Moderate
+64.0,No,Non-Hispanic White,Active and stable,Moderate
+72.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+69.0,No,Other,Active and responding,Mild
+82.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+60.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+39.0,Yes,Non-Hispanic White,Active and responding,Mild
+64.0,Yes,Non-Hispanic White,Active and responding,Moderate
+63.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+61.0,Yes,Hispanic,"Remission or no evidence of disease, >5 years",Mild
+62.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+52.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+69.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+75.0,Yes,Non-Hispanic White,Active and stable,Mild
+72.0,No,Non-Hispanic White,Active and stable,Mild
+51.0,No,Hispanic,"Remission or no evidence of disease, <5 years",Mild
+55.0,No,Non-Hispanic White,Active and responding,Mild
+60.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+62.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Severe
+55.0,Yes,Hispanic,"Remission or no evidence of disease, <5 years",Moderate
+39.0,No,Non-Hispanic AAPI,"Remission or no evidence of disease, <5 years",Mild
+83.0,Yes,Non-Hispanic White,Active and stable,Mild
+49.0,Yes,Hispanic,Active and responding,Moderate
+62.0,Yes,Other,"Remission or no evidence of disease, >5 years",Moderate
+63.0,Yes,Non-Hispanic White,Active and responding,Moderate
+71.0,Yes,Non-Hispanic White,Active and responding,Mild
+77.0,No,Non-Hispanic White,Active and progressing,Mild
+51.0,No,Other,"Remission or no evidence of disease, <5 years",Mild
+69.0,Yes,Other,Active and stable,Mild
+40.0,Yes,Other,"Remission or no evidence of disease, <5 years",Mild
+65.0,No,Other,Active and stable,Mild
+50.0,No,Non-Hispanic White,Active and progressing,Moderate
+56.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+54.0,No,Non-Hispanic White,Unknown,Mild
+48.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+42.0,Yes,Non-Hispanic White,Active and stable,Mild
+39.0,Yes,Non-Hispanic Black,Active and stable,Mild
+80.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+47.0,Yes,Non-Hispanic Black,Active and stable,Mild
+90.0,No,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+47.0,Yes,Non-Hispanic Black,"Remission or no evidence of disease, <5 years",Mild
+57.0,No,Non-Hispanic White,"Remission or no evidence of disease, <5 years",Mild
+50.0,Yes,Hispanic,"Remission or no evidence of disease, >5 years",Mild
+78.0,Yes,Non-Hispanic White,Active and responding,Mild
+58.0,No,Other,Active and responding,Mild
+73.0,No,Non-Hispanic Black,Active and responding,Moderate
+60.0,Yes,Non-Hispanic White,"Remission or no evidence of disease, >5 years",Mild
+60.0,No,Non-Hispanic Black,Unknown,Moderate
+68.0,Yes,Non-Hispanic White,Active and stable,Moderate

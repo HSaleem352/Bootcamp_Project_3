@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar.navbar-dark.bg-dark {
+    width: 100%;
+}
+
+/* Team cards */
+.big-card {
+    background-color: #ceb5b7;  /* Light pink color */
+    border-radius: 20px;  /* Rounded edges for the big card */
+    padding: 20px;  /* Add some padding to the big card */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally within the big card */
+    justify-content: center; /* Center items vertically within the big card */
+    width: 80%; /* Adjust the width of the big card */
+    margin: auto; /* Center the big card within its container */
+}
+
+.main-card {
+    width: 300px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border-radius: 0;  /* Normal edges for the small cards */
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-card:hover {
+    transform: scale(1.1);
+}
+
+.sub-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.sub-card img {
+    width: 120px; /* Adjust the width of the image */
+    height: 120px; /* Adjust the height of the image */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* LinkedIn & Github Icons */
+.icon-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-link:hover {
+    color: inherit;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 8px; /* Adjust spacing between icons and text */
+    width: 24px; /* Set the width of the icons */
+    height: 24px; /* Set the height of the icons */
+}
+
+.icon-link:hover span {
+    color: navy;
+    font-weight: bold;
+  }
