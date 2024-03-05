@@ -41,7 +41,20 @@ What are the sociodemographic and clinical factors that influence adverse outcom
 Nagaraj, G., Khaki, A., & Shah, D. (2023). Covid-19 and Cancer Consortium (CCC19) breast cancer and racial disparities outcomes study. Zenodo. https://doi.org/10.5281/zenodo.7644334
 
 ## Code Snippets
+**Mina**
+Home page question cards animation:
+```python
+.card-link .card {
+    transition: transform 0.3s ease-in-out;
+    width: 100%; /* Set a fixed width for the card */
+}
 
+.card-link:hover .card {
+    transform: scale(1.08); /* Increase the size on hover, adjust as needed */
+    transition: 0.7s;
+    box-shadow: 0px 0px 2px 2px darkgrey;     
+}
+```
 
 ## References
 **Hamza**
