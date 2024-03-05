@@ -48,17 +48,53 @@
         </div>
       </nav>
 
-    <h1>Breast Cancer Research on Race</h1>
-    <div id="race-counts-pie-chart"></div>
-    
+    <!-- <h1>Breast Cancer Research on Race</h1> -->
+
     <div class="container-fluid mt-3">
-      <div class="row justify-content-center">
-        <div class=".col-lg-4">
-          <div id="covid-severity-bar-chart" style="height: 500px;"></div>
+      <h1>Race Distribution in the Study</h1>
+      <div class="row">
+          <!-- Reduce the text column size for more chart space -->
+          <div class="col-xxl-4 p-3 text-black" style="background-color: white">
+            <h2> Sample Size Review </h2>
+            <p> This distribution suggests a significant representation of Non-Hispanic White individuals, accounting for the majority of the study's population. The Non-Hispanic Black and Hispanic categories follow, with a moderate representation. The "Other" and Non-Hispanic AAPI categories have the least representation. This distribution may reflect the demographic profile of the area or population from which the study participants were drawn, assuming the study aims to be representative of a broader population.</p>
+            <h2>Limitations of the Study</h2>
+            <p> The dominance of the Non-Hispanic White category and the underrepresentation of others, particularly Non-Hispanic AAPI, could introduce limitations regarding the generalizability and applicability of its findings. Future studies should aim for more balanced representation or employ methods to adjust for these disparities to ensure the findings are reflective of the broader population's experiences. This might involve targeted recruitment strategies or weighting the results to better reflect the general population's demographic makeup.</p>
+          </div>
+          <div class="col-xxl-8 p-3 text-white" style="background-color: white;">
+            <div id="race-counts-pie-chart" style="height: 800px;"></div>
         </div>
       </div>
     </div>
     
+  
+
+
+
+    <div class="container-fluid mt-3">
+      <h1>Relationship Between Ethnic Distribution and COVID-19 Severity</h1>
+      <div class="row">
+        <div class="col-sm-8 p-3 text-white" style="background-color: white;">
+              <div id="covid-severity-bar-chart" style="height: 700px;"></div>
+          </div>
+          <div class="col-sm-4 p-3 text-black" style="background-color: white">
+            <h2> Analysis </h2>
+            <p>  1.Non-Hispanic White individuals have the highest number of cases across all severity levels, suggesting this group might be the most affected or has the highest population among the data sampled.            </p>
+            <p>  2.Non-Hispanic Black and Hispanic groups follow, indicating a significant impact on these communities as well.
+            </p>
+            <p>  3.Non-Hispanic AAPI and Other have fewer cases, which could be due to a smaller population size in the dataset or potentially different exposure or reporting rates.
+            </p>
+            <h2> Severity Distribution within Races </h2>
+            <p>Across all racial categories, the distribution leans heavily towards mild cases, which is consistent with general COVID-19 data trends where the majority of cases do not become severe.
+              Severe cases are significantly less common than mild and moderate cases across all racial groups, which might indicate effective management or treatment of the disease in its less severe stages, or a natural progression of the disease being mostly mild or moderate for the majority of individuals.</p>
+              <h2> Conclusions</h2>
+            <p>  The proportion of severe cases is relatively low in comparison to mild and moderate cases for all racial groups. However, when looking at the numbers relatively, Non-Hispanic Black individuals have a higher proportion of moderate and severe cases compared to their total cases than the Non-Hispanic White group. This could suggest a disparity in the severity of the disease's impact on these communities, potentially due to socioeconomic factors, access to healthcare, or other determinants of health.
+            </p>
+
+          </div>
+      </div>
+  </div>
+
+ 
 
 
     <div id="covid-severity-bar-chart"></div>
@@ -140,13 +176,3 @@
 </body>
 </html>
 
-<!-- <div class="container-fluid mt-3">
-  <h1>Two Unequal Responsive Columns</h1>
-  <p>Resize the browser window to see the effect.</p>
-  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
-  <div class="row">
-    
-    <div class="col-sm-8 p-3 bg-dark text-white">.col</div>
-    <div class="col-sm-4 p-3 bg-primary text-white">.col</div>
-  </div>
-</div> -->

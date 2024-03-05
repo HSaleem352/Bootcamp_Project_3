@@ -79,10 +79,10 @@ d3.json(url3).then(function(data) {
     groupedData.forEach(function(values, race) {
         let labels = values.map(d => d['Cancer Status']);
         let counts = values.map(d => d.Count);
-        let chartIdSuffix = raceToChartIdMap[race]; // 获取映射的ID后缀
+        let chartIdSuffix = raceToChartIdMap[race]; 
         if (!chartIdSuffix) {
             console.error('Unknown race category:', race);
-            return; // 如果种族不在映射中，则跳过
+            return; 
         }
 
         let trace = {
@@ -97,14 +97,13 @@ d3.json(url3).then(function(data) {
             title: `${race} Cancer Status Distribution`,
         };
 
-        // 使用映射的ID后缀构建正确的图表ID
+        
         let chartId = `graph${chartIdSuffix}`;
 
-        // 绘制饼图
+        // pie chart create
         Plotly.newPlot(chartId, [trace], layout);
     });
 });
-
 
 
 
