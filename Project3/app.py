@@ -211,7 +211,7 @@ def afr_treatment_type_df():
     return json_data
 
 @app.route('/afr_treatment_timing_page')
-def main():
+def afr_page():
     return render_template("alejandra.html")
 
 
