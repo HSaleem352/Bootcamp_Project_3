@@ -171,6 +171,19 @@ def severity_residence_HS():
     return json_data
 
 
+@app.route('/api/v1/cancer_residence_HS', methods=['GET'])
+def cancer_residence():
+
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('cancer_residence_HS',connection)
+
+    # Convert DataFrame to JSON
+    json_data = df.to_json(orient='records')
+
+    return json_data
+
+
 #################################################################################################################
 ##                                                Alejandra                                                    ##
 #################################################################################################################

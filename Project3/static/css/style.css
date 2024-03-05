@@ -208,6 +208,8 @@
 
 .card-link:hover .card {
     transform: scale(1.08); /* Increase the size on hover, adjust as needed */
+    transition: 0.7s;
+    box-shadow: 0px 0px 2px 2px darkgrey;     
 }
 
 .card {
