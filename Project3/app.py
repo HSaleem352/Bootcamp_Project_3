@@ -201,8 +201,12 @@ def cancer_residence():
 def AFR_timing_df():
 
     # Read CSV file using pandas
-    df = pd.read_csv('https://drive.google.com/uc?id=1FE-JYKjod8YGo71-E37W3UpDq8nL3UyU&export=download')
+    # df = pd.read_csv('https://drive.google.com/uc?id=1FE-JYKjod8YGo71-E37W3UpDq8nL3UyU&export=download')
     
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('AFR_timing_df',connection)
+
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
 
@@ -212,7 +216,11 @@ def AFR_timing_df():
 def afr_treatment_type_df():
 
     # Read CSV file using pandas
-    df = pd.read_csv("https://drive.google.com/uc?id=1uDqbe24GtHw7ctzsdma_r4-wGPVUFevh&export=download")
+    #df = pd.read_csv("https://drive.google.com/uc?id=1uDqbe24GtHw7ctzsdma_r4-wGPVUFevh&export=download")
+
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('afr_treatment_type_df',connection)
 
     # Convert DataFrame to JSON
     json_data = df.to_json(orient="records")
