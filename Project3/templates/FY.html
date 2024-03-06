@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Visualization</title>
+    <title>Data Analysis - Breast Cancer, Age, Obesity, and COVID-19</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,11 +17,13 @@
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <!-- Your visualization JavaScript file -->
     <script src="{{ url_for('static', filename='js/plots_FY.js') }}"></script>
-    <!-- <link rel="stylesheet" href="/Project3/static/css/styling_FY.css"> -->
-
+    
+   
     <!-- plotly.js -->
+    
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -51,38 +53,119 @@
       </nav>
     
     
-    <div class="container">
-       
-        
+    <div class="container"> 
 
       
-        <h3 style="color: rgb(255, 115, 0);margin-left: 150px;">Distribution of Age for each Covid-19 Severity Levels</h3>
-        <div id="boxplot-container">
-         
-            <!-- <h2>Age Distribution by Cancer Status</h2> -->
+        <h3 style="font-style: italic;color: rgb(165, 79, 42);">Data Analysis - Breast Cancer, Age, Obesity, and COVID-19</h3>
+        <hr>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <h4 style="color: rgb(255, 115, 0);margin-left: 420px;" class="analysis-title">Distribution of Age for each Covid-19 Severity Levels</h4> 
+
+        <div id="obesity-distribution-chart-sunburst">
+            <!--  -->
         </div>
 
-        <h3 style="color: rgb(255, 132, 0);margin-left: 150px;">der_cancer_status_v4 (Percentage)</h3>
+        <div class="analysis-container">
+            
+            <button class="reveal-button" onclick="toggleContent('content1')"> Details</button>
+            <div id="content1" class="hidden-content">
+                <p class="analysis-text">
+                    The sunburst chart reveals that among individuals actively responding to breast cancer treatment, the distribution of obesity is remarkably balanced. Approximately 49.0% of individuals are classified as obese (Yes), while the remaining 51.0% are not obese. This equal representation suggests that, within this subgroup, there is a harmonious mix of both obese and non-obese individuals.
+                    <br>
+                    The nearly 50-50 distribution underscores the absence of a notable difference in the prevalence of obesity among people actively responding to breast cancer, highlighting a diverse range of health statuses within this cohort.
+                </p>
+            </div>
+        </div>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <h4 style="color: rgb(255, 115, 0);margin-left: 150px;" class="analysis-title">
+            Cancer percentage</h4> 
+
         <div id="cancer-status-chart-container">
-            <!-- bar chart to show cancer percentage -->
-       </div> 
+            <!--  -->
+        </div>
+
+        <div class="analysis-container">
+            
+            <button class="reveal-button" onclick="toggleContent('content2')"> Details</button>
+            <div id="content2" class="hidden-content">
+                <p class="analysis-text">
+                    The chart above illustrates the distribution of dermal cancer status (der_cancer_status_v4) across different severity levels. The data, represented as percentages, provides a visual insight into the prevalence of each severity category within the analyzed dataset.
+                    <br>
+                    The chart distinctly depict the proportions of severity levels, offering a clear perspective on the overall distribution. This visualization serves as a valuable tool for understanding the relative frequencies of different dermal cancer statuses
+                </p>
+            </div>
+        </div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` Obesity Distribution Chart -->
 
        
-       <h3 style="color: rgba(255, 115, 0, 0.801);margin-left: 150px;">Obesity Distribution Chart</h3>
-       <div id="obesity-distribution-chart-container">
-           <!-- bar chart to show Obesity Distribution Chart-->
-      </div>
+       <h4 style="color: rgb(255, 115, 0);margin-left: 150px;" class="analysis-title">Obesity distribution</h4> 
+
+        <div id="obesity-distribution-chart-container">
+            <!--  -->
+        </div>
+
+        <div class="analysis-container">
+            
+            <button class="reveal-button" onclick="toggleContent('content3')"> Details</button>
+            <div id="content3" class="hidden-content">
+                <p class="analysis-text">
+                    The Yes/No Distribution Pie Chart succinctly illustrates the distribution of the last-level responses within our dataset. Focused exclusively on "Yes" and "No" categories, this pie chart provides a clear and concise representation of the prevalence of the respective responses.
+                    <br>
+                    The pie chart elegantly divides into two distinct sections – one representing "Yes" responses and the other "No." The proportional areas of these segments offer an immediate visual understanding of the distribution balance between the affirmative and negative outcomes within our data.
+                    <br>
+                    The dominance of one segment over the other underscores the prevalence of either "Yes" or "No" responses in the category.
+                </p>
+            </div>
+        </div>
       
-      <h3 style="color: rgba(255, 85, 0, 0.957);margin-left: 150px;">Covid Severity Distribution Chart</h3>
-       <div id="covid-severity-distribution-chart-container">
-           <!-- bar chart to show covid-severity-distribution-chart-->
-      </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      
+    <h4 style="color: rgb(255, 115, 0);margin-left: 150px;" class="analysis-title">Covid severity distribution</h4> 
 
+    <div id="covid-severity-distribution-chart-container">
+        <!--  -->
+    </div>
 
-    <h3 style="color: rgb(255, 115, 0);margin-left: 150px;">age-distribution-scatter</h3>
+    <div class="analysis-container">
+        
+        <button class="reveal-button" onclick="toggleContent('content4')"> Details</button>
+        <div id="content4" class="hidden-content">
+            <p class="analysis-text">
+                Incorporating the COVID Severity Distribution Chart into this presentation enhances our ability to convey the diverse impact of COVID-19 on our study population.
+                <br>
+                This chart enables us to communicate the varied impact of COVID-19 across different severity levels
+                <br>
+                By observing the chart, we can discern patterns in the distribution of COVID-19 severity, identifying whether one category dominates or if there is a balanced representation across all levels.
+            </p>
+        </div>
+    </div>
+
+    <!--   `~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`` -->
+
+    <h4 style="color: rgb(255, 115, 0);margin-left: 150px;" class="analysis-title"> Age distribution by Covid severity level</h4> 
+
     <div id="age-distribution-boxplot">
-        <!-- bar chart to show age-distribution-scatter-->
- </div>
+        <!--  -->
+    </div>
+
+    <div class="analysis-container">
+        
+        <button class="reveal-button" onclick="toggleContent('content5')"> Details</button>
+        <div id="content5" class="hidden-content">
+            <p class="analysis-text">
+                Our analysis revealed a noteworthy correlation between age and COVID-19 severity in breast cancer patients.
+                Individuals aged 49 to 68 tended to experience milder symptoms, while those in the age range of 58 to 79 exhibited more moderate symptoms.
+                <br>
+                Severe cases were more prevalent in individuals aged 57 to 79.
+                This insight emphasizes the importance of considering age as a factor in predicting COVID-19 outcomes among breast cancer patients.
+            </p>
+        </div>
+    </div>
 
 </body>
 

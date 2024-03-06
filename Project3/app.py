@@ -319,8 +319,7 @@ def outcome_rates():
 def fozia_page():
     return render_template("FY.html")
 
-
-# a function to display the data from the sql server in json
+# A function to display the data from the sql server in json
 @app.route('/api/v1/FYinit_data',methods=['GET'])
 def FY_get_data():
     # Read Dataframe using SQL
@@ -333,23 +332,19 @@ def FY_get_data():
     return  jsonify(json_data)
 
 
-@app.route('/obesity_age_effect')
-def obesity_age_effect():
+@app.route('/obesity_distribution_active_responding')
+def obesity_distribution_active_responding():
+    # Connect to the database and retrieve data
     with engine.connect() as connection:
-        mild = pd.read_sql("SELECT der_age_trunc FROM obesity_age_effect Where severity_of_covid_19_v2 = 'Mild'", connection)
-        moderate = pd.read_sql("SELECT der_age_trunc FROM obesity_age_effect Where severity_of_covid_19_v2 = 'Moderate'", connection)
-        severe = pd.read_sql("SELECT der_age_trunc FROM obesity_age_effect Where severity_of_covid_19_v2 = 'Severe'", connection)
-       
-    combine1 = mild.join(moderate, lsuffix='_caller', rsuffix='_other')
-    combine2 = combine1.join(severe, lsuffix='_caller', rsuffix='_other')
-    combine2.rename(columns={"der_age_trunc_caller": "mild", "der_age_trunc_other": "moderate", "der_age_trunc":"Severe"}, inplace = True)
+        # Adjust the SQL query based on your database schema and structure
+        query = "SELECT der_obesity, COUNT(*) as count FROM obesity_age_effect WHERE der_cancer_status_v4 = 'Active and responding' GROUP BY der_obesity"
+        result = connection.execute(query)
+        data = [{"der_obesity": row[0], "count": row[1]} for row in result]
 
-    
-    age_obesity = combine2.fillna(0)
-    cleaned_data_json = age_obesity.to_json(orient='records')
-
-    return cleaned_data_json
-
+    # Convert the data to JSON
+    json_data = jsonify(data)
+   
+    return json_data
 
 @app.route('/FYcancer_status_percentage')
 def cancer_percentage():
@@ -371,7 +366,8 @@ def cancer_percentage():
 
     return cancer_percentage_json
 
-@app.route('/obesity_distribution')
+
+@app.route("/obesity_distribution")
 def obesity_distribution():
     with engine.connect() as connection:
         # Query data for obesity distribution
@@ -391,7 +387,6 @@ def obesity_distribution():
     obesity_distribution_json = obesity_distribution_df.to_json(orient='records')
 
     return obesity_distribution_json
-
 
 
 @app.route('/covid_severity_distribution')
@@ -417,7 +412,6 @@ def covid_severity_distribution():
     return covid_severity_distribution_json
 
 
-
 @app.route('/age_distribution_by_covid_severity')
 def age_distribution_by_covid_severity():
     with engine.connect() as connection:
@@ -439,6 +433,3 @@ def age_distribution_by_covid_severity():
 if __name__ == '__main__':
     app.run(debug=True)
 
-
-
-  

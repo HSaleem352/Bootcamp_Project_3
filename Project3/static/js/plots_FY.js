@@ -1,61 +1,79 @@
+// JavaScript functions for toggling hidden content
+function toggleContent(contentId) {
+    var content = document.getElementById(contentId);
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+}
 
 
 
-d3.json("/obesity_age_effect").then(function(data) {
+// Fetch data from the Flask route for obesity distribution in people with breast cancer (active and responding)
+d3.json('/obesity_distribution_active_responding').then(function(data) {
 
-    var y = ["Mild", "Moderate", "Severe"];
-    var x1 = data.map(d => d.mild);
-    var x2 = data.map(d => d.moderate);
-    var x3 = data.map(d => d.severe);
+    // Extracting data for plotting the bar chart
+    var labelsBarChart = data.map(d => d.der_obesity);
+    var valuesBarChart = data.map(d => d.count);
 
-    console.log(data);
-
-    var trace1 = {
-        y: y,
-        x: x1,
+    // Creating a bar chart using Plotly
+    var traceBarChart = {
+        x: labelsBarChart,
+        y: valuesBarChart,
         type: 'bar',
-        orientation: 'h', // Set orientation to horizontal
-        name: 'Mild'
+        marker: {
+            color: 'rgba(0, 123, 255, 0.7)'  
+        },
+        name: 'Obesity Distribution'
     };
 
-    var trace2 = {
-        y: y,
-        x: x2,
-        type: 'bar',
-        orientation: 'h', // Set orientation to horizontal
-        name: 'Moderate'
-    };
-
-    var trace3 = {
-        y: y,
-        x: x3,
-        type: 'bar',
-        orientation: 'h', // Set orientation to horizontal
-        name: 'Severe'
-    };
-
-    var layout = {
-        barmode: 'group',
-        title: 'Effect of Obesity and Age on COVID-19 Severity',
+    var layoutBarChart = {
+        title: 'Distribution of Obesity in People with Breast Cancer (Active and Responding)',
         xaxis: {
-            title: 'Count'
+            title: 'Obesity Status'
         },
         yaxis: {
-            title: 'Severity'
+            title: 'Number of Cases'
         }
     };
 
-    var data = [trace1, trace2, trace3];
+    var chartDataBarChart = [traceBarChart];
 
-    Plotly.newPlot('boxplot-container', data, layout);
+    // Create the bar chart
+    Plotly.newPlot("obesity-distribution-chart-sunburst", chartDataBarChart, layoutBarChart);
 
+    // Extracting data for plotting the sunburst chart
+    var labelsSunburst = data.map(d => d.der_obesity);
+    var valuesSunburst = data.map(d => d.count);
+
+    // Creating a hierarchical structure for the sunburst chart
+    var traceSunburst = {
+        labels: labelsSunburst,
+        parents: Array(labelsSunburst.length).fill(''),
+        values: valuesSunburst,
+        type: 'sunburst',
+        marker: {
+            colors: ['rgba(255, 0, 0, 0.7)', 'rgba(0, 255, 0, 0.7)', 'rgba(0, 0, 255, 0.7)']  
+        },
+        name: 'Obesity Distribution'
+    };
+
+    var layoutSunburst = {
+        title: 'Sunburst Chart of Obesity Distribution',
+    };
+
+    var chartDataSunburst = [traceSunburst];
+
+    // Create the sunburst chart
+    Plotly.newPlot('obesity-distribution-chart-sunburst', chartDataSunburst, layoutSunburst);
 });
 
 
 
 // Fetch data from the API endpoint
 d3.json("/FYcancer_status_percentage").then(function(data) {
-    // Assuming data is [{"cancer_percentage": 24.907, "no_cancer_percentage": 60.31042}]
+
     var labels = Object.keys(data[0]);
     var values = Object.values(data[0]);
 
@@ -64,7 +82,7 @@ d3.json("/FYcancer_status_percentage").then(function(data) {
         values: values,
         type: 'pie',
         marker: {
-            colors: ['rgba(255, 0, 0, 0.7)', 'rgba(0, 0, 255, 0.7)']  // Custom colors (red and blue)
+            colors: ['rgba(255, 0, 0, 0.7)', 'rgba(0, 0, 255, 0.7)']  
         }
     };
 
@@ -100,7 +118,6 @@ d3.json("/obesity_distribution").then(function(data) {
   
 
 
-
 d3.json("/covid_severity_distribution").then(function(data) {
   // Extract unique obesity statuses and severity levels
   var obesityStatuses = [...new Set(data.map(d => d.der_obesity))];
@@ -129,7 +146,6 @@ d3.json("/covid_severity_distribution").then(function(data) {
 
   Plotly.newPlot('covid-severity-distribution-chart-container', traces, layout);
 });
-
 
 
 
