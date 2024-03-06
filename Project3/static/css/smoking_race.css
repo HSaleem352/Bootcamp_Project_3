@@ -17,15 +17,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Adjust the height based on your design */
+    height: 100vh; 
 }
 
 .carousel-caption{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Adjust the height based on your design */
+    height: 100vh; 
 }
+
+.carousel-caption img {
+    max-width: 1000px;
+    max-height: 200px;
+    position: absolute;
+    bottom: -400px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 .carousel-inner {
     align-items: center;
     justify-content: center;
