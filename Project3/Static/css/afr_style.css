@@ -115,7 +115,7 @@
 
 
 /* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
-/*                                                                         TIMING CAROUSEL                                                                     */
+/*                                                                        TIMING CAROUSEL                                                                      */
 /* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
 
 * {box-sizing:border-box}
@@ -204,7 +204,161 @@
   from {opacity: .99} 
   to {opacity: 1}
 }
+/* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
+/*                                                                         TREATMENT FLIP CARD                                                                    */
+/* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
+
+/* The flip card container */
+.treat-flip-card {
+  background-color: transparent;
+  width: 2000px;
+  height: 600px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: 0 auto;
+}
+
+/* This container is needed to position the front and back side */
+.treat-flip-card-inner {
+  position: relative;
+  width: 2000px;
+  height: 600px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Add a class to rotate when active */
+.treat-flip-card.active .treat-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.treat-flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+}
+
+.treat-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  align-items: center;
+}
+
+/* Style the front side (fallback if image is missing) */
+.treat-flip-card-front {
+  background-color: #ecd3e9;
+  color: black;
+}
+
+/* Style the back side */
+.treat-flip-card-back {
+  background-color: rgb(252, 214, 243);
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:left;
+  font-family: "Lato";
+  color: black;
+  font-size: 20px;
+
+  transform: rotateY(180deg);
+}
 
 /* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
-/*                                                                         TREATMENT CAROUSEL                                                                  */
+/*                                                                        TREATMENT CAROUSEL                                                                   */
 /* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.treatment-slideshow-container {
+  max-width: 2000px;
+  height: 600;
+  position: relative;
+  margin: auto;
+  align-items: center;
+}
+
+/* Hide the images by default */
+.myTreatmentSlides {
+  display: block;
+  text-align: center;
+}
+
+
+/* Next & previous buttons */
+.treat-prev, .treat-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+/* Position the "next button" to the right */
+.treat-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.treat-prev:hover, .treat-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.treat-text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.treat-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.treat-active, .treat-dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.treat-fade {
+  animation-name: fade;
+  animation-duration: 100s;
+}
+
+@keyframes treat-fade {
+  from {opacity: .99} 
+  to {opacity: 1}
+}

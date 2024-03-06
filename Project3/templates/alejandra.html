@@ -49,7 +49,7 @@
       <p style = "max-width: 80%;">I am hypothesizing that the closer the cancer treatment was given to COVID-19 infection, the more likely the patients are to have moderate or severe COVID-19 outcomes</p>
   </div>
   <div class="hover_instruct">
-    <p>Hover on top of the bar chart below for more information on the data analysis</p>
+    <p>Click the bar chart below for more information on the data analysis</p>
   </div>
 
   <!-- Flip Card -->
@@ -110,25 +110,66 @@
     <p>I am hypothesizing that patients with more immune-targeted Anti Cancer Treatments will have more severe or moderate Covid-19 Outcomes</p>
 </div>
 <div class="hover_instruct">
-  <p>Hover on top of the bar chart below for more information on the data analysis</p>
+  <p>Click on the bar chart below for more information on the data analysis</p>
 </div>
 
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
+
+<!-- Treatment Overall Data -->
+<!-- Make it flip over to see explanation -->
+<div class="treat-flip-card">
+  <div class="treat-flip-card-inner">
+    <div class="treat-flip-card-front">
       <div id="afr_treatment_bar_grouped"></div>
     </div>
-    <div class="flip-card-back">
+    <div class="treat-flip-card-back">
       <p style="max-width: 60%;"> I hypothesized that individuals who received ACT closer to their timing of having covid would have more severe covid outcomes than individuals who never received ACT or who received it more than 3 months after getting covid. The null hypothesis would be that the timing had no effect on an individual’s covid-19 outcome severity. A chi-squared analysis shows that there was no significant relationship between the covid-19 outcome and the timing of ACT</p>
     </div>
   </div>
 </div>
 </div>
 
+<!-- Treatment Carousel -->
+<!-- Slideshow container -->
+<div class="treatment-slideshow-container">
 
-<!-- Treatment Overall Data -->
-<!-- Make it flip over to see explanation -->
-<div id="afr_treatment_bar_grouped"></div>
+  <!-- Full-width images with number and caption text -->
+  <div class="myTreatmentSlides fade">
+    <div id="afr_mild_treatment_pie" style ="width:100%"></div>
+    <div class="treat-text"> Mild Covid Outcomes for Different BC Treatment Types</div>
+  </div>
+
+  <div class="myTreatmentSlides fade">
+    <div id="afr_moderate_treatment_pie" style ="width:100%"></div>
+    <div class="treat-text">Moderate Covid Outcomes for Different BC Treatment Types</div>
+  </div>
+
+  <div class="myTreatmentSlides fade">
+    <div id="afr_severe_treatment_pie" style ="width:100%"></div>
+    <div class="treat-text"> Severe Covid Outcomes for Different BC Treatment Types</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="treat-prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="treat-next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="treat-dot" onclick="currentSlide(1)"></span> 
+  <span class="treat-dot" onclick="currentSlide(2)"></span> 
+  <span class="treat-dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+<!-- Scripts -->
+<script>
+  document.querySelector('.treat-flip-card').addEventListener('click', function() {
+    this.classList.toggle('active');
+  });
+</script>
 
 <script>
   document.querySelector('.flip-card').addEventListener('click', function() {
@@ -166,7 +207,6 @@
     dots[slideIndex-1].className += " active";
   }
 </script>
-
 
 <!-- Plots -->
 <script src="{{ url_for('static', filename='js/plots_AFR.js') }}"></script>
