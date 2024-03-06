@@ -8,20 +8,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- style.css -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-<!-- Title & Navbar -->
-    <div style="background-color: pink;">
-        <header class="bg-pink black-80 tc pv4 avenir mb0">
-            <h1 class="mt2 mb0 baskerville i fw1 f1">Breast Cancer Research Group</h1>
-        </header>
-    </div>
-    <div style="background-color: gray;">
+
+    <!-- Navbar -->
+    <div style="background-color: silver;">
         <nav class="bt bb tc mw7 center mt4">
         <a style="font-weight: bold;" class="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l" href="/">Home</a>
         <a style="font-weight: bold;" class="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l" href="/OurTeam">Our Team</a>
         <a style="font-weight: bold;" class="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pa3 ph4-l" href="/Limitations_References">Limitations & References</a>
         </nav>
+    </div>
+
+    <div class = "decor"> 
+        <div class = "text_frame">
+                <h1 class="mt2 mb0 baskerville i fw1 f1">Breast Cancer Research Group</h1>
+        </div>
+        <div class = "pic_frame">
+            <img src="https://healthcare.utah.edu/huntsmancancerinstitute/sites/g/files/zrelqx336/files/styles/freeform_phone/public/migrate_images/mammo-mask.jpg?h=bdbe9ddb&itok=VPDk9U4v">    
+        </div>
+
     </div>
     
     <!-- Introduction -->

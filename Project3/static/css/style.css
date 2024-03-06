@@ -1,20 +1,10 @@
-/* Title & Navbar */
-.ba {
-    border-style: solid;
-}
-
-.bt {
-    border-top-style: solid;
-    border-top-width: 1px;
-}
-
-.bb {
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+/* Title & Navbar  oldlace */
+body {
+    background-color: oldlace;
 }
 
 .b--black {
-    border-color: #000;
+    border-color: black;
 }
 
 .br-100 {
@@ -175,9 +165,10 @@
 
 /* Introduction */
 .content-box {
-    margin: 20px auto;
+    
+    margin-top: 0%;
     padding: 20px;
-    width: 80%;
+    width: 100%;
     background-color: #f0fff0; /* Set a very light green background color for the box */
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -222,3 +213,49 @@
     padding: 20px;
 }
 
+.decor {
+    display: inline-flex;
+    background-color: none;
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+}
+
+.text_frame{
+    display: flex;
+    margin-right:-20%;
+    position:relative;
+    background-color: none;
+    width:40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.text_frame h1 {
+    font-size: 3vw;
+}
+
+.pic_frame{
+    left: 30vw;
+    margin-left:-20%;
+    position:relative;
+    background-color: none;
+    width:70%;
+    height: 100%;
+    border-top-left-radius: 300px;
+    transform-origin: right top;
+    transform: skewX(30deg);
+    display: grid;
+    overflow: hidden;
+}
+
+.pic_frame img {
+    width: 100%; 
+    height: 100%; 
+    animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+   
+}
