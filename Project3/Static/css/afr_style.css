@@ -3,44 +3,106 @@
   width:100%;
 }
 
+/* Intro */
+.intro {
+  height: 500px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  background-color: rgb(255, 240, 243);
+}
+
+.intro h1 {
+  color: black;
+  font-family: "Lato";
+  font-size: 40px;
+  max-width: 80%;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+
+.intro p {
+  color: black;
+  font-family: "Lato";
+  font-size: 20px;
+  max-width: 80%;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+
+/* Conclusion */
+.conclu {
+  height: 500px;
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: rgb(255, 240, 243);
+}
+
+.conclu h1 {
+  color: black;
+  font-family: "Lato";
+  font-size: 40px;
+  max-width: 80%;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+
+.conclu p {
+  color: black;
+  font-family: "Lato";
+  font-size: 20px;
+  max-width: 80%;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
 /* Title Formating */
-  .afr_title {
-    color: black;
-    font-family: 'Lato';
-    font-size: 24px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items:end;
-    background-color: rgb(247, 247, 193);
-  }
+.afr_title {
+  color: black;
+  font-family: 'Lato';
+  font-size: 24px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items:end;
+  background-color: rgb(247, 247, 193);
+}
 
 /* Text Formating */
-  .afr_text_description{
-    color: black;
-    text-align: center;
-    font-family: "Lato";
-    font-size: 20px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items:baseline;
-    background-color: rgb(247, 247, 193);
+.afr_text_description {
+  color: black;
+  text-align: center;
+  font-family: "Lato";
+  font-size: 20px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items:baseline;
+  background-color: rgb(247, 247, 193);
   }
 
-  .hover_instruct{
-    background-color: rgb(211, 248, 211);
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: "Lato";
-    color: black;
-    font-size: 20px;
-  }
+.hover_instruct {
+  width: fit-content; /* Set width to fit the content */
+  margin: 0 auto; /* Center the container horizontally */
+  background-color: #aee2b0; /* Green background color */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center;
+}
 
-
+.hover_instruct p {
+  margin: 0;
+  color: black;
+  font-family: "Lato";
+  font-size: 20px;
+}
 
 /* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
 /*                                                                         TIMING FLIP CARD                                                                    */
@@ -48,11 +110,11 @@
 
 /* The flip card container */
 .flip-card {
-  background-color: transparent;
+  background-color: white;
   width: 2000px;
   height: 600px;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
   margin: 0 auto;
 }
 
@@ -69,6 +131,7 @@
 /* Add a class to rotate when active */
 .flip-card.active .flip-card-inner {
   transform: rotateY(180deg);
+  transition: transform 0.8s;
 }
 
 /* Position the front and back side */
@@ -76,30 +139,30 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   display: flex;
-  justify-content: center; /* Center horizontally */
+  justify-content: center;
 }
 
 .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   align-items: center;
+  background-color: white;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #ecd3e9;
   color: black;
+  background-color: white;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: rgb(252, 214, 243);
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
@@ -107,9 +170,8 @@
   align-items: center;
   text-align:left;
   font-family: "Lato";
-  color: black;
   font-size: 20px;
-
+  background-color:white;
   transform: rotateY(180deg);
 }
 
@@ -122,17 +184,21 @@
 
 /* Slideshow container */
 .timing-slideshow-container {
-  max-width: 2000px;
-  height: 600;
+  max-width: 700px;
+  height: 600px;
   position: relative;
-  margin: auto;
-  align-items: center;
+  margin:auto;
+  overflow: hidden;
 }
 
 /* Hide the images by default */
 .myTimingSlides {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 /* Next & previous buttons */
@@ -149,7 +215,7 @@
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  transform: translateY(-50%);
+  transform: rgba(214, 206, 206, 0.8);
 }
 
 /* Position the "next button" to the right */
@@ -161,6 +227,7 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+  color: white;
 }
 
 /* Caption text */
@@ -168,10 +235,6 @@
   color: black;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
 }
 
 /* The dots/bullets/indicators */
@@ -190,16 +253,6 @@
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 100s;
-}
-
-@keyframes fade {
-  from {opacity: .99} 
-  to {opacity: 1}
-}
 /* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
 /*                                                                         TREATMENT FLIP CARD                                                                    */
 /* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
@@ -210,7 +263,7 @@
   width: 2000px;
   height: 600px;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
   margin: 0 auto;
 }
 
@@ -234,30 +287,28 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   display: flex;
-  justify-content: center; /* Center horizontally */
+  justify-content: center;
 }
 
 .treat-flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   align-items: center;
 }
 
 /* Style the front side (fallback if image is missing) */
 .treat-flip-card-front {
-  background-color: #ecd3e9;
   color: black;
 }
 
 /* Style the back side */
 .treat-flip-card-back {
-  background-color: rgb(252, 214, 243);
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
@@ -265,29 +316,32 @@
   align-items: center;
   text-align:left;
   font-family: "Lato";
-  color: black;
   font-size: 20px;
 
   transform: rotateY(180deg);
 }
 
 /* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
-/*                                                                        TIMING CAROUSEL                                                                      */
+/*                                                                        TREATMENT CAROUSEL                                                                   */
 /* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
 
 /* Slideshow container */
 .treatment-slideshow-container {
-  max-width: 2000px;
-  height: 600;
-  position: relative;
+  max-width: 700px; /* Adjust the max-width to your preference */
+  height: 600px;
   margin: auto;
-  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Hide the images by default */
 .myTreatmentSlides {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  width: 100%; /* Take up the full width of the container */
 }
 
 /* Next & previous buttons */
@@ -304,7 +358,7 @@
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  transform: translateY(-50%);
+  background-color: rgba(214, 206, 206, 0.8);
 }
 
 /* Position the "next button" to the right */
@@ -315,7 +369,8 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev-treatment:hover, .next-treatment:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
 /* Caption text */
@@ -323,10 +378,6 @@
   color: black;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
 }
 
 /* The dots/bullets/indicators */
@@ -343,15 +394,4 @@
 
 .active-treatment, .treat-dot:hover {
   background-color: #717171;
-}
-
-/* Fading animation */
-.fade-treatment {
-  animation-name: fadeTreatment;
-  animation-duration: 100s;
-}
-
-@keyframes fadeTreatment {
-  from {opacity: .99} 
-  to {opacity: 1}
 }

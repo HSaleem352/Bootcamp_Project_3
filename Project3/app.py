@@ -84,9 +84,6 @@ def get_data_MB1():
 #################################################################################################################################################
 
 
-
-
-
 @app.route('/api/v1/Smoker_NonSmoker_Covid_DF', methods=['GET'])
 def get_data_MB2():
     # Read Dataframe using SQL

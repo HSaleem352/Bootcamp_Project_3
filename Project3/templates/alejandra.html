@@ -41,210 +41,232 @@
     </div>
 </nav>
 
-<!-- Timing Title -->
+<!-- Introduction -->
+  <div class="intro">
+    <h1>Introduction</h1>
+    <p>Research has found that ACT can compromise an individual’s immune system by either reducing the availability of white blood cells or changing the immune system’s ability to respond to infection. Patients in our study cohort received  different types of ACT at various time points relative to their Covid infection that range from no treatment to targeted immuno therapy. Thus, each unique cancer treatment likely interacted with the patient's immune system differently, and affected their ability to respond to viral infections like Covid-19. The study collected data on when patients received anti-cancer treatment relative to when they got covid, and the type of treatment they received. So, we want to investigate the effect that ACT has on a patient's immune system by examining how the <a href="#section1">Timing</a> and <a href="#section2">Treatment Type</a> of ACT affected the patients overall Covid outcome.</p>
+    <p>For each study question below, you will find a general bar graph that displays the cumulative data and additional pie charts that provide a broken-down view of the overall data. Clicking on the bar graph will provide you with more information on the hypothesis and the data analysis that was performed. The pie charts are bundled in a carousel and organized by Covid outcome severity.</p>
+  </div>
+  
+  <section id="section1">
+  <!-- Timing Title -->
+    <div class="afr_title">
+        <h1>How does the TIMING of Anti Breast Cancer Therapy Affect Covid-19 Outcome Severity?</h1>
+    </div>
+    <div class="afr_text_description">
+      <p style = "max-width: 80%;">I am hypothesizing that the closer in time the cancer treatment was given to a patient's COVID-19 infection, the more likely the patient will experience moderate or severe COVID-19 outcomes. The cancer treatment would compromise their immune system, thus making it harder for patients to fight off the infection and lead to more severe outcomes.</p>
+    </div>
+    <div class="hover_instruct">
+      <p>Click the bar chart below for more information on the data analysis</p>
+    </div>
+  </section>
+    <!-- Flip Card -->
+  
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div id="afr_timing_bar_grouped" style = "max-width: 100%;"></div>
+        </div>
+        <div class="flip-card-back">
+          <p style = "max-width: 60%;"> The bar graph shows the number of mild, moderate and severe Covid outcomes when cancer treatment is given from 0-4 Weeks of infection, between 1 and 3 months after infection, more than 3 months after infection, or not given at all.</p>
+          <p style="max-width: 60%;"> I hypothesized that individuals who received ACT closer to their timing of having covid would have more severe covid outcomes than individuals who never received ACT or who received it more than 3 months after getting covid. The null hypothesis would be that the timing had no effect on an individual’s covid-19 outcome severity. A chi-squared analysis shows that there was no significant relationship between the covid-19 outcome and the timing of ACT. For each group, the calculated p-value was larger than 0.05, which means that we fail to reject the null hypothesis. In this dataset, it seems that there was no significant relationship between the covid-19 outcome and the timing of ACT</p>
+        </div>
+      </div>
+    </div>
+  
+  <div class="hover_instruct">
+    <p>Flip through the carousel below to see a break down of the ACT Timing for Each Covid Outcome</p>
+  </div>
+  
+  <!-- Timing Carousel -->
+  
+  <!-- Slideshow container -->
+  <div class="timing-slideshow-container">
+  
+    <!-- Bar Charts with caption text -->
+    <div class="myTimingSlides">
+      <div id="afr_mild_timing_pie" style ="width:100%"></div>
+      <div class="timingtext" style = "width:100%"> The most number of patients experienced mild covid outcomes when they had ATC within the first 4 weeks of developing covid</div>
+    </div>
+  
+    <div class="myTimingSlides">
+      <div id="afr_moderate_timing_pie" style ="width:100%"></div>
+      <div class="timingtext" style = "width:100%"> The most number of patients experienced moderate covid outcomes when they had ATC within the first 4 weeks of developing covid</div>
+    </div>
+  
+    <div class="myTimingSlides">
+      <div id="afr_severe_timing_pie" style ="width:100%"></div>
+      <div class="timingtext" style = "width:100%"> The most number of patients experienced severe covid outcomes when they had ATC 3 months after of developing covid</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+  
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+  <!-- Treatment Title -->
+  <section id="section2">
   <div class="afr_title">
-      <h1>How does the TIMING of Anti Breast Cancer Therapy Affect Covid-19 Outcome Severity?</h1>
+      <h1>How does the TYPE of Anti Breast Cancer Therapy Affect Covid-19 Outcome Severity?</h1>
   </div>
   <div class="afr_text_description">
-      <p style = "max-width: 80%;">I am hypothesizing that the closer the cancer treatment was given to COVID-19 infection, the more likely the patients are to have moderate or severe COVID-19 outcomes</p>
+      <p style = "max-width: 80%;">I am hypothesizing that patients with more immune-targeted Anti Cancer Treatments will have more severe or moderate Covid-19 Outcomes compared to those that didn't receive ACT or those who's immune system wasn't targeted. Immune-targeting ACT would compromise their ability to fight off infections and thus lead to poorer Covid outcomes.</p>
   </div>
   <div class="hover_instruct">
-    <p>Click the bar chart below for more information on the data analysis</p>
+    <p>Click on the bar chart below for more information on the data analysis</p>
   </div>
-
-  <!-- Flip Card -->
-
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <div id="afr_timing_bar_grouped"></div>
+  </section>
+  
+  <!-- Treatment Overall Data -->
+  <!-- Make it flip over to see explanation -->
+  <div class="treat-flip-card">
+    <div class="treat-flip-card-inner">
+      <div class="treat-flip-card-front">
+        <div id="afr_treatment_bar_grouped"></div>
       </div>
-      <div class="flip-card-back">
-        <p style="max-width: 60%;"> I hypothesized that individuals who received ACT closer to their timing of having covid would have more severe covid outcomes than individuals who never received ACT or who received it more than 3 months after getting covid. The null hypothesis would be that the timing had no effect on an individual’s covid-19 outcome severity. A chi-squared analysis shows that there was no significant relationship between the covid-19 outcome and the timing of ACT</p>
+      <div class="treat-flip-card-back">
+        <p style = "max-width: 60%;"> The bar graph shows the number of mild, moderate and severe Covid outcomes when no treatment, cytotoxic chemotherapy, targeted radiation, endocrine therapy, or immune therapy is given.</p>
+        <p style="max-width: 60%;"> I hypothesized that individuals who received ACT that involved their immune system would have more severe covid outcomes than individuals who never received ACT or those who's treatment did not target the immune system. The null hypothesis would be that the type of ACT had no effect on an individual’s covid-19 outcome severity. A chi-squared analysis shows that there was no significant relationship between the covid-19 outcome and the type of ACT as each outcome group had a p value greater than 0.05. We fail to reject the null hypothesis, meaning there is no relationship between the type of ACT and the severity of a patient’s covid outcome.</p>
       </div>
     </div>
   </div>
-</div>
-
-<!-- Timing Carousel -->
-
-<!-- Slideshow container -->
-<div class="timing-slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="myTimingSlides fade">
-    <div id="afr_mild_timing_pie" style ="width:100%"></div>
-    <div class="timingtext"> Mild Covid Outcomes at Different BC Treatment Time Points</div>
+  
+  <div class="hover_instruct">
+    <p>Flip through the carousel below to see a break down of the ACT Type for Each Covid Outcome</p>
   </div>
-
-  <div class="myTimingSlides fade">
-    <div id="afr_moderate_timing_pie" style ="width:100%"></div>
-    <div class="timingtext">Moderate Covid Outcomes at Different BC Treatment Time Points</div>
-  </div>
-
-  <div class="myTimingSlides fade">
-    <div id="afr_severe_timing_pie" style ="width:100%"></div>
-    <div class="timingtext"> Severe Covid Outcomes at Different BC Treatment Time Points</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<!-- Treatment Title -->
-<div class="afr_title">
-    <h1>How does the TYPE of Anti Breast Cancer Therapy Affect Covid-19 Outcome Severity?</h1>
-</div>
-<div class="afr_text_description">
-    <p>I am hypothesizing that patients with more immune-targeted Anti Cancer Treatments will have more severe or moderate Covid-19 Outcomes</p>
-</div>
-<div class="hover_instruct">
-  <p>Click on the bar chart below for more information on the data analysis</p>
-</div>
-
-
-<!-- Treatment Overall Data -->
-<!-- Make it flip over to see explanation -->
-<div class="treat-flip-card">
-  <div class="treat-flip-card-inner">
-    <div class="treat-flip-card-front">
-      <div id="afr_treatment_bar_grouped"></div>
+  
+  <!-- Treatment Carousel -->
+  <!-- Slideshow container -->
+  <div class="treatment-slideshow-container">
+  
+    <!-- Full-width images with number and caption text -->
+    <div class="myTreatmentSlides">
+      <div id="afr_mild_treatment_pie"></div>
+      <div class="treatment-text"> Mild Covid Outcomes were most common in patients that received no ACT or endocrine therapy</div>
     </div>
-    <div class="treat-flip-card-back">
-      <p style="max-width: 60%;"> I hypothesized that individuals who received ACT closer to their timing of having covid would have more severe covid outcomes than individuals who never received ACT or who received it more than 3 months after getting covid. The null hypothesis would be that the timing had no effect on an individual’s covid-19 outcome severity. A chi-squared analysis shows that there was no significant relationship between the covid-19 outcome and the timing of ACT</p>
+  
+    <div class="myTreatmentSlides">
+      <div id="afr_moderate_treatment_pie"></div>
+      <div class="treatment-text">Moderate Covid Outcomes were most common in patients that received no ACT or endocrine therapy</div>
     </div>
+  
+    <div class="myTreatmentSlides">
+      <div id="afr_severe_treatment_pie"></div>
+      <div class="treatment-text"> Severe Covid Outcomes were most common in patients that received no ACT or endocrine therapy</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev-treatment" onclick="plusSlidesTreatment(-1)">&#10094;</a>
+    <a class="next-treatment" onclick="plusSlidesTreatment(1)">&#10095;</a>
+  
   </div>
-</div>
-</div>
-
-<!-- Slideshow container -->
-<div class="treatment-slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="myTreatmentSlides fade-treatment">
-    <div id="afr_mild_treatment_pie" style ="width:100%"></div>
-    <div class="treatment-text"> Mild Covid Outcomes at Different BC Treatment Time Points</div>
-  </div>
-
-  <div class="myTreatmentSlides fade-treatment">
-    <div id="afr_moderate_treatment_pie" style ="width:100%"></div>
-    <div class="treatment-text">Moderate Covid Outcomes at Different BC Treatment Time Points</div>
-  </div>
-
-  <div class="myTreatmentSlides fade-treatment">
-    <div id="afr_severe_treatment_pie" style ="width:100%"></div>
-    <div class="treatment-text"> Severe Covid Outcomes at Different BC Treatment Time Points</div>
+  
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="treat-dot" onclick="currentSlideTreatment(1)"></span> 
+    <span class="treat-dot" onclick="currentSlideTreatment(2)"></span> 
+    <span class="treat-dot" onclick="currentSlideTreatment(3)"></span> 
   </div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev-treatment" onclick="plusSlidesTreatment(-1)">&#10094;</a>
-  <a class="next-treatment" onclick="plusSlidesTreatment(1)">&#10095;</a>
-
-</div>
-
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="treat-dot" onclick="currentSlideTreatment(1)"></span> 
-  <span class="treat-dot" onclick="currentSlideTreatment(2)"></span> 
-  <span class="treat-dot" onclick="currentSlideTreatment(3)"></span> 
-</div>
-
-
-<!-- Scripts -->
-<script>
-  document.querySelector('.treat-flip-card').addEventListener('click', function() {
-    this.classList.toggle('active');
-  });
-</script>
-
-<script>
-  document.querySelector('.flip-card').addEventListener('click', function() {
-    this.classList.toggle('active');
-  });
-</script>
-
-<script>
-  let slideIndex = 1;
-  showSlides(slideIndex);
-
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("myTimingSlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+  <div class="conclu">
+    <h1>Conclusion</h1>
+    <p>Despite current research, it seems that the type and timing of ACT had no effect on the severity of Covid outcomes. Further research would have to be conducted to better elucidate if and how anti-cancer treatment can interact with the immune system and affect its ability to fight viral infections  </p>
+  </div>
+  
+  
+  <!-- Scripts -->
+  <script>
+    document.querySelector('.treat-flip-card').addEventListener('click', function() {
+      this.classList.toggle('active');
+    });
+  </script>
+  
+  <script>
+    document.querySelector('.flip-card').addEventListener('click', function() {
+      this.classList.toggle('active');
+    });
+  </script>
+  
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+  
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+  
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
     }
-    slides[slideIndex-1].style.display = "block"; 
-    dots[slideIndex-1].className += " active";
-  }
-</script>
-
-<script>
-  let slideIndexTreatment = 1;
-  showSlidesTreatment(slideIndexTreatment);
-
-  // Next/previous controls
-  function plusSlidesTreatment(n) {
-    showSlidesTreatment(slideIndexTreatment += n);
-  }
-
-  // Thumbnail image controls
-  function currentSlideTreatment(n) {
-    showSlidesTreatment(slideIndexTreatment = n);
-  }
-
-  function showSlidesTreatment(n) {
-    let i;
-    let slides = document.getElementsByClassName("myTreatmentSlides");
-    let dots = document.getElementsByClassName("treat-dot");
-    if (n > slides.length) {slideIndexTreatment = 1} 
-    if (n < 1) {slideIndexTreatment = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+  
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("myTimingSlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1} 
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block"; 
+      dots[slideIndex-1].className += " active";
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active-treatment", "");
+  </script>
+  
+  <script>
+    let slideIndexTreatment = 1;
+    showSlidesTreatment(slideIndexTreatment);
+  
+    // Next/previous controls
+    function plusSlidesTreatment(n) {
+      showSlidesTreatment(slideIndexTreatment += n);
     }
-    slides[slideIndexTreatment-1].style.display = "block"; 
-    dots[slideIndexTreatment-1].className += " active-treatment";
-  }
-</script>
-
-
-<!-- Plots -->
-<script src="{{ url_for('static', filename='js/plots_AFR.js') }}"></script>
-
- <!-- Bootstrap JS and Popper.js -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+  
+    // Thumbnail image controls
+    function currentSlideTreatment(n) {
+      showSlidesTreatment(slideIndexTreatment = n);
+    }
+  
+    function showSlidesTreatment(n) {
+      let i;
+      let slides = document.getElementsByClassName("myTreatmentSlides");
+      let dots = document.getElementsByClassName("treat-dot");
+      if (n > slides.length) {slideIndexTreatment = 1} 
+      if (n < 1) {slideIndexTreatment = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active-treatment", "");
+      }
+      slides[slideIndexTreatment-1].style.display = "block"; 
+      dots[slideIndexTreatment-1].className += " active-treatment";
+    }
+  </script>
+  
+  
+  <!-- Plots -->
+  <script src="{{ url_for('static', filename='js/plots_AFR.js') }}"></script>
+  
+   <!-- Bootstrap JS and Popper.js -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
