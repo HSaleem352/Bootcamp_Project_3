@@ -51,6 +51,12 @@ What are the sociodemographic and clinical factors that influence adverse outcom
 ## Dataset:
 Nagaraj, G., Khaki, A., & Shah, D. (2023). Covid-19 and Cancer Consortium (CCC19) breast cancer and racial disparities outcomes study. Zenodo. https://doi.org/10.5281/zenodo.7644334
 
+The same dataset was used from project 1. The data was extracted from a csv file from the source mentioned above and then transformed to give the desired tables 
+representing each question. The extraction and transforming was performed in project 1 however, in the write_SQL file, some examples can be seen for the transformation part. 
+Since the data was cleaned and tranformed into structured dataframes, SQL was used to save each dataframe in the form of a table. In order to let this wepapp be hosted from
+any host device, the SQL Server and the Database were created on Render. Using pgAdmin and Postgres, we were able to upload all our dataframes into render's database and were 
+able to successfully read from the database. SQL Alchemy and pandas library were used to communicate between our flaskapp and the SQL server. The ERD of the Database is ![ERD](ERD.png). Since each dataframe represents a different question, they are all independant of each other and share no connection to one another.
+
 ## Code Snippets
 **Mina**
 
