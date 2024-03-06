@@ -59,7 +59,7 @@ body {
   margin: auto;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
-  background-color:#fff0c1;
+  background-color:#E2F0CB;
  
   display: grid;
   
@@ -86,7 +86,7 @@ body {
   height: 80vh;
   margin: auto;
   border-top-right-radius: 70px;
-  background-color: #fff0c1;
+  background-color: #E2F0CB;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   display: grid;
@@ -114,11 +114,11 @@ body {
   height: 80vh;
   margin: auto;
   border-top-right-radius: 70px;
-  background-color: #fff0c1;
+  background-color: #E2F0CB;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   display: grid;
-  
+
   
 }
 
@@ -159,7 +159,7 @@ body {
   background-color:#fff0c1;
   transition: 0.7s;
   transform: scale(1.05);
-  box-shadow: 0px 0px 4px 4px darkgrey  ;
+  box-shadow: 0px 0px 5px 5px black  ;
 }
 
 .buttons2{
@@ -184,7 +184,7 @@ body {
   background-color:#fff0c1 !important;
   transition: 0.7s !important;
   transform: scale(1.05) !important;
-  box-shadow: 0px 0px 4px 4px darkgrey !important;
+  box-shadow: 0px 0px 5px 5px black !important;
 }
 
 #outer
