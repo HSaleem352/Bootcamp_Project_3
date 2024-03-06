@@ -34,6 +34,15 @@ body {
     justify-content: center;
     height: 100vh; /* Adjust the height */
 }
+
+.carousel-caption img {
+    max-width: 200px;
+    max-height: 200px;
+    position: absolute;
+    bottom: 40px; /* Adjust the negative value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
 .carousel-inner {
     align-items: center;
     justify-content: center;
