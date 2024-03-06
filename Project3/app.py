@@ -232,7 +232,7 @@ def afr_page():
 #################################################################################################################
 
 @app.route('/race_ethnicity_affect_COVID')
-def afr_page():
+def shan_page():
     return render_template("shan.html")
 
 @app.route('/api/v1/percentage_df', methods=['GET'])
