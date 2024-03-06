@@ -195,7 +195,7 @@ def cancer_residence():
 
 #################################################################################################################
 ##                                                Alejandra                                                    ##
-###############################################################################################################
+#################################################################################################################
 
 @app.route('/api/v1/AFR_timing_df', methods=['GET'])
 def AFR_timing_df():
@@ -301,7 +301,10 @@ def age_v_cancer_covid_data():
 def outcome_rates():
 
     # Read CSV file using pandas
-    df = pd.read_csv("https://drive.google.com/u/0/uc?id=1VotiOmeDwCyDDe5w3BYumclG9bzs1CTu&export=download")
+    
+    # Read Dataframe using SQL
+    with engine.connect() as connection:
+        df = pd.read_sql('outcome_rates',connection)
 
     # Convert DataFrame to JSON
     json_data = df.to_json(orient="records")
