@@ -11,7 +11,7 @@ What are the sociodemographic and clinical factors that influence adverse outcom
 3. Amongst all the races with different BC statuses, is smoking a factor for them to have COVID-19? - Mina
 4. How does race/ethnicity affect COVID with Breast Cancer? - Shan
 5. Does obesity and age have an effect on COVID-19 with Breast Cancer? - Fozia
-6. Is the severity of COVID-19 and the cancer status affected if the individuals live in urban, suburban, or rural areas? - Hamza
+6. Are the severity of COVID-19 and the cancer status affected if the individuals live in urban, suburban, or rural areas? - Hamza
 7. What is the isolated effect of age on the risk of COVID-19 and Breast Cancer outcomes? - Dean
 
 ## Members of the group
@@ -38,6 +38,13 @@ What are the sociodemographic and clinical factors that influence adverse outcom
 - Question 7 related page: Dean
 
 ## Instructions on how to use and interact with the project
+- Open app.py and run the application.
+- open the local host server: http://127.0.0.1:5000
+- Use the navigation bar to move through the webapp
+- Scroll down to view the page contents
+- Use the buttons in the home page to access the question pages
+- Use the navigation bar to return to homepage
+- Follow directions on the pages to interact with elements
 
 ## Efforts for ethical considerations made in the project
 
@@ -94,6 +101,104 @@ Card click expand:
         });
     </script>
 ```
+
+**Hamza**
+
+amCharts library was used for donut graphs,
+plotli was used for bar graph,
+animate.css library was used for the home page animation,
+bootstrap library was used for collapse buttons.
+
+
+### SQL Postgres from Render:
+
+for writing data to the server:
+with engine.connect() as connection:
+    residence_counts.to_sql('api_endpoint',connection)
+
+for reading data from the server:
+with engine.connect() as connection:
+        df = pd.read_sql('api_endpoint',connection)
+
+
+### Gradient Donut Graph:
+// Read the Data
+  var names = response.map(d => d.urban_rural);
+  var count = response.map(d => d.count);
+  var figure = [];
+
+  for (let i = 0; i < names.length; i++) {
+    figure.push(
+    {labels: names[i], values: count[i]}
+    )
+  }
+
+  //Create root element
+  var root = am5.Root.new("residence_pie");
+
+  // Set themes
+  root.setThemes([
+    am5themes_Animated.new(root),
+  ]);
+
+  // Create chart
+  var chart = root.container.children.push(am5percent.PieChart.new(root, {
+    radius: am5.percent(90),
+    innerRadius: am5.percent(50),
+    layout: root.horizontalLayout
+  }));
+  // Creating the series template
+  var series = chart.series.push(am5percent.PieSeries.new(root, {
+    name: "Residence",
+    valueField: "values",
+    categoryField: "labels"
+  }));
+  // Setting the data
+  series.data.setAll(figure)
+
+  // Disabling labels and ticks
+  series.labels.template.set("visible", false);
+  series.ticks.template.set("visible", false);
+
+  // Adding gradients
+  series.slices.template.set("strokeOpacity", 0);
+  series.slices.template.set("fillGradient", am5.RadialGradient.new(root, {
+    stops: [{
+      brighten: -0.8
+    }, {
+      brighten: -0.8
+    }, {
+      brighten: -0.5
+    }, {
+      brighten: 0
+    }, {
+      brighten: -0.5
+    }]
+  }));
+
+  // Create legend
+  var legend = chart.children.push(am5.Legend.new(root, {
+    centerY: am5.percent(50),
+    y: am5.percent(50),
+    layout: root.verticalLayout
+  }));
+  // set value labels align to right
+  legend.valueLabels.template.setAll({ textAlign: "right" })
+  // set width and max width of labels
+  legend.labels.template.setAll({ 
+    maxWidth: 140,
+    width: 140,
+    oversizedBehavior: "wrap"
+  });
+
+  legend.data.setAll(series.dataItems);
+
+
+  // Play initial series animation
+  series.appear(1000, 100);
+
+
+
 ## References
 **Hamza**
 creating postgresql engine: https://stackoverflow.com/questions/62688256/sqlalchemy-exc-nosuchmoduleerror-cant-load-plugin-sqlalchemy-dialectspostgre
