@@ -115,7 +115,7 @@
 
 
     <!-- Ethnic Distribution and COVID-19 Severity Bar chart  -->
-    <div class="container-fluid mt-3">
+    <!-- <div class="container-fluid mt-3">
       <h1>Relationship Between Ethnic Distribution and COVID-19 Severity</h1>
       <div class="row">
         <div class="col-sm-8 p-3 text-white" style="background-color: white;">
@@ -137,7 +137,7 @@
 
           </div>
       </div>
-  </div>
+  </div> -->
 
  
  <!-- first chi square test  -->
@@ -287,40 +287,44 @@
     <div class="divider"></div>
 
 
-          
-    <!-- <div class="big-sector">
-      <div class="container-fluid1 p-5 my-5 bg-primary text-white">
+  <!-- //flip cards       -->
+  <div class="big-sector">
+    <div class="container-fluid p-5 my-5 text-white">
         <div class="row">
-          <div class="col-md-6 mb-3">
-            <div class="card" onclick="flipCard(this)">
-              <div class="front" id="covid-severity-bar-chart">
-                <p>front</p>
-              </div>
-              <div class="back">
-                <img src="https://drive.google.com/thumbnail?id=1R04MqRj144NsEhemR3T2TRzl1rIPHWF5" alt="front" style="height: 700px;">
-              </div>
+            <div class="col-md-6 mb-3">
+                <div class="card-container"> 
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="front">
+                          <img src="https://dl.dropboxusercontent.com/scl/fi/vnj7ql162x1nlfcacziwj/download-1.png?rlkey=t4a7a6po0bi9yoscur5tpxgqx"  class="img-fluid">
+                        </div>
+                        <div class="back">
+                          <img src="https://dl.dropboxusercontent.com/scl/fi/vnj7ql162x1nlfcacziwj/download-1.png?rlkey=zl7lb7sko3muagw6phuqqd233&dl=0" alt="back">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div> -->
-    
-          
-
-    <script src="{{ url_for('static', filename='js/plots_LS.js') }}"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    </div>
+</div>
 
 
-     <!-- Flip Cards -->
-     <!-- <script>
-      function flipCard(card) {
-          card.classList.toggle('flipped');
-      }
-  </script> -->
 
+
+
+
+
+<script>
+    function flipCard(card) {
+        card.classList.toggle('flipped');
+    }
+</script>
+
+
+  <script src="{{ url_for('static', filename='js/plots_LS.js') }}"></script>
   <!-- Bootstrap JS and Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
-
