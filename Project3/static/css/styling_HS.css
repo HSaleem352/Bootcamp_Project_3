@@ -208,8 +208,9 @@ body {
 
 .card-footer{
   display: flex;
+  text-align: justify;
   width: 100vw;
-  height: 10vh;
+  height: 30vh;
   background-color: #A7C7E7 !important;
   /* background-image: url('https://i.pinimg.com/736x/e8/61/e2/e861e20ece0ef5c440304a703e1f95be.jpg') !important; */
   border: none !important;
@@ -218,6 +219,10 @@ body {
   align-items: center;
   cursor: pointer;
   color: black !important;
+}
+
+.card-footer span{
+  max-width: 80%;
 }
 
 
