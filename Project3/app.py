@@ -255,19 +255,8 @@ def get_data2_shan():
     return json_data
 
 
-@app.route('/api/v1/race_and_severity_plot', methods=['GET'])
-def get_data3_shan():
-    # Read Dataframe using SQL
-    with engine.connect() as connection:
-        df = pd.read_sql('race_and_severity_plot',connection)
-   
-    # Convert DataFrame to JSON
-    json_data = df.to_json(orient='records')
-
-    return json_data
-
 @app.route('/api/v1/cancer_status_sum', methods=['GET'])
-def get_data4_shan():
+def get_data3_shan():
     # Read Dataframe using SQL
     with engine.connect() as connection:
         df = pd.read_sql('cancer_status_sum',connection)

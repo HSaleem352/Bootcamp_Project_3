@@ -1,0 +1,241 @@
+.navbar.navbar-dark.bg-dark {
+    width:100%;
+}
+body {
+    display: flex;
+    flex-direction: column; /* Make the body a flex container with a vertical direction */
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#g_container1{
+    width: 100%; 
+    height: 70vh;
+    margin: auto;
+    background-color:rgba(255, 255, 255, 0);
+   
+    display: grid;
+    
+  }
+  
+  #graph1 {
+    width: 60vw;
+    height: 60vh; 
+    transform: translate(40%,-60%);
+    position:relative 
+  }
+  
+  #g1_title {
+    height: 45vh;
+    width: 50vw;
+    font-size: 2em; 
+    transform: translate(70%,10%);
+    color: black;
+    font-family: 'Your Desired Font', 'Times New Roman', Times, serif;
+  }
+
+  #g_container2{
+    width: 100%; 
+    height: 70vh;
+    margin: auto;
+    background-color:white;
+   
+    display: grid;
+    
+  }
+  
+  #graph2 {
+    width: 60vw;
+    height: 60vh; 
+    transform: translate(40%,-60%);
+    position:relative 
+  }
+  
+  #g2_title {
+    height: 45vh;
+    width: 50vw;
+    font-size: 2em; 
+    transform: translate(70%,10%);
+    color: black;
+    font-family: 'Your Desired Font', 'Times New Roman', Times, serif;
+  }
+
+  #g_container3{
+    width: 100%; 
+    height: 70vh;
+    margin: auto;
+    background-color:white;
+   
+    display: grid;
+    
+  }
+  
+  #graph3 {
+    width: 60vw;
+    height: 60vh; 
+    transform: translate(40%,-60%);
+    position:relative 
+  }
+  
+  #g3_title {
+    height: 45vh;
+    width: 50vw;
+    font-size: 2em; 
+    transform: translate(70%,10%);
+    color: black;
+    font-family: 'Your Desired Font', 'Times New Roman', Times, serif;
+  }
+
+  #g_container4{
+    width: 100%; 
+    height: 70vh;
+    margin: auto;
+    background-color:white;
+   
+    display: grid;
+    
+  }
+  
+  #graph4 {
+    width: 60vw;
+    height: 60vh; 
+    transform: translate(40%,-60%);
+    position:relative 
+  }
+  
+  #g4_title {
+    height: 45vh;
+    width: 50vw;
+    font-size: 2em; 
+    transform: translate(70%,10%);
+    color: black;
+    font-family: 'Your Desired Font', 'Times New Roman', Times, serif;
+  }
+
+  #g_container5{
+    width: 100%; 
+    height: 70vh;
+    margin: auto;
+    background-color:white;
+   
+    display: grid;
+    
+  }
+  
+  #graph5 {
+    width: 60vw;
+    height: 60vh; 
+    transform: translate(40%,-60%);
+    position:relative 
+  }
+  
+  #g5_title {
+    height: 45vh;
+    width: 50vw;
+    font-size: 2em; 
+    transform: translate(70%,10%);
+    color: black;
+    font-family: 'Your Desired Font', 'Times New Roman', Times, serif;
+  }
+
+  .buttons{
+    display: inline-block;
+    position: relative;
+    top:50%;
+    background-color:white;
+    border:none;
+    border-radius:50px;
+    
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-right:5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    min-height:30px; 
+    min-width: 120px;
+  }
+  
+  .buttons:hover {
+    background-color:#fff0c1;
+    transition: 0.7s;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 4px 4px darkgrey  ;
+  }
+  
+  #outer
+  {
+      width:100%;
+      text-align: center;
+      background-color: #A7C7E7 ;
+      border-radius:10px;
+  }
+  
+
+  .divider {
+    width: 100%; 
+    height: 30px; 
+    background-color: white; 
+    border-radius:10px;
+  }
+  
+
+  .divider2 {
+    width: 100%; 
+    height: 50px; 
+    background-color: white; 
+    border-radius: 10px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px; 
+    color: #000; 
+}
+
+/* flipbar */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}

@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breast Cancer Research|Race</title>
-    <!-- D3 -->
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <!-- plotly -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breast Cancer Research</title>
+  <!-- D3 -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <!-- plotly -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- amcharts library -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  <script src="//cdn.amcharts.com/lib/5/themes/Material.js"></script>
+
+  <!-- styling css for hamza branch -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling_LS.css') }}">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Bootstrap JavaScript and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
+   <!-- nav bar -->
     <nav class="navbar navbar-dark bg-dark" aria-label="First navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Residence Type Effect</a>
+          <a class="navbar-brand" href="#">Ethnicity, COVID-19, and Breast Cancer</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars_HS" aria-controls="navbars_HS" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -34,10 +50,235 @@
           </div>
         </div>
       </nav>
-    <h1>Breast Cancer Research|Race</h1>
-    <div id="race-counts-pie-chart"></div>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://dpjh8al9zd3a4.cloudfront.net/image/h:720,w:1800/183865?s=8e269d34" alt="picture1" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.cbcn.ca/web/default/files/public/Stories/race%20influence%20header.jpeg" alt="picture3" class="d-block" style="width:100%">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+      <!-- Race Distribution pie chart  -->
+      <div class="container-fluid mt-3">
+        <h1>Race Distribution in the Study</h1>
+        <div class="row">
+          <div class="col-sm-6 p-3 text-black" style="background-color: white;">
+            <h2>Sample Size Review</h2>
+            <p>This distribution suggests a significant representation of Non-Hispanic White individuals, accounting for the majority of the study's population. The Non-Hispanic Black and Hispanic categories follow, with a moderate representation. The "Other" and Non-Hispanic AAPI categories have the least representation. This distribution may reflect the demographic profile of the area or population from which the study participants were drawn, assuming the study aims to be representative of a broader population.</p>
+            <h2>Limitations on the Study</h2>
+            <p>The dominance of the Non-Hispanic White category and the underrepresentation of others, particularly Non-Hispanic AAPI, could introduce limitations regarding the generalizability and applicability of its findings. Future studies should aim for more balanced representation or employ methods to adjust for these disparities to ensure the findings are reflective of the broader population's experiences. This might involve targeted recruitment strategies or weighting the results to better reflect the general population's demographic makeup.</p>
+          </div>
+          <div class="col-lg-6 p-3" style="background-color: white;">
+            <div id="race-counts-pie-chart" style="height: 400px;"></div>
+          </div>
+        </div>
+      </div>
+      
+
+  
+
+
+    <!-- Ethnic Distribution and COVID-19 Severity Bar chart  -->
+    <div class="container-fluid mt-3">
+      <h1>Relationship Between Ethnic Distribution and COVID-19 Severity</h1>
+      <div class="row">
+        <div class="col-sm-8 p-3 text-white" style="background-color: white;">
+              <div id="covid-severity-bar-chart" style="height: 700px;"></div>
+          </div>
+          <div class="col-sm-4 p-3 text-black" style="background-color: white">
+            <h2> Analysis </h2>
+            <p>  - White individuals have the highest number of cases across all severity levels, suggesting this group might be the most affected or has the highest population among the data sampled.            </p>
+            <p>  - Non-Hispanic Black and Hispanic groups follow, indicating a significant impact on these communities as well.
+            </p>
+            <p>  - Non-Hispanic AAPI and Other have fewer cases, which could be due to a smaller population size in the dataset or potentially different exposure or reporting rates.
+            </p>
+            <h2> Severity Distribution within Races </h2>
+            <p>Across all racial categories, the distribution leans heavily towards mild cases, which is consistent with general COVID-19 data trends where the majority of cases do not become severe.
+              Severe cases are significantly less common than mild and moderate cases across all racial groups, which might indicate effective management or treatment of the disease in its less severe stages, or a natural progression of the disease being mostly mild or moderate for the majority of individuals.</p>
+              <h2> Conclusions</h2>
+            <p>  The proportion of severe cases is relatively low in comparison to mild and moderate cases for all racial groups. However, when looking at the numbers relatively, Non-Hispanic Black individuals have a higher proportion of moderate and severe cases compared to their total cases than the Non-Hispanic White group. This could suggest a disparity in the severity of the disease's impact on these communities, potentially due to socioeconomic factors, access to healthcare, or other determinants of health.
+            </p>
+
+          </div>
+      </div>
+  </div>
+
+ 
+ <!-- first chi square test  -->
+
+ <div class="container mt-3">
+  <div class="mt-4 p-5 text-black rounded" style="background-color: #A7C7E7">
+    <h1>The Chi-Square Test</h1> 
+    <p> 
+      The Chi-Square test was conducted to investigate the relationship between Race/Ethnic Distribution and the severity of COVID-19 cases. A resulting p-value of 0.004365424803990782 was obtained, which falls below the commonly accepted significance level of 0.05. This low p-value indicates a statistically significant association, strongly suggesting that Race/Ethnic Distribution has an impact on COVID-19 severity. In statistical terms, the null hypothesis—which posits that there is no relationship between the two variables—can be confidently rejected based on these results. Consequently, this analysis substantiates the presence of a link between Race/Ethnic Distribution and how severe COVID-19 cases can be.</p>
+    </div>
+  </div>
+
+
+ <!-- white Divider  -->
+    <div class="divider"></div>
+
+ <!-- white Divider  -->
+ <div class="divider"></div>
+
+ <!-- white Divider  -->
+ <div class="divider"></div>
+
+
+<!-- title Divider2  -->
+<div class="divider2">
+  <h1>Relationship Between Ethnic Distribution and  Breast Cancer</h1>
+</div>
+
+ <!-- white Divider  -->
+ <div class="divider"></div>
+
+  <!-- 5 buttons of pie charts  -->
     <div id="covid-severity-bar-chart"></div>
+       
+    <div id="outer">
+
+      <button  onclick="showAll()" class = "buttons">Show All</button>
+
+      <button  onclick="toggleGraph(1)" class = "buttons" >Hispanic</button>
+
+      <button  onclick="toggleGraph(2)" class = "buttons">Non-Hispanic AAPI</button>
+
+      <button  onclick="toggleGraph(3)" class = "buttons" >Non-Hispanic Black</button>
+
+      <button  onclick="toggleGraph(4)" class = "buttons" >Non-Hispanic White</button>
+
+      <button  onclick="toggleGraph(5)" class = "buttons" >Other</button>
+
+  </div>
+
+
+  <!-- 5 pie charts  -->
+  <div class="container-fluid mt-3">  
+    <div class="row">
+      <div class="col-12">
+        <div id="g_container1">
+          <div id="g1_title">Cancer Status Distribution - Hispanic</div>
+          <div id="graph1"></div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-12">
+        <div id="g_container2">
+          <div id="g2_title">Cancer Status Distribution - Non-Hispanic AAPI</div>
+          <div id="graph2"></div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-12">
+        <div id="g_container3">
+          <div id="g3_title">Cancer Status Distribution - Non-Hispanic Black</div>
+          <div id="graph3"></div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-12">
+        <div id="g_container4">
+          <div id="g4_title">Cancer Status Distribution - Non-Hispanic White</div>
+          <div id="graph4"></div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-12">
+        <div id="g_container5">
+          <div id="g5_title">Cancer Status Distribution - Other</div>
+          <div id="graph5"></div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- second chi square test  -->
+
+ <div class="container mt-3">
+  <div class="mt-4 p-5 text-black rounded" style="background-color: #A7C7E7">
+    <h1>The Chi-Square Test</h1> 
+    <p> The Chi-Square test was conducted to investigate the relationship between Race/Ethnic Distribution and the status of breast cancer.The analysis generated a Chi-squared statistic of 98.05191807290167, accompanied by a p-value of 2.8064344261338783e-12. This p-value is remarkably lower than the commonly accepted threshold of 0.05, which is used to determine statistical significance. Given such a low p-value, there is compelling evidence to reject the null hypothesis, which assumes no association between the variables. Therefore, the results strongly suggest that there is a significant and meaningful relationship between an individual's Race/Ethnic Distribution and their breast cancer status.
+    </p>
+    </div>
+  </div>
+
+  <!-- white Divider  -->
+  <div class="divider"></div>
+
+  <!-- white Divider  -->
+  <div class="divider"></div>
+
+  <!-- title Divider2  -->
+<div class="divider2">
+  <h1>Conclusions</h1>
+</div>
+
+  <!-- white Divider  -->
+  <div class="divider"></div>
+
+    <!-- white Divider  -->
+    <div class="divider"></div>
+
+
+
+<!-- conclusion  -->
+<div class="container">
+  <div class="row">
+      <!-- Left Column for Image -->
+      <div class="col-md-6">
+          <img src="https://dl.dropboxusercontent.com/scl/fi/vnj7ql162x1nlfcacziwj/download-1.png?rlkey=t4a7a6po0bi9yoscur5tpxgqx"  class="img-fluid">
+      </div>
+
+      <!-- Right Column for Text -->
+      <div class="col-md-6">
+        <p>The analysis conducted on the relationship between race, COVID-19 severity, and breast cancer incidence revealed a strong correlation among these factors, as evidenced by the results of their respective Chi-Square tests. The outcomes illustrate the significant associations between race and the severity of COVID-19, as well as between race and breast cancer incidence. This implies not only that race is a determining factor in the severity of COVID-19 cases and the occurrence of breast cancer but also suggests an intricate interrelation where the impact of COVID-19 and the severity of breast cancer are interconnected through their association with race. Therefore, these findings underline a complex interplay among the three variables, indicating that as race is related to COVID-19 severity and breast cancer severity, the latter two health outcomes are also implicitly related through their common link to race. This triangulated relationship underscores the multifaceted impact of racial factors on health outcomes and the intertwined nature of these significant health issues.</p>
+      </div>
+  </div>
+</div>
+
+  <!-- white Divider  -->
+  <div class="divider"></div>
+
+    <!-- white Divider  -->
+    <div class="divider"></div>
+
+
+
     <script src="{{ url_for('static', filename='js/plots_LS.js') }}"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
 
