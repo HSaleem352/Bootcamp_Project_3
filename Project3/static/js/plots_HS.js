@@ -130,7 +130,7 @@ d3.json("/api/v1/severity_residence_HS").then(function(response) {
       barmode: 'group',
       // height: 800,
       // width: 1200,
-      title: 'Severity of covid 19 vs cases of Covid-19 for each residence type',
+      title: 'Severity of Covid 19 vs cases of Covid-19 for each residence type',
       font: {
           family: "'Times New Roman', Times, serif", // Set the desired font
           size: 22, // Set the font size
