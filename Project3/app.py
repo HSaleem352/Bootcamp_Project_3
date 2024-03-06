@@ -272,8 +272,8 @@ def get_data3_shan():
 ##                                                  Dean                                                       ##
 #################################################################################################################
 
-@app.route('/dean_q')
-def dean_q():
+@app.route('/severe_outcomes_by_age')
+def dean_page():
     return render_template("dean_q.html")
 
 
