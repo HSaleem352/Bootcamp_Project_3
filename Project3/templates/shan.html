@@ -111,30 +111,51 @@
 
   <!-- white Divider  -->
   <div class="divider"></div>
+ <!-- white Divider  -->
+ <div class="divider"></div>
+ <!-- white Divider  -->
+ <div class="divider"></div>
 
 
+
+<!-- Flip Card -->
+  
+<!-- <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div id="covid-severity-bar-chart" style = "max-width: 100%; background-color: white"></div>
+    </div>
+    <div class="flip-card-back">
+      <img src="https://dl.dropboxusercontent.com/scl/fi/vnj7ql162x1nlfcacziwj/download-1.png?rlkey=zl7lb7sko3muagw6phuqqd233&dl=0" alt="back">
+    </div>
+  </div>
+</div> -->
 
     <!-- Ethnic Distribution and COVID-19 Severity Bar chart  -->
     <div class="container-fluid mt-3">
       <h1>Relationship Between Ethnic Distribution and COVID-19 Severity</h1>
       <div class="row">
-        <div class="col-sm-8 p-3 text-white" style="background-color: white;">
-              <div id="covid-severity-bar-chart" style="height: 700px;"></div>
+          <div class="col-md-8 p-3 text-black-on-light">
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <div id="covid-severity-bar-chart" style="max-width: 100%;"></div>
+                      </div>
+                      <div class="flip-card-back">
+                          <img src="https://dl.dropboxusercontent.com/scl/fi/vnj7ql162x1nlfcacziwj/download-1.png?rlkey=zl7lb7sko3muagw6phuqqd233&dl=0" alt="Chart Back Side">
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="col-sm-4 p-3 text-black" style="background-color: white">
-            <h2> Analysis </h2>
-            <p>  - White individuals have the highest number of cases across all severity levels, suggesting this group might be the most affected or has the highest population among the data sampled.            </p>
-            <p>  - Non-Hispanic Black and Hispanic groups follow, indicating a significant impact on these communities as well.
-            </p>
-            <p>  - Non-Hispanic AAPI and Other have fewer cases, which could be due to a smaller population size in the dataset or potentially different exposure or reporting rates.
-            </p>
-            <h2> Severity Distribution within Races </h2>
-            <p>Across all racial categories, the distribution leans heavily towards mild cases, which is consistent with general COVID-19 data trends where the majority of cases do not become severe.
-              Severe cases are significantly less common than mild and moderate cases across all racial groups, which might indicate effective management or treatment of the disease in its less severe stages, or a natural progression of the disease being mostly mild or moderate for the majority of individuals.</p>
-              <h2> Conclusions</h2>
-            <p>  The proportion of severe cases is relatively low in comparison to mild and moderate cases for all racial groups. However, when looking at the numbers relatively, Non-Hispanic Black individuals have a higher proportion of moderate and severe cases compared to their total cases than the Non-Hispanic White group. This could suggest a disparity in the severity of the disease's impact on these communities, potentially due to socioeconomic factors, access to healthcare, or other determinants of health.
-            </p>
-
+          <div class="col-md-4 p-3 text-black-on-light">
+              <h2>Analysis</h2>
+              <p>White individuals have the highest number of cases across all severity levels, suggesting this group might be the most affected or has the highest population among the data sampled.</p>
+              <p>Non-Hispanic Black and Hispanic groups follow, indicating a significant impact on these communities as well.</p>
+              <p>Non-Hispanic AAPI and Other have fewer cases, which could be due to a smaller population size in the dataset or potentially different exposure or reporting rates.</p>
+              <h2>Severity Distribution within Races</h2>
+              <p>Across all racial categories, the distribution leans heavily towards mild cases, which is consistent with general COVID-19 data trends where the majority of cases do not become severe. Severe cases are significantly less common than mild and moderate cases across all racial groups, which might indicate effective management or treatment of the disease in its less severe stages, or a natural progression of the disease being mostly mild or moderate for the majority of individuals.</p>
+              <h2>Conclusions</h2>
+              <p>The proportion of severe cases is relatively low in comparison to mild and moderate cases for all racial groups. However, when looking at the numbers relatively, Non-Hispanic Black individuals have a higher proportion of moderate and severe cases compared to their total cases than the Non-Hispanic White group. This could suggest a disparity in the severity of the disease's impact on these communities, potentially due to socioeconomic factors, access to healthcare, or other determinants of health.</p>
           </div>
       </div>
   </div>
@@ -287,36 +308,15 @@
     <div class="divider"></div>
 
 
-  <!-- //flip cards       -->
-  <div class="big-sector">
-    <div class="container-fluid p-5 my-5 text-white">
-        <div class="row">
-            <div class="col-md-6 mb-3">
-                <div class="card-container"> 
-                    <div class="card" onclick="flipCard(this)">
-                        <div class="front">
-                          <img src="https://dl.dropboxusercontent.com/scl/fi/vnj7ql162x1nlfcacziwj/download-1.png?rlkey=t4a7a6po0bi9yoscur5tpxgqx"  class="img-fluid">
-                        </div>
-                        <div class="back">
-                          <img src="https://dl.dropboxusercontent.com/scl/fi/vnj7ql162x1nlfcacziwj/download-1.png?rlkey=zl7lb7sko3muagw6phuqqd233&dl=0" alt="back">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
 
 
 
 
 
 <script>
-    function flipCard(card) {
-        card.classList.toggle('flipped');
-    }
+  document.querySelector('.flip-card').addEventListener('click', function() {
+    this.classList.toggle('active');
+  });
 </script>
 
 

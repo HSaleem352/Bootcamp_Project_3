@@ -197,73 +197,77 @@ body {
 
 
 /* Flip Cards */
-.card-container {
+/* The flip card container */
+.flip-card {
+  background-color: white;
+  width: 100%; /* Adjusted from 2000px to be responsive within its parent */
+  height: 600px;
+  border: 1px solid #f1f1f1;
   perspective: 1000px;
-  width: 100%; 
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
+  /* Removed margin: 0 auto; to avoid forced centering */
 }
 
-
-
-.card {
-  width: 640px; /* Adjust the width */
-  height: 550px; /* Adjust the height */
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%; /* Ensure this is also responsive */
+  height: 600px;
+  text-align: center;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
-  transition: transform 0.5s;
-  border: 2px solid #000000; 
-  position: relative;/* Add a black border */
-
-
 }
 
-.card.flipped {
+/* Add a class to rotate when active */
+.flip-card.active .flip-card-inner {
   transform: rotateY(180deg);
+  transition: transform 0.8s;
 }
 
-.front, .back {
+/* Position the front and back side */
+.flip-card-front {
   position: absolute;
+  width: 100%;
+  height: 100%;
   backface-visibility: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-
-.front {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e0e0e0;
-}
-
-.back {
+.flip-card-back {
+  position: absolute;
   width: 70%;
   height: 70%;
-  transform: rotateY(180deg);
-  background-color: #f0f0f0;
-  display: flex;
+  backface-visibility: hidden;
   align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  flex-direction: column;
+}
+
+
+/* .flip-card-front {
+  color: black;
+  background-color: white;
+} */
+
+/* Style the back side */
+.flip-card-back {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  text-align:left;
+  font-family: "Lato";
+  font-size: 20px;
+  background-color:white;
+  transform: rotateY(-180deg);
 }
 
-/* Container */
-.big-sector {
-  margin: 20px;
-
+.flip-card-back img {
+  max-width: 80%; 
+  max-height: auto; 
+  display: block; 
+  margin: 0 auto; /* Centers the image horizontally */
 }
-<<<<<<< Updated upstream
-.big-sector, .card-container {
-  min-height: 700px; 
-}
-
-=======
-.big-sector, .card {
-  min-height: 700px; 
-}
->>>>>>> Stashed changes
