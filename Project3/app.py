@@ -231,15 +231,16 @@ def afr_page():
 ##                                                  Shan                                                       ##
 #################################################################################################################
 
-@app.route('/race_ethnicity_affect_COVID')
+@app.route('/race_affect_COVID_breast_cancer')
 def shan_page():
     return render_template("shan.html")
 
-@app.route('/api/v1/percentage_df', methods=['GET'])
+
+@app.route('/api/v1/race_counts', methods=['GET'])
 def get_data1_shan():
     # Read Dataframe using SQL
     with engine.connect() as connection:
-        df = pd.read_sql('percentage_df',connection)
+        df = pd.read_sql('race_counts',connection)
 
     # Convert DataFrame to JSON
     json_data = df.to_json(orient='records')
@@ -258,8 +259,7 @@ def get_data2_shan():
 
     return json_data
 
-
-@app.route('/api/v1/cancer_status_sum', methods=['GET'])
+@app.route('/api/v1/covid_severity_count_by_race', methods=['GET'])
 def get_data3_shan():
     # Read Dataframe using SQL
     with engine.connect() as connection:
