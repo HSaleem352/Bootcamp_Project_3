@@ -2,10 +2,10 @@ let canHueOrder = ['Remission or no evidence of disease, <5 years', 'Active and 
 let canColors = ["#169489", "#1E5F94", '#EC6433', "#a6a6a6"]
 let canNames = ['Remission', 'Responding', 'Stable', 'Progressing']
 
-let covHueOrder = ['Mild', 'Moderate', 'Severe'] // ['Severe', 'Moderate', 'Mild']
+let covHueOrder = ['Mild', 'Moderate', 'Severe'] 
 let covNames = ['Mild', 'Moderate', 'Severe']
-let covColors = ["#rgb(22, 148, 137)", "rgb(30, 95, 148)", 'rgb(236, 100, 51)'] // ["#169489", "#1E5F94", '#EC6433']
-let covColorsTransparent = ["#rgba(22, 148, 137, .5)", "rgba(30, 95, 148, .5)", 'rgba(236, 100, 51, .5)']
+let covColors = ["rgb(22, 148, 137)", "rgb(30, 95, 148)", 'rgb(236, 100, 51)'] 
+let covColorsTransparent = ["rgba(22, 148, 137, .5)", "rgba(30, 95, 148, .5)", 'rgba(236, 100, 51, .5)']
 
 
 var xTicks = d3.scaleLinear().domain([5, 105])
@@ -38,7 +38,7 @@ function plotCancerBox() {
     d3.json("/api/v1/age_status_severity").then(function(data) {
         let traces = cancerTraces(data)
         var layout = {
-            title: 'Cancer Status',
+            title: '<b>Cancer Status</b> <br>The age distribution for each cancer status is identical. Patients within each <br>cancer status share average age of about <em>58</em>.',
             xaxis: {
                 title: 'Age',
                 zeroline: false
@@ -78,7 +78,7 @@ function plotCovidBox() {
         }
 
         var layout = {
-            title: 'Covid Severity',
+            title: '<b>Covid Severity</b><br>The average age of patients with Moderate and <br>Severe COVID is <em>8-10 years higher</em> than the average of 58.',
             xaxis: {
                 title: 'Age',
                 zeroline: false
@@ -501,72 +501,143 @@ function animateDisjointCovDensity() {
 plotCovidDensity()
 plotCancerDensity()
 
-
+function getDividerTrace(y) {
+    return {
+        x: [-3, 103],
+        y: [y, y],
+        mode: 'lines',
+        showlegend: false,
+        hoverinfo: 'skip',
+        line: {
+            color: 'grey',
+            dash: 'dot',
+            width: 1
+        }
+    }
+}
 
 function plotDotPlot() {
-var rows = ['All patients', 'Ages 18-34', '35-49', '50+', 'Cancer Mild', 'Moderate', 'Severe'];
+    d3.json("/api/v1/outcome_rates").then(function(data) {
 
-var mortalityRates = [8.93, 7.317, 5.085, 10.0, 1.795, 20.845, 56.604];
+        var rows = ['Severe', 'Moderate', 'Covid Mild', "  ", 'Responding', 'Stable', 'Progressing', 'Cancer Remission', " ", '80+', '65-79', '50-64', '35-49', 'Ages 18-34', "", 'All patients'];
 
-var trace1 = {
-  type: 'scatter',
-  x: mortalityRates,
-  y: rows,
-  mode: 'markers',
-  name: 'Percent of estimated voting age population',
-  marker: {
-    color: 'rgba(156, 165, 196, 0.95)',
-    line: {
-      color: 'rgba(156, 165, 196, 1.0)',
-      width: 1,
-    },
-    symbol: 'circle',
-    size: 16
-  }
-};
-var data = [trace1];
+        var traceLine = getDividerTrace('')
+        var traceLine2 = getDividerTrace(' ')
+        var traceLine3 = getDividerTrace('  ')
+        let fontSize = 14;
 
-var layout = {
-  title: 'Votes cast for ten lowest voting age population in OECD countries',
-  xaxis: {
-    showgrid: false,
-    showline: true,
-    linecolor: 'rgb(102, 102, 102)',
-    titlefont: {
-      font: {
-        color: 'rgb(204, 204, 204)'
-      }
-    },
-    tickfont: {
-      font: {
-        color: 'rgb(102, 102, 102)'
-      }
-    },
-    autotick: false,
-    dtick: 10,
-    ticks: 'outside',
-    tickcolor: 'rgb(102, 102, 102)'
-  },
-  margin: {
-    l: 140,
-    r: 40,
-    b: 50,
-    t: 80
-  },
-  legend: {
-    font: {
-      size: 10,
-    },
-    yanchor: 'middle',
-    xanchor: 'right'
-  },
-  width: 600,
-  height: 600,
-  paper_bgcolor: 'rgb(254, 247, 234)',
-  plot_bgcolor: 'rgb(254, 247, 234)',
-  hovermode: 'closest'
-};
+        var trace1 = {
+            type: 'scatter',
+            x: data.map((d) => d.der_deadbinary),
+            y: rows,
+            mode: 'markers',
+            name: 'death',
+            marker: {
+                color: '#025951',
+                line: {
+                    color: '#025951',
+                    width: 2,
+                },
+                symbol: 'circle',
+                size: fontSize
+            }
+        };
 
-Plotly.newPlot('mortality-dots', data, layout);
-    
+        var trace2 = {
+            x: data.map((d) => d.der_mv),
+            y: rows,
+            mode: 'markers',
+            name: "mechanical ventilation",
+            marker: {
+                color: 'rgba(8, 51, 89, 0.1)',
+                line: {
+                    color: 'rgba(8, 51, 89, 1)',
+                    width: 2,
+                },
+                symbol: "triangle-down",
+                size: fontSize
+            }
+        };
+
+        var trace3 = {
+            x: data.map((d) => d.der_ICU),
+            y: rows,
+            mode: 'markers',
+            name: "ICU",
+            marker: {
+                color: 'rgba(166, 33, 3, .01)',
+                line: {
+                    color: 'rgba(166, 33, 3, 1)',
+                    width: 1,
+                },
+                symbol: 'circle',
+                size: fontSize
+            }
+        };
+
+        var trace4 = {
+            x: data.map((d) => d.der_hosp),
+            y: rows,
+            mode: 'markers',
+            name: "hospitalized",
+            marker: {
+                color: 'rgba(0, 0, 0, .25)',
+                line: {
+                    color: 'rgba(0, 0, 0, .25)',
+                    width: 1,
+                },
+                symbol: 'circle',
+                size: fontSize
+            }
+        };
+
+        var data = [trace1, traceLine, traceLine2, traceLine3, trace2, trace3, trace4];
+
+        var layout = {
+            title: '<b>Probability of Severe Outcomes</b><br>Adults over the age of 35 are more likely to require time in the ICU, require mechanical ventilation given a COVID diagnosis, <br>and experience higher mortality and hospitalization rates with an increase in age.',
+
+            yaxis: {
+                showgrid: true,
+                showline: false,
+                tickfont: fontSize
+            },
+            xaxis: {
+                showgrid: false,
+                showline: true,
+                linecolor: 'rgb(102, 102, 102)',
+                titlefont: {
+                    font: {
+                        color: 'rgb(204, 204, 204)'
+                    }
+                },
+                tickfont: {
+                    font: {
+                        color: 'rgb(102, 102, 102)'
+                    }
+                },
+                autotick: false,
+                dtick: 20,
+                ticks: 'outside',
+                tickcolor: 'rgb(102, 102, 102)'
+            },
+            margin: {
+                l: 150
+            },
+            legend: {
+                //orientation: "h",
+                font: {
+                    size: fontSize,
+                },
+                //y: 40,
+                //x: 0.05,
+            },
+            height: 600,
+
+            hovermode: 'closest'
+        };
+
+        Plotly.newPlot('mortality-dots', data, layout);
+
+    })
 }
+plotDotPlot()

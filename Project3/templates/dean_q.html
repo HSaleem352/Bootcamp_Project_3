@@ -11,6 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <!-- plotly -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- typekit -->
+    <link rel="stylesheet" href="https://use.typekit.net/tic0xoy.css?ver=6.4.3">
 </head>
     
 <body style="background-color:white">
@@ -18,7 +20,7 @@
 <!-- Title & Navbar -->
 <nav class="navbar navbar-dark bg-dark" aria-label="First navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Residence Type Effect</a>
+        <a class="navbar-brand" href="#">The Effect of Age on the Probability of Severe Outcomes</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars_HS" aria-controls="navbars_HS" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,16 +41,16 @@
       </div>
     </nav>
     
-    <div id="boxplot-cancer" class="column"></div>
+    <div id="boxplot-cancer" class="left-column"></div>
     <button onclick="plots_DN:animateJointCanDesntiy();" class="button">Joint Distribution</button>
     <button onclick="plots_DN:animateDisjointCanDensity();" class="button">Marginal Distributions (default)</button>
-    <div id="density-cancer" class="column"></div>
-    <div id="boxplot-covid" class="column"></div>
+    <div id="density-cancer" class="right-column"></div>
+    <div id="boxplot-covid" class="left-column"></div>
     <button onclick="plots_DN:animateCovCDF();" class="button" title="empirical cumulative distribution function">Empirical CDF</button>
-    <button onclick="plots_DN:animateDisjointCovDensity();" class="button" class="empirical probability density">Empirical PDF (default)</button>
-    <div id="density-covid" class="column"></div>
+    <button onclick="plots_DN:animateDisjointCovDensity();" class="button" title="empirical probability density">Empirical PDF (default)</button>
+    <div id="density-covid" class="right-column"></div>
     <div id="mortality-dots" class="column"></div>
-    
+
     <script src="{{ url_for('static', filename='js/plots_DN.js') }}"></script>
 
     <!-- Bootstrap JS and Popper.js -->
