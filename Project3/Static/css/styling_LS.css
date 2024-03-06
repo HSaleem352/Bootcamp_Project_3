@@ -257,7 +257,13 @@ body {
   margin: 20px;
 
 }
+<<<<<<< Updated upstream
 .big-sector, .card-container {
   min-height: 700px; 
 }
 
+=======
+.big-sector, .card {
+  min-height: 700px; 
+}
+>>>>>>> Stashed changes
