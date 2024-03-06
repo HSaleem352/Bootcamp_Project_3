@@ -18,6 +18,8 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling_LS.css') }}">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+
 
   <!-- Bootstrap JavaScript and jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -48,6 +50,37 @@
           </div>
         </div>
       </nav>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://dpjh8al9zd3a4.cloudfront.net/image/h:720,w:1800/183865?s=8e269d34" alt="picture1" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.cbcn.ca/web/default/files/public/Stories/race%20influence%20header.jpeg" alt="picture3" class="d-block" style="width:100%">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
 
       <!-- Race Distribution pie chart  -->
       <div class="container-fluid mt-3">
@@ -145,9 +178,7 @@
 
 
   <!-- 5 pie charts  -->
-  <div class="container-fluid mt-3">
-    <!-- Outer container to ensure full-width and some margin at the top -->
-  
+  <div class="container-fluid mt-3">  
     <div class="row">
       <div class="col-12">
         <div id="g_container1">
@@ -156,7 +187,6 @@
         </div>
       </div>
     </div>
-
   
     <div class="row">
       <div class="col-12">
@@ -244,10 +274,10 @@
     <!-- white Divider  -->
     <div class="divider"></div>
 
-  </div>
-  
-    <script src="{{ url_for('static', filename='js/plots_LS.js') }}"></script>
 
+
+    <script src="{{ url_for('static', filename='js/plots_LS.js') }}"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
