@@ -47,6 +47,11 @@ What are the sociodemographic and clinical factors that influence adverse outcom
 - Follow directions on the pages to interact with elements
 
 ## Efforts for ethical considerations made in the project
+The dataset that we are using is associated with a Creative Commons Attribution 4.0 International License. This allows for the re-distribution and re-use of the dataset as long as the creators are porperly cited. We made sure to cite the creators of the dataset both in this ReadMe and on the Website - thus adhering to the Data License.
+
+Our website doesn't collect any user information like name or contact information, thus we did not have to deploy additional security measures to ensure we were safely storing and using the information.
+
+We made sure to make the website easy to use and interpret, and engaging so that it is accessible to the general public. In this way, we are also making scientific research more accessible to the lay audience.
 
 ## Dataset:
 Nagaraj, G., Khaki, A., & Shah, D. (2023). Covid-19 and Cancer Consortium (CCC19) breast cancer and racial disparities outcomes study. Zenodo. https://doi.org/10.5281/zenodo.7644334
@@ -115,6 +120,118 @@ plotli was used for bar graph,
 animate.css library was used for the home page animation,
 bootstrap library was used for collapse buttons.
 
+**Alejandra**
+
+html code for the carousel displaying the pie charts with the timing of BC treatment for each covid outcome 
+  <!-- Timing Carousel -->
+  
+  <!-- Slideshow container -->
+  <div class="timing-slideshow-container">
+  
+    <!-- Bar Charts with caption text -->
+    <div class="myTimingSlides">
+      <div id="afr_mild_timing_pie" style ="width:100%"></div>
+      <div class="timingtext" style = "width:100%"> The most number of patients experienced mild covid outcomes when they had ATC within the first 4 weeks of developing covid</div>
+    </div>
+  
+    <div class="myTimingSlides">
+      <div id="afr_moderate_timing_pie" style ="width:100%"></div>
+      <div class="timingtext" style = "width:100%"> The most number of patients experienced moderate covid outcomes when they had ATC within the first 4 weeks of developing covid</div>
+    </div>
+  
+    <div class="myTimingSlides">
+      <div id="afr_severe_timing_pie" style ="width:100%"></div>
+      <div class="timingtext" style = "width:100%"> The most number of patients experienced severe covid outcomes when they had ATC 3 months after of developing covid</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+  
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+css code for the carousel displaying the pie charts with the timing of BC treatment for each covid outcome 
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.timing-slideshow-container {
+  max-width: 700px;
+  height: 600px;
+  position: relative;
+  margin:auto;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.myTimingSlides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transform: rgba(214, 206, 206, 0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* Caption text */
+.timingtext {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
 
 ### SQL Postgres from Render:
 
@@ -202,16 +319,23 @@ with engine.connect() as connection:
 
   // Play initial series animation
   series.appear(1000, 100);
-
-
-
+  
 ## References
+
 **Hamza**
 creating postgresql engine: https://stackoverflow.com/questions/62688256/sqlalchemy-exc-nosuchmoduleerror-cant-load-plugin-sqlalchemy-dialectspostgre
 listing all tables in postgres using SQLAlchemy: https://www.pythonsheets.com/notes/python-sqlalchemy.html
 visual for amcharts: https://www.amcharts.com/demos/donut-with-radial-gradient/
 pic for home page: https://healthcare.utah.edu/huntsmancancerinstitute/sites/g/files/zrelqx336/files/styles/freeform_phone/public/migrate_images/mammo-mask.jpg?h=bdbe9ddb&itok=VPDk9U4v
 animations: https://animate.style/
+
+**Alejandra**
+information on the license applied to the dataset: https://creativecommons.org/licenses/by/4.0/legalcode
+information on ethical web design: https://capacityinteractive.com/blog/the-principles-of-ethical-web-design/
+creating the carousel: https://www.w3schools.com/howto/howto_js_slideshow.asp
+creating the flip cards: https://www.w3schools.com/howto/howto_css_flip_card.asp
+aranging text vertically: https://www.shecodes.io/athena/38295-how-to-make-h1-on-two-lines-with-different-colors
+text alignment in css: https://www.w3schools.com/css/css_text_align.asp
 
 
 **Mina**
