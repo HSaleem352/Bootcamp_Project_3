@@ -332,6 +332,11 @@ animations: https://animate.style/
 **Alejandra**
 information on the license applied to the dataset: https://creativecommons.org/licenses/by/4.0/legalcode
 information on ethical web design: https://capacityinteractive.com/blog/the-principles-of-ethical-web-design/
+creating the carousel: https://www.w3schools.com/howto/howto_js_slideshow.asp
+creating the flip cards: https://www.w3schools.com/howto/howto_css_flip_card.asp
+aranging text vertically: https://www.shecodes.io/athena/38295-how-to-make-h1-on-two-lines-with-different-colors
+text alignment in css: https://www.w3schools.com/css/css_text_align.asp
+
 
 **Mina**
 -Page structures: https://getbootstrap.com/ , ChatGPT
