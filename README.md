@@ -11,7 +11,7 @@ What are the sociodemographic and clinical factors that influence adverse outcom
 3. Amongst all the races with different BC statuses, is smoking a factor for them to have COVID-19? - Mina
 4. How does race/ethnicity affect COVID with Breast Cancer? - Shan
 5. Does obesity and age have an effect on COVID-19 with Breast Cancer? - Fozia
-6. Is the severity of COVID-19 affected if the individuals live in urban, suburban, or rural areas? - Hamza
+6. Is the severity of COVID-19 and the cancer status affected if the individuals live in urban, suburban, or rural areas? - Hamza
 7. What is the isolated effect of age on the risk of COVID-19 and Breast Cancer outcomes? - Dean
 
 ## Members of the group
