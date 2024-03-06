@@ -11,9 +11,9 @@ body {
 
 #g_container1{
     width: 100%; 
-    height: 80vh;
+    height: 70vh;
     margin: auto;
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0);
    
     display: grid;
     
@@ -27,7 +27,7 @@ body {
   }
   
   #g1_title {
-    height: 50vh;
+    height: 45vh;
     width: 50vw;
     font-size: 2em; 
     transform: translate(70%,10%);
@@ -37,7 +37,7 @@ body {
 
   #g_container2{
     width: 100%; 
-    height: 80vh;
+    height: 70vh;
     margin: auto;
     background-color:white;
    
@@ -53,7 +53,7 @@ body {
   }
   
   #g2_title {
-    height: 50vh;
+    height: 45vh;
     width: 50vw;
     font-size: 2em; 
     transform: translate(70%,10%);
@@ -63,7 +63,7 @@ body {
 
   #g_container3{
     width: 100%; 
-    height: 80vh;
+    height: 70vh;
     margin: auto;
     background-color:white;
    
@@ -79,7 +79,7 @@ body {
   }
   
   #g3_title {
-    height: 50vh;
+    height: 45vh;
     width: 50vw;
     font-size: 2em; 
     transform: translate(70%,10%);
@@ -89,7 +89,7 @@ body {
 
   #g_container4{
     width: 100%; 
-    height: 80vh;
+    height: 70vh;
     margin: auto;
     background-color:white;
    
@@ -105,7 +105,7 @@ body {
   }
   
   #g4_title {
-    height: 50vh;
+    height: 45vh;
     width: 50vw;
     font-size: 2em; 
     transform: translate(70%,10%);
@@ -115,7 +115,7 @@ body {
 
   #g_container5{
     width: 100%; 
-    height: 80vh;
+    height: 70vh;
     margin: auto;
     background-color:white;
    
@@ -131,7 +131,7 @@ body {
   }
   
   #g5_title {
-    height: 50vh;
+    height: 45vh;
     width: 50vw;
     font-size: 2em; 
     transform: translate(70%,10%);
@@ -175,8 +175,27 @@ body {
   .divider {
     width: 100%; 
     height: 30px; 
-    background-color: #A7C7E7; 
+    background-color: white; 
     border-radius:10px;
   }
   
 
+  .divider2 {
+    width: 100%; 
+    height: 50px; 
+    background-color: white; 
+    border-radius: 10px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px; 
+    color: #000; 
+}
+
+
+.divider3 {
+  width: 100%; 
+  height: 10px; 
+  background-color:#A7C7E7; 
+  border-radius:10px;
+}

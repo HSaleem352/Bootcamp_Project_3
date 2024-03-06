@@ -65,8 +65,7 @@
       </div>
       
     
-    <!-- Divider  -->
-    <div class="divider"></div>
+   
   
 
 
@@ -96,6 +95,34 @@
   </div>
 
  
+ <!-- first chi square test  -->
+
+ <div class="container mt-3">
+  <div class="mt-4 p-5 text-black rounded" style="background-color: #A7C7E7">
+    <h1>The Chi-Square Test</h1> 
+    <p> 
+      The Chi-Square test was conducted to investigate the relationship between Race/Ethnic Distribution and the severity of COVID-19 cases. A resulting p-value of 0.004365424803990782 was obtained, which falls below the commonly accepted significance level of 0.05. This low p-value indicates a statistically significant association, strongly suggesting that Race/Ethnic Distribution has an impact on COVID-19 severity. In statistical terms, the null hypothesis—which posits that there is no relationship between the two variables—can be confidently rejected based on these results. Consequently, this analysis substantiates the presence of a link between Race/Ethnic Distribution and how severe COVID-19 cases can be.</p>
+    </div>
+  </div>
+
+
+ <!-- white Divider  -->
+    <div class="divider"></div>
+
+ <!-- white Divider  -->
+ <div class="divider"></div>
+
+ <!-- white Divider  -->
+ <div class="divider"></div>
+
+
+<!-- title Divider  -->
+<div class="divider2">
+  <h1>Relationship Between Ethnic Distribution and  Breast Cancer</h1>
+</div>
+
+ <!-- white Divider  -->
+ <div class="divider"></div>
 
   <!-- 5 buttons of pie charts  -->
     <div id="covid-severity-bar-chart"></div>
@@ -115,6 +142,7 @@
       <button  onclick="toggleGraph(5)" class = "buttons" >Other</button>
 
   </div>
+
 
   <!-- 5 pie charts  -->
   <div class="container-fluid mt-3">
@@ -168,6 +196,15 @@
       </div>
     </div>
   
+    <!-- second chi square test  -->
+
+ <div class="container mt-3">
+  <div class="mt-4 p-5 text-black rounded" style="background-color: #A7C7E7">
+    <h1>The Chi-Square Test</h1> 
+    <p> The Chi-Square test was conducted to investigate the relationship between Race/Ethnic Distribution and the status of breast cancer.The analysis generated a Chi-squared statistic of 98.05191807290167, accompanied by a p-value of 2.8064344261338783e-12. This p-value is remarkably lower than the commonly accepted threshold of 0.05, which is used to determine statistical significance. Given such a low p-value, there is compelling evidence to reject the null hypothesis, which assumes no association between the variables. Therefore, the results strongly suggest that there is a significant and meaningful relationship between an individual's Race/Ethnic Distribution and their breast cancer status.
+    </p>
+    </div>
+  </div>
   </div>
   
     <script src="{{ url_for('static', filename='js/plots_LS.js') }}"></script>
