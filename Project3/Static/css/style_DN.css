@@ -9,9 +9,15 @@
   width: 50%;
 }
 
+.right-column-nobutton {
+  float: left;
+  width: 50%;
+margin-top: 25px;
+}
+
 .column {
   float: left;
-  width: 100%;
+  width: 95%;
 }
 
 /* Clear floats after the columns */

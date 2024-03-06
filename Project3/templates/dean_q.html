@@ -20,7 +20,7 @@
 <!-- Title & Navbar -->
 <nav class="navbar navbar-dark bg-dark" aria-label="First navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">The Effect of Age on the Probability of Severe Outcomes</a>
+        <a class="navbar-brand" href="#">The Effect of Age on the Occurrence of Severe Outcomes</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars_HS" aria-controls="navbars_HS" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,9 +46,9 @@
     <button onclick="plots_DN:animateDisjointCanDensity();" class="button">Marginal Distributions (default)</button>
     <div id="density-cancer" class="right-column"></div>
     <div id="boxplot-covid" class="left-column"></div>
-    <button onclick="plots_DN:animateCovCDF();" class="button" title="empirical cumulative distribution function">Empirical CDF</button>
-    <button onclick="plots_DN:animateDisjointCovDensity();" class="button" title="empirical probability density">Empirical PDF (default)</button>
-    <div id="density-covid" class="right-column"></div>
+    <!-- <button onclick="plots_DN:animateCovCDF();" class="button" title="empirical cumulative distribution function">Empirical CDF</button> -->
+    <!-- <button onclick="plots_DN:animateDisjointCovDensity();" class="button" title="empirical probability density">Empirical PDF (default)</button> -->
+    <div id="density-covid" class="right-column-nobutton"></div>
     <div id="mortality-dots" class="column"></div>
 
     <script src="{{ url_for('static', filename='js/plots_DN.js') }}"></script>
