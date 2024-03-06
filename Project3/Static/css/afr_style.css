@@ -135,10 +135,6 @@
   text-align: center;
 }
 
-#afr_moderate_timing_pie {
-  margin: auto; /* Center the div horizontally */
-}
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -276,10 +272,8 @@
 }
 
 /* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
-/*                                                                        TREATMENT CAROUSEL                                                                   */
+/*                                                                        TIMING CAROUSEL                                                                      */
 /* --------------------------------------------------- --------------------------------------------------- --------------------------------------------------- */
-
-* {box-sizing:border-box}
 
 /* Slideshow container */
 .treatment-slideshow-container {
@@ -296,9 +290,8 @@
   text-align: center;
 }
 
-
 /* Next & previous buttons */
-.treat-prev, .treat-next {
+.prev-treatment, .next-treatment {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -315,18 +308,18 @@
 }
 
 /* Position the "next button" to the right */
-.treat-next {
+.next-treatment {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.treat-prev:hover, .treat-next:hover {
+.prev-treatment:hover, .next-treatment:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
-.treat-text {
+.treatment-text {
   color: black;
   font-size: 15px;
   padding: 8px 12px;
@@ -348,17 +341,17 @@
   transition: background-color 0.6s ease;
 }
 
-.treat-active, .treat-dot:hover {
+.active-treatment, .treat-dot:hover {
   background-color: #717171;
 }
 
 /* Fading animation */
-.treat-fade {
-  animation-name: fade;
+.fade-treatment {
+  animation-name: fadeTreatment;
   animation-duration: 100s;
 }
 
-@keyframes treat-fade {
+@keyframes fadeTreatment {
   from {opacity: .99} 
   to {opacity: 1}
 }

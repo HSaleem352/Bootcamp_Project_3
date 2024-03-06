@@ -128,29 +128,28 @@
 </div>
 </div>
 
-<!-- Treatment Carousel -->
 <!-- Slideshow container -->
 <div class="treatment-slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="myTreatmentSlides fade">
+  <div class="myTreatmentSlides fade-treatment">
     <div id="afr_mild_treatment_pie" style ="width:100%"></div>
-    <div class="treat-text"> Mild Covid Outcomes for Different BC Treatment Types</div>
+    <div class="treatment-text"> Mild Covid Outcomes at Different BC Treatment Time Points</div>
   </div>
 
-  <div class="myTreatmentSlides fade">
+  <div class="myTreatmentSlides fade-treatment">
     <div id="afr_moderate_treatment_pie" style ="width:100%"></div>
-    <div class="treat-text">Moderate Covid Outcomes for Different BC Treatment Types</div>
+    <div class="treatment-text">Moderate Covid Outcomes at Different BC Treatment Time Points</div>
   </div>
 
-  <div class="myTreatmentSlides fade">
+  <div class="myTreatmentSlides fade-treatment">
     <div id="afr_severe_treatment_pie" style ="width:100%"></div>
-    <div class="treat-text"> Severe Covid Outcomes for Different BC Treatment Types</div>
+    <div class="treatment-text"> Severe Covid Outcomes at Different BC Treatment Time Points</div>
   </div>
 
   <!-- Next and previous buttons -->
-  <a class="treat-prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="treat-next" onclick="plusSlides(1)">&#10095;</a>
+  <a class="prev-treatment" onclick="plusSlidesTreatment(-1)">&#10094;</a>
+  <a class="next-treatment" onclick="plusSlidesTreatment(1)">&#10095;</a>
 
 </div>
 
@@ -158,9 +157,9 @@
 
 <!-- The dots/circles -->
 <div style="text-align:center">
-  <span class="treat-dot" onclick="currentSlide(1)"></span> 
-  <span class="treat-dot" onclick="currentSlide(2)"></span> 
-  <span class="treat-dot" onclick="currentSlide(3)"></span> 
+  <span class="treat-dot" onclick="currentSlideTreatment(1)"></span> 
+  <span class="treat-dot" onclick="currentSlideTreatment(2)"></span> 
+  <span class="treat-dot" onclick="currentSlideTreatment(3)"></span> 
 </div>
 
 
@@ -207,6 +206,38 @@
     dots[slideIndex-1].className += " active";
   }
 </script>
+
+<script>
+  let slideIndexTreatment = 1;
+  showSlidesTreatment(slideIndexTreatment);
+
+  // Next/previous controls
+  function plusSlidesTreatment(n) {
+    showSlidesTreatment(slideIndexTreatment += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlideTreatment(n) {
+    showSlidesTreatment(slideIndexTreatment = n);
+  }
+
+  function showSlidesTreatment(n) {
+    let i;
+    let slides = document.getElementsByClassName("myTreatmentSlides");
+    let dots = document.getElementsByClassName("treat-dot");
+    if (n > slides.length) {slideIndexTreatment = 1} 
+    if (n < 1) {slideIndexTreatment = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active-treatment", "");
+    }
+    slides[slideIndexTreatment-1].style.display = "block"; 
+    dots[slideIndexTreatment-1].className += " active-treatment";
+  }
+</script>
+
 
 <!-- Plots -->
 <script src="{{ url_for('static', filename='js/plots_AFR.js') }}"></script>
