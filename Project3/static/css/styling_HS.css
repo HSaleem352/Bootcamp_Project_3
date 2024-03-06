@@ -20,8 +20,9 @@ body {
   }
   
 .figure1_container{
+  position: relative;
   width: 100%; /* Adjust the width as needed */
-  height: 100vh;
+  height: 100%;
   margin: auto;
   border-top-right-radius: 70px;
   transform-origin: left top;
@@ -40,7 +41,7 @@ body {
   top: 5%;
   transform-origin: left top; 
   transform: skewX(12deg);
-  position:absolute;
+  position:relative;
   color: black;
   font-family: 'Your Desired Font', 'Times New Roman', Times, serif;
 }
@@ -195,3 +196,10 @@ body {
   transform-origin: right bottom; 
 }
 
+.card_count{
+    width: 100vw; /* Adjust the width */
+    height: 100vw; /* Adjust the height */
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    border: 2px solid #000000; /* Add a black border */
+}
