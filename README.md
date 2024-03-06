@@ -320,6 +320,83 @@ with engine.connect() as connection:
   // Play initial series animation
   series.appear(1000, 100);
   
+**Dean** \
+Functions to compute densities
+```python
+// Function to compute density
+function kernelDensityEstimator(kernel, X) {
+    return function(V) {
+        return X.map(function(x) {
+            return [x, d3.mean(V, function(v) {
+                return kernel(x - v);
+            })];
+        });
+    };
+}
+
+function kernelEpanechnikov(k) {
+    return function(v) {
+        return Math.abs(v /= k) <= 1 ? 0.75 * (1 - v * v) / k : 0;
+    };
+}
+
+function plotCancerDensity() {
+    d3.json("/api/v1/age_status_severity").then(function(data) {
+        let traces = []
+        let density = null,
+            dat = null
+
+        for (i in canHueOrder) {
+            dat = data
+                .filter((d) => d.der_cancer_status_v4 === canHueOrder[i])
+                .map((d) => d.der_age_trunc)
+            density = kde(dat)
+            traces.push({
+                x: density.map((d) => d[0]),
+                y: density.map((d) => 100 * (dat.length / data.length) * d[1]),
+                line: {
+                    color: canColors[i]
+                },
+                mode: "lines",
+                name: canNames[i],
+                type: "scatter",
+                hovermode: false
+            })
+        }
+
+        Plotly.newPlot('density-cancer', traces);
+    })
+}
+```
+Custom hover template for stacked densities
+```python
+            hovertemplate = 'Relative:%{customdata:.3f})%<extra>%{fullData.name}</extra>'
+            if (i == (covHueOrder.length - 1)) {
+                hovertemplate = 'Overall Density:%{y:.3f}% | Relative:%{customdata:.3f})%<extra>%{fullData.name}</extra>'
+            }
+            max_ = Math.max(max_, Math.max(...y))
+            traces.push({
+                x: x,
+                y: y,
+                line: {
+                    color: covColors[i],
+                },
+                fill: "tonexty",
+                fillcolor: covColors[i],
+                mode: "lines",
+                name: covNames[i],
+                type: "scatter",
+                customdata: subvector(y, y_last),
+                hovertemplate: hovertemplate,
+                hoverlabel: {
+                    font: {
+                        color: 'white',
+                        size: 18
+                    }
+                }
+            })
+```
+
 ## References
 
 **Hamza**
@@ -342,6 +419,12 @@ text alignment in css: https://www.w3schools.com/css/css_text_align.asp
 -Page structures: https://getbootstrap.com/ , ChatGPT
 -Uploading images from GoogleDrive to Our Team page: https://stackoverflow.com/questions/77851898/using-google-drive-link-as-img-src-on-react-app-not-working
 -Home page navbar: https://tachyons.io/components/nav/logo-titles-links-centered/index.html
+
+**Dean**
+* [Density plot with several groups in d3.js](https://d3-graph-gallery.com/graph/density_double.html)
+* [Animations in JavaScript](https://plotly.com/javascript/animations/)
+* [Dot Plots in JavaScript](https://plotly.com/javascript/animations/)
+
 
 
 

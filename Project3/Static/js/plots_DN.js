@@ -2,9 +2,9 @@ let canHueOrder = ['Remission or no evidence of disease, <5 years', 'Active and 
 let canColors = ["#169489", "#1E5F94", '#EC6433', "#a6a6a6"]
 let canNames = ['Remission', 'Responding', 'Stable', 'Progressing']
 
-let covHueOrder = ['Mild', 'Moderate', 'Severe'] 
+let covHueOrder = ['Mild', 'Moderate', 'Severe']
 let covNames = ['Mild', 'Moderate', 'Severe']
-let covColors = ["rgb(22, 148, 137)", "rgb(30, 95, 148)", 'rgb(236, 100, 51)'] 
+let covColors = ["rgb(22, 148, 137)", "rgb(30, 95, 148)", 'rgb(236, 100, 51)']
 let covColorsTransparent = ["rgba(22, 148, 137, .5)", "rgba(30, 95, 148, .5)", 'rgba(236, 100, 51, .5)']
 
 
@@ -38,7 +38,7 @@ function plotCancerBox() {
     d3.json("/api/v1/age_status_severity").then(function(data) {
         let traces = cancerTraces(data)
         var layout = {
-            title: '<b>Cancer Status</b> <br>The age distribution for each cancer status is identical. Patients within each <br>cancer status share average age of about <em>58</em>.',
+            title: '<b>Cancer Status</b> <br>The age distribution for each cancer status is identical. Patients within each <br>cancer status each about <em>58</em> on average.',
             xaxis: {
                 title: 'Age',
                 zeroline: false
@@ -47,7 +47,9 @@ function plotCancerBox() {
                 ticks: '',
                 showticklabels: false
             },
-
+            legend: {
+                traceorder: 'reversed'
+            },
             boxmode: 'group',
 
         };
@@ -78,7 +80,7 @@ function plotCovidBox() {
         }
 
         var layout = {
-            title: '<b>Covid Severity</b><br>The average age of patients with Moderate and <br>Severe COVID is <em>8-10 years higher</em> than the average of 58.',
+            title: '<b>Covid Severity</b><br>Patients with Moderate and Severe COVID are <em>8-10 years older</em> on average.',
             xaxis: {
                 title: 'Age',
                 zeroline: false
@@ -89,6 +91,9 @@ function plotCovidBox() {
             },
 
             boxmode: 'group',
+            legend: {
+                traceorder: 'reversed'
+            }
 
         };
 
@@ -130,7 +135,7 @@ function plotCancerDensity() {
             density = kde(dat)
             traces.push({
                 x: density.map((d) => d[0]),
-                y: density.map((d) => (dat.length / data.length) * d[1]),
+                y: density.map((d) => 100 * (dat.length / data.length) * d[1]),
                 line: {
                     color: canColors[i]
                 },
@@ -149,24 +154,31 @@ function addvector(a, b) {
     return a.map((e, i) => e + b[i]);
 }
 
+function subvector(a, b) {
+    return a.map((e, i) => e - b[i]);
+}
+
 function animateJointCanDesntiy() {
     d3.json("/api/v1/age_status_severity").then(function(data) {
         let dat = data.map((d) => d.der_age_trunc)
         let density = kde(dat)
         let x = density.map((d) => d[0])
-        let y = density.map((d) => d[1])
+        let y = density.map((d) => 100 * d[1])
         let layout = {}
 
         for (i in canHueOrder) {
-            layout = {}
+            layout = {
+                hovermode: false
+            }
             if (i == (canHueOrder.length - 1)) {
                 layout = {
+                    hovermode: false,
                     yaxis: {
                         range: [0, Math.max(...y) + .001]
                     },
                     annotations: [{
                         x: 58,
-                        y: 0.0252,
+                        y: 2.52,
                         xref: 'x',
                         yref: 'y',
                         text: 'Overall Average age: 58',
@@ -187,7 +199,7 @@ function animateJointCanDesntiy() {
             }, {
                 transition: {
                     duration: 500,
-                    easing: 'cubic-in-out'
+                    easing: "cubic-in-out"
                 },
                 frame: {
                     duration: 500
@@ -212,13 +224,14 @@ function animateDisjointCanDensity() {
                 .filter((d) => d.der_cancer_status_v4 === canHueOrder[i])
                 .map((d) => d.der_age_trunc)
             density = kde(dat)
-            y = density.map((d) => (dat.length / data.length) * d[1])
+            y = density.map((d) => 100 * (dat.length / data.length) * d[1])
             x = density.map((d) => d[0])
 
             max_ = Math.max(max_, Math.max(...y))
-            layout = {}
+            layout = {hovermode: true}
             if (i == (canHueOrder.length - 1)) {
                 layout = {
+                    hovermode: true,
                     yaxis: {
                         range: [0, max_ + .001]
                     }
@@ -234,10 +247,11 @@ function animateDisjointCanDensity() {
             }, {
                 transition: {
                     duration: 500,
-                    easing: 'cubic-in-out'
+                    easing: "cubic-in-out"
                 },
                 frame: {
-                    duration: 500
+                    duration: 500.
+                    
                 }
             })
         }
@@ -286,13 +300,14 @@ let cov_age_annotations = [{
 function plotCovidDensity() {
     d3.json("/api/v1/age_status_severity").then(function(data) {
         let traces = []
-
         let density = null,
             dat = null
         let x = null,
             y = null
+        let hovertemplate
         let y_last = new Array(81).fill(0);
         let max_ = 0
+
         for (i in covHueOrder) {
             dat = data
                 .filter(function(d) {
@@ -304,7 +319,11 @@ function plotCovidDensity() {
             density = kde(dat)
             x = density.map((d) => d[0])
             y = density.map((d, i) => covDensityMultiplier * (dat.length / data.length) * d[1] + y_last[i])
-            y_last = y
+
+            hovertemplate = 'Relative:%{customdata:.3f})%<extra>%{fullData.name}</extra>'
+            if (i == (covHueOrder.length - 1)) {
+                hovertemplate = 'Overall Density:%{y:.3f}% | Relative:%{customdata:.3f})%<extra>%{fullData.name}</extra>'
+            }
             max_ = Math.max(max_, Math.max(...y))
             traces.push({
                 x: x,
@@ -317,9 +336,20 @@ function plotCovidDensity() {
                 mode: "lines",
                 name: covNames[i],
                 type: "scatter",
+                customdata: subvector(y, y_last),
+                hovertemplate: hovertemplate,
+                hoverlabel: {
+                    font: {
+                        color: 'white',
+                        size: 18
+                    }
+                }
             })
+            y_last = y
         }
         var layout = {
+            // hovermode: false,
+
             yaxis: {
                 range: [.0, max_],
             },
@@ -345,7 +375,7 @@ function animateCovCDF() {
     d3.json("/api/v1/age_status_severity").then(function(data) {
         let density = null,
             dat = null
-        let layout = {}
+        let layout = null
         let x = null,
             y = null
         let max_ = 0
@@ -365,9 +395,12 @@ function animateCovCDF() {
                 .map((d, j) => 2 * (dat.length / data.length) * d + y_last[j])
             y_last = y
 
-            layout = {}
+            layout = {
+                hovermode: false
+            }
             if (i == (covHueOrder.length - 1)) {
                 layout = {
+                    hovermode: false,
                     yaxis: {
                         range: [0, 1.001]
                     },
@@ -383,7 +416,7 @@ function animateCovCDF() {
             }, {
                 transition: {
                     duration: 500,
-                    easing: 'cubic-in-out'
+                    easing: "cubic-in-out"
                 },
                 frame: {
                     duration: 500
@@ -436,7 +469,7 @@ function animateCovCDFv2() {
             }, {
                 transition: {
                     duration: 500,
-                    easing: 'cubic-in-out'
+                    easing: "cubic-in-out"
                 },
                 frame: {
                     duration: 500
@@ -468,9 +501,12 @@ function animateDisjointCovDensity() {
             y_last = y
 
             max_ = Math.max(max_, Math.max(...y))
-            layout = {}
+            layout = {
+                hovermode: false
+            }
             if (i == (covHueOrder.length - 1)) {
                 layout = {
+                    hovermode: false,
                     yaxis: {
                         range: [0, max_ + .001]
                     },
@@ -487,7 +523,7 @@ function animateDisjointCovDensity() {
             }, {
                 transition: {
                     duration: 500,
-                    easing: 'cubic-in-out'
+                    easing: "cubic-in-out"
                 },
                 frame: {
                     duration: 500
@@ -524,7 +560,7 @@ function plotDotPlot() {
         var traceLine = getDividerTrace('')
         var traceLine2 = getDividerTrace(' ')
         var traceLine3 = getDividerTrace('  ')
-        let fontSize = 14;
+        let fontSize = 18;
 
         var trace1 = {
             type: 'scatter',
@@ -579,7 +615,7 @@ function plotDotPlot() {
             x: data.map((d) => d.der_hosp),
             y: rows,
             mode: 'markers',
-            name: "hospitalized",
+            name: "hospitalization",
             marker: {
                 color: 'rgba(0, 0, 0, .25)',
                 line: {
@@ -594,7 +630,7 @@ function plotDotPlot() {
         var data = [trace1, traceLine, traceLine2, traceLine3, trace2, trace3, trace4];
 
         var layout = {
-            title: '<b>Probability of Severe Outcomes</b><br>Adults over the age of 35 are more likely to require time in the ICU, require mechanical ventilation given a COVID diagnosis, <br>and experience higher mortality and hospitalization rates with an increase in age.',
+            title: '<b>Probability of Severe Outcomes</b><br>Adults over the age of 35 are more likely to <i>require time in the ICU</i>, <i>require mechanical ventilation given a COVID diagnosis</span>, <br>and <i>experience higher mortality and hospitalization rates</i> with increase in age.',
 
             yaxis: {
                 showgrid: true,
@@ -624,12 +660,11 @@ function plotDotPlot() {
                 l: 150
             },
             legend: {
-                //orientation: "h",
+                yanchor: 'middle',
+                xanchor: 'right',
                 font: {
                     size: fontSize,
                 },
-                //y: 40,
-                //x: 0.05,
             },
             height: 600,
 
