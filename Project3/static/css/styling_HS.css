@@ -37,7 +37,7 @@ body {
 
 #residence_title {
   height: 10%;
-  width: 50%;
+  width: 30%;
   font-size: 2em; 
   transform-origin: left top; 
   transform: skewX(12deg);
@@ -166,7 +166,7 @@ body {
 {
     width:100%;
     text-align: center;
-    /* background-color: #A7C7E7 ; */
+    /* background-color: #A7C7E7 ;  */
     background-image: url('https://i.pinimg.com/736x/e8/61/e2/e861e20ece0ef5c440304a703e1f95be.jpg'); /* Image URL */
     border-radius:10px;
 }
@@ -191,20 +191,21 @@ body {
   transform-origin: right bottom; 
 }
 
-.info_card{
+.info_card_header{
+
   display: flex;
   width: 100vw;
   height: 10vh;
-  background-image: url('https://i.pinimg.com/736x/e8/61/e2/e861e20ece0ef5c440304a703e1f95be.jpg'); /* Image URL */
-  border-radius: 20px;
+  background-color: #ffe69c !important; /* Use !important to override Bootstrap styles */
+  border: none !important;
+  border-radius: 20px !important;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  color: black !important;
 }
 
-.info_card h1{
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 30px;
-  color: gold;
-  
-}
+
+
+
 
