@@ -113,12 +113,6 @@ Card click expand:
     </script>
 ```
 
-**Hamza**
-
-amCharts library was used for donut graphs,
-plotli was used for bar graph,
-animate.css library was used for the home page animation,
-bootstrap library was used for collapse buttons.
 
 **Alejandra**
 
@@ -232,6 +226,14 @@ css code for the carousel displaying the pie charts with the timing of BC treatm
 .active, .dot:hover {
   background-color: #717171;
 }
+
+
+**Hamza**
+
+amCharts library was used for donut graphs,
+plotli was used for bar graph,
+animate.css library was used for the home page animation,
+bootstrap library was used for collapse buttons.
 
 ### SQL Postgres from Render:
 
