@@ -311,7 +311,7 @@ def outcome_rates():
 ##                                                  Fozia                                                      ##
 #################################################################################################################
 
-@app.route('/Fozia')
+@app.route('/obesity&age')
 def fozia_page():
     return render_template("FY.html")
 
