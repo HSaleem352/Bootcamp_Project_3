@@ -153,3 +153,4 @@ function showAll() {
 document.addEventListener('DOMContentLoaded', function() {
     showAll(); // display all when launch
 });
+
