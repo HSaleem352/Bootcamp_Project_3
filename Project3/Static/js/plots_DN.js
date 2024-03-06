@@ -38,7 +38,7 @@ function plotCancerBox() {
     d3.json("/api/v1/age_status_severity").then(function(data) {
         let traces = cancerTraces(data)
         var layout = {
-            title: 'Cancer Status',
+            title: '<b>Cancer Status</b> <br>The age distribution for each cancer status is identical. Patients within each <br>cancer status share average age of about <em>58</em>.',
             xaxis: {
                 title: 'Age',
                 zeroline: false
@@ -78,7 +78,7 @@ function plotCovidBox() {
         }
 
         var layout = {
-            title: 'Covid Severity',
+            title: '<b>Covid Severity</b><br>The average age of patients with Moderate and <br>Severe COVID is <em>8-10 years higher</em> than the average of 58.',
             xaxis: {
                 title: 'Age',
                 zeroline: false
@@ -594,7 +594,7 @@ function plotDotPlot() {
         var data = [trace1, traceLine, traceLine2, traceLine3, trace2, trace3, trace4];
 
         var layout = {
-            title: 'Probability of Severe Outcomes',
+            title: '<b>Probability of Severe Outcomes</b><br>Adults over the age of 35 are more likely to require time in the ICU, require mechanical ventilation given a COVID diagnosis, <br>and experience higher mortality and hospitalization rates with an increase in age.',
 
             yaxis: {
                 showgrid: true,
@@ -621,15 +621,15 @@ function plotDotPlot() {
                 tickcolor: 'rgb(102, 102, 102)'
             },
             margin: {
-                l: 150,
+                l: 150
             },
             legend: {
-                orientation: "h",
+                //orientation: "h",
                 font: {
                     size: fontSize,
                 },
-                y: 40,
-                x: 0.05,
+                //y: 40,
+                //x: 0.05,
             },
             height: 600,
 
