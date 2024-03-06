@@ -39,10 +39,11 @@ body {
     max-width: 200px;
     max-height: 200px;
     position: absolute;
-    bottom: 40px; /* Adjust the negative value as needed */
+    bottom: 40px; 
     left: 50%;
     transform: translateX(-50%);
 }
+
 .carousel-inner {
     align-items: center;
     justify-content: center;
