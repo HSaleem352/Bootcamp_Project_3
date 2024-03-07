@@ -401,6 +401,84 @@ Custom hover template for stacked densities
                 }
             })
 ```
+
+**Dean** \
+Functions to compute densities
+```python
+// Function to compute density
+function kernelDensityEstimator(kernel, X) {
+    return function(V) {
+        return X.map(function(x) {
+            return [x, d3.mean(V, function(v) {
+                return kernel(x - v);
+            })];
+        });
+    };
+}
+
+function kernelEpanechnikov(k) {
+    return function(v) {
+        return Math.abs(v /= k) <= 1 ? 0.75 * (1 - v * v) / k : 0;
+    };
+}
+
+function plotCancerDensity() {
+    d3.json("/api/v1/age_status_severity").then(function(data) {
+        let traces = []
+        let density = null,
+            dat = null
+
+        for (i in canHueOrder) {
+            dat = data
+                .filter((d) => d.der_cancer_status_v4 === canHueOrder[i])
+                .map((d) => d.der_age_trunc)
+            density = kde(dat)
+            traces.push({
+                x: density.map((d) => d[0]),
+                y: density.map((d) => 100 * (dat.length / data.length) * d[1]),
+                line: {
+                    color: canColors[i]
+                },
+                mode: "lines",
+                name: canNames[i],
+                type: "scatter",
+                hovermode: false
+            })
+        }
+
+        Plotly.newPlot('density-cancer', traces);
+    })
+}
+```
+Custom hover template for stacked densities
+```python
+            hovertemplate = 'Relative:%{customdata:.3f})%<extra>%{fullData.name}</extra>'
+            if (i == (covHueOrder.length - 1)) {
+                hovertemplate = 'Overall Density:%{y:.3f}% | Relative:%{customdata:.3f})%<extra>%{fullData.name}</extra>'
+            }
+            max_ = Math.max(max_, Math.max(...y))
+            traces.push({
+                x: x,
+                y: y,
+                line: {
+                    color: covColors[i],
+                },
+                fill: "tonexty",
+                fillcolor: covColors[i],
+                mode: "lines",
+                name: covNames[i],
+                type: "scatter",
+                customdata: subvector(y, y_last),
+                hovertemplate: hovertemplate,
+                hoverlabel: {
+                    font: {
+                        color: 'white',
+                        size: 18
+                    }
+                }
+            })
+```
+
 **Shan** \
 Generates pie charts for each race category with dynamic labeling
 ```python
