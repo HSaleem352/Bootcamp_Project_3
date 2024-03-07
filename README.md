@@ -28,6 +28,7 @@ What are the sociodemographic and clinical factors that influence adverse outcom
 - Flask: All group members
 - Plot creation: All group members
 - Home page: Mina and Hamza
+- Fly.io: Shan
 - Our Team, Limitations & References pages: Mina
 - Question 1 related page: Alejandra
 - Question 2 related page: Mina
@@ -154,6 +155,7 @@ html code for the carousel displaying the pie charts with the timing of BC treat
   </div>
 
 css code for the carousel displaying the pie charts with the timing of BC treatment for each covid outcome 
+```python
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -226,7 +228,7 @@ css code for the carousel displaying the pie charts with the timing of BC treatm
 .active, .dot:hover {
   background-color: #717171;
 }
-
+```
 
 **Hamza**
 
@@ -247,6 +249,7 @@ with engine.connect() as connection:
 
 
 ### Gradient Donut Graph:
+```python
 // Read the Data
   var names = response.map(d => d.urban_rural);
   var count = response.map(d => d.count);
@@ -398,7 +401,85 @@ Custom hover template for stacked densities
                 }
             })
 ```
+**Shan** \
+Generates pie charts for each race category with dynamic labeling
+```python
+    const raceToChartIdMap = {
+    'Hispanic': '1',
+    'Non-Hispanic AAPI': '2',
+    'Non-Hispanic Black': '3',
+    'Non-Hispanic White': '4',
+    'Other': '5'
+};
 
+let url3 = '/api/v1/cancer_status_sum'
+d3.json(url3).then(function(data) {
+    let groupedData = d3.group(data, d => d.Race);
+
+    groupedData.forEach(function(values, race) {
+        let labels = values.map(d => d['Cancer Status']);
+        let counts = values.map(d => d.Count);
+        let chartIdSuffix = raceToChartIdMap[race]; 
+        if (!chartIdSuffix) {
+            console.error('Unknown race category:', race);
+            return; 
+        }
+
+        let trace = {
+            labels: labels,
+            values: counts,
+            type: 'pie',
+            textinfo: "percent",
+            insidetextorientation: "auto"
+        };
+
+        let layout = {
+            paper_bgcolor: 'white',
+            plot_bgcolor: 'white',
+            legend: {
+                font: {
+                    size: 16 // Adjust this value as needed to increase the font size
+                }
+            }
+        };
+             
+        let chartId = `graph${chartIdSuffix}`;
+
+        // pie chart create
+        Plotly.newPlot(chartId, [trace], layout);
+    });
+});
+```
+HTML code for flip-card with a bar chart visualizing ethnic distribution and COVID-19 severity on one side and a static image on the reverse
+
+```python
+<div class="name">
+  <h1>Relationship Between Ethnic Distribution and COVID-19 Severity</h1>  
+</div>
+
+    <!-- Ethnic Distribution and COVID-19 Severity Bar chart  -->
+    <div class="container-fluid mt-3">
+      <div class="row">
+          <div class="col-md-8 p-3 text-black-on-light">
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <div id="covid-severity-bar-chart" style="max-width: 100%;"></div>
+                      </div>
+                      <div class="flip-card-back">
+                          <img src="https://dl.dropboxusercontent.com/scl/fi/vnj7ql162x1nlfcacziwj/download-1.png?rlkey=zl7lb7sko3muagw6phuqqd233&dl=0" alt="Chart Back Side">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 p-3 text-black-on-light">
+              <h2>Analysis</h2>
+              <h2>Conclusions</h2>
+          </div>
+      </div>
+  </div>
+
+```
 ## References
 
 **Hamza**
@@ -421,6 +502,14 @@ text alignment in css: https://www.w3schools.com/css/css_text_align.asp
 -Page structures: https://getbootstrap.com/ , ChatGPT
 -Uploading images from GoogleDrive to Our Team page: https://stackoverflow.com/questions/77851898/using-google-drive-link-as-img-src-on-react-app-not-working
 -Home page navbar: https://tachyons.io/components/nav/logo-titles-links-centered/index.html
+
+**Shan**
+* [Creating the carousel](https://www.w3schools.com/howto/howto_js_slideshow.asp)
+* [Deploy a Fly.io App](https://fly.io/docs/apps/deploy/)
+* [First image for race/covid/breastcancer page](https://www.cbcn.ca/web/default/files/public/Stories/race%20influence%20header.jpeg)
+* [Second image for race/covid/breastcancer page](https://dpjh8al9zd3a4.cloudfront.net/image/h:720,w:1800/183865)
+
+
 
 **Dean**
 * [Density plot with several groups in d3.js](https://d3-graph-gallery.com/graph/density_double.html)
