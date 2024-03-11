@@ -1,11 +1,12 @@
 # Breast Cancer Research Group
 
 ## Description of Project
-Our project 3 will focus on Breast Cancer data analysis. We will be continuing with our data set from project one and performing a data visualization. Our data set will come from the COVID-19 and Cancer Consortium (CCC19) breast cancer and racial disparities outcomes study. It consists of demographic data for patients with Breast Cancer and COVID-19 and provides information on their COVID-19 outcomes.
+Project 3 represents the culmination of our efforts in exploring and visualizing Breast Cancer data, a continuation from the analysis started in Project 1. Our study utilizes a critical dataset from the COVID-19 and Cancer Consortium (CCC19), which focuses on breast cancer patients and examines the outcomes of racial disparities within the context of COVID-19. This dataset includes demographic information and COVID-19 outcomes for patients affected by Breast Cancer, offering a comprehensive view of their experiences and challenges.
+
+Our web-based platform serves as the culmination of this project, synthesizing advanced data engineering and dynamic visualization techniques to present our findings. With the integration of PostgreSQL for database management, Flask for creating API endpoints, and front-end technologies like HTML, CSS, and JavaScript, we've developed a user-centric web application. This platform invites visitors to interact with our data through intuitive visualizations and API endpoints, enabling them to uncover the nuanced relationship between Breast Cancer and COVID-19 outcomes.
 
 ## Questions we are asking of the data:
-
-What are the sociodemographic and clinical factors that influence adverse outcomes: 
+### What are the sociodemographic and clinical factors that influence adverse outcomes: 
 1. How does the timing and type of their breast cancer treatment affect their COVID-19 outcomes? - Alex
 2. Is smoking a factor in severe COVID-19 for individuals with Breast Cancer? - Mina
 3. Amongst all the races with different BC statuses, is smoking a factor for them to have COVID-19? - Mina
@@ -28,7 +29,7 @@ What are the sociodemographic and clinical factors that influence adverse outcom
 - Flask: All group members
 - Plot creation: All group members
 - Home page: Mina and Hamza
-- Fly.io: Shan
+- Fly.io deploy: Shan
 - Our Team, Limitations & References pages: Mina
 - Question 1 related page: Alejandra
 - Question 2 related page: Mina
@@ -39,13 +40,20 @@ What are the sociodemographic and clinical factors that influence adverse outcom
 - Question 7 related page: Dean
 
 ## Instructions on how to use and interact with the project
+### Method 1: Accessing the Web Application Directly
+Visit our hosted web application by navigating to https://breastcancerproject3.fly.dev/
+
+### Method 2: Running the Code Locally
 - Open app.py and run the application.
-- open the local host server: http://127.0.0.1:5000
+- Open the local host server: http://127.0.0.1:5000
 - Use the navigation bar to move through the webapp
 - Scroll down to view the page contents
 - Use the buttons in the home page to access the question pages
 - Use the navigation bar to return to homepage
 - Follow directions on the pages to interact with elements
+
+
+
 
 ## Efforts for ethical considerations made in the project
 The dataset that we are using is associated with a Creative Commons Attribution 4.0 International License. This allows for the re-distribution and re-use of the dataset as long as the creators are porperly cited. We made sure to cite the creators of the dataset both in this ReadMe and on the Website - thus adhering to the Data License.
