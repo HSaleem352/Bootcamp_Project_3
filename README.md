@@ -5,7 +5,7 @@ Project 3 represents the culmination of our efforts in exploring and visualizing
 
 Our web-based platform serves as the culmination of this project, synthesizing advanced data engineering and dynamic visualization techniques to present our findings. With the integration of PostgreSQL for database management, Flask for creating API endpoints, and front-end technologies like HTML, CSS, and JavaScript, we've developed a user-centric web application. This platform invites visitors to interact with our data through intuitive visualizations and API endpoints, enabling them to uncover the nuanced relationship between Breast Cancer and COVID-19 outcomes.
 
-## Questions we are asking of the data:
+## Questions We Are Asking of the Data:
 ### What are the sociodemographic and clinical factors that influence adverse outcomes: 
 1. How does the timing and type of their breast cancer treatment affect their COVID-19 outcomes? - Alex
 2. Is smoking a factor in severe COVID-19 for individuals with Breast Cancer? - Mina
@@ -15,7 +15,7 @@ Our web-based platform serves as the culmination of this project, synthesizing a
 6. Are the severity of COVID-19 and the cancer status affected if the individuals live in urban, suburban, or rural areas? - Hamza
 7. What is the isolated effect of age on the risk of COVID-19 and Breast Cancer outcomes? - Dean
 
-## Members of the group
+## Members of the Group
 - Hamza Saleem - @HSaleem352
 - Mina Bagheri - @minalbm
 - Dean Ninalga - @Ninalgad 
@@ -39,7 +39,7 @@ Our web-based platform serves as the culmination of this project, synthesizing a
 - Question 6 related page: Hamza
 - Question 7 related page: Dean
 
-## Instructions on how to use and interact with the project
+## Instructions on How to Use and Interact with the Project
 ### Method 1: Accessing the Web Application Directly
 Visit our hosted web application by navigating to https://breastcancerproject3.fly.dev/
 
@@ -55,7 +55,7 @@ Visit our hosted web application by navigating to https://breastcancerproject3.f
 
 
 
-## Efforts for ethical considerations made in the project
+## Efforts for Ethical Considerations Made in the Project
 The dataset that we are using is associated with a Creative Commons Attribution 4.0 International License. This allows for the re-distribution and re-use of the dataset as long as the creators are porperly cited. We made sure to cite the creators of the dataset both in this ReadMe and on the Website - thus adhering to the Data License.
 
 Our website doesn't collect any user information like name or contact information, thus we did not have to deploy additional security measures to ensure we were safely storing and using the information.
@@ -63,13 +63,14 @@ Our website doesn't collect any user information like name or contact informatio
 We made sure to make the website easy to use and interpret, and engaging so that it is accessible to the general public. In this way, we are also making scientific research more accessible to the lay audience.
 
 ## Dataset:
-Nagaraj, G., Khaki, A., & Shah, D. (2023). Covid-19 and Cancer Consortium (CCC19) breast cancer and racial disparities outcomes study. Zenodo. https://doi.org/10.5281/zenodo.7644334
+[Nagaraj, G., Khaki, A., & Shah, D. (2023). Covid-19 and Cancer Consortium (CCC19) breast cancer and racial disparities outcomes study. Zenodo](https://doi.org/10.5281/zenodo.7644334). 
 
 The same dataset was used from project 1. The data was extracted from a csv file from the source mentioned above and then transformed to give the desired tables 
 representing each question. The extraction and transforming was performed in project 1 however, in the write_SQL file, some examples can be seen for the transformation part. 
 Since the data was cleaned and tranformed into structured dataframes, SQL was used to save each dataframe in the form of a table. In order to let this wepapp be hosted from
 any host device, the SQL Server and the Database were created on Render. Using pgAdmin and Postgres, we were able to upload all our dataframes into render's database and were 
-able to successfully read from the database. SQL Alchemy and pandas library were used to communicate between our flaskapp and the SQL server. The ERD of the Database is ![ERD](ERD.png). Since each dataframe represents a different question, they are all independant of each other and share no connection to one another.
+able to successfully read from the database. SQL Alchemy and pandas library were used to communicate between our flaskapp and the SQL server. Since each dataframe represents a different question, they are all independant of each other and share no connection to one another. The ERD of the Database is showing below: ![ERD](ERD.png) 
+
 
 ## Code Snippets
 **Mina**
