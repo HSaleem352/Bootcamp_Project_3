@@ -581,7 +581,7 @@ HTML code for flip-card with a bar chart visualizing ethnic distribution and COV
 **Alejandra**
 * [Information on the license applied to the dataset](https://creativecommons.org/licenses/by/4.0/legalcode)
 * [Information on ethical web design](https://capacityinteractive.com/blog/the-principles-of-ethical-web-design/)
-* Creating the carousel: https://www.w3schools.com/howto/howto_js_slideshow.asp
+* [Creating the carousel](https://www.w3schools.com/howto/howto_js_slideshow.asp)
 * [Creating the flip cards](https://www.w3schools.com/howto/howto_css_flip_card.asp)
 * [Aranging text vertically](https://www.shecodes.io/athena/38295-how-to-make-h1-on-two-lines-with-different-colors)
 * [Text alignment in css](https://www.w3schools.com/css/css_text_align.asp)
