@@ -2,21 +2,12 @@ body {
     padding: 20px;
 }
 
-/* .visualization-container {
-    margin-bottom: 30px;
-} */
 
 #boxplot-container{
     height: 800px;
     width: 100%;
 }
 
-/* }
-h2 {
-    margin-bottom: 15px;
-} */
-
-/* Custom styles for the reveal button and hidden content */
 .analysis-container {
     margin-bottom: 20px;
 }
@@ -50,3 +41,8 @@ h2 {
     background-color: #f8f9fa; /* Light grey background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
+
+
+
