@@ -240,13 +240,15 @@ bootstrap library was used for collapse buttons.
 ### SQL Postgres from Render:
 
 for writing data to the server:
+```python
 with engine.connect() as connection:
     residence_counts.to_sql('api_endpoint',connection)
-
+```
 for reading data from the server:
+```python
 with engine.connect() as connection:
         df = pd.read_sql('api_endpoint',connection)
-
+```
 
 ### Gradient Donut Graph:
 ```python
@@ -561,25 +563,25 @@ HTML code for flip-card with a bar chart visualizing ethnic distribution and COV
 ## References
 
 **Hamza**
-creating postgresql engine: https://stackoverflow.com/questions/62688256/sqlalchemy-exc-nosuchmoduleerror-cant-load-plugin-sqlalchemy-dialectspostgre
-listing all tables in postgres using SQLAlchemy: https://www.pythonsheets.com/notes/python-sqlalchemy.html
-visual for amcharts: https://www.amcharts.com/demos/donut-with-radial-gradient/
-pic for home page: https://healthcare.utah.edu/huntsmancancerinstitute/sites/g/files/zrelqx336/files/styles/freeform_phone/public/migrate_images/mammo-mask.jpg?h=bdbe9ddb&itok=VPDk9U4v
-animations: https://animate.style/
+* [Creating postgresql engine](https://stackoverflow.com/questions/62688256/sqlalchemy-exc-nosuchmoduleerror-cant-load-plugin-sqlalchemy-dialectspostgre)
+* [Listing all tables in postgres using SQLAlchemy](https://www.pythonsheets.com/notes/python-sqlalchemy.html)  
+* [Visual for amcharts](https://www.amcharts.com/demos/donut-with-radial-gradient/)
+* [Pic for home page](https://healthcare.utah.edu/huntsmancancerinstitute/sites/g/files/zrelqx336/files/styles/freeform_phone/public/migrate_images/mammo-mask.jpg?h=bdbe9ddb&itok=VPDk9U4v)
+* [Animations](https://animate.style/)
 
 **Alejandra**
-information on the license applied to the dataset: https://creativecommons.org/licenses/by/4.0/legalcode
-information on ethical web design: https://capacityinteractive.com/blog/the-principles-of-ethical-web-design/
-creating the carousel: https://www.w3schools.com/howto/howto_js_slideshow.asp
-creating the flip cards: https://www.w3schools.com/howto/howto_css_flip_card.asp
-aranging text vertically: https://www.shecodes.io/athena/38295-how-to-make-h1-on-two-lines-with-different-colors
-text alignment in css: https://www.w3schools.com/css/css_text_align.asp
+* [Information on the license applied to the dataset](https://creativecommons.org/licenses/by/4.0/legalcode)
+* [Information on ethical web design](https://capacityinteractive.com/blog/the-principles-of-ethical-web-design/)
+* Creating the carousel: https://www.w3schools.com/howto/howto_js_slideshow.asp
+* [Creating the flip cards](https://www.w3schools.com/howto/howto_css_flip_card.asp)
+* [Aranging text vertically](https://www.shecodes.io/athena/38295-how-to-make-h1-on-two-lines-with-different-colors)
+* [Text alignment in css](https://www.w3schools.com/css/css_text_align.asp)
 
 
 **Mina**
--Page structures: https://getbootstrap.com/ , ChatGPT
--Uploading images from GoogleDrive to Our Team page: https://stackoverflow.com/questions/77851898/using-google-drive-link-as-img-src-on-react-app-not-working
--Home page navbar: https://tachyons.io/components/nav/logo-titles-links-centered/index.html
+* [Page structures](https://getbootstrap.com) , ChatGPT
+* [Uploading images from GoogleDrive to Our Team page](https://stackoverflow.com/questions/77851898/using-google-drive-link-as-img-src-on-react-app-not-working)
+* [Home page navbar](https://tachyons.io/components/nav/logo-titles-links-centered/index.html)
 
 **Shan**
 * [Creating the carousel](https://www.w3schools.com/howto/howto_js_slideshow.asp)
