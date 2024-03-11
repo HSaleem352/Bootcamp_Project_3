@@ -389,14 +389,14 @@ def obesity_distribution():
 def covid_severity_distribution():
     with engine.connect() as connection:
         # Query data for COVID-19 severity distribution by obesity status
-        query = """
+        query = text("""
             SELECT
                 der_obesity,
                 severity_of_covid_19_v2,
                 COUNT(*) AS count
             FROM obesity_age_effect
             GROUP BY der_obesity, severity_of_covid_19_v2
-        """
+        """)
         result = connection.execute(query)
 
         # Convert the result to a DataFrame
@@ -411,7 +411,7 @@ def covid_severity_distribution():
 @app.route('/age_distribution_by_covid_severity')
 def age_distribution_by_covid_severity():
     with engine.connect() as connection:
-        query = "SELECT der_age_trunc, severity_of_covid_19_v2 FROM obesity_age_effect WHERE der_cancer_status_v4 IS NOT NULL"
+        query = text("""SELECT der_age_trunc, severity_of_covid_19_v2 FROM obesity_age_effect WHERE der_cancer_status_v4 IS NOT NULL""")
         data = pd.read_sql(query, connection)
 
     # Clean the data if needed and filter out null values
