@@ -5,6 +5,8 @@ Project 3 represents the culmination of our efforts in exploring and visualizing
 
 Our web-based platform serves as the culmination of this project, synthesizing advanced data engineering and dynamic visualization techniques to present our findings. With the integration of PostgreSQL for database management, Flask for creating API endpoints, and front-end technologies like HTML, CSS, and JavaScript, we've developed a user-centric web application. This platform invites visitors to interact with our data through intuitive visualizations and API endpoints, enabling them to uncover the nuanced relationship between Breast Cancer and COVID-19 outcomes.
 
+Click here for more information about [Project 1](https://github.com/HSaleem352/Bootcamp-Project1)
+
 ## Questions We Are Asking of the Data:
 ### What are the sociodemographic and clinical factors that influence adverse outcomes: 
 1. How does the timing and type of their breast cancer treatment affect their COVID-19 outcomes? - Alex
